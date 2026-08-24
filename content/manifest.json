@@ -1,0 +1,35 @@
+{
+  "sections": [
+    {
+      "slug": "empezar",
+      "title": { "es": "Empezar", "en": "Getting started" },
+      "pages": [
+        { "slug": "que-es", "title": { "es": "Qué es Dotrino", "en": "What is Dotrino" } }
+      ]
+    },
+    {
+      "slug": "vault",
+      "title": { "es": "La bóveda (vault)", "en": "The vault" },
+      "pages": [
+        { "slug": "modelo", "title": { "es": "El modelo: perfil, acta y llaves", "en": "The model: profile, record, keys" } },
+        { "slug": "instalacion", "title": { "es": "Instalación", "en": "Install" } },
+        { "slug": "cli", "title": { "es": "CLI de control", "en": "Control CLI" } },
+        { "slug": "tui", "title": { "es": "Interfaz de terminal (TUI)", "en": "Terminal UI (TUI)" } },
+        { "slug": "perfiles", "title": { "es": "Perfiles y contraseña", "en": "Profiles and password" } },
+        { "slug": "emparejar", "title": { "es": "Emparejar un aparato", "en": "Pairing a device" } },
+        { "slug": "secretos", "title": { "es": "Secretos de servicios", "en": "Service secrets" } },
+        { "slug": "aprobacion", "title": { "es": "Aprobación desde el teléfono", "en": "Phone approval" } },
+        { "slug": "ssh", "title": { "es": "Llaves SSH sin archivos", "en": "SSH keys without files" } },
+        { "slug": "seguridad", "title": { "es": "Cifrado, store y alcance", "en": "Encryption, store and scope" } }
+      ]
+    },
+    {
+      "slug": "desarrollo",
+      "title": { "es": "Desarrollo", "en": "Development" },
+      "pages": [
+        { "slug": "contribuir", "title": { "es": "Contribuir", "en": "Contributing" } },
+        { "slug": "diseno", "title": { "es": "Documentos de diseño", "en": "Design documents" } }
+      ]
+    }
+  ]
+}

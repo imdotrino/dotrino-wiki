@@ -1,0 +1,25 @@
+---
+title: Dotrino Wiki
+description: La documentación del ecosistema Dotrino, en un solo lugar: la bóveda, los pilares, las apps y cómo contribuir.
+---
+
+# Dotrino Wiki
+
+La documentación del ecosistema [Dotrino](https://dotrino.com) en un solo lugar.
+Dotrino es un ecosistema de aplicaciones centradas en la privacidad de tus datos:
+**lo tuyo es tuyo, y tú decides qué compartes, con quién y cuándo.**
+
+## Por dónde empezar
+
+- [Qué es Dotrino](/empezar/que-es/) — el ecosistema en dos minutos.
+- [La bóveda](/vault/modelo/) — tu certificador y tu almacén, en tu propia máquina.
+- [Instalarla](/vault/instalacion/) y [conectar tus aparatos](/vault/emparejar/).
+- [Secretos de servicios](/vault/secretos/): que tus programas dejen de llevar un `.env`.
+- [Aprobación desde el teléfono](/vault/aprobacion/) y [llaves SSH sin archivos](/vault/ssh/).
+
+## Cómo se edita este wiki
+
+Cada página tiene abajo un botón **«Editar en GitHub»**: el contenido vive en
+Markdown en el repositorio [`dotrino-wiki`](https://github.com/imdotrino/dotrino-wiki)
+y se publica estático con un generador propio — sin cuentas, sin cookies, sin
+JavaScript de terceros. Los cambios entran por *pull request* a la rama `develop`.
