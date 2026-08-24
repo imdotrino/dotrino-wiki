@@ -13,6 +13,64 @@
             "es": "Qué es Dotrino",
             "en": "What is Dotrino"
           }
+        },
+        {
+          "slug": "instalar-apps",
+          "title": {
+            "es": "Instalar una app en tu teléfono",
+            "en": "Install an app on your phone"
+          }
+        },
+        {
+          "slug": "identidad",
+          "title": {
+            "es": "Tu identidad y tus perfiles",
+            "en": "Your identity and your profiles"
+          }
+        },
+        {
+          "slug": "como-viaja",
+          "title": {
+            "es": "Cómo viaja lo que compartes",
+            "en": "How what you share travels"
+          }
+        },
+        {
+          "slug": "privacidad",
+          "title": {
+            "es": "Cómo se protege lo tuyo",
+            "en": "How your data is kept private"
+          }
+        },
+        {
+          "slug": "apoyar",
+          "title": {
+            "es": "Apoyar el proyecto",
+            "en": "Supporting the project"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "empresa",
+      "title": {
+        "es": "Dotrino Enterprise",
+        "en": "Dotrino Enterprise"
+      },
+      "pages": [
+        {
+          "slug": "que-es",
+          "title": {
+            "es": "Qué es Dotrino Enterprise",
+            "en": "What is Dotrino Enterprise"
+          }
+        },
+        {
+          "slug": "como-empezar",
+          "title": {
+            "es": "Cómo empezar en tu empresa",
+            "en": "Getting started in your company"
+          }
         }
       ]
     },

@@ -12,10 +12,17 @@ Dotrino is an ecosystem of applications centered on the privacy of your data:
 ## Where to start
 
 - [What is Dotrino](/en/empezar/que-es/) — the ecosystem in two minutes.
+- [Install an app on your phone](/en/empezar/instalar-apps/) and [Your identity and your profiles](/en/empezar/identidad/).
+- [How your data is kept private](/en/empezar/privacidad/) and [How what you share travels](/en/empezar/como-viaja/).
 - [The vault](/en/vault/modelo/) — your certifier and your store, on your own machine.
 - [Install it](/en/vault/instalacion/) and [pair your devices](/en/vault/emparejar/).
 - [Service secrets](/en/vault/secretos/): your programs stop carrying a `.env`.
 - [Phone approval](/en/vault/aprobacion/) and [SSH keys without files](/en/vault/ssh/).
+
+## For a company
+
+- [What is Dotrino Enterprise](/en/empresa/que-es/) — the same architecture, for your company.
+- [Getting started in your company](/en/empresa/como-empezar/) — the four steps, in order.
 
 ## How this wiki is edited
 
