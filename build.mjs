@@ -133,6 +133,7 @@ function layout ({ lang, section, slug, title, description, html, editPath }) {
   const url = SITE + urlOf(lang, section, slug)
   const altLang = lang === 'es' ? 'en' : 'es'
   const altUrl = SITE + urlOf(altLang, section, slug)
+  const altPath = urlOf(altLang, section, slug)
   const t = T[lang]
   return `<!doctype html>
 <html lang="${lang}">
@@ -191,11 +192,18 @@ th { background:var(--panel); }
 </style>
 </head>
 <body>
-<dotrino-topbar brand="Dotrino Wiki" icon="/icon.svg" brand-href="${lang === 'en' ? '/en/' : '/'}" no-back no-lang
+<dotrino-topbar brand="Dotrino Wiki" icon="/icon.svg" brand-href="${lang === 'en' ? '/en/' : '/'}" no-back lang="${lang}"
   support-repo="imdotrino/dotrino-wiki" support-discord="https://discord.gg/D648uq7cth">
-  <a href="${T[lang].langHref(urlOf('es', section, slug).replace(/^\/en/, ''))}" data-testid="lang-toggle">${t.lang}</a>
   <a href="https://dotrino.com/" rel="noopener">dotrino.com</a>
 </dotrino-topbar>
+<script>
+// §9: el selector es el toggle ESTÁNDAR del topbar (ES/EN, ambos visibles). Como el wiki
+// es multipágina por idioma, cambiar de idioma = navegar a la URL gemela de esta página.
+document.querySelector('dotrino-topbar').addEventListener('dotrino-lang', (e) => {
+  const l = e.detail && e.detail.lang
+  if (l && l !== '${lang}') location.href = '${SITE ? '' : ''}${altPath}'
+})
+</script>
 <div class="wrap">
 ${sidebar(lang, { section, slug })}
 <main>
