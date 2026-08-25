@@ -28,6 +28,7 @@ Dotrino is an ecosystem of applications centered on the privacy of your data:
 ## Tools for your machine
 
 - [The installer](/en/herramientas/instalar/) — one command and done.
+- [Inspector](/en/herramientas/inspector/) — which passwords are in plain sight, and what to do.
 - [Terminal](/en/herramientas/terminal/), [AI assistants](/en/herramientas/ia/) and [the tunnel](/en/herramientas/tunel/).
 
 ## For developers

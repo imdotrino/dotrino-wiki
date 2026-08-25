@@ -282,6 +282,13 @@
           }
         },
         {
+          "slug": "inspector",
+          "title": {
+            "es": "Inspector — contraseñas a la vista",
+            "en": "Inspector — passwords in plain sight"
+          }
+        },
+        {
           "slug": "terminal",
           "title": {
             "es": "Terminal — tu computadora desde el teléfono",

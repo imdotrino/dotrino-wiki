@@ -10,6 +10,9 @@ enrolan a la bóveda como un miembro más, con un cert limitado a su cajón
 (`vault:secrets:<ns>`), y al arrancar piden su bundle. **En la máquina del servicio
 no queda ningún secreto**: los valores viven solo en memoria del proceso.
 
+> ¿No sabes cuáles tienes ahora mismo en un `.env`? [El Inspector](/herramientas/inspector/)
+> te los enseña uno por uno y te da la receta para traerlos aquí.
+
 ## Enrolar (una vez, con un humano)
 
 ```sh

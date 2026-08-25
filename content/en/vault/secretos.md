@@ -10,6 +10,9 @@ enroll with the vault as one more member, with a cert limited to their drawer
 (`vault:secrets:<ns>`), and ask for their bundle on boot. **No secret remains on the
 service's machine**: values live only in the process memory.
 
+> Not sure which ones you have in an `.env` right now? [The Inspector](/en/herramientas/inspector/)
+> shows them one by one and gives you the recipe to bring them here.
+
 ## Enroll (once, with a human)
 
 ```sh
