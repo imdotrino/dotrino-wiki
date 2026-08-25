@@ -12,6 +12,26 @@ own servers.
 
 > **Nothing that should stay in, gets out.**
 
+Your company's keys live on a machine you choose and open only where you authorised
+them. Every permission is granted by you, is recorded with its date, and is withdrawn
+from a single place.
+
+## Why now
+
+AI tools changed two things about the environment every company works in.
+
+**The speed changed.** Taking advantage of a technical oversight now takes hours, not
+weeks. A key that has gone years without changing, or copied into a file on every
+server, stopped being a minor detail.
+*With Dotrino Enterprise:* keys live in a single place, and changing one is a matter
+of minutes rather than an operation.
+
+**Voices and faces are imitated.** Imitating someone's voice, face and writing style
+is within anyone's reach. "The manager asked me over chat" no longer proves anything
+on its own.
+*With Dotrino Enterprise:* every request travels signed by the machine it was made
+from, and the signature checks itself: a convincing message grants no permission.
+
 ## What it solves
 
 | | How it ends up |
@@ -23,6 +43,7 @@ own servers.
 | **Who comes in and who leaves** | Authorising a machine requires typing a code on that very machine; withdrawing it cuts access on the spot and the permission expires on its own after 30 days. See [Pairing a device](/en/vault/emparejar/). |
 | **A person authorises from their phone** | A service marked this way gets no keys until someone approves from their phone. See [Phone approval](/en/vault/aprobacion/). |
 | **No loose keys on the computers** | Server access keys are just another secret, and never end up written to disk. See [SSH keys without files](/en/vault/ssh/). |
+| **What you ask the AI** | Every question your people ask an artificial intelligence goes first through a machine of yours, which blanks out whatever your rules mark as sensitive, asks when in doubt, and records what left and when. |
 | **The code is in plain sight** | Everything is open under the MIT licence: your people can read it, build it and run the tests. Every signature, permission and rejected attempt is recorded with its date on your own machine. |
 
 ## What it does not offer

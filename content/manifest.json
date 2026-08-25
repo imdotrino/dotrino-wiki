@@ -15,6 +15,20 @@
           }
         },
         {
+          "slug": "crear-cuenta",
+          "title": {
+            "es": "Cómo crear una cuenta",
+            "en": "How to create an account"
+          }
+        },
+        {
+          "slug": "otros-dispositivos",
+          "title": {
+            "es": "Cómo usar tu cuenta en otros dispositivos",
+            "en": "How to use your account on other devices"
+          }
+        },
+        {
           "slug": "instalar-apps",
           "title": {
             "es": "Instalar una app en tu teléfono",

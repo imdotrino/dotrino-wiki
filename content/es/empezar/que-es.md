@@ -13,6 +13,30 @@ Eso no es una abstracción: es un inventario concreto. Tu voz, tu cara, tu forma
 escribir, tus conversaciones, tus fotos, dónde estás, con quién hablas, qué buscas,
 qué compras, tu identidad, tu historial, tus documentos.
 
+## Tu información, en tu servidor, bajo tus reglas
+
+Tus fotos, tus mensajes y tus archivos viven donde tú los pones, y puedes
+llevártelos, copiarlos o borrarlos el día que quieras. Lo que no compartes no se
+mueve de ahí.
+
+## Cómo funciona mientras la usas
+
+Esto es lo que las apps hacen por ti sin que tengas que configurar nada:
+
+- **Empiezas al abrir.** Abres la app y ya está: la usas desde el primer momento, sin
+  registro. Ver [Cómo crear una cuenta](/empezar/crear-cuenta/).
+- **De tu equipo al suyo.** Cuando la conexión lo permite, lo que se mandan viaja de un
+  equipo al otro por el camino más corto.
+- **Tu mensaje espera.** Si la otra persona está desconectada, tu mensaje la espera
+  hasta un día y le llega en cuanto vuelve. Ver [Cómo viaja lo que compartes](/empezar/como-viaja/).
+- **Lo tuyo te acompaña.** Tus contactos y tus mensajes son los mismos en cada app de
+  Dotrino que abras en ese navegador.
+- **Va con tu firma.** Lo que mandas sale con una firma que nace en tu equipo, así que
+  quien lo recibe sabe que viene de ti. Ver [Tu identidad y tus perfiles](/empezar/identidad/).
+- **Cerca de ti, cuando tú quieras.** Algunas apps te ayudan a ver lo que tienes cerca.
+  Cada vez que pasa lo decides tú, y se borra en unas horas. Ver
+  [Cómo se protege lo tuyo](/empezar/privacidad/).
+
 ## Cómo lo garantiza
 
 - Las aplicaciones comparten **identidad, transporte y almacenamiento cifrado**,
@@ -32,3 +56,6 @@ qué compras, tu identidad, tu historial, tus documentos.
 | Los pilares (`@dotrino/*`) | identidad, transporte, almacén, reputación: librerías que todas las apps comparten |
 
 El catálogo completo de aplicaciones está en [dotrino.com](https://dotrino.com/).
+
+Para una empresa, el mismo ecosistema se presenta en
+[Qué es Dotrino Enterprise](/empresa/que-es/).
