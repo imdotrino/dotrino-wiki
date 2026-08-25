@@ -19,6 +19,22 @@ Dotrino es un ecosistema de aplicaciones centradas en la privacidad de tus datos
 - [Secretos de servicios](/vault/secretos/): que tus programas dejen de llevar un `.env`.
 - [Aprobación desde el teléfono](/vault/aprobacion/) y [llaves SSH sin archivos](/vault/ssh/).
 
+## Las aplicaciones
+
+- [Chat y Messenger](/apps/mensajeria/), [Eco](/apps/eco/), [here](/apps/here/) y [Trueque](/apps/trueque/) — hablar, publicar y encontrarse.
+- [Perfil y calificaciones](/apps/perfil/), [Wallet](/apps/wallet/) y [QRShare](/apps/compartir-archivos/).
+- [Los juegos](/apps/juegos/), [Deporte](/apps/deporte/), [Utilidades](/apps/utilidades/), [códigos QR](/apps/qr/) y [Android Launcher](/apps/android/).
+
+## Herramientas para tu máquina
+
+- [El instalador](/herramientas/instalar/) — un comando y listo.
+- [Terminal](/herramientas/terminal/), [asistentes de IA](/herramientas/ia/) y [el túnel](/herramientas/tunel/).
+
+## Para desarrollar
+
+- [Los pilares](/desarrollo/pilares/) y [los componentes de interfaz](/desarrollo/componentes/).
+- [Los servicios](/desarrollo/servicios/) y [el índice y las pruebas](/desarrollo/indice/).
+
 ## Para una empresa
 
 - [Qué es Dotrino Enterprise](/empresa/que-es/) — la misma arquitectura, para tu empresa.

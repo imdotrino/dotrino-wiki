@@ -175,6 +175,136 @@
       ]
     },
     {
+      "slug": "apps",
+      "title": {
+        "es": "Las apps",
+        "en": "The apps"
+      },
+      "pages": [
+        {
+          "slug": "mensajeria",
+          "title": {
+            "es": "Chat y Messenger",
+            "en": "Chat and Messenger"
+          }
+        },
+        {
+          "slug": "eco",
+          "title": {
+            "es": "Eco — publicar en tu zona",
+            "en": "Eco — posting in your area"
+          }
+        },
+        {
+          "slug": "here",
+          "title": {
+            "es": "here — tu ubicación en vivo",
+            "en": "here — your live location"
+          }
+        },
+        {
+          "slug": "trueque",
+          "title": {
+            "es": "Trueque — anuncios cerca de ti",
+            "en": "Trueque — listings near you"
+          }
+        },
+        {
+          "slug": "compartir-archivos",
+          "title": {
+            "es": "QRShare — pasar archivos",
+            "en": "QRShare — moving files"
+          }
+        },
+        {
+          "slug": "qr",
+          "title": {
+            "es": "Leer y crear códigos QR",
+            "en": "Reading and creating QR codes"
+          }
+        },
+        {
+          "slug": "wallet",
+          "title": {
+            "es": "Wallet — tarjetas, eventos y contactos",
+            "en": "Wallet — cards, events and contacts"
+          }
+        },
+        {
+          "slug": "perfil",
+          "title": {
+            "es": "Perfil y calificaciones",
+            "en": "Profile and ratings"
+          }
+        },
+        {
+          "slug": "juegos",
+          "title": {
+            "es": "Los juegos",
+            "en": "The games"
+          }
+        },
+        {
+          "slug": "deporte",
+          "title": {
+            "es": "Deporte: marcadores y timer",
+            "en": "Sport: scoreboards and timer"
+          }
+        },
+        {
+          "slug": "utilidades",
+          "title": {
+            "es": "Utilidades: Base64, Mi IP y Favicon",
+            "en": "Utilities: Base64, My IP and Favicon"
+          }
+        },
+        {
+          "slug": "android",
+          "title": {
+            "es": "Android Launcher",
+            "en": "Android Launcher"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "herramientas",
+      "title": {
+        "es": "Herramientas para tu máquina",
+        "en": "Tools for your machine"
+      },
+      "pages": [
+        {
+          "slug": "instalar",
+          "title": {
+            "es": "El instalador de Dotrino",
+            "en": "The Dotrino installer"
+          }
+        },
+        {
+          "slug": "terminal",
+          "title": {
+            "es": "Terminal — tu computadora desde el teléfono",
+            "en": "Terminal — your computer from your phone"
+          }
+        },
+        {
+          "slug": "ia",
+          "title": {
+            "es": "Asistentes de IA en tu máquina",
+            "en": "AI assistants on your machine"
+          }
+        },
+        {
+          "slug": "tunel",
+          "title": {
+            "es": "El túnel",
+            "en": "The tunnel"
+          }
+        }
+      ]
+    },
+    {
       "slug": "desarrollo",
       "title": {
         "es": "Desarrollo",
@@ -193,6 +323,34 @@
           "title": {
             "es": "Documentos de diseño",
             "en": "Design documents"
+          }
+        },
+        {
+          "slug": "pilares",
+          "title": {
+            "es": "Los pilares (@dotrino/*)",
+            "en": "The pillars (@dotrino/*)"
+          }
+        },
+        {
+          "slug": "componentes",
+          "title": {
+            "es": "Los componentes de interfaz",
+            "en": "The UI components"
+          }
+        },
+        {
+          "slug": "servicios",
+          "title": {
+            "es": "Los servicios del ecosistema",
+            "en": "The ecosystem's services"
+          }
+        },
+        {
+          "slug": "indice",
+          "title": {
+            "es": "El índice y las pruebas",
+            "en": "The index and the tests"
           }
         }
       ]
