@@ -62,6 +62,6 @@ specific wins. Remove the device and its variables go with it.
 ### Public or private
 
 Each variable is public or private, and that decides **one thing only**: whether its
-value can be seen from the [remote console](https://vault.dotrino.com/devices). It is
+value can be seen from the [remote console](https://vault.dotrino.com/vault). It is
 **born private**, and private is forever (you can cover a public one; never uncover).
 The service does not care: it receives both.

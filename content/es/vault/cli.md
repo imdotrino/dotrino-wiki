@@ -64,6 +64,6 @@ lo específico gana. Al quitar el aparato, sus variables se van con él.
 ### Pública o privada
 
 Cada variable es pública o privada, y eso decide **una sola cosa**: si su valor puede
-verse desde la [consola remota](https://vault.dotrino.com/devices). **Se nace
+verse desde la [consola remota](https://vault.dotrino.com/vault). **Se nace
 privada**, y privada es para siempre (tapar una pública sí se puede; destapar, no).
 Al servicio le da igual: recibe las dos.
