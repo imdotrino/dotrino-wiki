@@ -37,11 +37,16 @@ reboot never leaves your apps dead waiting for someone to type something.
 dotrino-vault profile password     # set or change the password
 dotrino-vault profile password rm  # remove it
 dotrino-vault unlock               # open the vault in this console
-dotrino-vault lock                 # close it again
+dotrino-vault lock                 # close it right away
 ```
 
-The profile locks again when the service restarts. The password is never stored
-(only a salted verifier, PBKDF2) and after 5 failures each new attempt waits longer.
+**It locks itself after 5 minutes idle**, on top of locking when the service restarts.
+The countdown runs from the last thing you did in the console, so it never kicks you out
+mid-task; what your devices ask for through the proxy does not count as use, and they
+keep working all the same. The TUI also forgets the password at that point.
+
+The password is never stored (only a salted verifier, scrypt), asks for at least 12
+characters —several random words— and after 5 failures each new attempt waits longer.
 
 **What it protects, plainly:** the console — someone sitting at your machine seeing
 or touching that vault. It does **not** encrypt the key on disk (that's

@@ -37,11 +37,16 @@ reinicio del PC nunca deja tus apps muertas esperando a que alguien teclee algo.
 dotrino-vault profile password     # pone o cambia la contraseña
 dotrino-vault profile password rm  # la quita
 dotrino-vault unlock               # abre la bóveda en esta consola
-dotrino-vault lock                 # vuelve a cerrarla
+dotrino-vault lock                 # vuelve a cerrarla ya
 ```
 
-El perfil se vuelve a bloquear al reiniciar el servicio. La contraseña no se guarda
-(solo un verificador con sal, PBKDF2) y tras 5 intentos fallidos cada intento nuevo
+**Se cierra sola a los 5 minutos sin usarse**, además de al reiniciar el servicio. El
+plazo se cuenta desde lo último que hiciste en la consola, así que mientras trabajas no
+te echa; lo que piden tus dispositivos por el proxy no cuenta como uso y siguen
+funcionando igual. La TUI, además, olvida la contraseña en ese momento.
+
+La contraseña no se guarda (solo un verificador con sal, scrypt), pide un mínimo de 12
+caracteres —varias palabras al azar— y tras 5 intentos fallidos cada intento nuevo
 espera cada vez más.
 
 **Qué protege y qué no, dicho sin adornos:** protege la consola — que otro que se
