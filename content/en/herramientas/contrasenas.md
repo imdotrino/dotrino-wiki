@@ -40,16 +40,29 @@ with Dotrino's bird in it. It shows up **only when it can do something there**:
 |---|---|---|
 | is empty | you have nothing saved | doesn't show |
 | is empty | you have something saved | **fill** |
-| has something typed | it isn't saved the same | **save** |
-| has something typed | it is already saved the same | doesn't show |
+| has something typed | — | **save** |
 
-**One letter** is enough for it to appear. And once you fill from it, it goes away on its
-own: what's typed is now what you have saved.
+**One letter** is enough for it to appear.
 
 **Nothing is filled for you.** The manager never writes into a form by itself: it marks
 where it can help and waits for you to ask. That is on purpose — filling on its own means
 deciding for you which field each value goes into, and getting that wrong means typing a
 password into the wrong place.
+
+## Nothing leaves your vault without your say-so
+
+When the manager needs a saved password —to fill it, to copy it, or to save over a record
+you already have— **a confirmation comes up**, and nothing is handed over until you press
+**Authorize**. It comes up inside the extension, never on the page: the site you are
+looking at cannot draw it or answer it for you.
+
+This works the **same** wherever you keep them: in the extension itself, in your
+computer's vault, or in one open in a tab. That the extension's own vault didn't ask was a
+difference that should not have existed.
+
+It asks every time on purpose while the manager is young: that way you see when your
+things are used and when they aren't. If you close the little window without answering, it
+counts as a **no** and nothing happens — it just asks again next time.
 
 ## Saving
 
@@ -113,8 +126,8 @@ is still there with its own things inside, and you pick which one you're looking
 is a separate [profile](/empezar/identidad/) and they don't see each other — personal and
 work live side by side without mixing.
 
-With a connected vault, every password handed over **can ask for your approval on the
-phone** (see [approval](/vault/aprobacion/)).
+With a connected vault, that confirmation can also be asked **on your phone**, with your
+fingerprint (see [approval](/vault/aprobacion/)).
 
 ## Bringing yours in, and taking it away
 

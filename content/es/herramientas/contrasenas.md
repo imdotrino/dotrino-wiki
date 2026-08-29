@@ -40,16 +40,29 @@ esquina, con el pájaro de Dotrino. Aparece **solo cuando puede hacer algo ahí*
 |---|---|---|
 | está vacío | no tienes nada guardado | no aparece |
 | está vacío | tienes algo guardado | **rellenar** |
-| tiene algo escrito | no está guardado igual | **guardar** |
-| tiene algo escrito | ya está guardado igual | no aparece |
+| tiene algo escrito | — | **guardar** |
 
-Con **una sola letra** escrita ya aparece. Y cuando rellenas desde él, desaparece solo:
-lo que hay escrito ya es lo que tienes guardado.
+Con **una sola letra** escrita ya aparece.
 
 **Nada se rellena solo.** El gestor nunca escribe en un formulario por su cuenta: marca
 dónde puede ayudar y espera a que tú lo pidas. Es a propósito — rellenar solo obliga a
 decidir por ti en qué campo va cada dato, y equivocarse ahí significa escribir una
 contraseña en el sitio equivocado.
+
+## Nada sale de tu bóveda sin que lo autorices
+
+Cuando el gestor necesita una contraseña guardada —para rellenarla, para copiarla, o para
+guardar encima de una entrada que ya tienes— **sale una confirmación** y no se entrega
+nada hasta que pulses **Autorizar**. Sale en la propia extensión, nunca en la página: el
+sitio que estás mirando no puede dibujarla ni responderla por ti.
+
+Esto vale **igual** guardes donde guardes: en la propia extensión, en la bóveda de tu
+computadora o en la de una pestaña. Que la de la extensión no preguntara era una
+diferencia que no debía existir.
+
+Se pregunta cada vez a propósito, mientras el gestor es joven: así ves cuándo se usa lo
+tuyo y cuándo no. Si cierras la ventanita sin contestar, cuenta como un **no** y no pasa
+nada — solo vuelve a pedirlo.
 
 ## Guardar
 
@@ -112,8 +125,8 @@ tenías sigue estando, con lo suyo dentro, y eliges cuál miras. Cada una es un
 [perfil](/empezar/identidad/) distinto y no se ven entre ellas — la personal y la del
 trabajo conviven sin mezclarse.
 
-Con una bóveda conectada, cada contraseña que se entrega **puede pedir tu aprobación en el
-teléfono** (ver [aprobación](/vault/aprobacion/)).
+Con una bóveda conectada, la confirmación puede además pedirse **en el teléfono**, con tu
+huella (ver [aprobación](/vault/aprobacion/)).
 
 ## Traer y llevarte lo que tienes
 
