@@ -121,6 +121,11 @@ en veinte sitios.
 Pulsa el botón del campo y elige de qué entrada. Puedes rellenar **ese dato** o **todos
 los valores** que esa entrada tenga en la página, de una vez.
 
+Cada línea de la lista lleva, al lado del nombre, **con qué se va a rellenar**: en pequeño
+y recortado, para que puedas distinguir dos cuentas sin abrir nada. Lo que hayas marcado
+como privado sale tapado (`••••••`) y solo aparece al pulsar Completar, que es cuando se te
+pide autorización.
+
 ### Cuando la cuenta está guardada en otro sitio
 
 Pasa mucho: cambia el subdominio y la cuenta es la misma. En el modal hay una **lupa**:

@@ -124,6 +124,11 @@ sites.
 Press the field's button and pick which record. You can fill **that one value** or
 **every value** that record has on the page, in one go.
 
+Each line in the list shows, next to the name, **what it would fill in**: small and
+trimmed, so you can tell two accounts apart without opening anything. Whatever you marked
+as private shows covered (`••••••`) and only appears when you press Fill, which is when you
+are asked to authorize it.
+
 ### When the account is saved under another site
 
 It happens all the time: the subdomain changes and the account is the same. The dialog has
