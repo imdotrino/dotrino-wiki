@@ -160,6 +160,34 @@ looking at**. For each record you can:
 - **Fill** or **copy** its password.
 - Mark it **default**: that's the one picked when you open a field's button. One per site.
 - **Delete** it, confirming on its own card.
+- **Edit** it, which opens its page in the manager.
+
+Below the list there's a button that opens **the manager** itself.
+
+## The manager: changing what is already saved
+
+It's a separate tab, and it has nothing to do with the page you happen to be looking at:
+it's where you manage what's yours. It opens from a card's **Edit** button — straight to
+that record — or from the button below the list.
+
+At the top you see **which sites you have something saved on**, and how many records on
+each. Click one to see its records, or type in the search box to find one by name.
+
+Inside a record you can change its **name**, change any value, **add** a new one and
+**remove** the ones you no longer use. Everything is saved at once with a single button, or
+cancelled at once: until you press *Save changes*, nothing is touched. Whatever you mark
+for removal stays crossed out in place, so you can see what you are about to lose.
+
+### Private things still don't come out, not even here
+
+A value marked private **is not shown in the manager**: its box comes up empty, and what
+you can do is **type over it to replace it**. If you type exactly what was already there,
+the manager tells you and saves nothing — it knows by comparing, without ever seeing what
+is stored.
+
+That's why opening a record and saving your changes **never asks you to confirm anything**:
+nothing your vault protects leaves it. You can also take the private mark off a value
+without the manager seeing it: from then on it is shown.
 
 ## Where your passwords live
 

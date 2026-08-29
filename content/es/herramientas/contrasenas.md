@@ -158,6 +158,34 @@ estás mirando**. De cada entrada puedes:
 - Marcarla **predeterminada**: es la que sale elegida al abrir el botón de un campo. Una
   por sitio.
 - **Borrarla**, con una confirmación en su propia tarjeta.
+- **Editarla**, que abre su ficha en el gestor.
+
+Debajo de la lista hay un botón que abre **el gestor** entero.
+
+## El gestor: cambiar lo que ya está guardado
+
+Es una pestaña aparte, y no tiene nada que ver con la página que estés mirando: es donde
+administras lo tuyo. Se abre desde el botón **Editar** de una tarjeta —entra directo a esa
+ficha— o desde el botón de debajo de la lista.
+
+Arriba ves **en qué sitios tienes algo guardado**, con cuántas entradas en cada uno. Pulsa
+uno para ver las suyas, o escribe en el buscador para encontrar una por su nombre.
+
+Dentro de una ficha puedes cambiar el **nombre** de la entrada, cambiar cualquier valor,
+**añadir** uno nuevo y **quitar** los que ya no uses. Todo se guarda de una vez con un solo
+botón, o se cancela de una vez: hasta que pulsas *Guardar los cambios*, no se toca nada.
+Lo que marques para quitar se queda tachado a la vista, para que sepas qué vas a perder.
+
+### Lo privado sigue sin salir, ni siquiera aquí
+
+Un dato marcado como privado **no se enseña en el gestor**: su casilla sale vacía, y lo que
+puedes hacer es **escribir encima para reemplazarlo**. Si escribes exactamente lo mismo que
+ya había, el gestor te lo dice y no guarda nada — lo sabe comparando, sin llegar a ver lo
+guardado.
+
+Por eso abrir una ficha y guardar los cambios **no te pide ninguna confirmación**: nada de
+lo que protege tu bóveda sale de ella. También puedes quitarle a un dato la marca de
+privado sin que el gestor lo vea: a partir de ahí sí se enseña.
 
 ## Dónde viven tus contraseñas
 
