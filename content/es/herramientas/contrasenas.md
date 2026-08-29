@@ -154,11 +154,16 @@ próxima vez aparece sola.
 Al pulsar el icono de Dotrino en la barra de Chrome ves lo que tienes **para el sitio que
 estás mirando**. De cada entrada puedes:
 
-- **Rellenar** o **copiar** su contraseña.
+- **Rellenarla** en la página.
+- Abrir el **chevron** de la izquierda para ver lo que guarda, campo a campo, y **copiar**
+  el que quieras. Los datos normales se copian sin más; **un dato privado te lo pregunta**,
+  y solo ese — copiar tu teléfono nunca saca tu contraseña.
 - Marcarla **predeterminada**: es la que sale elegida al abrir el botón de un campo. Una
   por sitio.
 - **Borrarla**, con una confirmación en su propia tarjeta.
 - **Editarla**, que abre su ficha en el gestor.
+
+La lista va en **orden alfabético**, para que cada cosa esté siempre donde la dejaste.
 
 Debajo de la lista hay un botón que abre **el gestor** entero.
 
@@ -172,7 +177,11 @@ Arriba ves **en qué sitios tienes algo guardado**, con cuántas entradas en cad
 uno para ver las suyas, o escribe en el buscador para encontrar una por su nombre.
 
 Dentro de una ficha puedes cambiar el **nombre** de la entrada, cambiar cualquier valor,
-**añadir** uno nuevo y **quitar** los que ya no uses. Todo se guarda de una vez con un solo
+**añadir** uno nuevo y **quitar** los que ya no uses. Abajo están **los sitios donde vale**:
+puedes ponerle varios —la misma cuenta te sirve en dos direcciones distintas— o quitarlos
+todos, y entonces vale en cualquier sitio, que es lo que quieres para tu correo o tu
+teléfono. Un sitio cubre también sus subdominios, así que con `banco.com.ec` ya entras en
+`www.banco.com.ec`. Todo se guarda de una vez con un solo
 botón, o se cancela de una vez: hasta que pulsas *Guardar los cambios*, no se toca nada.
 Lo que marques para quitar se queda tachado a la vista, para que sepas qué vas a perder.
 
@@ -186,6 +195,13 @@ guardado.
 Por eso abrir una ficha y guardar los cambios **no te pide ninguna confirmación**: nada de
 lo que protege tu bóveda sale de ella. También puedes quitarle a un dato la marca de
 privado sin que el gestor lo vea: a partir de ahí sí se enseña.
+
+### Cada sitio es cada sitio
+
+Una cuenta guardada en `pass.ejemplo.com` **no** aparece en `otra.ejemplo.com`: compartir
+el dominio de arriba no los hace el mismo sitio, y ahí puede haber servicios que no tienen
+nada que ver entre sí. Si de verdad quieres que una cuenta valga en todo un dominio,
+guárdala con el dominio a secas (`ejemplo.com`) y entra en todos sus subdominios.
 
 ## Dónde viven tus contraseñas
 

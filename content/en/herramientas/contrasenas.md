@@ -157,10 +157,15 @@ time it shows up by itself.
 Clicking the Dotrino icon in Chrome's bar shows what you have **for the site you are
 looking at**. For each record you can:
 
-- **Fill** or **copy** its password.
+- **Fill** it into the page.
+- Open the **chevron** on the left to see what it keeps, field by field, and **copy** the
+  one you want. Ordinary values copy straight away; **a private one asks you first**, and
+  only that one — copying your phone number never pulls out your password.
 - Mark it **default**: that's the one picked when you open a field's button. One per site.
 - **Delete** it, confirming on its own card.
 - **Edit** it, which opens its page in the manager.
+
+The list is in **alphabetical order**, so everything stays where you left it.
 
 Below the list there's a button that opens **the manager** itself.
 
@@ -174,7 +179,11 @@ At the top you see **which sites you have something saved on**, and how many rec
 each. Click one to see its records, or type in the search box to find one by name.
 
 Inside a record you can change its **name**, change any value, **add** a new one and
-**remove** the ones you no longer use. Everything is saved at once with a single button, or
+**remove** the ones you no longer use. At the bottom are **the sites it works on**: you can
+give it several — the same account serving you at two different addresses — or remove them
+all, and then it works anywhere, which is what you want for your email or your phone
+number. A site covers its subdomains too, so `bank.example` already gets you into
+`www.bank.example`. Everything is saved at once with a single button, or
 cancelled at once: until you press *Save changes*, nothing is touched. Whatever you mark
 for removal stays crossed out in place, so you can see what you are about to lose.
 
@@ -188,6 +197,13 @@ is stored.
 That's why opening a record and saving your changes **never asks you to confirm anything**:
 nothing your vault protects leaves it. You can also take the private mark off a value
 without the manager seeing it: from then on it is shown.
+
+### Every site is its own site
+
+An account saved on `pass.example.com` does **not** show up on `other.example.com`: sharing
+the domain above them doesn't make them the same site, and there can be services there with
+nothing to do with each other. If you really want an account to work across a whole domain,
+save it with the bare domain (`example.com`) and it gets you into all its subdomains.
 
 ## Where your passwords live
 
