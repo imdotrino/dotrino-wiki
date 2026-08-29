@@ -28,6 +28,7 @@ Dotrino es un ecosistema de aplicaciones centradas en la privacidad de tus datos
 ## Herramientas para tu máquina
 
 - [El instalador](/herramientas/instalar/) — un comando y listo.
+- [Gestor de contraseñas](/herramientas/contrasenas/) — las tuyas, en tu propia bóveda.
 - [Inspector](/herramientas/inspector/) — qué contraseñas tienes a la vista, y qué hacer.
 - [Terminal](/herramientas/terminal/), [asistentes de IA](/herramientas/ia/) y [el túnel](/herramientas/tunel/).
 

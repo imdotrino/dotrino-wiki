@@ -296,6 +296,13 @@
           }
         },
         {
+          "slug": "contrasenas",
+          "title": {
+            "es": "Gestor de contraseñas",
+            "en": "Password manager"
+          }
+        },
+        {
           "slug": "inspector",
           "title": {
             "es": "Inspector — contraseñas a la vista",
