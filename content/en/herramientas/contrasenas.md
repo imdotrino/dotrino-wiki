@@ -40,9 +40,15 @@ with Dotrino's bird in it. It shows up **only when it can do something there**:
 |---|---|---|
 | is empty | you have nothing saved | doesn't show |
 | is empty | you have something saved | **fill** |
-| has something typed | — | **save** |
+| has something typed | it isn't saved the same | **save** |
+| has something typed | it is already saved the same | doesn't show |
 
-**One letter** is enough for it to appear.
+**One letter** is enough for it to appear. And once you fill from it, it goes away on its
+own: what's typed is now what you have saved.
+
+To know it is already the same, the manager **opens nothing**: your vault sends it a
+fingerprint of each value —one that cannot be turned back into the value— and it compares
+fingerprints. That is how it can tell you a password hasn't changed without ever seeing it.
 
 **Nothing is filled for you.** The manager never writes into a form by itself: it marks
 where it can help and waits for you to ask. That is on purpose — filling on its own means

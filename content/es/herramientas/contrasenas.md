@@ -40,9 +40,15 @@ esquina, con el pájaro de Dotrino. Aparece **solo cuando puede hacer algo ahí*
 |---|---|---|
 | está vacío | no tienes nada guardado | no aparece |
 | está vacío | tienes algo guardado | **rellenar** |
-| tiene algo escrito | — | **guardar** |
+| tiene algo escrito | no está guardado igual | **guardar** |
+| tiene algo escrito | ya está guardado igual | no aparece |
 
-Con **una sola letra** escrita ya aparece.
+Con **una sola letra** escrita ya aparece. Y cuando rellenas desde él, desaparece solo:
+lo que hay escrito ya es lo que tienes guardado.
+
+Para saber que ya lo tienes igual, el gestor **no abre nada**: tu bóveda le manda una
+huella de cada dato —que no permite reconstruirlo— y él compara huellas. Por eso puede
+decirte que una contraseña no ha cambiado sin llegar a verla.
 
 **Nada se rellena solo.** El gestor nunca escribe en un formulario por su cuenta: marca
 dónde puede ayudar y espera a que tú lo pidas. Es a propósito — rellenar solo obliga a
