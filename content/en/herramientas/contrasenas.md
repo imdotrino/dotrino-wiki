@@ -58,20 +58,26 @@ where it can help and waits for you to ask. That is on purpose — filling on it
 deciding for you which field each value goes into, and getting that wrong means typing a
 password into the wrong place.
 
-## Nothing leaves your vault without your say-so
+## Private things don't leave without your say-so
 
-When the manager needs a saved password —to fill it, to copy it, or to save over a record
-you already have— **a confirmation comes up**, and nothing is handed over until you press
-**Authorize**. It comes up inside the extension, never on the page: the site you are
-looking at cannot draw it or answer it for you.
+When the manager is about to take **something private** out of your vault —a password, a
+two-step code, or any field you marked as private— **a confirmation comes up**, and nothing
+is handed over until you press **Authorize**. It appears inside the extension, never on the
+page: the site you are looking at cannot draw it or answer it for you.
 
-This works the **same** wherever you keep them: in the extension itself, in your
-computer's vault, or in one open in a tab. That the extension's own vault didn't ask was a
-difference that should not have existed.
+**What it does not ask about**, on purpose:
 
-It asks every time on purpose while the manager is young: that way you see when your
-things are used and when they aren't. If you close the little window without answering, it
-counts as a **no** and nothing happens — it just asks again next time.
+- filling in something **public** of yours (your name, your email, your phone): typing into
+  a form what you typed there yourself is not taking out a secret;
+- **saving** or **replacing**: saving doesn't take anything out of your vault, it puts
+  something in.
+
+Asking for everything sounds safer and is the opposite: you end up clicking without
+reading, and the day it matters you no longer look.
+
+This works the **same** wherever you keep them: in the extension itself, in your computer's
+vault, or in one open in a tab. If you close the little window without answering, it counts
+as a **no** and nothing happens — it just asks again next time.
 
 ## Saving
 

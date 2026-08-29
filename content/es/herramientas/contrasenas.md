@@ -58,20 +58,25 @@ dónde puede ayudar y espera a que tú lo pidas. Es a propósito — rellenar so
 decidir por ti en qué campo va cada dato, y equivocarse ahí significa escribir una
 contraseña en el sitio equivocado.
 
-## Nada sale de tu bóveda sin que lo autorices
+## Lo privado no sale sin que lo autorices
 
-Cuando el gestor necesita una contraseña guardada —para rellenarla, para copiarla, o para
-guardar encima de una entrada que ya tienes— **sale una confirmación** y no se entrega
-nada hasta que pulses **Autorizar**. Sale en la propia extensión, nunca en la página: el
-sitio que estás mirando no puede dibujarla ni responderla por ti.
+Cuando el gestor va a sacar de tu bóveda **un dato privado** —una contraseña, un código de
+dos pasos, o cualquier campo que hayas marcado como privado— **sale una confirmación** y no
+se entrega nada hasta que pulses **Autorizar**. Aparece en la propia extensión, nunca en la
+página: el sitio que estás mirando no puede dibujarla ni responderla por ti.
+
+**Lo que no pregunta**, y es a propósito:
+
+- rellenar un dato **público** tuyo (tu nombre, tu correo, tu teléfono): escribir en un
+  formulario lo que tú mismo tecleaste ahí no es sacar ningún secreto;
+- **guardar** o **reemplazar**: al guardar no sale nada de tu bóveda, entra.
+
+Pedir permiso para todo suena más seguro y es lo contrario: acabas dando al botón sin leer,
+y el día que importa ya no lo miras.
 
 Esto vale **igual** guardes donde guardes: en la propia extensión, en la bóveda de tu
-computadora o en la de una pestaña. Que la de la extensión no preguntara era una
-diferencia que no debía existir.
-
-Se pregunta cada vez a propósito, mientras el gestor es joven: así ves cuándo se usa lo
-tuyo y cuándo no. Si cierras la ventanita sin contestar, cuenta como un **no** y no pasa
-nada — solo vuelve a pedirlo.
+computadora o en la de una pestaña. Si cierras la ventanita sin contestar, cuenta como un
+**no** y no pasa nada — solo vuelve a pedirlo.
 
 ## Guardar
 
