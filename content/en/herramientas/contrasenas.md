@@ -103,6 +103,17 @@ When two look so alike that there is no telling which one you meant, the prompt 
 choose for you**: the new entry comes selected and you say which. To tell them apart, each
 row carries its date.
 
+### Naming a record
+
+Every record is named, to begin with, after what it holds: the username, or the email, or
+the first value it has. That works, but with two accounts on the same site both end up
+named the same.
+
+Press the **pencil** next to the name and write your own: "the work one", "my mum's".
+Enter saves it, Escape leaves it as it was, and clearing it brings the old name back — no
+record is ever left nameless. When you create a new record you can name it right there,
+before saving it.
+
 ### Into which record
 
 At the top you choose **where it goes**: one of the records you already have for that

@@ -101,6 +101,16 @@ Cuando dos se parecen tanto que no hay forma de saber cuál querías, el aviso *
 ti**: viene marcada la entrada nueva y tú dices cuál. Para distinguirlas, cada fila lleva su
 fecha.
 
+### Ponerle nombre a una entrada
+
+Cada entrada se llama, de entrada, por lo que lleva dentro: el usuario, o el correo, o el
+primer dato que tenga. Sirve, pero con dos cuentas del mismo sitio las dos se llaman igual.
+
+Pulsa el **lápiz** que hay al lado del nombre y escríbelo tú: «la del trabajo», «la de mi
+mamá». Enter lo guarda, Escape lo deja como estaba, y si lo borras vuelve el nombre de
+antes — ninguna entrada se queda sin nombre. Al crear una entrada nueva puedes escribírselo
+ahí mismo, antes de guardarla.
+
 ### En qué entrada
 
 Arriba eliges **dónde va**: una de las entradas que ya tienes de ese sitio, o **una
