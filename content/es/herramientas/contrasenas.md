@@ -107,9 +107,15 @@ Cada entrada se llama, de entrada, por lo que lleva dentro: el usuario, o el cor
 primer dato que tenga. Sirve, pero con dos cuentas del mismo sitio las dos se llaman igual.
 
 Pulsa el **lápiz** que hay al lado del nombre y escríbelo tú: «la del trabajo», «la de mi
-mamá». Enter lo guarda, Escape lo deja como estaba, y si lo borras vuelve el nombre de
-antes — ninguna entrada se queda sin nombre. Al crear una entrada nueva puedes escribírselo
-ahí mismo, antes de guardarla.
+mamá». Confirma con el **visto** que aparece al lado (Enter y salir del campo hacen lo
+mismo), Escape lo deja como estaba, y si lo borras vuelve el nombre de antes — ninguna
+entrada se queda sin nombre.
+
+El lápiz está en los tres sitios donde salen tus entradas: el recuadro de un campo, el
+aviso de guardar y la lista de la extensión.
+
+Al crear una entrada nueva puedes escribirle el nombre ahí mismo. Ese no lleva visto, y es
+a propósito: la entrada todavía no existe — se crea al guardar.
 
 ### En qué entrada
 

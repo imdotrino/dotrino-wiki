@@ -110,9 +110,14 @@ the first value it has. That works, but with two accounts on the same site both 
 named the same.
 
 Press the **pencil** next to the name and write your own: "the work one", "my mum's".
-Enter saves it, Escape leaves it as it was, and clearing it brings the old name back — no
-record is ever left nameless. When you create a new record you can name it right there,
-before saving it.
+Confirm with the **tick** next to it (Enter and clicking away do the same), Escape leaves
+it as it was, and clearing it brings the old name back — no record is ever left nameless.
+
+The pencil is in all three places your records show up: a field's box, the save prompt and
+the extension's list.
+
+When you create a new record you can name it right there. That one has no tick, on purpose:
+the record doesn't exist yet — it is created when you save.
 
 ### Into which record
 
