@@ -92,6 +92,17 @@ Two moments, and you decide in both:
 Either way you see **one row per value**, with its name, and you pick which ones go in. A
 value you already had unchanged doesn't show: there is nothing to decide about it.
 
+### Two accounts that look the same are still two
+
+You can have two accounts on the same site with the same email —one for work, one
+personal— or two cards with the same name. **They are two, and they don't get merged.**
+Each one has its own identity inside, which isn't shown to you because it wouldn't help:
+what you see is the name, and names can repeat.
+
+When two look so alike that there is no telling which one you meant, the prompt **doesn't
+choose for you**: the new entry comes selected and you say which. To tell them apart, each
+row carries its date.
+
 ### Into which record
 
 At the top you choose **where it goes**: one of the records you already have for that

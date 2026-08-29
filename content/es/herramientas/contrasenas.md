@@ -90,6 +90,17 @@ Hay dos momentos, y en los dos decides tú:
 En los dos casos ves **una fila por dato**, con su nombre, y eliges cuáles entran. Un dato
 que ya tenías igual no sale: no hay nada que decidir en él.
 
+### Dos cuentas que se ven iguales siguen siendo dos
+
+Puedes tener dos cuentas del mismo sitio con el mismo correo —una de trabajo y otra
+personal—, o dos fichas con el mismo nombre. **Son dos, y no se juntan.** Cada una tiene su
+propia identidad por dentro, que no se te muestra porque no te sirve de nada: lo que ves es
+el nombre, y el nombre puede repetirse.
+
+Cuando dos se parecen tanto que no hay forma de saber cuál querías, el aviso **no elige por
+ti**: viene marcada la entrada nueva y tú dices cuál. Para distinguirlas, cada fila lleva su
+fecha.
+
 ### En qué entrada
 
 Arriba eliges **dónde va**: una de las entradas que ya tienes de ese sitio, o **una
