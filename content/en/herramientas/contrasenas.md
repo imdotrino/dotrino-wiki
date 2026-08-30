@@ -205,6 +205,17 @@ the domain above them doesn't make them the same site, and there can be services
 nothing to do with each other. If you really want an account to work across a whole domain,
 save it with the bare domain (`example.com`) and it gets you into all its subdomains.
 
+### If your vault lives in a tab, let it warn you
+
+A vault open in a tab only answers while that tab is open. So you don't get stuck, turn on
+notices from it (**“Tell me when something asks”**): from then on, if you ask for a password
+while the vault is closed, your browser tells you. Tapping the notice opens the vault and it
+answers what was waiting — no need to ask again.
+
+The notice **doesn't say what was asked**, only that something is asking. And even with the
+vault open, if the tab is in the background it tells you too: that way a question isn't left
+waiting on a screen nobody is looking at.
+
 ## Where your passwords live
 
 To begin with, **inside the extension itself**: encrypted, with a key the manager cannot

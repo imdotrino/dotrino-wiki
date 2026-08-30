@@ -203,6 +203,18 @@ el dominio de arriba no los hace el mismo sitio, y ahí puede haber servicios qu
 nada que ver entre sí. Si de verdad quieres que una cuenta valga en todo un dominio,
 guárdala con el dominio a secas (`ejemplo.com`) y entra en todos sus subdominios.
 
+### Si tu bóveda vive en una pestaña, avísala
+
+Una bóveda abierta en una pestaña solo responde mientras esa pestaña esté abierta. Para que
+no te quedes a medias, enciende los avisos desde ella (**«Avísame cuando alguien pida
+algo»**): a partir de ahí, si pides una contraseña con la bóveda cerrada, tu navegador te
+avisa. Al pulsar el aviso se abre la bóveda y responde lo que quedó esperando — no hay que
+pedirlo otra vez.
+
+El aviso **no dice qué se pidió**, solo que alguien pide. Y aunque la bóveda esté abierta,
+si la pestaña está en segundo plano también te avisa: así no se queda una pregunta esperando
+en una pantalla que nadie mira.
+
 ## Dónde viven tus contraseñas
 
 De entrada, **en la propia extensión**: cifradas, con una llave que ni el gestor puede
