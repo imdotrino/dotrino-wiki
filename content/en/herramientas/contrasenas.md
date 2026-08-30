@@ -41,9 +41,11 @@ with Dotrino's bird in it. It shows up **only when it can do something there**:
 | is empty | you have nothing saved | doesn't show |
 | is empty | you have something saved | **fill** |
 | has something typed | — | **save** |
+| **is an empty password box** | either way | **a new password** |
 
 In one sentence: **it only hides when the field is empty and you have nothing saved for
-it.** **One letter** is enough for it to appear.
+it.** **One letter** is enough for it to appear. The last row is the exception: an empty
+password box always offers you a new one, whether you have something saved or not.
 
 If what's typed is already saved in one of your accounts, the button **stays**: you may
 want it in another one too, or in a new one. Press it and you'll see — the account that
@@ -57,6 +59,31 @@ how it can tell you a password hasn't changed without ever seeing it.
 where it can help and waits for you to ask. That is on purpose — filling on its own means
 deciding for you which field each value goes into, and getting that wrong means typing a
 password into the wrong place.
+
+## A new password
+
+When you press the button on an **empty password box**, the first thing you see is a
+freshly made password: twenty characters, without the letters and digits that look alike
+when you read them (the l and the 1, the O and the 0). It is made in your browser, right
+then, and never goes through any server.
+
+- **Use** writes it into the field. If the form has a *"repeat the password"* box, it
+  writes it there too — you don't have to copy it by hand.
+- **↻** gives you another one, in case that one doesn't suit you. Until you press it, the
+  one you see doesn't change: you can read it calmly or write it down.
+
+> **Save it.** As soon as you use it, the manager keeps it ready: when you submit the form
+> it will ask you where to save it, and the button on the field itself changes to **save**
+> in case you'd rather do it now. A password you don't save is an account you can't get
+> back into.
+
+This is what stops your passwords from all looking like each other. The one you make up
+looks like the last one; this one looks like none of them, and you don't have to learn it
+because your vault keeps it.
+
+**It doesn't show up on a password change yet.** On forms that ask for your current and new
+password at once, the button appears on the first box. For now, to change a password,
+generate one from an empty box on a sign-up form or from the console app.
 
 ## Private things don't leave without your say-so
 

@@ -41,9 +41,11 @@ esquina, con el pájaro de Dotrino. Aparece **solo cuando puede hacer algo ahí*
 | está vacío | no tienes nada guardado | no aparece |
 | está vacío | tienes algo guardado | **rellenar** |
 | tiene algo escrito | — | **guardar** |
+| **es una contraseña y está vacío** | da igual | **una contraseña nueva** |
 
 Dicho en una frase: **solo se esconde si el campo está vacío y no tienes nada guardado
-suyo.** Con **una sola letra** escrita ya aparece.
+suyo.** Con **una sola letra** escrita ya aparece. La última fila es la excepción: una
+casilla de contraseña vacía siempre te ofrece una nueva, tengas algo guardado o no.
 
 Si lo que hay escrito ya está guardado en una de tus cuentas, el botón **sigue ahí**: puede
 que quieras guardarlo también en otra, o en una nueva. Al pulsarlo lo verás — la cuenta que
@@ -57,6 +59,32 @@ ha cambiado sin llegar a verla.
 dónde puede ayudar y espera a que tú lo pidas. Es a propósito — rellenar solo obliga a
 decidir por ti en qué campo va cada dato, y equivocarse ahí significa escribir una
 contraseña en el sitio equivocado.
+
+## Una contraseña nueva
+
+Cuando pulsas el botón de una **casilla de contraseña vacía**, lo primero que ves es una
+contraseña recién hecha: veinte caracteres, sin las letras y números que se confunden al
+leerlos (la ele y el uno, la O y el cero). Se crea en tu navegador, en ese momento, y no
+pasa por ningún servidor.
+
+- **Usar** la escribe en el campo. Si el formulario tiene la casilla de *«repite la
+  contraseña»*, la escribe también ahí — no tienes que copiarla a mano.
+- **↻** te da otra, por si esa no te sirve. Mientras no lo pulses, la que ves no cambia:
+  puedes leerla con calma o apuntarla.
+
+> **Guárdala.** En cuanto la usas, el gestor la deja preparada: al enviar el formulario te
+> preguntará dónde guardarla, y el botón del propio campo pasa a decir **guardar** por si
+> prefieres hacerlo ya. Una contraseña que no guardas es una cuenta a la que no vuelves a
+> entrar.
+
+Esto es lo que hace que las contraseñas de tus cuentas dejen de parecerse entre sí. La que
+te inventas tú se parece a la anterior; esta no se parece a ninguna, y no hace falta que te
+la aprendas porque la guarda tu bóveda.
+
+**Todavía no aparece en un cambio de contraseña.** En los formularios que piden la actual y
+la nueva a la vez, el botón sale en la primera casilla. Por ahora, para cambiar una
+contraseña, genérala desde una casilla vacía de un registro o desde la aplicación de
+consola.
 
 ## Lo privado no sale sin que lo autorices
 
