@@ -131,6 +131,13 @@
           }
         },
         {
+          "slug": "kms",
+          "title": {
+            "es": "La clave del disco (KMS)",
+            "en": "The disk key (KMS)"
+          }
+        },
+        {
           "slug": "cli",
           "title": {
             "es": "CLI de control",
@@ -156,6 +163,13 @@
           "title": {
             "es": "Emparejar un aparato",
             "en": "Pairing a device"
+          }
+        },
+        {
+          "slug": "multivault",
+          "title": {
+            "es": "Dos bóvedas en la misma cuenta",
+            "en": "Two vaults, one account"
           }
         },
         {
