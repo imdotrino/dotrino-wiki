@@ -173,6 +173,13 @@
           }
         },
         {
+          "slug": "registro-selladores",
+          "title": {
+            "es": "El registro público de selladores",
+            "en": "The public sealer registry"
+          }
+        },
+        {
           "slug": "secretos",
           "title": {
             "es": "Secretos de servicios",
