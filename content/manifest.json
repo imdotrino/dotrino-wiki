@@ -57,6 +57,13 @@
           }
         },
         {
+          "slug": "politica-de-privacidad",
+          "title": {
+            "es": "Política de privacidad",
+            "en": "Privacy policy"
+          }
+        },
+        {
           "slug": "apoyar",
           "title": {
             "es": "Apoyar el proyecto",
