@@ -118,6 +118,10 @@ Hay dos momentos, y en los dos decides tú:
 En los dos casos ves **una fila por dato**, con su nombre, y eliges cuáles entran. Un dato
 que ya tenías igual no sale: no hay nada que decidir en él.
 
+Muchos sitios te dejan en otra dirección al entrar —escribes en una página de acceso y
+acabas en la del servicio—. El aviso sale igual, en la pestaña donde entraste, y dice
+**la dirección donde escribiste la contraseña**, que es donde vas a volver a necesitarla.
+
 ### Dos cuentas que se ven iguales siguen siendo dos
 
 Puedes tener dos cuentas del mismo sitio con el mismo correo —una de trabajo y otra

@@ -119,6 +119,10 @@ Two moments, and you decide in both:
 Either way you see **one row per value**, with its name, and you pick which ones go in. A
 value you already had unchanged doesn't show: there is nothing to decide about it.
 
+Many sites leave you at a different address once you're in — you type on a sign-in page and
+end up on the service itself. The prompt still shows up, in the tab you signed in from, and
+it names **the address where you typed the password**, which is where you'll need it again.
+
 ### Two accounts that look the same are still two
 
 You can have two accounts on the same site with the same email —one for work, one
