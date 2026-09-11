@@ -18,18 +18,111 @@ them.
 
 ## Installing it
 
-It is not in the Chrome store yet, so you add it by hand. Once:
+It is not in the Chrome store yet. There are two ways, and what changes is **who handles
+the updates**: in the first one, you; in the second one, Chrome.
+
+Either way, from the moment it is in it keeps your things encrypted in your own browser,
+asking you for nothing else: no account, no master password, nothing installed on your
+computer.
+
+### To try it out: by hand
+
+Works on any system and touches nothing on the machine.
 
 1. Download the extension from [pass.dotrino.com](https://pass.dotrino.com/) and unzip
    the folder.
 2. In Chrome, open `chrome://extensions` and turn on **Developer mode**.
 3. Click **Load unpacked** and pick the folder you just unzipped.
 
-That's it. From then on it keeps your things encrypted in your own browser, asking you for
-nothing else: no account, no master password, nothing installed on your computer.
+> Don't delete that folder: Chrome reads the extension from it. And when a new version
+> comes out you'll have to download it and hit **reload** on that same page — Chrome keeps
+> the previous version running behind the scenes until you say so, and meanwhile you will
+> see odd messages.
 
-> When you update it, **reload it** on that same page. Chrome keeps the previous version
-> running behind the scenes until you say so, and meanwhile you will see odd messages.
+### To really use it: let it update itself
+
+Here Chrome installs it and **keeps it current on its own**: every few hours it checks
+`pass.dotrino.com` for a new version and catches up without you doing anything. No
+developer mode, no folder to look after. Once per machine.
+
+It is the same extension on every machine of yours, and this is how it is recognized:
+
+```
+fgfaonjeacleeoagdcbndgiapfnnablc
+```
+
+#### On Linux
+
+Linux is the only system where Chrome will install an extension that doesn't come from the
+store, so nothing else is needed:
+
+1. On [pass.dotrino.com](https://pass.dotrino.com/), download the **signed package
+   (`.crx`)** — the other link, not the `.zip`.
+2. Open `chrome://extensions` and **drag the `.crx` file** onto the window.
+3. Accept.
+
+From then on it updates itself.
+
+#### On Windows
+
+On Windows, Chrome only installs from the store **unless you tell it otherwise through a
+policy**. It is a `.reg` file run as administrator, once:
+
+```
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome]
+"ExtensionSettings"="{\"fgfaonjeacleeoagdcbndgiapfnnablc\":{\"installation_mode\":\"normal_installed\",\"update_url\":\"https://pass.dotrino.com/app/updates.xml\"}}"
+```
+
+Save it as `dotrino-passmanager.reg`, double-click it, and restart Chrome.
+
+#### On macOS
+
+Same as Windows: it only gets in through a policy. The file goes in the system's managed
+preferences, so it asks for your administrator password:
+
+```bash
+sudo tee "/Library/Managed Preferences/com.google.Chrome.plist" >/dev/null <<'PLIST'
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>ExtensionSettings</key>
+  <dict>
+    <key>fgfaonjeacleeoagdcbndgiapfnnablc</key>
+    <dict>
+      <key>installation_mode</key><string>normal_installed</string>
+      <key>update_url</key><string>https://pass.dotrino.com/app/updates.xml</string>
+    </dict>
+  </dict>
+</dict>
+</plist>
+PLIST
+sudo killall cfprefsd
+```
+
+Restart Chrome afterwards.
+
+#### And checking it took
+
+Open `chrome://policy`, hit **Reload policies** and look for `ExtensionSettings`: the
+identifier above has to show up there. In `chrome://extensions` you'll see the extension
+already installed.
+
+> **Careful not to overwrite what was there.** `ExtensionSettings` is **one single** policy
+> for every extension on the machine. If one was already set, **add** this entry inside it
+> rather than replacing the whole file.
+>
+> And `normal_installed` means "it installs itself and you can disable it". If you'd rather
+> it couldn't be removed, change that word to `force_installed`.
+
+### Not on the phone
+
+**Chrome on Android does not support extensions.** It is not a hidden setting or a missing
+permission: the possibility doesn't exist. On the phone the Dotrino app does the other
+thing, and it's the one that matters: **approving**. When you ask for a password from the
+computer, the phone asks you and you use your fingerprint.
 
 ## The button on each field
 
