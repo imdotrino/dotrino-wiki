@@ -62,6 +62,16 @@ tienda, así que no hace falta nada más:
 
 De ahí en adelante se actualiza sola.
 
+Y si tienes varias máquinas Linux y prefieres no arrastrar nada en cada una, el mismo
+efecto con un archivo (pide contraseña de administrador, y Chrome la instala al arrancar):
+
+```bash
+sudo mkdir -p /opt/google/chrome/extensions
+sudo tee /opt/google/chrome/extensions/fgfaonjeacleeoagdcbndgiapfnnablc.json >/dev/null <<'JSON'
+{ "external_update_url": "https://pass.dotrino.com/app/updates.xml" }
+JSON
+```
+
 #### En Windows
 
 En Windows, Chrome solo instala de la tienda **salvo que se lo digas por política**. Es un

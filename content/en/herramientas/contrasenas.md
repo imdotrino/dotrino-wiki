@@ -63,6 +63,17 @@ store, so nothing else is needed:
 
 From then on it updates itself.
 
+And if you have several Linux machines and would rather not drag anything on each one, the
+same result with a file (asks for your administrator password; Chrome installs it on
+startup):
+
+```bash
+sudo mkdir -p /opt/google/chrome/extensions
+sudo tee /opt/google/chrome/extensions/fgfaonjeacleeoagdcbndgiapfnnablc.json >/dev/null <<'JSON'
+{ "external_update_url": "https://pass.dotrino.com/app/updates.xml" }
+JSON
+```
+
 #### On Windows
 
 On Windows, Chrome only installs from the store **unless you tell it otherwise through a
