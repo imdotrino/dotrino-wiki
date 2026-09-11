@@ -74,40 +74,21 @@ JSON
 
 #### En Windows
 
-En Windows, Chrome solo instala de la tienda **salvo que se lo digas por política**. Es un
-archivo `.reg` que se ejecuta como administrador, y se hace una vez:
+En Windows, Chrome solo instala de la tienda **salvo que se lo digas por política**. Ese
+permiso es un archivo, y lo genera el propio despliegue — no hay que escribirlo:
 
-```
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome]
-"ExtensionSettings"="{\"fgfaonjeacleeoagdcbndgiapfnnablc\":{\"installation_mode\":\"normal_installed\",\"update_url\":\"https://pass.dotrino.com/app/updates.xml\"}}"
-```
-
-Guárdalo como `dotrino-passmanager.reg`, doble clic, y reinicia Chrome.
+1. Descarga [`dotrino-passmanager.reg`](https://pass.dotrino.com/app/dotrino-passmanager.reg).
+2. Doble clic, y acepta cuando Windows pregunte. Pide permiso de administrador.
+3. Reinicia Chrome.
 
 #### En macOS
 
-Igual que en Windows: solo entra por política. El archivo va en las preferencias
-gestionadas del sistema, así que pide tu contraseña de administrador:
+Igual que en Windows: solo entra por política, y el archivo también sale del despliegue.
+Va en las preferencias gestionadas del sistema, así que pide tu contraseña:
 
 ```bash
-sudo tee "/Library/Managed Preferences/com.google.Chrome.plist" >/dev/null <<'PLIST'
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-  <key>ExtensionSettings</key>
-  <dict>
-    <key>fgfaonjeacleeoagdcbndgiapfnnablc</key>
-    <dict>
-      <key>installation_mode</key><string>normal_installed</string>
-      <key>update_url</key><string>https://pass.dotrino.com/app/updates.xml</string>
-    </dict>
-  </dict>
-</dict>
-</plist>
-PLIST
+curl -fsSL https://pass.dotrino.com/app/dotrino-passmanager.plist \
+  | sudo tee "/Library/Managed Preferences/com.google.Chrome.plist" >/dev/null
 sudo killall cfprefsd
 ```
 
