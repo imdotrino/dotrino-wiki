@@ -30,41 +30,54 @@ Necesitas tres cosas, y las tres se tramitan fuera de la app:
 > venga de una entidad acreditada responde «firma inválida». Lo que no tienen las facturas
 > de pruebas es validez tributaria, así que puedes emitir todas las que quieras.
 
-## 1. Tus datos de emisor
+## 1. Tus firmas electrónicas
 
-En **Ajustes → Emisor** pon los datos tal como están en tu RUC: razón social, dirección
-matriz, establecimiento y punto de emisión (normalmente `001` y `001`), y si llevas
-contabilidad, eres contribuyente especial, agente de retención o estás en el RIMPE.
-
-- **Próximo secuencial**: el número que llevará la próxima factura. Si ya facturabas con
-  otro sistema **en ese mismo punto de emisión**, pon el siguiente al último que usaste.
-- **Ambiente**: empieza en **Pruebas**. Cambia a **Producción** cuando el SRI te haya dado
-  el permiso y tus facturas de prueba salgan autorizadas.
-
-Si facturas desde **más de un aparato**, dale a cada uno su propio punto de emisión: dos
-aparatos con el mismo punto podrían usar el mismo número, y el SRI rechaza el segundo.
-
-## 2. Tu firma electrónica
-
-En **Ajustes → Firma electrónica**, elige tu archivo y escribe su contraseña.
+En **Ajustes → Firmas electrónicas**, pulsa **Añadir firma**, elige tu archivo y escribe su
+contraseña.
 
 - La app comprueba que el archivo abre y que la firma está vigente, y te enseña el titular
   y hasta cuándo vale.
 - El archivo se guarda **cifrado con la llave de tu perfil**.
-- **La contraseña no se guarda.** Cada vez que abras la app para emitir te la pedirá una
-  vez; al cerrar o recargar la página, la firma vuelve a quedar bloqueada.
-- La firma queda en **este aparato**. Para emitir desde otro, cárgala también allí.
+- **La contraseña no se guarda.** Cada firma te la pide una vez cuando vas a emitir; al
+  cerrar o recargar la página, vuelve a quedar bloqueada.
+- Las firmas quedan en **este aparato**. Para emitir desde otro, cárgalas también allí.
+
+Puedes tener varias. Una misma firma sirve para varios emisores: por ejemplo, tu RUC
+personal y el de tu empresa si tú eres quien firma por ella.
+
+## 2. Tus emisores
+
+Un emisor es un **RUC con su serie** (establecimiento y punto de emisión) en un
+**ambiente**: pruebas o producción. En **Ajustes → Emisores** pulsa **Añadir emisor** y pon
+los datos tal como están en tu RUC: razón social, dirección matriz, establecimiento y punto
+de emisión (normalmente `001` y `001`), si llevas contabilidad, eres contribuyente especial,
+agente de retención o estás en el RIMPE, y **con qué firma factura**.
+
+- **Próximo secuencial**: el número que llevará la próxima factura de ese emisor. Si ya
+  facturabas con otro sistema **en esa misma serie**, pon el siguiente al último que usaste.
+- **Pruebas y producción son emisores distintos**, cada uno con su numeración. Lo cómodo es
+  crear primero el de pruebas y, cuando el SRI te dé el permiso, usar **Duplicar** y
+  cambiarle el ambiente a producción.
+- **Varios RUC**: añade un emisor por cada uno.
+- No se pueden guardar dos emisores con **el mismo RUC, serie y ambiente**: compartirían la
+  numeración y el SRI rechazaría la segunda factura con el mismo número.
+
+Si facturas desde **más de un aparato**, dale a cada uno su propio punto de emisión, por la
+misma razón.
 
 ## 3. Emitir una factura
 
 En **Nueva factura**:
 
-1. **Comprador**: tipo de identificación, número y nombre. Para **consumidor final** los
+1. **Emisor**: elige con cuál facturas. La app te dice qué número llevará la factura y te
+   avisa si es de pruebas. Se queda elegido para la siguiente.
+2. **Comprador**: tipo de identificación, número y nombre. Para **consumidor final** los
    datos se ponen solos; el SRI solo lo permite hasta **USD 50**.
-2. **Detalle**: una línea por producto o servicio, con cantidad, precio, descuento y la
+3. **Detalle**: una línea por producto o servicio, con cantidad, precio, descuento y la
    tarifa de IVA (15% es la general).
-3. **Forma de pago**.
-4. **Firmar y enviar al SRI.** En producción la app te pide confirmar antes.
+4. **Forma de pago**.
+5. **Firmar y enviar al SRI.** Si la firma de ese emisor está bloqueada, te pide su
+   contraseña. En producción te pide además confirmar.
 
 La app firma, envía y espera la respuesta del SRI unos segundos.
 
@@ -93,8 +106,10 @@ una factura autorizada puedes:
 ## Guardar tus facturas
 
 Hay que conservar las facturas **7 años**. Además de lo que queda en tu almacén, en
-**Facturas** puedes **descargar los XML del mes en un `.zip`**. Hazlo cada mes y guarda
-esos archivos donde guardas tus documentos.
+**Facturas** puedes **descargar los XML del mes en un `.zip`**, con una carpeta por RUC y
+ambiente (las de pruebas no se mezclan con las que valen). Si tienes varios emisores, puedes
+filtrar la lista por uno. Hazlo cada mes y guarda esos archivos donde guardas tus
+documentos.
 
 ## El «RUC Proveedor»
 

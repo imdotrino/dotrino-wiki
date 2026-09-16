@@ -30,43 +30,56 @@ You need three things, all arranged outside the app:
 > come from an accredited entity it answers "invalid signature". What test invoices lack is
 > tax validity, so you can issue as many as you like.
 
-## 1. Your issuer details
+## 1. Your electronic signatures
 
-In **Settings → Issuer**, enter your details exactly as they appear on your RUC: legal
-name, head office address, establishment and emission point (usually `001` and `001`), and
-whether you keep accounting records, are a special taxpayer, a withholding agent or in the
-RIMPE regime.
-
-- **Next sequence number**: the number the next invoice will carry. If you already
-  invoiced with another system **at that same emission point**, enter the one after the
-  last you used.
-- **Environment**: start in **Test**. Switch to **Production** once the SRI has granted you
-  permission and your test invoices come back authorized.
-
-If you invoice from **more than one device**, give each one its own emission point: two
-devices sharing one could use the same number, and the SRI rejects the second.
-
-## 2. Your electronic signature
-
-In **Settings → Electronic signature**, choose your file and type its password.
+In **Settings → Electronic signatures**, press **Add signature**, choose your file and type
+its password.
 
 - The app checks that the file opens and that the signature is valid, and shows you the
   holder and its expiry date.
 - The file is stored **encrypted with your profile's key**.
-- **The password is not stored.** Each time you open the app to issue invoices it asks for
-  it once; when you close or reload the page, the signature is locked again.
-- The signature stays on **this device**. To issue from another one, load it there too.
+- **The password is not stored.** Each signature asks for it once when you are about to
+  issue an invoice; when you close or reload the page, it is locked again.
+- Signatures stay on **this device**. To issue from another one, load them there too.
+
+You can have several. One signature can serve several issuers: for example, your personal
+RUC and your company's if you are the one who signs for it.
+
+## 2. Your issuers
+
+An issuer is a **RUC with its series** (establishment and emission point) in an
+**environment**: test or production. In **Settings → Issuers**, press **Add issuer** and
+enter the details exactly as they appear on your RUC: legal name, head office address,
+establishment and emission point (usually `001` and `001`), whether you keep accounting
+records, are a special taxpayer, a withholding agent or in the RIMPE regime, and **which
+signature it invoices with**.
+
+- **Next sequence number**: the number that issuer's next invoice will carry. If you already
+  invoiced with another system **in that same series**, enter the one after the last you
+  used.
+- **Test and production are separate issuers**, each with its own numbering. The easy way is
+  to create the test one first and, once the SRI grants you permission, use **Duplicate**
+  and switch the copy's environment to production.
+- **Several RUCs**: add one issuer for each.
+- Two issuers with **the same RUC, series and environment** cannot be saved: they would
+  share numbering and the SRI would reject the second invoice with the same number.
+
+If you invoice from **more than one device**, give each one its own emission point, for
+the same reason.
 
 ## 3. Issuing an invoice
 
 In **New invoice**:
 
-1. **Buyer**: ID type, number and name. For a **final consumer** the details fill in by
+1. **Issuer**: choose which one you are invoicing with. The app shows the number the
+   invoice will carry and warns you if it is a test one. It stays chosen for the next one.
+2. **Buyer**: ID type, number and name. For a **final consumer** the details fill in by
    themselves; the SRI only allows it up to **USD 50**.
-2. **Items**: one line per product or service, with quantity, price, discount and VAT rate
+3. **Items**: one line per product or service, with quantity, price, discount and VAT rate
    (15% is the standard one).
-3. **Payment method**.
-4. **Sign and send to the SRI.** In production the app asks you to confirm first.
+4. **Payment method**.
+5. **Sign and send to the SRI.** If that issuer's signature is locked, it asks for its
+   password. In production it also asks you to confirm.
 
 The app signs, sends and waits a few seconds for the SRI's answer.
 
@@ -95,8 +108,10 @@ The law requires you to give them the **authorized XML** and its printed version
 ## Keeping your invoices
 
 Invoices must be kept for **7 years**. Besides what stays in your storage, in **Invoices**
-you can **download the month's XML files as a `.zip`**. Do it every month and keep those
-files wherever you keep your documents.
+you can **download the month's XML files as a `.zip`**, with one folder per RUC and
+environment (test invoices do not mix with the valid ones). If you have several issuers,
+you can filter the list by one. Do it every month and keep those files wherever you keep
+your documents.
 
 ## The "RUC Proveedor" field
 
