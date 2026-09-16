@@ -98,6 +98,19 @@ Invoices must be kept for **7 years**. Besides what stays in your storage, in **
 you can **download the month's XML files as a `.zip`**. Do it every month and keep those
 files wherever you keep your documents.
 
+## The "RUC Proveedor" field
+
+Since SRI resolution NAC-DGERCGC26-00000027 (July 28, 2026), anyone who invoices with a system
+**sold by a provider** must include that provider's RUC in the additional information of every
+invoice.
+
+The resolution defines a provider as whoever develops or owns an invoicing system **in order
+to sell it**. Facturero is free and not sold, so it has no provider in that sense, and its
+invoices **do not include** that field.
+
+This is how the resolution reads as of September 16, 2026: the SRI has not yet said anything
+about free software. If your accountant sees your case differently, check it with them.
+
 ## What the app does not do (yet)
 
 - **Cancel** an invoice: that is done at SRI en línea → Facturación Electrónica →

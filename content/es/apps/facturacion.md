@@ -96,6 +96,19 @@ Hay que conservar las facturas **7 años**. Además de lo que queda en tu almac�
 **Facturas** puedes **descargar los XML del mes en un `.zip`**. Hazlo cada mes y guarda
 esos archivos donde guardas tus documentos.
 
+## El «RUC Proveedor»
+
+Desde la resolución del SRI NAC-DGERCGC26-00000027 (28 de julio de 2026), quien factura con
+un sistema **que un proveedor vende** tiene que poner el RUC de ese proveedor en la
+información adicional de cada factura.
+
+La resolución llama proveedor a quien desarrolla o es dueño de un sistema de facturación
+**para venderlo**. Facturero es gratuito y no se vende, así que no tiene un proveedor en ese
+sentido, y sus facturas **no llevan** ese dato.
+
+Es la lectura de la resolución al 16 de septiembre de 2026: el SRI todavía no ha dicho nada
+sobre programas gratuitos. Si tu contador lo ve distinto para tu caso, consúltalo con él.
+
 ## Lo que la app no hace (todavía)
 
 - **Anular** una factura: se hace en SRI en línea → Facturación Electrónica → Anulación,
