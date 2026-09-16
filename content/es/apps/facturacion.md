@@ -66,21 +66,35 @@ En el mismo formulario del emisor, en **Firma electrónica**, elige tu archivo (
   también su firma.
 - Las firmas quedan en **este aparato**. Para emitir desde otro, carga allí tus emisores.
 
-## 3. Emitir una factura
+## 3. Tus compradores
+
+En la pestaña **Compradores** registras a quienes les facturas: tipo de identificación
+(cédula, RUC, pasaporte o del exterior), número, nombres o razón social y **correo**, que es
+obligatorio porque a él va la factura. Teléfono y dirección son opcionales. Los compradores
+sirven para **todos tus emisores**.
+
+- **Consumidor final** está siempre en la lista y no se edita ni se borra. Es el comprador
+  con el que empieza cada factura, y el SRI solo lo permite hasta **USD 50**.
+- No se puede registrar dos veces la misma identificación.
+- Quitar un comprador no cambia las facturas que ya le emitiste.
+
+## 4. Emitir una factura
 
 En **Nueva factura**:
 
 1. **Emisor**: elige con cuál facturas. La app te dice qué número llevará la factura y te
    avisa si es de pruebas. Se queda elegido para la siguiente.
-2. **Comprador**: tipo de identificación, número y nombre. Para **consumidor final** los
-   datos se ponen solos; el SRI solo lo permite hasta **USD 50**.
+2. **Comprador**: empieza en **Consumidor final**. Con **Cambiar** lo buscas por nombre,
+   identificación o correo, o registras uno nuevo ahí mismo, que queda elegido. Si la
+   factura pasa de USD 50, la app te pide identificar al comprador.
 3. **Detalle**: una línea por producto o servicio, con cantidad, precio, descuento y la
    tarifa de IVA (15% es la general).
 4. **Forma de pago**.
 5. **Firmar y enviar al SRI.** Si la firma de ese emisor está bloqueada, te pide su
    contraseña. En producción te pide además confirmar.
 
-La app firma, envía y espera la respuesta del SRI unos segundos.
+La app firma, envía y espera la respuesta del SRI unos segundos. La factura siguiente
+vuelve a empezar con Consumidor final.
 
 ## Qué significa cada estado
 

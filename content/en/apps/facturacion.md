@@ -68,21 +68,35 @@ and type its password.
   signature too.
 - Signatures stay on **this device**. To issue from another one, load your issuers there.
 
-## 3. Issuing an invoice
+## 3. Your buyers
+
+In the **Buyers** tab you register the people and companies you invoice: ID type (national
+ID, RUC, passport or foreign ID), number, name or legal name and **email**, which is required
+because the invoice goes there. Phone and address are optional. Buyers are shared by **all
+your issuers**.
+
+- **Final consumer** is always on the list and cannot be edited or removed. Every invoice
+  starts with it, and the SRI only allows it up to **USD 50**.
+- The same ID cannot be registered twice.
+- Removing a buyer does not change the invoices you already issued to them.
+
+## 4. Issuing an invoice
 
 In **New invoice**:
 
 1. **Issuer**: choose which one you are invoicing with. The app shows the number the
    invoice will carry and warns you if it is a test one. It stays chosen for the next one.
-2. **Buyer**: ID type, number and name. For a **final consumer** the details fill in by
-   themselves; the SRI only allows it up to **USD 50**.
+2. **Buyer**: it starts as **Final consumer**. With **Change** you search by name, ID or
+   email, or register a new one right there, which stays chosen. If the invoice goes over
+   USD 50, the app asks you to identify the buyer.
 3. **Items**: one line per product or service, with quantity, price, discount and VAT rate
    (15% is the standard one).
 4. **Payment method**.
 5. **Sign and send to the SRI.** If that issuer's signature is locked, it asks for its
    password. In production it also asks you to confirm.
 
-The app signs, sends and waits a few seconds for the SRI's answer.
+The app signs, sends and waits a few seconds for the SRI's answer. The next invoice starts
+again with Final consumer.
 
 ## What each status means
 
