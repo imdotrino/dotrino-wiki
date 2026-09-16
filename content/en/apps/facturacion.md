@@ -102,9 +102,9 @@ upload the "Reporte de clientes" or "Reporte-Bienes" exactly as you download the
 - The file is read on your device: it is not uploaded anywhere.
 
 Using another system? In the same tab, **Need another importer?** lets you ask for it: tell
-us which one, leave your email and, if you like, attach a sample file of up to 5 MB. That
-does reach Dotrino by email; if the file contains your clients' data, send a copy with only a
-few rows.
+us which one, leave your email and, if you like, attach a sample file of up to 1 MB: a
+sample is enough. That does reach Dotrino by email; if the file contains your clients' data,
+send a copy with only a few rows.
 
 ## 6. Issuing an invoice
 

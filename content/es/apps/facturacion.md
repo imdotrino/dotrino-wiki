@@ -100,8 +100,8 @@ sube el «Reporte de clientes» o el «Reporte-Bienes» tal como los descargas (
 
 ¿Usas otro sistema? En la misma pestaña, **¿Necesitas otro importador?** te deja pedirlo:
 cuéntanos cuál es, deja tu correo y, si quieres, adjunta un archivo de ejemplo de hasta
-5 MB. Eso sí llega por correo a Dotrino; si el archivo trae datos de tus clientes, manda una
-copia con pocas filas.
+1 MB: basta con una muestra. Eso sí llega por correo a Dotrino; si el archivo trae datos de
+tus clientes, manda una copia con pocas filas.
 
 ## 6. Emitir una factura
 
