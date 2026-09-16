@@ -273,6 +273,13 @@
           }
         },
         {
+          "slug": "facturacion",
+          "title": {
+            "es": "Facturación electrónica (SRI)",
+            "en": "Electronic invoicing (SRI)"
+          }
+        },
+        {
           "slug": "perfil",
           "title": {
             "es": "Perfil y calificaciones",
