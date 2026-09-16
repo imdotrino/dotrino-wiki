@@ -78,7 +78,32 @@ sirven para **todos tus emisores**.
 - No se puede registrar dos veces la misma identificación.
 - Quitar un comprador no cambia las facturas que ya le emitiste.
 
-## 4. Emitir una factura
+## 4. Tus productos
+
+En la pestaña **Productos** registras lo que vendes: código, código auxiliar (opcional),
+descripción, precio unitario, tarifa de IVA y unidad de medida (opcional). Sirven para
+todos tus emisores y no se puede repetir un código.
+
+Al hacer una factura, **Elegir producto** en una línea copia sus datos a esa línea; la
+cantidad y el descuento los pones tú. Cambiar un producto después no cambia las facturas
+que ya lo llevan.
+
+## 5. Importar desde otro sistema
+
+En la pestaña **Importar** puedes traer tus clientes y tus productos de **Facturero Móvil**:
+sube el «Reporte de clientes» o el «Reporte-Bienes» tal como los descargas (.xls).
+
+- Antes de guardar nada verás **fila por fila** qué entra, qué ya estaba registrado y qué
+  no entra y por qué (por ejemplo, un cliente sin correo o un producto inactivo).
+- Solo se guarda cuando pulsas **Importar**, y solo lo que es nuevo.
+- El archivo se lee en tu aparato: no se sube a ningún sitio.
+
+¿Usas otro sistema? En la misma pestaña, **¿Necesitas otro importador?** te deja pedirlo:
+cuéntanos cuál es, deja tu correo y, si quieres, adjunta un archivo de ejemplo de hasta
+5 MB. Eso sí llega por correo a Dotrino; si el archivo trae datos de tus clientes, manda una
+copia con pocas filas.
+
+## 6. Emitir una factura
 
 En **Nueva factura**:
 
@@ -87,8 +112,9 @@ En **Nueva factura**:
 2. **Comprador**: empieza en **Consumidor final**. Con **Cambiar** lo buscas por nombre,
    identificación o correo, o registras uno nuevo ahí mismo, que queda elegido. Si la
    factura pasa de USD 50, la app te pide identificar al comprador.
-3. **Detalle**: una línea por producto o servicio, con cantidad, precio, descuento y la
-   tarifa de IVA (15% es la general).
+3. **Detalle**: una línea por producto o servicio. Con **Elegir producto** traes uno
+   registrado; si no, escribes descripción, precio y la tarifa de IVA (15% es la general).
+   La cantidad y el descuento van en cada línea.
 4. **Forma de pago**.
 5. **Firmar y enviar al SRI.** Si la firma de ese emisor está bloqueada, te pide su
    contraseña. En producción te pide además confirmar.

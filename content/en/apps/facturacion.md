@@ -80,7 +80,33 @@ your issuers**.
 - The same ID cannot be registered twice.
 - Removing a buyer does not change the invoices you already issued to them.
 
-## 4. Issuing an invoice
+## 4. Your products
+
+In the **Products** tab you register what you sell: code, auxiliary code (optional),
+description, unit price, VAT rate and unit of measure (optional). They serve all your
+issuers and a code cannot be repeated.
+
+When making an invoice, **Choose product** on a line copies its details into that line; you
+set the quantity and discount. Changing a product later does not change the invoices that
+already include it.
+
+## 5. Importing from another system
+
+In the **Import** tab you can bring in your clients and products from **Facturero Móvil**:
+upload the "Reporte de clientes" or "Reporte-Bienes" exactly as you download them (.xls).
+
+- Before anything is saved you see **row by row** what goes in, what was already registered
+  and what cannot be imported and why (for example, a client with no email or an inactive
+  product).
+- Nothing is saved until you press **Import**, and only what is new.
+- The file is read on your device: it is not uploaded anywhere.
+
+Using another system? In the same tab, **Need another importer?** lets you ask for it: tell
+us which one, leave your email and, if you like, attach a sample file of up to 5 MB. That
+does reach Dotrino by email; if the file contains your clients' data, send a copy with only a
+few rows.
+
+## 6. Issuing an invoice
 
 In **New invoice**:
 
@@ -89,8 +115,9 @@ In **New invoice**:
 2. **Buyer**: it starts as **Final consumer**. With **Change** you search by name, ID or
    email, or register a new one right there, which stays chosen. If the invoice goes over
    USD 50, the app asks you to identify the buyer.
-3. **Items**: one line per product or service, with quantity, price, discount and VAT rate
-   (15% is the standard one).
+3. **Items**: one line per product or service. **Choose product** brings in a registered
+   one; otherwise you type the description, price and VAT rate (15% is the standard one).
+   Quantity and discount go on each line.
 4. **Payment method**.
 5. **Sign and send to the SRI.** If that issuer's signature is locked, it asks for its
    password. In production it also asks you to confirm.
