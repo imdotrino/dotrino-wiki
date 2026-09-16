@@ -146,6 +146,11 @@ una factura autorizada puedes:
 
 ## Guardar tus facturas
 
+Todo lo que haces en Facturero se guarda en este navegador. Si tu perfil está enlazado a tu
+[bóveda](/vault/emparejar/), además se copia allí, cifrado, y lo recuperas desde otro aparato
+de tu cuenta. En **Ajustes → Dónde están tus datos** ves si está **Respaldado en tu bóveda** o
+**Solo en este navegador**, y por qué; desde ahí también puedes **Sincronizar ahora**.
+
 Hay que conservar las facturas **7 años**. Además de lo que queda en tu almacén, en
 **Facturas** puedes **descargar los XML del mes en un `.zip`**, con una carpeta por RUC y
 ambiente (las de pruebas no se mezclan con las que valen). Si tienes varios emisores, puedes

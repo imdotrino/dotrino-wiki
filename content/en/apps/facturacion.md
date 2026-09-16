@@ -149,6 +149,12 @@ The law requires you to give them the **authorized XML** and its printed version
 
 ## Keeping your invoices
 
+Everything you do in Facturero is saved in this browser. If your profile is linked to your
+[vault](/en/vault/emparejar/), it is also copied there, encrypted, and you get it back on
+another device of your account. In **Settings → Where your data is** you see whether it is
+**Backed up in your vault** or **Only in this browser**, and why; from there you can also
+**Sync now**.
+
 Invoices must be kept for **7 years**. Besides what stays in your storage, in **Invoices**
 you can **download the month's XML files as a `.zip`**, with one folder per RUC and
 environment (test invoices do not mix with the valid ones). If you have several issuers,
