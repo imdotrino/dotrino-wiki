@@ -30,42 +30,43 @@ You need three things, all arranged outside the app:
 > come from an accredited entity it answers "invalid signature". What test invoices lack is
 > tax validity, so you can issue as many as you like.
 
-## 1. Your electronic signatures
-
-In **Settings → Electronic signatures**, press **Add signature**, choose your file and type
-its password.
-
-- The app checks that the file opens and that the signature is valid, and shows you the
-  holder and its expiry date.
-- The file is stored **encrypted with your profile's key**.
-- **The password is not stored.** Each signature asks for it once when you are about to
-  issue an invoice; when you close or reload the page, it is locked again.
-- Signatures stay on **this device**. To issue from another one, load them there too.
-
-You can have several. One signature can serve several issuers: for example, your personal
-RUC and your company's if you are the one who signs for it.
-
-## 2. Your issuers
+## 1. Your issuers
 
 An issuer is a **RUC with its series** (establishment and emission point) in an
-**environment**: test or production. In **Settings → Issuers**, press **Add issuer** and
-enter the details exactly as they appear on your RUC: legal name, head office address,
-establishment and emission point (usually `001` and `001`), whether you keep accounting
-records, are a special taxpayer, a withholding agent or in the RIMPE regime, and **which
-signature it invoices with**.
+**environment**, test or production, **with its electronic signature**. In **Settings →
+Issuers**, press **Add issuer** and enter the details exactly as they appear on your RUC:
+legal name, head office address, establishment and emission point (usually `001` and
+`001`), and whether you keep accounting records, are a special taxpayer, a withholding
+agent or in the RIMPE regime.
 
 - **Next sequence number**: the number that issuer's next invoice will carry. If you already
   invoiced with another system **in that same series**, enter the one after the last you
   used.
 - **Test and production are separate issuers**, each with its own numbering. The easy way is
   to create the test one first and, once the SRI grants you permission, use **Duplicate**
-  and switch the copy's environment to production.
+  and switch the copy's environment to production: the copy keeps the same signature.
 - **Several RUCs**: add one issuer for each.
 - Two issuers with **the same RUC, series and environment** cannot be saved: they would
   share numbering and the SRI would reject the second invoice with the same number.
 
 If you invoice from **more than one device**, give each one its own emission point, for
 the same reason.
+
+## 2. Each issuer's signature
+
+In the same issuer form, under **Electronic signature**, choose your file (`.p12` or `.pfx`)
+and type its password.
+
+- The app opens the file before saving the issuer: if the password is wrong, it tells you
+  and saves nothing.
+- The issuer's card shows the signature holder and its expiry date.
+- The file is stored **encrypted with your profile's key**.
+- **The password is not stored.** Each issuer's signature asks for it once when you are
+  about to issue with it (or with **Unlock** on its card); when you close or reload the
+  page, it is locked again.
+- To change it, **Edit** the issuer and **Replace signature**. Removing an issuer removes its
+  signature too.
+- Signatures stay on **this device**. To issue from another one, load your issuers there.
 
 ## 3. Issuing an invoice
 
