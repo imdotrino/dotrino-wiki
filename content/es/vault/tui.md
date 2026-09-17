@@ -19,7 +19,9 @@ daemon no corre, la TUI ofrece arrancarlo con `S` (solo sabe hacerlo por systemd
 ## Dos niveles
 
 1. **Bóvedas**: la pantalla de entrada — tus perfiles. `Enter` entra a uno; `p`
-   conecta un dispositivo; también creas, renombras, borras y pones el candado.
+   conecta un dispositivo; `j` mete esta bóveda en la cuenta de otra (pegas la
+   invitación que enseña la otra, ver [Dos bóvedas en la misma cuenta](/vault/multivault/));
+   también creas, renombras, borras y pones el candado.
 2. Dentro, **pestañas** (`←→`): **Dispositivos** (emparejar, aprobar, rechazar,
    revocar; con `e` sobre un servicio, sus variables propias) y **Scopes y
    variables** (las compartidas; `i` importa un `.env` entero).
@@ -36,6 +38,7 @@ Los mnemónicos son en inglés y no cambian con el idioma (`l` conmuta español/
 |---|---|
 | `Enter` | entrar a la bóveda |
 | `p` | pair — conectar un dispositivo |
+| `j` | join — entrar en la cuenta de otra bóveda |
 | `a` / `x` / `v` | approve · quitar/rechazar · revocar |
 | `n` / `r` / `d` | nueva · renombrar/refrescar · borrar |
 | `c` · `u` / `k` | contraseña · candado (unlock / lock) |

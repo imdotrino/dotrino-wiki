@@ -20,7 +20,9 @@ order for the daemon. If the daemon isn't running, the TUI offers to start it wi
 ## Two levels
 
 1. **Vaults**: the entry screen — your profiles. `Enter` opens one; `p` connects a
-   device; you also create, rename, delete and set the password lock.
+   device; `j` puts this vault into another vault's account (you paste the invitation
+   the other one shows, see [Two vaults, one account](/en/vault/multivault/)); you also
+   create, rename, delete and set the password lock.
 2. Inside, **tabs** (`←→`): **Devices** (pair, approve, reject, revoke; `e` on a
    service shows its own variables) and **Scopes & variables** (the shared ones; `i`
    imports a whole `.env`).
@@ -37,6 +39,7 @@ español/English).
 |---|---|
 | `Enter` | open the vault |
 | `p` | pair — connect a device |
+| `j` | join — join another vault's account |
 | `a` / `x` / `v` | approve · remove/reject · revoke |
 | `n` / `r` / `d` | new · rename/refresh · delete |
 | `c` · `u` / `k` | password · lock (unlock / lock) |

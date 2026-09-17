@@ -32,6 +32,10 @@ dotrino-vault join "<la invitación>" --name "cuenta de casa"
 dotrino-vault approve 767527
 ```
 
+**Desde la TUI** son los mismos tres pasos, sin comandos: en la primera, `p` → «Entrar a
+esta cuenta» enseña la invitación; en la nueva, `j` en Bóvedas te pide que la pegues y
+enseña el código; de vuelta en la primera, `a` y el código.
+
 Dos cosas que importan de esto:
 
 - **Entra con SU propia llave**, no con una de aparato inventada. Por eso después se le
@@ -57,6 +61,13 @@ dotrino-vault members                 # mira el ID de la nueva
 dotrino-vault caps 622C-A2C0 +sella   # ahora puede sellar el acta
 dotrino-vault caps 622C-A2C0 -sella   # y ya no
 ```
+
+En la TUI: Dispositivos → la bóveda nueva → `c` → marca «sella» → `G`.
+
+**Antes de darle `+sella`, ponle contraseña a esa cuenta en la bóveda nueva**
+(`dotrino-vault profile password`, o `c` en su TUI). Sin contraseña, su llave queda cerrada
+solo con la de la máquina, y cualquiera con acceso a esa máquina podría sellar el acta en
+tu nombre.
 
 **No es un traspaso**: quien manda sigue mandando. Lo que cambia es que ahora hay dos
 llaves que el acta reconoce como selladoras, y cualquiera de las dos puede admitir un

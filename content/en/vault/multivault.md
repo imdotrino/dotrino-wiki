@@ -32,6 +32,10 @@ dotrino-vault join "<the invitation>" --name "home account"
 dotrino-vault approve 767527
 ```
 
+**From the TUI** it is the same three steps, without commands: on the first one, `p` →
+“Join this account” shows the invitation; on the new one, `j` in Vaults asks you to paste
+it and shows the code; back on the first one, `a` and the code.
+
 Two things matter here:
 
 - **It joins with ITS own key**, not an invented device key. That is what lets you give it
@@ -56,6 +60,13 @@ dotrino-vault members                  # find the new one's ID
 dotrino-vault caps 622C-A2C0 +sealer   # it can now seal the record
 dotrino-vault caps 622C-A2C0 -sealer   # and now it cannot
 ```
+
+In the TUI: Devices → the new vault → `c` → tick “sealer” → `G`.
+
+**Before granting `+sealer`, set a password on that account in the new vault**
+(`dotrino-vault profile password`, or `c` in its TUI). Without one, its key is locked only
+with the machine's key, and anyone with access to that machine could seal the record as
+you.
 
 **It is not a handover**: whoever is in charge stays in charge. What changes is that there
 are now two keys the record recognises as sealers, and either can admit a device. What one
