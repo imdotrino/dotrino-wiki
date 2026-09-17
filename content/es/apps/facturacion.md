@@ -70,7 +70,8 @@ En el mismo formulario del emisor, en **Firma electrónica**, elige tu archivo (
 
 En la pestaña **Compradores** registras a quienes les facturas: tipo de identificación
 (cédula, RUC, pasaporte o del exterior), número y nombres o razón social. Correo, teléfono y
-dirección son opcionales: el SRI autoriza la factura sin correo. Si lo pones, sale en la factura.
+dirección son opcionales: el SRI autoriza la factura sin correo. Si lo pones, sale en la factura;
+puedes poner varios separados por comas.
 Los compradores sirven para **todos tus emisores**.
 
 - **Consumidor final** está siempre en la lista y no se edita ni se borra. Es el comprador
@@ -94,7 +95,8 @@ En la pestaña **Importar** puedes traer tus clientes y tus productos de **Factu
 sube el «Reporte de clientes» o el «Reporte-Bienes» tal como los descargas (.xls).
 
 - Antes de guardar nada verás **fila por fila** qué entra, qué ya estaba registrado y qué
-  no entra y por qué (por ejemplo, un cliente repetido o un producto inactivo).
+  no entra y por qué (por ejemplo, un cliente repetido o un producto inactivo). Un correo que
+  no es válido no deja fuera al cliente: se importa sin ese correo y la fila lo dice.
 - Solo se guarda cuando pulsas **Importar**, y solo lo que es nuevo.
 - El archivo se lee en tu aparato: no se sube a ningún sitio.
 

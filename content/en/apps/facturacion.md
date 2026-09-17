@@ -73,7 +73,7 @@ and type its password.
 In the **Buyers** tab you register the people and companies you invoice: ID type (national
 ID, RUC, passport or foreign ID), number and name or legal name. Email, phone and address are
 optional: the SRI authorizes the invoice without an email. If you add one, it appears on the
-invoice. Buyers are shared by **all your issuers**.
+invoice; you can add several separated by commas. Buyers are shared by **all your issuers**.
 
 - **Final consumer** is always on the list and cannot be edited or removed. Every invoice
   starts with it, and the SRI only allows it up to **USD 50**.
@@ -97,7 +97,8 @@ upload the "Reporte de clientes" or "Reporte-Bienes" exactly as you download the
 
 - Before anything is saved you see **row by row** what goes in, what was already registered
   and what cannot be imported and why (for example, a repeated client or an inactive
-  product).
+  product). An invalid email does not leave the client out: it is imported without that
+  email and the row says so.
 - Nothing is saved until you press **Import**, and only what is new.
 - The file is read on your device: it is not uploaded anywhere.
 
