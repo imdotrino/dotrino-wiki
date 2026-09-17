@@ -44,6 +44,8 @@ llevas contabilidad, eres contribuyente especial, agente de retención o estás 
   crear primero el de pruebas y, cuando el SRI te dé el permiso, usar **Duplicar** y
   cambiarle el ambiente a producción: la copia se lleva la misma firma.
 - **Varios RUC**: añade un emisor por cada uno.
+- **Logo**: en el formulario del emisor puedes cargar una imagen PNG, JPG o WebP, que sale en la
+  cabecera de su factura impresa. Se reduce sola; con **Duplicar** la copia se lleva el mismo logo.
 - No se pueden guardar dos emisores con **el mismo RUC, serie y ambiente**: compartirían la
   numeración y el SRI rechazaría la segunda factura con el mismo número.
 

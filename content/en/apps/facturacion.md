@@ -46,6 +46,8 @@ agent or in the RIMPE regime.
   to create the test one first and, once the SRI grants you permission, use **Duplicate**
   and switch the copy's environment to production: the copy keeps the same signature.
 - **Several RUCs**: add one issuer for each.
+- **Logo**: in the issuer form you can load a PNG, JPG or WebP image, which appears at the top of
+  that issuer's printed invoice. It is reduced automatically; **Duplicate** keeps the same logo.
 - Two issuers with **the same RUC, series and environment** cannot be saved: they would
   share numbering and the SRI would reject the second invoice with the same number.
 
