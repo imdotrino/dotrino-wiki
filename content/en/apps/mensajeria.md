@@ -38,8 +38,7 @@ What sets it apart from Chat:
 - **You receive even while offline.** If someone writes with the app closed, the
   message waits encrypted for up to 24 hours and arrives when you come back.
 - **Alerts.** It can notify you on your phone when something arrives.
-- **It installs** like any app ([how](/en/empezar/instalar-apps/)) and also exists
-  as a Chrome extension.
+- **It installs** like any app ([how](/en/empezar/instalar-apps/)).
 
 To write to someone you need their identity: add it from
 [your profile](/en/empezar/identidad/) or by scanning their code.

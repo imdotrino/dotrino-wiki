@@ -38,8 +38,7 @@ Lo que lo distingue del chat:
 - **Recibes aunque estés desconectado.** Si te escriben con la app cerrada, el
   mensaje espera cifrado hasta 24 horas y te llega al volver.
 - **Avisos.** Puede avisarte con una notificación del teléfono cuando llega algo.
-- **Se instala** como cualquier app ([cómo](/empezar/instalar-apps/)) y también
-  existe como extensión de Chrome.
+- **Se instala** como cualquier app ([cómo](/empezar/instalar-apps/)).
 
 Para escribirle a alguien necesitas su identidad: la agregas desde
 [tu perfil](/empezar/identidad/) o escaneando su código.
