@@ -12,7 +12,7 @@ dotrino-vault pair                 # empareja: muestra el QR (más URL y código
 dotrino-vault pair --new-account [nombre]   # estrena una cuenta VACÍA y mete al dispositivo en ella
 dotrino-vault pair --adopt [nombre]         # al revés: la bóveda adopta la cuenta que trae el aparato
 dotrino-vault pair --service <ns>  # empareja un SERVICIO con acceso SOLO a sus secretos
-dotrino-vault pair --scope <lista> # los PERMISOS del cert: sign,read,store,secrets:<ns>
+dotrino-vault pair --scope <lista> # los PERMISOS con los que entra: firma,lee,guarda,administra,aprueba…,secrets:<ns>
 dotrino-vault pair --approval      # el que entre pedirá tu aprobación al recibir claves
 dotrino-vault pending              # qué dispositivo espera, y cómo aprobarlo
 dotrino-vault approve <código>     # aprueba tecleando los 6 dígitos que MUESTRA el dispositivo

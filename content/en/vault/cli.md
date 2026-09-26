@@ -12,7 +12,7 @@ dotrino-vault pair                 # pair: shows the QR (plus URL and pasteable 
 dotrino-vault pair --new-account [name]   # start an EMPTY account and put the device in it
 dotrino-vault pair --adopt [name]         # the other way: the vault adopts the device's account
 dotrino-vault pair --service <ns>  # pair a SERVICE with access ONLY to its secrets
-dotrino-vault pair --scope <list>  # the cert's PERMISSIONS: sign,read,store,secrets:<ns>
+dotrino-vault pair --scope <list>  # the PERMISSIONS it joins with: sign,read,store,admin,approve…,secrets:<ns>
 dotrino-vault pair --approval      # whoever enters will ask for your approval to receive keys
 dotrino-vault pending              # which device is waiting, and how to approve it
 dotrino-vault approve <code>       # approve by typing the 6 digits the device SHOWS
