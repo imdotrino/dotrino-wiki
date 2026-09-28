@@ -5,7 +5,7 @@ description: What gets recorded when you use Dotrino, for how long, and who else
 
 # Privacy policy
 
-Last reviewed: **2 September 2026**.
+Last reviewed: **28 September 2026**.
 
 This page says **what gets recorded, for how long, and who else touches it**. If you're
 looking for the why, that's in [How your things are protected](/empezar/privacidad/).
@@ -24,7 +24,8 @@ in aggregate, and stopping someone from knocking the servers over.
 - **No accounts and no passwords of ours.** No email, no phone, no name.
 - **No cookies.** None at all, not even session ones.
 - **No third-party code.** No Google Analytics, Meta, Hotjar or ad networks. No app loads
-  JavaScript from someone else's company.
+  JavaScript from someone else's company. The only outside piece is Google's notification
+  service inside the Android app, and only for that ([see below](#the-android-apps)).
 - **We don't sell or share anything**, and there are no ads. The project doesn't live on that.
 - **We don't join up what you do across apps.** There's nothing to join it with: no
   identifier of yours ever reaches our servers.
@@ -63,10 +64,43 @@ Messages pass through a relay server. There:
 The contact form is **forwarded by email and not stored** on any server of ours. What you
 tell us stays in that email.
 
+### The Android apps
+
+This covers both apps on Google Play: **Dotrino** (`com.dotrino.app`) and **Dotrino
+Identity** (`com.dotrino.identity`).
+
+**Dotrino Identity does not connect to the internet.** It doesn't even have permission to.
+It keeps your keys in the phone's own safe and your profile on the phone, and lends them only
+to Dotrino apps signed by us. Nothing it keeps leaves the device.
+
+**Dotrino** shows the same pages as the web, so everything above applies to them. On top of
+that:
+
+- **Phone notifications.** So your vault can tell you there's something to approve, the app
+  uses Google's notification service (Firebase Cloud Messaging). Google gives the phone a
+  **notification code**, and the app registers it on our relay server next to your phone's
+  public key. The vault's notification **carries no content**: it only says "there's
+  something new", and the app then fetches the request itself the usual way. The code is kept
+  while it keeps working. Google sees that a notification reached that phone,
+  and when. We use Firebase for nothing else: no statistics and no crash reports.
+- **Camera.** Only when you open it, to read a QR code (for example, when pairing the phone).
+  The image is processed on the phone and is neither stored nor sent.
+- **Your profile and your accounts** (name, contact details if you add them, the vaults you
+  paired the phone with) are kept on the phone, inside Dotrino Identity. If you choose to copy
+  them to your own vault, they travel encrypted and we can't read them.
+
+**Google Play** also knows you installed the app, as with any app in its store. That's
+governed by [Google's privacy policy](https://policies.google.com/privacy), not this one.
+
+**To delete everything:** uninstall both apps. Your keys and your profile go with Dotrino
+Identity. The notification code stops working when you uninstall Dotrino, and our server
+deletes it the next time it tries to notify you and Google answers that it no longer exists.
+
 ## Who else touches something
 
-A server provider, a content delivery network, the hosting for the pages, and the service
-that sends the contact form emails. We name them, with what each one sees, in the
+A server provider, a content delivery network, the hosting for the pages, the service
+that sends the contact form emails and, for the Android apps, Google (the store and the
+notification service). We name them, with what each one sees, in the
 [full list](https://github.com/imdotrino/dotrino-vault/blob/main/docs/flujos-de-datos.md) —
 it's the same technical document we use ourselves, with no watered-down version.
 
