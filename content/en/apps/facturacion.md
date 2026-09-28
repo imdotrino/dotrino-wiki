@@ -154,13 +154,18 @@ set an invoice aside, finish it later and start another one, press **Save draft*
 **Correct** resends the invoice with **the same number and the same date**, as the SRI
 requires. You have **72 hours** from issue for it to reach the SRI.
 
+An invoice that has been sent cannot be changed. To make another one like it, open it and
+press **Copy as new**: its details go to New invoice (same issuer, buyer, items and payment
+method), and when you issue it, it gets its own number.
+
 ## Delivering the invoice to the buyer
 
 The law requires you to give them the **authorized XML** and its printed version (the
 **RIDE**). From an authorized invoice you can:
 
 - **Download XML**: the file that has legal validity.
-- **Print or save as PDF**: the RIDE, with the access key and its barcode.
+- **Print or save as PDF**: the RIDE, with the access key and its barcode. The PDF is named
+  after the invoice number, for example `FA-001-001-000000101.pdf`.
 - **Share**: on your phone, send the XML through the app of your choice.
 
 ## Keeping your invoices

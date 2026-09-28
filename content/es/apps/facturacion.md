@@ -153,13 +153,18 @@ detalle y el total.
 **Corregir** reenvía la factura con **el mismo número y la misma fecha**, como pide el SRI.
 Tienes **72 horas** desde la emisión para que llegue al SRI.
 
+Una factura enviada ya no se cambia. Para hacer otra igual, ábrela y pulsa **Copiar como
+nueva**: sus datos pasan a Nueva factura (mismo emisor, comprador, detalle y forma de pago)
+y al emitirla lleva su propio número.
+
 ## Entregar la factura al comprador
 
 La ley te pide entregarle el **XML autorizado** y su versión impresa (el **RIDE**). Desde
 una factura autorizada puedes:
 
 - **Descargar XML**: el archivo que tiene validez.
-- **Imprimir o guardar PDF**: el RIDE, con la clave de acceso y su código de barras.
+- **Imprimir o guardar PDF**: el RIDE, con la clave de acceso y su código de barras. El PDF
+  se propone con el número de la factura, por ejemplo `FA-001-001-000000101.pdf`.
 - **Compartir**: en el teléfono, envía el XML por la app que elijas.
 
 ## Guardar tus facturas
