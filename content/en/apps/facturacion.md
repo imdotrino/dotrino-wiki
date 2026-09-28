@@ -128,6 +128,19 @@ In **New invoice**:
 The app signs, sends and waits a few seconds for the SRI's answer. The next invoice starts
 again with Final consumer.
 
+### Leaving it for later
+
+What you type in **New invoice** stays there even if you switch tabs or reload the page. To
+set an invoice aside, finish it later and start another one, press **Save draft**: it goes to
+**Invoices**, at the top, under **Drafts**, with the buyer, the items and the total.
+
+- **Continue** opens it again in New invoice. If you had another one half done there, it is
+  not lost: it moves to Drafts.
+- Once you issue it, it leaves Drafts. If you save it again, it is updated in place.
+- **Delete** asks you to confirm before removing it.
+- A draft has no number yet: it gets one when it is signed, so saving drafts leaves no gaps
+  in your numbering.
+
 ## What each status means
 
 | Status | What happened | What to do |

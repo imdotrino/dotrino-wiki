@@ -126,6 +126,20 @@ En **Nueva factura**:
 La app firma, envía y espera la respuesta del SRI unos segundos. La factura siguiente
 vuelve a empezar con Consumidor final.
 
+### Dejarla para después
+
+Lo que escribes en **Nueva factura** se queda ahí aunque cambies de pestaña o recargues la
+página. Si quieres apartar una factura para terminarla más tarde y empezar otra, pulsa
+**Guardar borrador**: queda en **Facturas**, arriba, en **Borradores**, con el comprador, el
+detalle y el total.
+
+- **Continuar** la vuelve a abrir en Nueva factura. Si ahí tenías otra a medias, no se
+  pierde: pasa a Borradores.
+- Al emitirla, sale de Borradores. Si la guardas otra vez, se actualiza en su sitio.
+- **Eliminar** te pide confirmar antes de quitarla.
+- Un borrador todavía no tiene número: lo recibe al firmarlo, así que guardar borradores no
+  deja huecos en tu numeración.
+
 ## Qué significa cada estado
 
 | Estado | Qué pasó | Qué hacer |
