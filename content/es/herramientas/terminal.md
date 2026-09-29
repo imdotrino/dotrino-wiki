@@ -16,9 +16,9 @@ cifrado de punta a punta.
 
 ## Qué hace falta
 
-1. [La bóveda](/vault/instalacion/) instalada en la computadora a la que quieres
-   entrar.
-2. El agente corriendo en esa computadora:
+1. [La bóveda](/vault/instalacion/) instalada en alguna de tus computadoras. No tiene
+   que ser la misma a la que quieres entrar.
+2. El agente corriendo en la computadora a la que quieres entrar:
 
 ```
 npx @dotrino/terminal-agent
@@ -27,12 +27,36 @@ npx @dotrino/terminal-agent
    O con [el instalador](/herramientas/instalar/), si prefieres no depender de
    `npx`.
 
+   La primera vez te pide **enlazarla** a tu bóveda: en la computadora de la bóveda
+   corre `dotrino-vault pair`, pega la invitación en el agente y aprueba con
+   `dotrino-vault approve <código>` el código que te muestra. Solo se hace una vez.
+
 3. El aparato desde el que entras, [enlazado a tu bóveda](/vault/emparejar/).
 
 ## Cómo se entra
 
-Abre `terminal.dotrino.com` en el otro aparato. Si el aparato ya está enlazado,
-tu máquina aparece sola en la lista: la eliges y ya estás dentro.
+Abre `terminal.dotrino.com` en el otro aparato. Tus computadoras con el agente
+**encendido** aparecen solas en la lista, con el nombre que les pusiste al
+aprobarlas: eliges una y ya estás dentro.
+
+Si no aparece, lo más probable es que el agente no esté corriendo. Una computadora
+apagada no sale en la lista hasta que el agente vuelve a arrancar.
+
+## Más de un agente en la misma computadora
+
+Cada agente tiene un **nombre** y su propio enlace. Si no le das ninguno se llama
+`default`, y es lo normal. Para tener otro en la misma computadora, dale su nombre;
+se enlaza una vez y aparece aparte en la lista:
+
+```
+npx @dotrino/terminal-agent --name casa
+npx @dotrino/terminal-agent list      # los que hay en esta computadora
+```
+
+Lanzar dos veces el mismo agente no se puede: el segundo se para y te lo dice.
+
+Los enlaces se guardan en `~/.dotrino/agent/terminal-agent/<nombre>/`. Ahí está la
+llave de esa computadora: cuídala como una llave SSH.
 
 ## La otra vía: este aparato es la bóveda
 

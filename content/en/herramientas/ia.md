@@ -18,7 +18,54 @@ conversation memory and end-to-end encryption. Only a device you have
 [linked to your vault](/en/vault/emparejar/) gets in.
 
 It needs the same as [Terminal](/en/herramientas/terminal/): the vault installed
-and the agent running on the target machine.
+and the agent running on the target machine. The assistant is **Claude Code**, so
+that machine needs it installed and signed in.
+
+```
+cd ~/my-project
+npx @dotrino/ia-agent
+```
+
+The first time it asks you to link it to your vault, just like the terminal. Then
+open `ia.dotrino.com` on your phone: the machine shows up on its own while the agent
+is running.
+
+### Which folder it works in
+
+The assistant works in the **folder you start the agent from**. On startup it tells
+you which one (`trabaja en: …`). To pick another without moving, use `IA_CWD`:
+
+```
+IA_CWD=~/other-project npx @dotrino/ia-agent
+```
+
+### One agent per project
+
+Each agent has a **name** and its own link, just like in
+[Terminal](/en/herramientas/terminal/). To have two projects at once, start each one
+with its own name; each is linked once and shows up separately in the list:
+
+```
+cd ~/project-a && npx @dotrino/ia-agent --name project-a
+cd ~/project-b && npx @dotrino/ia-agent --name project-b
+npx @dotrino/ia-agent list
+```
+
+When you approve them in the vault, give them names you will recognise: those are
+the ones you will see on your phone.
+
+### What the assistant can do
+
+Out of the box the assistant can **read and answer**, but not change anything:
+whatever needs permission (editing files, running commands) is refused, because
+nobody is there to approve it. The exception is whatever you have already allowed in
+that machine's Claude Code settings.
+
+> **If you allow everything** (`CLAUDE_FLAGS=--dangerously-skip-permissions`), it
+> will do what it is asked without asking, deleting files included. Any device of
+> your account that opens the chat can ask for that. If you do it, run it isolated:
+> `npx @dotrino/ia-agent init-podman` (or `init-docker`) sets up a container that
+> only sees the project folder.
 
 ## Telegram bot — from the chat you already use
 
