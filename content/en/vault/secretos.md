@@ -27,7 +27,7 @@ npx -y @dotrino/env enroll --ns myapp --code <code>
 dotrino-vault approve 418027
 ```
 
-This leaves `~/.dotrino/service/myapp/service-identity.json` (0600, encrypted bound
+This leaves `~/.dotrino/service/<vault>/myapp/service-identity.json` (0600, encrypted bound
 to that machine) with the device key — which is only good for **asking**.
 Re-enrolling the same `ns` **replaces** the previous identity: that's how you rotate
 a compromised machine's.
@@ -41,6 +41,7 @@ machine.
 ```sh
 npx -y @dotrino/env run --ns myapp -- node app.js   # variables in the CHILD's environment
 npx -y @dotrino/env check --ns myapp                # the NAMES (never values)
+npx -y @dotrino/env info                            # which device this is: its ID, its vault
 ```
 
 ```js
@@ -51,6 +52,33 @@ console.log(process.env.API_KEY)
 **The vault rules**: whatever comes from the vault **overrides** the `.env` and the
 environment. That's what makes rotation cheap: change it in one place and no stale
 `.env` forgotten on a server can keep winning.
+
+## Bring your `.env` over in one go
+
+To migrate a service that already has its `.env`, you do not need to copy the variables
+one by one into the vault: upload them from the service's own machine.
+
+```sh
+npx -y @dotrino/env import                          # uploads ./.env to this service's drawer
+npx -y @dotrino/env import config/.env --public SITE_URL,REGION   # those two, public
+npx -y @dotrino/env set API_KEY=sk-… --ns myapp     # loose ones, on the command line
+```
+
+Values are sealed **on the service's machine**: the vault stores envelopes it cannot read,
+and only the names are printed. Everything is private except what you mark with
+`--public`. If a line in the file is malformed, nothing is uploaded and it tells you which.
+
+What happens to what you send is up to your account:
+
+- **If someone can approve**, approval is **always** requested (even for a service that
+  starts without asking). With the yes it is saved, and it **can also change** variables
+  that already existed.
+- **If nobody can approve**, it is saved right away, but **only the missing ones**: the
+  ones that already exist are left alone.
+- **Deleting**, never from here: that is done in the vault.
+
+A service only writes into **its own** drawer. An agent (terminal, AI, content…) uses its
+link instead of the `dotrino-env` identity: `--link <link folder> --ns <drawer>`.
 
 ## On rotation, the service restarts
 
@@ -66,4 +94,5 @@ connection the agent **compares** its bundle with the vault's.
 - **Vault or proxy down** → the service **waits** (backoff retries). Booting anyway
   would mean operating on stale configuration.
 - **Not enrolled, cert revoked/expired, wrong scope** → **aborts immediately**: you
-  must (re)enroll. The cert lives 30 days and renews at boot when under 7 remain.
+  must (re)enroll. The cert does not expire by date: it is valid while your record says
+  so, and it is remade on its own when you change its permissions.

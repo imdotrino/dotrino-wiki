@@ -27,7 +27,7 @@ npx -y @dotrino/env enroll --ns miapp --code <código>
 dotrino-vault approve 418027
 ```
 
-Queda `~/.dotrino/service/miapp/service-identity.json` (0600, cifrado ligado a esa
+Queda `~/.dotrino/service/<bóveda>/miapp/service-identity.json` (0600, cifrado ligado a esa
 máquina) con la llave del dispositivo — que solo sirve para **pedir**. Re-enrolar el
 mismo `ns` **reemplaza** la identidad anterior: así se rota la de una máquina comprometida.
 
@@ -40,6 +40,7 @@ la máquina.
 ```sh
 npx -y @dotrino/env run --ns miapp -- node app.js   # variables en el entorno DEL HIJO
 npx -y @dotrino/env check --ns miapp                # los NOMBRES (nunca valores)
+npx -y @dotrino/env info                            # qué aparato es: su ID, su bóveda
 ```
 
 ```js
@@ -50,6 +51,33 @@ console.log(process.env.API_KEY)
 **El vault manda**: lo que venga de la bóveda **pisa** el `.env` y el entorno. Es lo
 que hace barata la rotación: se cambia en un solo lugar y ningún `.env` rancio
 olvidado en un servidor puede seguir ganando.
+
+## Traer tu `.env` de golpe
+
+Para migrar un servicio que ya tiene su `.env`, no hace falta copiar las variables una a
+una en la bóveda: súbelas desde la propia máquina del servicio.
+
+```sh
+npx -y @dotrino/env import                          # sube ./.env al cajón de este servicio
+npx -y @dotrino/env import config/.env --public SITE_URL,REGION   # esas dos, públicas
+npx -y @dotrino/env set API_KEY=sk-… --ns miapp     # sueltas, en la orden
+```
+
+Los valores se sellan **en la máquina del servicio**: la bóveda guarda sobres que no puede
+leer, y en pantalla solo salen los nombres. Todas son privadas salvo las que marques con
+`--public`. Si una línea del archivo está mal escrita, no se sube nada y te dice cuál.
+
+Qué pasa con lo que envías lo decide tu cuenta:
+
+- **Si alguien puede aprobar**, se pide aprobación **siempre** (también a un servicio que
+  arranca sin preguntar). Con el sí se guarda, y **también puede cambiar** las variables
+  que ya existían.
+- **Si nadie puede aprobar**, se guarda en el acto, pero **solo las que faltan**: las que
+  ya existen no se tocan.
+- **Borrar**, nunca desde aquí: eso se hace en la bóveda.
+
+Un servicio solo escribe en **su** cajón. Un agente (terminal, IA, contenido…) usa su
+enlace en vez de la identidad de `dotrino-env`: `--link <carpeta del enlace> --ns <cajón>`.
 
 ## Al rotar, el servicio se reinicia
 
@@ -65,5 +93,5 @@ cada conexión el agente **compara** su bundle con el de la bóveda.
 - **Bóveda o proxy caídos** → el servicio **espera** (reintento con backoff). Arrancar
   igual sería operar con la configuración vieja.
 - **Sin enrolar, cert revocado/vencido, scope equivocado** → **aborta en el acto**:
-  hay que (re)enrolar. El cert vive 30 días y se renueva al arrancar cuando le quedan
-  menos de 7.
+  hay que (re)enrolar. El cert no caduca por fecha: vale mientras tu acta lo diga, y se
+  rehace solo cuando cambias sus permisos.
