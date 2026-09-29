@@ -42,6 +42,16 @@ approved them: pick one and you are in.
 If it does not show up, the agent is most likely not running. A computer that is off
 stays out of the list until its agent starts again.
 
+## Closing the browser does not close the console
+
+Whatever you leave running keeps running: if you reload, close the browser or lose the
+connection, the console stays alive on your computer. When you come back, the tabs reopen
+on their own (if you only reloaded), or the app offers to **resume** the consoles that are
+still open, from this device or another one. You see them exactly as they were.
+
+To really close a console, press the **×** on its tab. If the agent restarts, the consoles
+are lost.
+
 ## More than one agent on the same computer
 
 Each agent has a **name** and its own link. If you give it none it is called

@@ -42,6 +42,16 @@ aprobarlas: eliges una y ya estás dentro.
 Si no aparece, lo más probable es que el agente no esté corriendo. Una computadora
 apagada no sale en la lista hasta que el agente vuelve a arrancar.
 
+## Cerrar el navegador no cierra la consola
+
+Lo que dejes corriendo sigue corriendo: si recargas, cierras el navegador o se te va la
+conexión, la consola sigue viva en tu computadora. Al volver, las pestañas se abren solas
+(si solo recargaste) o la app te ofrece **retomar** las consolas que siguen abiertas, desde
+este aparato o desde otro. Las ves tal como estaban.
+
+Para cerrar una consola de verdad, pulsa la **×** de su pestaña. Si el agente se reinicia,
+las consolas se pierden.
+
 ## Más de un agente en la misma computadora
 
 Cada agente tiene un **nombre** y su propio enlace. Si no le das ninguno se llama
