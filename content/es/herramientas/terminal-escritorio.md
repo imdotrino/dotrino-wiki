@@ -23,15 +23,17 @@ La app sola ya es una terminal normal. El programa de las consolas solo hace fal
 **perfiles**, que es lo que deja abrir tus ventanas desde otros aparatos.
 
 **1. El programa de las consolas** (para los perfiles). Necesita Node 20 o más reciente. Lo
-más fácil es desde la propia app: **Perfil → Instalar dotrino-terminal…**. La instalación se
-ve en la ventana y, al terminar, la ventana pasa a tu perfil. O a mano:
+más fácil es desde la propia app: **Perfil → Instalar dotrino-terminal…** escribe la orden en
+tu consola; revísala y pulsa **Enter**. Cuando termina, los perfiles y «Enrolar…» se activan
+solos en el menú. O a mano:
 
 ```
 npm install -g @dotrino/terminal-agent
 ```
 
 Cuando ya está instalado, la misma opción se llama **Actualizar dotrino-terminal…** y trae la
-versión más nueva.
+versión más nueva. El agente que ya estaba corriendo sigue con la versión anterior hasta que se
+reinicia.
 
 **2. La app.** Bájala de la
 [página de versiones](https://github.com/imdotrino/dotrino-terminal/releases/latest):
@@ -44,6 +46,20 @@ versión más nueva.
 
 En macOS la app todavía no va firmada por Apple, así que la primera vez el sistema no la deja
 abrir con doble clic. Ábrela con **clic derecho → Abrir** y confirma. Solo se hace una vez.
+
+## Como terminal de tu escritorio (XFCE y Thunar)
+
+En Linux con XFCE puedes hacer que Dotrino Terminal sea **tu terminal de siempre**:
+
+1. Abre **Configuración → Aplicaciones preferidas → Utilidades**.
+2. En **Emulador de terminal**, elige **Dotrino Terminal**.
+
+Desde ese momento, **«Abrir terminal aquí»** en Thunar abre una ventana de Dotrino Terminal
+**en esa carpeta**, con tu perfil. Lo mismo cualquier programa que pida «abrir en una
+terminal».
+
+Una ventana abre siempre en la carpeta desde la que se lanzó. Si esa carpeta ya no existe, la
+ventana lo dice en vez de abrir en otra.
 
 ## Las ventanas
 
@@ -116,7 +132,7 @@ En `terminal.dotrino.com` esas consolas salen como «ventana abierta en la máqu
 Lo mismo sin la app, desde cualquier terminal:
 
 ```
-dotrino-terminal                      # abre una consola en esta ventana
+dotrino-terminal                      # abre una consola en esta ventana, en la carpeta actual
 dotrino-terminal --name trabajo       # en el perfil «trabajo»
 dotrino-terminal ls                   # las consolas abiertas
 dotrino-terminal attach <id>          # volver a una

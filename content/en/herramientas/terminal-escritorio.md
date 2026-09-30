@@ -23,15 +23,16 @@ The app on its own is already a plain terminal. The console program is only need
 **profiles**, which is what lets you open your windows from other devices.
 
 **1. The console program** (for profiles). It needs Node 20 or newer. The easiest way is from
-the app itself: **Profile → Install dotrino-terminal…**. You watch the install in the window
-and, when it finishes, the window switches to your profile. Or by hand:
+the app itself: **Profile → Install dotrino-terminal…** types the command into your console;
+check it and press **Enter**. When it finishes, the profiles and "Enroll…" light up in the menu
+by themselves. Or by hand:
 
 ```
 npm install -g @dotrino/terminal-agent
 ```
 
 Once installed, the same option is called **Update dotrino-terminal…** and brings the newest
-version.
+version. An agent that was already running keeps the old version until it restarts.
 
 **2. The app.** Download it from the
 [releases page](https://github.com/imdotrino/dotrino-terminal/releases/latest):
@@ -44,6 +45,20 @@ version.
 
 On macOS the app is not signed by Apple yet, so the first time the system won't open it with
 a double click. Open it with **right click → Open** and confirm. You only do this once.
+
+## As your desktop's terminal (XFCE and Thunar)
+
+On Linux with XFCE you can make Dotrino Terminal **your everyday terminal**:
+
+1. Open **Settings → Preferred Applications → Utilities**.
+2. Under **Terminal Emulator**, pick **Dotrino Terminal**.
+
+From then on, **"Open Terminal Here"** in Thunar opens a Dotrino Terminal window **in that
+folder**, with your profile. The same goes for any program that asks to "open in a
+terminal".
+
+A window always opens in the folder it was launched from. If that folder no longer exists, the
+window says so instead of opening somewhere else.
 
 ## Windows
 
@@ -116,7 +131,7 @@ On `terminal.dotrino.com` those consoles show up as "window open on the machine"
 The same without the app, from any terminal:
 
 ```
-dotrino-terminal                      # open a console in this window
+dotrino-terminal                      # open a console in this window, in the current folder
 dotrino-terminal --name work          # in the "work" profile
 dotrino-terminal ls                   # open consoles
 dotrino-terminal attach <id>          # go back to one
