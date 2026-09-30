@@ -52,6 +52,38 @@ este aparato o desde otro. Las ves tal como estaban.
 Para cerrar una consola de verdad, pulsa la **×** de su pestaña. Si el agente se reinicia,
 las consolas se pierden.
 
+## Las ventanas de tu computadora
+
+Dotrino Terminal también es la terminal de la propia computadora (Linux y macOS). Cada
+ventana que abres ahí es una consola que puedes **retomar desde el teléfono**, y al revés.
+
+Hay dos formas de abrir ventanas:
+
+- **La app de escritorio**: se baja de
+  [la página de versiones](https://github.com/imdotrino/dotrino-terminal/releases) (en Linux
+  el `.deb` o el `.tar.gz`; en macOS el `.zip`). Necesita el cliente instalado:
+
+```
+npm install -g @dotrino/terminal-agent
+```
+
+- **Dentro de la terminal que ya usas**: escribe `dotrino-terminal` y esa ventana pasa a ser
+  una consola de Dotrino.
+
+En la app, el menú **Perfil** lista los perfiles de la computadora (cada uno enlazado a una
+cuenta, o solo local). **Elegir otro cierra la consola de esa ventana y abre una nueva** en
+el otro perfil, como cerrar una terminal y abrir otra. **Enrolar…** enlaza un perfil nuevo
+ahí mismo: pide el nombre y la invitación de `dotrino-vault pair`, y enseña el código que
+hay que aprobar. Archivo → Nueva ventana (Ctrl+Shift+N) abre otra con el mismo perfil.
+
+Cerrar una ventana cierra su consola, como en cualquier terminal. Para dejarla viva y
+retomarla después, pulsa **Ctrl+]** y luego **d**. Con `dotrino-terminal ls` ves las
+consolas abiertas y con `dotrino-terminal attach <id>` vuelves a una.
+
+Si alguien entra desde otro aparato en una ventana de la computadora, la ventana suena y lo
+dice en su título. En `terminal.dotrino.com` esas consolas salen como «ventana abierta en la
+máquina».
+
 ## Más de un agente en la misma computadora
 
 Cada agente tiene un **nombre** y su propio enlace. Si no le das ninguno se llama
