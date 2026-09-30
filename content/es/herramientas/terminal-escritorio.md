@@ -61,9 +61,12 @@ luego **d**: la ventana se cierra y la consola sigue viva.
 
 ## Perfiles
 
+**Cada ventana abre en un perfil**: el último que elegiste en el menú; si no, `default`; si no,
+el primero enlazado. Una ventana nueva usa el perfil de la ventana desde la que la abriste.
+
 **Sin perfil, la ventana es una terminal más**: tu shell de siempre, sin nada de Dotrino y sin
-que nadie la vea desde fuera. Es como abre la app si no tienes ningún perfil enlazado, o si
-tienes varios (no adivina cuál quieres). Con uno solo enlazado, abre en ese.
+que nadie la vea desde fuera. Es lo que pasa cuando no tienes ningún perfil, o cuando falta el
+programa de las consolas. El título de la ventana termina en «— sin perfil», para que se note.
 
 Un perfil es una identidad de esta computadora para Dotrino Terminal. Cada uno puede estar
 **enlazado a una cuenta** (a su bóveda) o ser **solo de esta computadora**:

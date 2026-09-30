@@ -61,10 +61,13 @@ and the console stays alive.
 
 ## Profiles
 
+**Every window opens in a profile**: the last one you picked in the menu; otherwise
+`default`; otherwise the first linked one. A new window uses the profile of the window you
+opened it from.
+
 **With no profile, the window is just another terminal**: your usual shell, nothing Dotrino
-about it, and nobody sees it from outside. That is how the app opens if you have no linked
-profile, or several (it doesn't guess which one you want). With exactly one linked, it opens
-in that one.
+about it, and nobody sees it from outside. That happens when you have no profile at all, or
+when the console program is missing. The window title ends in "— no profile" so you can tell.
 
 A profile is an identity of this computer for Dotrino Terminal. Each one is either **linked
 to an account** (to its vault) or **this computer only**:
