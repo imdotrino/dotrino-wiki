@@ -19,9 +19,10 @@ Two ways to use it:
 
 ## Install
 
-You need two things: the app and the program that runs the consoles.
+The app on its own is already a plain terminal. The console program is only needed for
+**profiles**, which is what lets you open your windows from other devices.
 
-**1. The console program.** It needs Node 20 or newer:
+**1. The console program** (for profiles). It needs Node 20 or newer:
 
 ```
 npm install -g @dotrino/terminal-agent
@@ -49,7 +50,7 @@ Open the app and you get a window with a console. The menu is at the top:
 | File | Close window | Ctrl+Shift+W | ⌘W |
 | Edit | Copy | Ctrl+Shift+C | ⌘C |
 | Edit | Paste | Ctrl+Shift+V | ⌘V |
-| Profile | the list of profiles · Enroll… | | |
+| Profile | No profile · the list of profiles · Enroll… | | |
 | Help | How to use it (this page) | | |
 
 A new window uses the same profile as the window you opened it from.
@@ -60,6 +61,11 @@ and the console stays alive.
 
 ## Profiles
 
+**With no profile, the window is just another terminal**: your usual shell, nothing Dotrino
+about it, and nobody sees it from outside. That is how the app opens if you have no linked
+profile, or several (it doesn't guess which one you want). With exactly one linked, it opens
+in that one.
+
 A profile is an identity of this computer for Dotrino Terminal. Each one is either **linked
 to an account** (to its vault) or **this computer only**:
 
@@ -69,7 +75,8 @@ to an account** (to its vault) or **this computer only**:
 - **This computer only**: it works the same, but nobody gets in from outside.
 
 You can have several: one for your personal account, another for work. **Switching profile
-from the menu closes that window's console and opens a new one in the other profile**, like
+from the menu (to "No profile" too) closes that window's console and opens a new one in the
+other**, like
 closing a terminal and opening another. Whatever was running in the previous console ends; to
 keep it, detach it first with Ctrl+] d.
 
@@ -114,8 +121,9 @@ If the console program is not running, `dotrino-terminal` starts it by itself.
 
 ## If something doesn't work
 
-- **"Can't find dotrino-terminal"** when opening the app: step 1 of [Install](#install) is
-  missing. Install it and open the window again.
+- **"Enroll…" greyed out and the note "To use profiles, install dotrino-terminal"** in the
+  Profile menu: step 1 of [Install](#install) is missing. Install it and open a new window.
+  Without it the app works anyway, with no profile.
 - **"An agent is running that does not accept windows"**: a version older than 0.6.0 is
   running (for example as a service). Stop it and start the new one:
   `npx @dotrino/terminal-agent@latest`.

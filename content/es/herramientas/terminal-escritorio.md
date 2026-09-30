@@ -19,9 +19,10 @@ Hay dos formas de usarla:
 
 ## Instalar
 
-Hacen falta dos cosas: la app y el programa que abre las consolas.
+La app sola ya es una terminal normal. El programa de las consolas solo hace falta para usar
+**perfiles**, que es lo que deja abrir tus ventanas desde otros aparatos.
 
-**1. El programa de las consolas.** Necesita Node 20 o más reciente:
+**1. El programa de las consolas** (para los perfiles). Necesita Node 20 o más reciente:
 
 ```
 npm install -g @dotrino/terminal-agent
@@ -49,7 +50,7 @@ Abre la app y tienes una ventana con una consola. Arriba está el menú:
 | Archivo | Cerrar ventana | Ctrl+Shift+W | ⌘W |
 | Editar | Copiar | Ctrl+Shift+C | ⌘C |
 | Editar | Pegar | Ctrl+Shift+V | ⌘V |
-| Perfil | la lista de perfiles · Enrolar… | | |
+| Perfil | Sin perfil · la lista de perfiles · Enrolar… | | |
 | Ayuda | Cómo se usa (esta página) | | |
 
 Una ventana nueva usa el mismo perfil que la ventana desde la que la abriste.
@@ -60,6 +61,10 @@ luego **d**: la ventana se cierra y la consola sigue viva.
 
 ## Perfiles
 
+**Sin perfil, la ventana es una terminal más**: tu shell de siempre, sin nada de Dotrino y sin
+que nadie la vea desde fuera. Es como abre la app si no tienes ningún perfil enlazado, o si
+tienes varios (no adivina cuál quieres). Con uno solo enlazado, abre en ese.
+
 Un perfil es una identidad de esta computadora para Dotrino Terminal. Cada uno puede estar
 **enlazado a una cuenta** (a su bóveda) o ser **solo de esta computadora**:
 
@@ -69,7 +74,8 @@ Un perfil es una identidad de esta computadora para Dotrino Terminal. Cada uno p
 - **Solo de esta computadora**: funciona igual, pero nadie entra desde fuera.
 
 Puedes tener varios: uno para tu cuenta personal, otro para la del trabajo. **Cambiar de
-perfil desde el menú cierra la consola de esa ventana y abre una nueva en el otro perfil**,
+perfil desde el menú (también a «Sin perfil») cierra la consola de esa ventana y abre una
+nueva en el otro**,
 como cerrar una terminal y abrir otra. Lo que tenías en la consola anterior se termina; si
 quieres conservarlo, suéltala antes con Ctrl+] d.
 
@@ -115,8 +121,9 @@ Si el programa de las consolas no está corriendo, `dotrino-terminal` lo arranca
 
 ## Si algo no funciona
 
-- **«No encuentro dotrino-terminal»** al abrir la app: falta el paso 1 de
-  [Instalar](#instalar). Instálalo y vuelve a abrir la ventana.
+- **«Enrolar…» en gris y la nota «Para usar perfiles, instala dotrino-terminal»** en el menú
+  Perfil: falta el paso 1 de [Instalar](#instalar). Instálalo y abre una ventana nueva. Sin él
+  la app funciona igual, sin perfil.
 - **«Hay un agente corriendo que no acepta ventanas»**: tienes corriendo una versión anterior
   a la 0.6.0 (por ejemplo, como servicio). Detenla y vuelve a arrancarla con la nueva:
   `npx @dotrino/terminal-agent@latest`.
