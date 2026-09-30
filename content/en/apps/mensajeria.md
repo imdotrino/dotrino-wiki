@@ -37,11 +37,34 @@ What sets it apart from Chat:
 
 - **You receive even while offline.** If someone writes with the app closed, the
   message waits encrypted for up to 24 hours and arrives when you come back.
-- **Alerts.** It can notify you on your phone when something arrives.
+- **Alerts with a trill.** It notifies you on your phone when something arrives,
+  with one of seven bird trills at random. It also sounds with the app open. The
+  alert doesn't say what was written or by whom: only that you have new messages.
 - **It installs** like any app ([how](/en/empezar/instalar-apps/)).
 
 To write to someone you need their identity: add it from
 [your profile](/en/empezar/identidad/) or by scanning their code.
+
+- **Also as an Android app** (beta), with the same profile and contacts as on the
+  web. Install [Dotrino Identity](https://play.google.com/apps/internaltest/4699800053552003281) first, which keeps your keys on the phone,
+  and then [Messenger for Android](https://play.google.com/apps/internaltest/4701700199204289743). The iPhone one comes later.
+
+### Adding someone
+
+Nobody writes to you unless you accept it:
+
+1. Tap **Add contact**. There you see **My code**, a short six-letter code with its
+   QR. It also opens when you tap your code in the top bar.
+2. The other person types your code or scans your QR. You get a **request**, not a
+   message.
+3. If you accept, you become contacts and can write to each other. If not, nothing
+   happens: a message from someone who is not your contact reaches no chat.
+
+### Your history, safe in your vault
+
+If your phone is connected to [your vault](/en/vault/emparejar/), your conversations
+are kept encrypted there. What you write on the phone shows up on the web and the
+other way round, and you don't lose it if you change devices.
 
 ## Which one
 

@@ -6,7 +6,8 @@ description: A device flagged with +approval only receives private keys when you
 # Phone approval
 
 Releasing private keys to a device can require the **go-ahead of another device**:
-your phone, with the Dotrino app. It is a property **of the device, not of the
+your phone, with the Dotrino app (Android, beta: install
+[Dotrino Identity](https://play.google.com/apps/internaltest/4699800053552003281) and then [Dotrino](https://play.google.com/apps/internaltest/4701203131776122603)). It is a property **of the device, not of the
 drawer** — the unattended server doesn't ask; the PC you work on does.
 
 By default **nobody asks**. It is set at enrollment, or later like any permission:
@@ -24,7 +25,10 @@ npx -y @dotrino/env run --ns claude -- node my-script.js
 # [dotrino-env] waiting for approval on your phone…
 ```
 
-The vault records the request and **rings your phone** (native notification). At
+The vault records the request and **rings your phone** (native notification, with a
+bird trill; on Android and iPhone). The alert carries nothing of the request: only
+that there is one. If **Requests** is already open in the app, the request shows up
+in the list and the trill plays right there. At
 [vault.dotrino.com/approvals](https://vault.dotrino.com/approvals) you see *who* asks
 for *which drawer*, **what command is running and from which folder**, and decide:
 **Approve** delivers the keys — to the asking process, in memory only — and **Deny**

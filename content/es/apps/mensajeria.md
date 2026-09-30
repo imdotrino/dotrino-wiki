@@ -37,11 +37,31 @@ Lo que lo distingue del chat:
 
 - **Recibes aunque estés desconectado.** Si te escriben con la app cerrada, el
   mensaje espera cifrado hasta 24 horas y te llega al volver.
-- **Avisos.** Puede avisarte con una notificación del teléfono cuando llega algo.
+- **Avisos con un trino.** Te avisa en el teléfono cuando llega algo, con uno de
+  siete trinos al azar. También suena con la app abierta. El aviso no dice qué te
+  escribieron ni quién: solo que tienes mensajes nuevos.
 - **Se instala** como cualquier app ([cómo](/empezar/instalar-apps/)).
+- **También como app para Android** (beta), con tu mismo perfil y tus mismos
+  contactos que en la web. Instala primero
+  [Identidad Dotrino](https://play.google.com/apps/internaltest/4699800053552003281), que guarda tus llaves en el teléfono, y después
+  [Messenger para Android](https://play.google.com/apps/internaltest/4701700199204289743). La de iPhone viene después.
 
-Para escribirle a alguien necesitas su identidad: la agregas desde
-[tu perfil](/empezar/identidad/) o escaneando su código.
+### Agregar a alguien
+
+Nadie te escribe sin que tú lo aceptes:
+
+1. Pulsa **Añadir contacto**. Ahí ves **Mi código**, un código corto de seis
+   letras con su QR. También se abre al tocar tu código en la barra de arriba.
+2. La otra persona escribe tu código o escanea tu QR. A ti te llega una
+   **solicitud**, no un mensaje.
+3. Si la aceptas, quedan como contactos y ya pueden escribirse. Si no, no pasa nada:
+   el mensaje de alguien que no es tu contacto no llega a ningún chat.
+
+### Tu historial, a salvo en tu bóveda
+
+Si tu teléfono está conectado a [tu bóveda](/vault/emparejar/), tus conversaciones se
+guardan cifradas en ella. Así lo que escribes en el teléfono aparece en la web y al
+revés, y no lo pierdes si cambias de aparato.
 
 ## Cuál uso
 

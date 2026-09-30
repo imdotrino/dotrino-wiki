@@ -6,7 +6,8 @@ description: Un aparato marcado con +permiso solo recibe claves privadas cuando 
 # Aprobación desde el teléfono
 
 Liberar claves privadas a un aparato puede exigir el **visto bueno de otro aparato**:
-tu teléfono, con la app de Dotrino. Es una propiedad **del aparato, no del cajón** —
+tu teléfono, con la app de Dotrino (Android, beta: instala
+[Identidad Dotrino](https://play.google.com/apps/internaltest/4699800053552003281) y después [Dotrino](https://play.google.com/apps/internaltest/4701203131776122603)). Es una propiedad **del aparato, no del cajón** —
 el servidor desatendido no pide; la PC en la que trabajas, sí.
 
 Por defecto **nadie pide**. Se fija al enrolar, o después como un permiso más:
@@ -24,7 +25,10 @@ npx -y @dotrino/env run --ns claude -- node mi-script.js
 # [dotrino-env] waiting for approval on your phone…
 ```
 
-La bóveda apunta el pedido y **timbra tu teléfono** (aviso nativo). En
+La bóveda apunta el pedido y **timbra tu teléfono** (aviso nativo, con un trino; en
+Android y en iPhone). El aviso no lleva nada del pedido: solo que hay uno. Si ya
+tienes **Pedidos** abierto en la app, el pedido aparece en la lista y suena el trino
+ahí mismo. En
 [vault.dotrino.com/approvals](https://vault.dotrino.com/approvals) ves *quién* pide
 *qué cajón*, **qué comando está ejecutando y desde qué carpeta**, y decides:
 **Aprobar** entrega las claves —al proceso que pidió, solo en memoria— y **Denegar**
