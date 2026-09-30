@@ -22,11 +22,16 @@ Hay dos formas de usarla:
 La app sola ya es una terminal normal. El programa de las consolas solo hace falta para usar
 **perfiles**, que es lo que deja abrir tus ventanas desde otros aparatos.
 
-**1. El programa de las consolas** (para los perfiles). Necesita Node 20 o más reciente:
+**1. El programa de las consolas** (para los perfiles). Necesita Node 20 o más reciente. Lo
+más fácil es desde la propia app: **Perfil → Instalar dotrino-terminal…**. La instalación se
+ve en la ventana y, al terminar, la ventana pasa a tu perfil. O a mano:
 
 ```
 npm install -g @dotrino/terminal-agent
 ```
+
+Cuando ya está instalado, la misma opción se llama **Actualizar dotrino-terminal…** y trae la
+versión más nueva.
 
 **2. La app.** Bájala de la
 [página de versiones](https://github.com/imdotrino/dotrino-terminal/releases/latest):
@@ -50,7 +55,7 @@ Abre la app y tienes una ventana con una consola. Arriba está el menú:
 | Archivo | Cerrar ventana | Ctrl+Shift+W | ⌘W |
 | Editar | Copiar | Ctrl+Shift+C | ⌘C |
 | Editar | Pegar | Ctrl+Shift+V | ⌘V |
-| Perfil | Sin perfil · la lista de perfiles · Enrolar… | | |
+| Perfil | Sin perfil · la lista de perfiles · Enrolar… · Instalar/Actualizar dotrino-terminal… | | |
 | Ayuda | Cómo se usa (esta página) | | |
 
 Una ventana nueva usa el mismo perfil que la ventana desde la que la abriste.
@@ -125,8 +130,12 @@ Si el programa de las consolas no está corriendo, `dotrino-terminal` lo arranca
 ## Si algo no funciona
 
 - **«Enrolar…» en gris y la nota «Para usar perfiles, instala dotrino-terminal»** en el menú
-  Perfil: falta el paso 1 de [Instalar](#instalar). Instálalo y abre una ventana nueva. Sin él
-  la app funciona igual, sin perfil.
+  Perfil: falta el paso 1 de [Instalar](#instalar). Usa **Perfil → Instalar dotrino-terminal…**.
+  Sin él la app funciona igual, sin perfil.
+- **La instalación dice EACCES**: tu npm instala en una carpeta del sistema. Usa
+  [nvm](https://github.com/nvm-sh/nvm), o instálalo con `sudo` desde otra terminal.
+- **«No encuentro npm»**: falta Node. Instala Node 20 o más reciente desde
+  [nodejs.org](https://nodejs.org).
 - **«Hay un agente corriendo que no acepta ventanas»**: tienes corriendo una versión anterior
   a la 0.6.0 (por ejemplo, como servicio). Detenla y vuelve a arrancarla con la nueva:
   `npx @dotrino/terminal-agent@latest`.

@@ -22,11 +22,16 @@ Two ways to use it:
 The app on its own is already a plain terminal. The console program is only needed for
 **profiles**, which is what lets you open your windows from other devices.
 
-**1. The console program** (for profiles). It needs Node 20 or newer:
+**1. The console program** (for profiles). It needs Node 20 or newer. The easiest way is from
+the app itself: **Profile → Install dotrino-terminal…**. You watch the install in the window
+and, when it finishes, the window switches to your profile. Or by hand:
 
 ```
 npm install -g @dotrino/terminal-agent
 ```
+
+Once installed, the same option is called **Update dotrino-terminal…** and brings the newest
+version.
 
 **2. The app.** Download it from the
 [releases page](https://github.com/imdotrino/dotrino-terminal/releases/latest):
@@ -50,7 +55,7 @@ Open the app and you get a window with a console. The menu is at the top:
 | File | Close window | Ctrl+Shift+W | ⌘W |
 | Edit | Copy | Ctrl+Shift+C | ⌘C |
 | Edit | Paste | Ctrl+Shift+V | ⌘V |
-| Profile | No profile · the list of profiles · Enroll… | | |
+| Profile | No profile · the list of profiles · Enroll… · Install/Update dotrino-terminal… | | |
 | Help | How to use it (this page) | | |
 
 A new window uses the same profile as the window you opened it from.
@@ -125,8 +130,12 @@ If the console program is not running, `dotrino-terminal` starts it by itself.
 ## If something doesn't work
 
 - **"Enroll…" greyed out and the note "To use profiles, install dotrino-terminal"** in the
-  Profile menu: step 1 of [Install](#install) is missing. Install it and open a new window.
-  Without it the app works anyway, with no profile.
+  Profile menu: step 1 of [Install](#install) is missing. Use **Profile → Install
+  dotrino-terminal…**. Without it the app works anyway, with no profile.
+- **The install says EACCES**: your npm installs into a system folder. Use
+  [nvm](https://github.com/nvm-sh/nvm), or install it with `sudo` from another terminal.
+- **"Can't find npm"**: Node is missing. Install Node 20 or newer from
+  [nodejs.org](https://nodejs.org).
 - **"An agent is running that does not accept windows"**: a version older than 0.6.0 is
   running (for example as a service). Stop it and start the new one:
   `npx @dotrino/terminal-agent@latest`.
