@@ -352,6 +352,13 @@
           }
         },
         {
+          "slug": "terminal-escritorio",
+          "title": {
+            "es": "Terminal en tu computadora",
+            "en": "Terminal on your computer"
+          }
+        },
+        {
           "slug": "ia",
           "title": {
             "es": "Asistentes de IA en tu máquina",

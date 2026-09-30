@@ -35,7 +35,7 @@ npx @dotrino/terminal-agent
 
 ## Getting in
 
-Open `terminal.dotrino.com` on the other device. Your computers with the agent
+Open [`terminal.dotrino.com/consoles`](https://terminal.dotrino.com/consoles) on the other device. Your computers with the agent
 **running** show up in the list on their own, with the name you gave them when you
 approved them: pick one and you are in.
 
@@ -54,35 +54,10 @@ are lost.
 
 ## Your computer's windows
 
-Dotrino Terminal is also the terminal of the computer itself (Linux and macOS). Every window
-you open there is a console you can **pick up from your phone**, and the other way round.
-
-Two ways to open windows:
-
-- **The desktop app**: download it from
-  [the releases page](https://github.com/imdotrino/dotrino-terminal/releases) (on Linux the
-  `.deb` or the `.tar.gz`; on macOS the `.zip`). It needs the client installed:
-
-```
-npm install -g @dotrino/terminal-agent
-```
-
-- **Inside the terminal you already use**: type `dotrino-terminal` and that window becomes a
-  Dotrino console.
-
-In the app, the **Profile** menu lists the computer's profiles (each linked to an account, or
-local only). **Picking another one closes that window's console and opens a new one** in the
-other profile, like closing a terminal and opening another. **Enroll…** links a new profile
-right there: it asks for a name and the invitation from `dotrino-vault pair`, and shows the
-code to approve. File → New window (Ctrl+Shift+N) opens another one with the same profile.
-
-Closing a window closes its console, like any terminal. To keep it alive and come back
-later, press **Ctrl+]** then **d**. `dotrino-terminal ls` lists open consoles and
-`dotrino-terminal attach <id>` takes you back to one.
-
-If someone enters one of the computer's windows from another device, the window rings and
-says so in its title. On `terminal.dotrino.com` those consoles show up as "window open on
-the machine".
+Dotrino Terminal is also the terminal of the computer itself (Linux and macOS): every window
+you open there can be picked up from here. How to install the app, profiles and how to enroll
+one: [Terminal on your computer](/en/herramientas/terminal-escritorio/). In the list, those
+consoles show up as "window open on the machine".
 
 ## More than one agent on the same computer
 
