@@ -71,10 +71,14 @@ Abre la app y tienes una ventana con una consola. Arriba está el menú:
 | Archivo | Cerrar ventana | Ctrl+Shift+W | ⌘W |
 | Editar | Copiar | Ctrl+Shift+C | ⌘C |
 | Editar | Pegar | Ctrl+Shift+V | ⌘V |
-| Perfil | Sin perfil · la lista de perfiles · Enrolar… · Instalar/Actualizar dotrino-terminal… | | |
+| Perfil | Sin perfil · la lista de perfiles · Renombrar · Enrolar… · Instalar/Actualizar dotrino-terminal… | | |
 | Ayuda | Cómo se usa (esta página) | | |
 
 Una ventana nueva usa el mismo perfil que la ventana desde la que la abriste.
+
+**Clic derecho** sobre la terminal: **Copiar** lo seleccionado y **Pegar**. Lo pegado queda en el
+prompt y no se ejecuta hasta que pulses Enter, aunque traiga varias líneas (bash lo marca
+resaltado hasta la siguiente tecla).
 
 **Cerrar una ventana cierra su consola**, como en cualquier terminal. Si quieres dejarla
 corriendo y volver después (desde esta computadora o desde otro aparato), pulsa **Ctrl+]** y
@@ -102,6 +106,16 @@ perfil desde el menú (también a «Sin perfil») cierra la consola de esa venta
 nueva en el otro**,
 como cerrar una terminal y abrir otra. Lo que tenías en la consola anterior se termina; si
 quieres conservarlo, suéltala antes con Ctrl+] d.
+
+### Cambiarle el nombre a un perfil
+
+El nombre de un perfil es solo tuyo, de esta computadora: no lo ve tu cuenta. Para cambiarlo,
+**Perfil → Renombrar «…»…** escribe en tu consola `dotrino-terminal rename <perfil> `;
+completa el nombre nuevo y pulsa **Enter**. La ventana sigue, ya en el perfil con su nombre
+nuevo. Es el mismo aparato: no hace falta volver a enrolar.
+
+Renombrarlo reinicia el programa de ese perfil, así que **se cierran sus consolas abiertas**.
+Si hay otras además de la tuya, te pregunta antes.
 
 ## Enrolar un perfil
 
@@ -139,6 +153,7 @@ dotrino-terminal attach <id>          # volver a una
 dotrino-terminal kill <id>            # cerrar una
 dotrino-terminal profiles             # los perfiles de esta computadora
 dotrino-terminal link                 # enrolar un perfil
+dotrino-terminal rename <perfil> <nuevo>   # cambiarle el nombre
 ```
 
 Si el programa de las consolas no está corriendo, `dotrino-terminal` lo arranca solo.

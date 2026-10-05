@@ -70,10 +70,14 @@ Open the app and you get a window with a console. The menu is at the top:
 | File | Close window | Ctrl+Shift+W | ⌘W |
 | Edit | Copy | Ctrl+Shift+C | ⌘C |
 | Edit | Paste | Ctrl+Shift+V | ⌘V |
-| Profile | No profile · the list of profiles · Enroll… · Install/Update dotrino-terminal… | | |
+| Profile | No profile · the list of profiles · Rename · Enroll… · Install/Update dotrino-terminal… | | |
 | Help | How to use it (this page) | | |
 
 A new window uses the same profile as the window you opened it from.
+
+**Right click** on the terminal: **Copy** the selection and **Paste**. Pasted text stays at the
+prompt and doesn't run until you press Enter, even with several lines (bash highlights it until
+the next key).
 
 **Closing a window closes its console**, like any terminal. To keep it running and come back
 later (from this computer or another device), press **Ctrl+]** then **d**: the window closes
@@ -102,6 +106,16 @@ from the menu (to "No profile" too) closes that window's console and opens a new
 other**, like
 closing a terminal and opening another. Whatever was running in the previous console ends; to
 keep it, detach it first with Ctrl+] d.
+
+### Renaming a profile
+
+A profile's name is yours alone, on this computer: your account doesn't see it. To change it,
+**Profile → Rename "…"…** types `dotrino-terminal rename <profile> ` into your console; finish
+it with the new name and press **Enter**. The window carries on, now in the renamed profile.
+It is the same device: no need to enroll again.
+
+Renaming restarts that profile's program, so **its open consoles close**. If there are others
+besides yours, it asks first.
 
 ## Enroll a profile
 
@@ -138,6 +152,7 @@ dotrino-terminal attach <id>          # go back to one
 dotrino-terminal kill <id>            # close one
 dotrino-terminal profiles             # this computer's profiles
 dotrino-terminal link                 # enroll a profile
+dotrino-terminal rename <profile> <new>    # rename it
 ```
 
 If the console program is not running, `dotrino-terminal` starts it by itself.
