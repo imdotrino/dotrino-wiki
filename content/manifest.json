@@ -173,6 +173,13 @@
           }
         },
         {
+          "slug": "llave-de-seguridad",
+          "title": {
+            "es": "Abrir con una llave de seguridad (YubiKey)",
+            "en": "Opening with a security key (YubiKey)"
+          }
+        },
+        {
           "slug": "emparejar",
           "title": {
             "es": "Emparejar un aparato",

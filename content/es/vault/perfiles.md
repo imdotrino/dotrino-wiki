@@ -45,9 +45,10 @@ plazo se cuenta desde lo último que hiciste en la consola, así que mientras tr
 te echa; lo que piden tus dispositivos por el proxy no cuenta como uso y siguen
 funcionando igual. La TUI, además, olvida la contraseña en ese momento.
 
-La contraseña no se guarda (solo un verificador con sal, scrypt), pide un mínimo de 12
+La contraseña no se guarda (solo un sobre cifrado con lo que sale de ella por scrypt), pide un mínimo de 12
 caracteres —varias palabras al azar— y tras 5 intentos fallidos cada intento nuevo
-espera cada vez más.
+espera cada vez más. En vez de la contraseña, o además de ella, el perfil puede
+abrirse con una [llave de seguridad](/vault/llave-de-seguridad/).
 
 **Qué protege y qué no, dicho sin adornos:** protege la consola — que otro que se
 siente en tu máquina vea o toque esa bóveda. **No** cifra la llave en el disco (de eso

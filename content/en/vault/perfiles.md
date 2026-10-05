@@ -45,8 +45,10 @@ The countdown runs from the last thing you did in the console, so it never kicks
 mid-task; what your devices ask for through the proxy does not count as use, and they
 keep working all the same. The TUI also forgets the password at that point.
 
-The password is never stored (only a salted verifier, scrypt), asks for at least 12
+The password is never stored (only an envelope encrypted with what scrypt derives from it), asks for at least 12
 characters —several random words— and after 5 failures each new attempt waits longer.
+Instead of the password, or together with it, the profile can open with a
+[security key](/en/vault/llave-de-seguridad/).
 
 **What it protects, plainly:** the console — someone sitting at your machine seeing
 or touching that vault. It does **not** encrypt the key on disk (that's

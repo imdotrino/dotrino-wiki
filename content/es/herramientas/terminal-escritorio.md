@@ -23,9 +23,9 @@ La app sola ya es una terminal normal. El programa de las consolas solo hace fal
 **perfiles**, que es lo que deja abrir tus ventanas desde otros aparatos.
 
 **1. El programa de las consolas** (para los perfiles). Necesita Node 20 o más reciente. Lo
-más fácil es desde la propia app: **Perfil → Instalar dotrino-terminal…** escribe la orden en
-tu consola; revísala y pulsa **Enter**. Cuando termina, los perfiles y «Enrolar…» se activan
-solos en el menú. O a mano:
+más fácil es desde la propia app: **Perfil → Instalar dotrino-terminal…** abre una ventana
+aparte que lo instala en el acto; el resultado se queda a la vista hasta que pulses Enter. Cuando
+termina, los perfiles, «Enrolar…» y el panel de consolas se activan solos. O a mano:
 
 ```
 npm install -g @dotrino/terminal-agent
@@ -94,6 +94,8 @@ de cada una dice dónde está abierta, o si está suelta.
 - **Clic derecho sobre una consola** del panel (también colapsado): **Abrir aquí**, **Abrir en
   otra ventana** y **Cerrar consola**.
 - **Ver → Panel de consolas** (Ctrl+Shift+B) lo esconde o lo muestra.
+- Con un `dotrino-terminal` anterior a la 0.11 el panel sale deshabilitado y lo dice: actualízalo
+  desde **Perfil → Actualizar dotrino-terminal…**.
 
 A la derecha, cuando hay historial, una **barra de desplazamiento** enseña dónde estás; se puede
 arrastrar, y la rueda del ratón sube y baja de tres en tres líneas.

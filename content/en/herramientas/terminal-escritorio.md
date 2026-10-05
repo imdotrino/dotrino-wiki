@@ -23,9 +23,9 @@ The app on its own is already a plain terminal. The console program is only need
 **profiles**, which is what lets you open your windows from other devices.
 
 **1. The console program** (for profiles). It needs Node 20 or newer. The easiest way is from
-the app itself: **Profile → Install dotrino-terminal…** types the command into your console;
-check it and press **Enter**. When it finishes, the profiles and "Enroll…" light up in the menu
-by themselves. Or by hand:
+the app itself: **Profile → Install dotrino-terminal…** opens a separate window that installs it
+right away; the result stays on screen until you press Enter. When it finishes, the profiles,
+"Enroll…" and the consoles panel light up by themselves. Or by hand:
 
 ```
 npm install -g @dotrino/terminal-agent
@@ -93,6 +93,8 @@ each one it says where it is open, or that it is detached.
 - **Right click on a console** in the panel (collapsed too): **Open here**, **Open in another
   window** and **Close console**.
 - **View → Consoles panel** (Ctrl+Shift+B) hides or shows it.
+- With a `dotrino-terminal` older than 0.11 the panel is disabled and says so: update it from
+  **Profile → Update dotrino-terminal…**.
 
 On the right, when there is history, a **scrollbar** shows where you are; you can drag it, and
 the mouse wheel scrolls three lines at a time.
