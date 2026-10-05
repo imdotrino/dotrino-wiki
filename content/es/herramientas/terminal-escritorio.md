@@ -68,6 +68,7 @@ Abre la app y tienes una ventana con una consola. Arriba está el menú:
 | Menú | Opción | Atajo (Linux) | Atajo (macOS) |
 |---|---|---|---|
 | Archivo | Nueva ventana | Ctrl+Shift+N | ⌘N |
+| Archivo | Nueva ventana con consola nueva | Ctrl+Shift+T | ⌘T |
 | Archivo | Cerrar ventana | Ctrl+Shift+W | ⌘W |
 | Editar | Copiar | Ctrl+Shift+C | ⌘C |
 | Editar | Pegar | Ctrl+Shift+V | ⌘V |
@@ -75,7 +76,15 @@ Abre la app y tienes una ventana con una consola. Arriba está el menú:
 | Perfil | Sin perfil · la lista de perfiles · Renombrar · Enrolar… · Instalar/Actualizar dotrino-terminal… | | |
 | Ayuda | Cómo se usa (esta página) | | |
 
-Una ventana nueva usa el mismo perfil que la ventana desde la que la abriste.
+Una ventana nueva usa el mismo perfil que la ventana desde la que la abriste y **se engancha a una
+consola que no esté abierta en ninguna ventana**, si la hay; si no, abre una nueva. Igual al
+abrir la app. Para una consola nueva siempre: **Archivo → Nueva ventana con consola nueva**
+(Ctrl+Shift+T).
+
+**Al cerrar la última ventana se cierran las consolas que usaron las ventanas**, salvo las que
+dejaste **en segundo plano** (clic derecho sobre la consola en el panel → *Dejar en segundo
+plano*), las que esté mirando otro aparato y las que no se abrieron desde esta computadora. Las de
+segundo plano siguen vivas y la próxima vez que abras la app las encuentras ahí.
 
 ### El panel de consolas
 
@@ -92,7 +101,7 @@ de cada una dice dónde está abierta, o si está suelta.
 - **+** abre una consola nueva en la ventana; **×** cierra esa consola (si era la de la ventana,
   la ventana pasa a otra).
 - **Clic derecho sobre una consola** del panel (también colapsado): **Abrir aquí**, **Abrir en
-  otra ventana** y **Cerrar consola**.
+  otra ventana**, **Dejar en segundo plano** (o quitarla de ahí) y **Cerrar consola**.
 - **Ver → Panel de consolas** (Ctrl+Shift+B) lo esconde o lo muestra.
 - Con un `dotrino-terminal` anterior a la 0.11 el panel sale deshabilitado y lo dice: actualízalo
   desde **Perfil → Actualizar dotrino-terminal…**.

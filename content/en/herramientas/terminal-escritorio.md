@@ -67,6 +67,7 @@ Open the app and you get a window with a console. The menu is at the top:
 | Menu | Option | Shortcut (Linux) | Shortcut (macOS) |
 |---|---|---|---|
 | File | New window | Ctrl+Shift+N | ⌘N |
+| File | New window with a new console | Ctrl+Shift+T | ⌘T |
 | File | Close window | Ctrl+Shift+W | ⌘W |
 | Edit | Copy | Ctrl+Shift+C | ⌘C |
 | Edit | Paste | Ctrl+Shift+V | ⌘V |
@@ -74,7 +75,15 @@ Open the app and you get a window with a console. The menu is at the top:
 | Profile | No profile · the list of profiles · Rename · Enroll… · Install/Update dotrino-terminal… | | |
 | Help | How to use it (this page) | | |
 
-A new window uses the same profile as the window you opened it from.
+A new window uses the same profile as the window you opened it from and **attaches to a console
+that isn't open in any window**, if there is one; otherwise it opens a new one. The same when the
+app starts. For a brand-new console every time: **File → New window with a new console**
+(Ctrl+Shift+T).
+
+**Closing the last window closes the consoles the windows used**, except the ones you left **in
+the background** (right click on the console in the panel → *Keep in background*), the ones
+another device is watching, and the ones not opened from this computer. Background consoles stay
+alive and you find them there next time you open the app.
 
 ### The consoles panel
 
@@ -91,7 +100,7 @@ each one it says where it is open, or that it is detached.
 - **+** opens a new console in the window; **×** closes that console (if it was the window's, the
   window moves to another one).
 - **Right click on a console** in the panel (collapsed too): **Open here**, **Open in another
-  window** and **Close console**.
+  window**, **Keep in background** (or remove it from there) and **Close console**.
 - **View → Consoles panel** (Ctrl+Shift+B) hides or shows it.
 - With a `dotrino-terminal` older than 0.11 the panel is disabled and says so: update it from
   **Profile → Update dotrino-terminal…**.
