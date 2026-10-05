@@ -88,7 +88,8 @@ alive and you find them there next time you open the app.
 ### The consoles panel
 
 On the left, when the window has a profile, there is **one button per open console** in that
-profile. It starts **collapsed**: a narrow strip with one number per console (the title shows on
+profile, with its **fixed number**: if you close 1, 2 stays 2 and the next new console becomes 1.
+It starts **collapsed**: a narrow strip with one number per console (the title shows on
 hover); **»** opens it with the names and **«** collapses it again. Each window has its own. Open,
 it shows all the profile's consoles: this window's, your other windows', and the ones you opened from another device. Under
 each one it says where it is open, or that it is detached.
@@ -112,7 +113,9 @@ the mouse wheel scrolls three lines at a time.
 prompt and doesn't run until you press Enter, even with several lines (bash highlights it until
 the next key).
 
-**Closing a window closes its console**, like any terminal. To keep it running and come back
+**Closing a window closes the console it is showing**, unless another window or device is watching
+it, or it is in the background. Consoles you left behind by switching from the panel stay detached
+until you close the app. To keep it running and come back
 later (from this computer or another device), press **Ctrl+]** then **d**: the window closes
 and the console stays alive. In a `dotrino-terminal` console, **Ctrl+]** then **n** opens another
 one (detaching the current one).

@@ -89,7 +89,8 @@ segundo plano siguen vivas y la próxima vez que abras la app las encuentras ah�
 ### El panel de consolas
 
 A la izquierda, cuando la ventana tiene perfil, sale **un botón por cada consola abierta** en ese
-perfil. Empieza **colapsado**: una franja estrecha con un número por consola (el título aparece al
+perfil, con su **número fijo**: si cierras la 1, la 2 sigue siendo la 2 y la próxima consola
+nueva será la 1. Empieza **colapsado**: una franja estrecha con un número por consola (el título aparece al
 pasar el ratón); **»** lo abre con los nombres y **«** lo vuelve a colapsar. Cada ventana tiene el
 suyo. Abierto, enseña todas las consolas del perfil: las de esta ventana, las de tus otras ventanas y las que abriste desde otro aparato. Debajo
 de cada una dice dónde está abierta, o si está suelta.
@@ -113,7 +114,9 @@ arrastrar, y la rueda del ratón sube y baja de tres en tres líneas.
 prompt y no se ejecuta hasta que pulses Enter, aunque traiga varias líneas (bash lo marca
 resaltado hasta la siguiente tecla).
 
-**Cerrar una ventana cierra su consola**, como en cualquier terminal. Si quieres dejarla
+**Cerrar una ventana cierra la consola que está mostrando**, salvo que la esté mirando otra
+ventana u otro aparato, o que esté en segundo plano. Las consolas que dejaste atrás al cambiar desde
+el panel siguen sueltas hasta que cierres la app. Si quieres dejarla
 corriendo y volver después (desde esta computadora o desde otro aparato), pulsa **Ctrl+]** y
 luego **d**: la ventana se cierra y la consola sigue viva. En una consola de `dotrino-terminal`,
 **Ctrl+]** y **n** abre otra (soltando la actual).
