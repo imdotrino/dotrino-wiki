@@ -37,5 +37,9 @@ not on somebody else's server.
 Some pieces are also packaged as an Android app for what the browser cannot do. The
 ones that have it show their download button in [the catalogue](https://dotrino.com/).
 
+Note: an app installed from the store **doesn't see your browser's profiles**, nor
+the other way around. Why, and how to use the same one in both:
+[The browser and installed apps](/en/empezar/navegador-y-apps/).
+
 The full catalogue lives at [dotrino.com](https://dotrino.com/) and its code, like
 everything else, is in [`imdotrino/dotrino-home`](https://github.com/imdotrino/dotrino-home).

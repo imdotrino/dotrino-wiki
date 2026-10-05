@@ -43,6 +43,13 @@
           }
         },
         {
+          "slug": "navegador-y-apps",
+          "title": {
+            "es": "El navegador y las apps instaladas",
+            "en": "The browser and installed apps"
+          }
+        },
+        {
           "slug": "como-viaja",
           "title": {
             "es": "Cómo viaja lo que compartes",

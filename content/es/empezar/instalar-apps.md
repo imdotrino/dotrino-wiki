@@ -38,5 +38,9 @@ Algunas piezas también se empaquetan como app de Android para lo que el navegad
 no puede hacer. Las que la tienen muestran su botón de descarga en
 [el catálogo](https://dotrino.com/).
 
+Ojo: una app instalada desde la tienda **no ve los perfiles de tu navegador**, ni al
+revés. Por qué y cómo usar el mismo en los dos:
+[El navegador y las apps instaladas](/empezar/navegador-y-apps/).
+
 El catálogo completo vive en [dotrino.com](https://dotrino.com/) y su código, como
 todo lo demás, está en [`imdotrino/dotrino-home`](https://github.com/imdotrino/dotrino-home).

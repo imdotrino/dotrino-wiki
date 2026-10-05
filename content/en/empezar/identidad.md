@@ -30,6 +30,15 @@ You can keep **more than one profile** in the same browser — one personal, one
 work — and switch between them. Each profile has its own key and its own things: they
 never mix. When you switch, apps reload with the new one.
 
+## On your phone: the browser and installed apps are separate
+
+If you use one Dotrino app **in the browser** and another **installed from the
+store**, **their profiles don't see each other**: the browser keeps its own and the
+installed apps keep theirs. On Android the installed apps keep them in the **Dotrino
+Identity** app; on iPhone that app doesn't exist, and the Dotrino apps share the
+identity among themselves. All of it in
+[The browser and installed apps](/en/empezar/navegador-y-apps/).
+
 ## If you want to go further
 
 You can make **your own machine** the one that holds your master key and authorises

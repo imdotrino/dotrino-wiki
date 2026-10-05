@@ -45,9 +45,11 @@ What sets it apart from Chat:
 To write to someone you need their identity: add it from
 [your profile](/en/empezar/identidad/) or by scanning their code.
 
-- **Also as an Android app** (beta), with the same profile and contacts as on the
-  web. Install [Dotrino Identity](https://play.google.com/apps/internaltest/4699800053552003281) first, which keeps your keys on the phone,
+- **Also as an Android app** (beta). Install [Dotrino Identity](https://play.google.com/apps/internaltest/4699800053552003281) first, which keeps your keys on the phone,
   and then [Messenger for Android](https://play.google.com/apps/internaltest/4701700199204289743). The iPhone one comes later.
+  The installed app **doesn't see your browser's profiles**: to have the same profile
+  and contacts in both, connect them to your vault
+  ([how](/en/empezar/navegador-y-apps/)).
 
 ### Adding someone
 

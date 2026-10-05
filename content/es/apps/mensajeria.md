@@ -41,10 +41,12 @@ Lo que lo distingue del chat:
   siete trinos al azar. También suena con la app abierta. El aviso no dice qué te
   escribieron ni quién: solo que tienes mensajes nuevos.
 - **Se instala** como cualquier app ([cómo](/empezar/instalar-apps/)).
-- **También como app para Android** (beta), con tu mismo perfil y tus mismos
-  contactos que en la web. Instala primero
+- **También como app para Android** (beta). Instala primero
   [Identidad Dotrino](https://play.google.com/apps/internaltest/4699800053552003281), que guarda tus llaves en el teléfono, y después
   [Messenger para Android](https://play.google.com/apps/internaltest/4701700199204289743). La de iPhone viene después.
+  La app instalada **no ve los perfiles de tu navegador**: para tener el mismo perfil y
+  los mismos contactos en los dos, conéctalos a tu bóveda
+  ([cómo](/empezar/navegador-y-apps/)).
 
 ### Agregar a alguien
 

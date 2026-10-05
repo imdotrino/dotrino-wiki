@@ -30,6 +30,15 @@ para el trabajo, por ejemplo— y cambiar de uno a otro. Cada perfil tiene su pr
 llave y sus propias cosas: no se mezclan. Al cambiar de perfil, las apps se recargan
 con el nuevo.
 
+## En el teléfono: el navegador y las apps instaladas van por separado
+
+Si usas una app de Dotrino **en el navegador** y otra **instalada desde la tienda**,
+**sus perfiles no se ven entre sí**: el navegador guarda los suyos y las apps
+instaladas los suyos. En Android las apps instaladas los guardan en la app
+**Identidad Dotrino**; en iPhone esa app no existe, y la identidad la comparten las
+apps de Dotrino entre ellas. Todo explicado en
+[El navegador y las apps instaladas](/empezar/navegador-y-apps/).
+
 ## Si quieres ir más allá
 
 Puedes hacer que **tu propia máquina** sea la que guarda tu llave maestra y autoriza a
