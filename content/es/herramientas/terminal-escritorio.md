@@ -103,8 +103,8 @@ de cada una dice dónde está abierta, o si está suelta.
   sobre **la consola que muestra esa ventana**: la fija al tamaño de esa ventana, o la suelta.
   Encendido se ve resaltado, y el panel desplegado dice de quién es el tamaño (*Tamaño de la 2:
   esta ventana (87×33) · fijado*). Si esa pantalla ya tenía el tamaño, al fijarlo no cambia nada a
-  la vista: lo que cambia es que otra pantalla que llegue después ya no se lo quita. Esa pantalla se sigue al redimensionarla o
-  girarla; escribir o dar foco a otra no lo cambia. Si se va, pasa a otra de las que miran.
+  la vista: lo que cambia es que otra pantalla que llegue después ya no se lo quita. Las demás la ven a ese tamaño, con el resto de la ventana vacío. Esa pantalla se sigue al
+  redimensionarla o girarla; escribir o dar foco a otra no lo cambia. Si se va, pasa a otra de las que miran.
 - **+** abre una consola nueva en la ventana; **×** cierra esa consola (si era la de la ventana,
   la ventana pasa a otra).
 - **Clic derecho sobre una consola** del panel (también colapsado): **Abrir aquí**, **Abrir en
