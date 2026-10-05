@@ -96,8 +96,11 @@ each one it says where it is open, or that it is detached.
 
 - **Click a console**: the window switches to it instantly. The one you had **does not close**: it
   stays in the list so you can go back.
-- **Two windows on the same console** see the same thing and type into it, at the same time. If
-  they have different sizes, the console takes the size of **the window that has focus**.
+- **Several screens on the same console** (windows, the phone) see the same thing and type into
+  it, at the same time. Only one has the **size**: the one that **pinned** it with 📌 (*View → This
+  window sets the size*, or right click on the console; on the phone, the 📌 in the panel) and, if
+  none did, **the last one that attached**. That screen is followed when resized or rotated; typing
+  or focusing another one doesn't change it. If it leaves, the size moves to another one watching.
 - **+** opens a new console in the window; **×** closes that console (if it was the window's, the
   window moves to another one).
 - **Right click on a console** in the panel (collapsed too): **Open here**, **Open in another

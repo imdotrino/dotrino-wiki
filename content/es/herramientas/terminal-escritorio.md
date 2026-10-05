@@ -97,8 +97,11 @@ de cada una dice dónde está abierta, o si está suelta.
 
 - **Clic en una consola**: la ventana pasa a ella al instante. La que tenías **no se cierra**: queda
   en la lista para volver.
-- **Dos ventanas en la misma consola** ven lo mismo y escriben en lo mismo, a la vez. Si son de
-  tamaños distintos, la consola toma el tamaño de **la ventana que tiene el foco**.
+- **Varias pantallas en la misma consola** (ventanas, el teléfono) ven lo mismo y escriben en lo
+  mismo, a la vez. El **tamaño** lo tiene una sola: la que lo **fijó** con 📌 (*Ver → Esta ventana
+  manda en el tamaño*, o el clic derecho sobre la consola; en el teléfono, el 📌 del panel) y, si
+  ninguna lo fijó, **la última que se enganchó**. Esa pantalla se sigue al redimensionarla o
+  girarla; escribir o dar foco a otra no lo cambia. Si se va, pasa a otra de las que miran.
 - **+** abre una consola nueva en la ventana; **×** cierra esa consola (si era la de la ventana,
   la ventana pasa a otra).
 - **Clic derecho sobre una consola** del panel (también colapsado): **Abrir aquí**, **Abrir en
