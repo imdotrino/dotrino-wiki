@@ -86,10 +86,14 @@ each one it says where it is open, or that it is detached.
 
 - **Click a console**: the window switches to it instantly. The one you had **does not close**: it
   stays in the list so you can go back.
-- **Two windows on the same console** see the same thing and type into it, at the same time.
+- **Two windows on the same console** see the same thing and type into it, at the same time. If
+  they have different sizes, the console takes the size of **the window that has focus**.
 - **+** opens a new console in the window; **×** closes that console (if it was the window's, the
   window moves to another one).
 - **View → Consoles panel** (Ctrl+Shift+B) hides or shows it.
+
+On the right, when there is history, a **scrollbar** shows where you are; you can drag it, and
+the mouse wheel scrolls three lines at a time.
 
 **Right click** on the terminal: **Copy** the selection and **Paste**. Pasted text stays at the
 prompt and doesn't run until you press Enter, even with several lines (bash highlights it until

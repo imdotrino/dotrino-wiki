@@ -87,10 +87,14 @@ de cada una dice dónde está abierta, o si está suelta.
 
 - **Clic en una consola**: la ventana pasa a ella al instante. La que tenías **no se cierra**: queda
   en la lista para volver.
-- **Dos ventanas en la misma consola** ven lo mismo y escriben en lo mismo, a la vez.
+- **Dos ventanas en la misma consola** ven lo mismo y escriben en lo mismo, a la vez. Si son de
+  tamaños distintos, la consola toma el tamaño de **la ventana que tiene el foco**.
 - **+** abre una consola nueva en la ventana; **×** cierra esa consola (si era la de la ventana,
   la ventana pasa a otra).
 - **Ver → Panel de consolas** (Ctrl+Shift+B) lo esconde o lo muestra.
+
+A la derecha, cuando hay historial, una **barra de desplazamiento** enseña dónde estás; se puede
+arrastrar, y la rueda del ratón sube y baja de tres en tres líneas.
 
 **Clic derecho** sobre la terminal: **Copiar** lo seleccionado y **Pegar**. Lo pegado queda en el
 prompt y no se ejecuta hasta que pulses Enter, aunque traiga varias líneas (bash lo marca
