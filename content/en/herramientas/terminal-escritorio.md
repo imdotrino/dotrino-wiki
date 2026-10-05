@@ -90,6 +90,8 @@ each one it says where it is open, or that it is detached.
   they have different sizes, the console takes the size of **the window that has focus**.
 - **+** opens a new console in the window; **×** closes that console (if it was the window's, the
   window moves to another one).
+- **Right click on a console** in the panel (collapsed too): **Open here**, **Open in another
+  window** and **Close console**.
 - **View → Consoles panel** (Ctrl+Shift+B) hides or shows it.
 
 On the right, when there is history, a **scrollbar** shows where you are; you can drag it, and

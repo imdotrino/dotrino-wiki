@@ -91,6 +91,8 @@ de cada una dice dónde está abierta, o si está suelta.
   tamaños distintos, la consola toma el tamaño de **la ventana que tiene el foco**.
 - **+** abre una consola nueva en la ventana; **×** cierra esa consola (si era la de la ventana,
   la ventana pasa a otra).
+- **Clic derecho sobre una consola** del panel (también colapsado): **Abrir aquí**, **Abrir en
+  otra ventana** y **Cerrar consola**.
 - **Ver → Panel de consolas** (Ctrl+Shift+B) lo esconde o lo muestra.
 
 A la derecha, cuando hay historial, una **barra de desplazamiento** enseña dónde estás; se puede
