@@ -97,9 +97,12 @@ each one it says where it is open, or that it is detached.
 - **Click a console**: the window switches to it instantly. The one you had **does not close**: it
   stays in the list so you can go back.
 - **Several screens on the same console** (windows, the phone) see the same thing and type into
-  it, at the same time. Only one has the **size**: the one that **pinned** it with 📌 (*View → This
-  window sets the size*, or right click on the console; on the phone, the 📌 in the panel) and, if
-  none did, **the last one that attached**. That screen is followed when resized or rotated; typing
+  it, at the same time. Only one has the **size**: the one that **pinned** it with 📌 and, if none
+  did, **the last one that attached**. The 📌 sits in the panel, under **+** (and in *View*), and
+  acts on **the console that window shows**: it pins it to that window's size, or releases it. When
+  on it is highlighted, and the expanded panel says who has the size (*Size of 2: this window
+  (87×33) · pinned*). If that screen already had the size, pinning changes nothing you can see:
+  what changes is that a screen arriving later no longer takes it. That screen is followed when resized or rotated; typing
   or focusing another one doesn't change it. If it leaves, the size moves to another one watching.
 - **+** opens a new console in the window; **×** closes that console (if it was the window's, the
   window moves to another one).

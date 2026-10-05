@@ -98,9 +98,12 @@ de cada una dice dónde está abierta, o si está suelta.
 - **Clic en una consola**: la ventana pasa a ella al instante. La que tenías **no se cierra**: queda
   en la lista para volver.
 - **Varias pantallas en la misma consola** (ventanas, el teléfono) ven lo mismo y escriben en lo
-  mismo, a la vez. El **tamaño** lo tiene una sola: la que lo **fijó** con 📌 (*Ver → Esta ventana
-  manda en el tamaño*, o el clic derecho sobre la consola; en el teléfono, el 📌 del panel) y, si
-  ninguna lo fijó, **la última que se enganchó**. Esa pantalla se sigue al redimensionarla o
+  mismo, a la vez. El **tamaño** lo tiene una sola: la que lo **fijó** con 📌 y, si ninguna lo fijó,
+  **la última que se enganchó**. El 📌 está en el panel, debajo de **+** (y en *Ver*), y actúa
+  sobre **la consola que muestra esa ventana**: la fija al tamaño de esa ventana, o la suelta.
+  Encendido se ve resaltado, y el panel desplegado dice de quién es el tamaño (*Tamaño de la 2:
+  esta ventana (87×33) · fijado*). Si esa pantalla ya tenía el tamaño, al fijarlo no cambia nada a
+  la vista: lo que cambia es que otra pantalla que llegue después ya no se lo quita. Esa pantalla se sigue al redimensionarla o
   girarla; escribir o dar foco a otra no lo cambia. Si se va, pasa a otra de las que miran.
 - **+** abre una consola nueva en la ventana; **×** cierra esa consola (si era la de la ventana,
   la ventana pasa a otra).
