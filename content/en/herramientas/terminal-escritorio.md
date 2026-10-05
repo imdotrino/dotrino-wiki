@@ -79,7 +79,9 @@ A new window uses the same profile as the window you opened it from.
 ### The consoles panel
 
 On the left, when the window has a profile, there is **one button per open console** in that
-profile: this window's, your other windows', and the ones you opened from another device. Under
+profile. It starts **collapsed**: a narrow strip with one number per console (the title shows on
+hover); **»** opens it with the names and **«** collapses it again. Each window has its own. Open,
+it shows all the profile's consoles: this window's, your other windows', and the ones you opened from another device. Under
 each one it says where it is open, or that it is detached.
 
 - **Click a console**: the window switches to it instantly. The one you had **does not close**: it

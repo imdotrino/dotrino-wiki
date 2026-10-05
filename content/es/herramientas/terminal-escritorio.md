@@ -80,7 +80,9 @@ Una ventana nueva usa el mismo perfil que la ventana desde la que la abriste.
 ### El panel de consolas
 
 A la izquierda, cuando la ventana tiene perfil, sale **un botón por cada consola abierta** en ese
-perfil: las de esta ventana, las de tus otras ventanas y las que abriste desde otro aparato. Debajo
+perfil. Empieza **colapsado**: una franja estrecha con un número por consola (el título aparece al
+pasar el ratón); **»** lo abre con los nombres y **«** lo vuelve a colapsar. Cada ventana tiene el
+suyo. Abierto, enseña todas las consolas del perfil: las de esta ventana, las de tus otras ventanas y las que abriste desde otro aparato. Debajo
 de cada una dice dónde está abierta, o si está suelta.
 
 - **Clic en una consola**: la ventana pasa a ella al instante. La que tenías **no se cierra**: queda
