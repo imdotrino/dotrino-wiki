@@ -70,10 +70,24 @@ Open the app and you get a window with a console. The menu is at the top:
 | File | Close window | Ctrl+Shift+W | ⌘W |
 | Edit | Copy | Ctrl+Shift+C | ⌘C |
 | Edit | Paste | Ctrl+Shift+V | ⌘V |
+| View | Consoles panel | Ctrl+Shift+B | ⌘B |
 | Profile | No profile · the list of profiles · Rename · Enroll… · Install/Update dotrino-terminal… | | |
 | Help | How to use it (this page) | | |
 
 A new window uses the same profile as the window you opened it from.
+
+### The consoles panel
+
+On the left, when the window has a profile, there is **one button per open console** in that
+profile: this window's, your other windows', and the ones you opened from another device. Under
+each one it says where it is open, or that it is detached.
+
+- **Click a console**: the window switches to it instantly. The one you had **does not close**: it
+  stays in the list so you can go back.
+- **Two windows on the same console** see the same thing and type into it, at the same time.
+- **+** opens a new console in the window; **×** closes that console (if it was the window's, the
+  window moves to another one).
+- **View → Consoles panel** (Ctrl+Shift+B) hides or shows it.
 
 **Right click** on the terminal: **Copy** the selection and **Paste**. Pasted text stays at the
 prompt and doesn't run until you press Enter, even with several lines (bash highlights it until
@@ -81,7 +95,8 @@ the next key).
 
 **Closing a window closes its console**, like any terminal. To keep it running and come back
 later (from this computer or another device), press **Ctrl+]** then **d**: the window closes
-and the console stays alive.
+and the console stays alive. In a `dotrino-terminal` console, **Ctrl+]** then **n** opens another
+one (detaching the current one).
 
 ## Profiles
 

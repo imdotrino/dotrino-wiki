@@ -71,10 +71,24 @@ Abre la app y tienes una ventana con una consola. Arriba está el menú:
 | Archivo | Cerrar ventana | Ctrl+Shift+W | ⌘W |
 | Editar | Copiar | Ctrl+Shift+C | ⌘C |
 | Editar | Pegar | Ctrl+Shift+V | ⌘V |
+| Ver | Panel de consolas | Ctrl+Shift+B | ⌘B |
 | Perfil | Sin perfil · la lista de perfiles · Renombrar · Enrolar… · Instalar/Actualizar dotrino-terminal… | | |
 | Ayuda | Cómo se usa (esta página) | | |
 
 Una ventana nueva usa el mismo perfil que la ventana desde la que la abriste.
+
+### El panel de consolas
+
+A la izquierda, cuando la ventana tiene perfil, sale **un botón por cada consola abierta** en ese
+perfil: las de esta ventana, las de tus otras ventanas y las que abriste desde otro aparato. Debajo
+de cada una dice dónde está abierta, o si está suelta.
+
+- **Clic en una consola**: la ventana pasa a ella al instante. La que tenías **no se cierra**: queda
+  en la lista para volver.
+- **Dos ventanas en la misma consola** ven lo mismo y escriben en lo mismo, a la vez.
+- **+** abre una consola nueva en la ventana; **×** cierra esa consola (si era la de la ventana,
+  la ventana pasa a otra).
+- **Ver → Panel de consolas** (Ctrl+Shift+B) lo esconde o lo muestra.
 
 **Clic derecho** sobre la terminal: **Copiar** lo seleccionado y **Pegar**. Lo pegado queda en el
 prompt y no se ejecuta hasta que pulses Enter, aunque traiga varias líneas (bash lo marca
@@ -82,7 +96,8 @@ resaltado hasta la siguiente tecla).
 
 **Cerrar una ventana cierra su consola**, como en cualquier terminal. Si quieres dejarla
 corriendo y volver después (desde esta computadora o desde otro aparato), pulsa **Ctrl+]** y
-luego **d**: la ventana se cierra y la consola sigue viva.
+luego **d**: la ventana se cierra y la consola sigue viva. En una consola de `dotrino-terminal`,
+**Ctrl+]** y **n** abre otra (soltando la actual).
 
 ## Perfiles
 
