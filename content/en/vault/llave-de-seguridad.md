@@ -44,7 +44,8 @@ dotrino-vault profile add Work --key            # a new profile, born with its k
 
 From then on `dotrino-vault unlock` uses the key when it is plugged in and only asks
 for the password when it has to. To skip the key: `dotrino-vault unlock --password`.
-The TUI does the same.
+The TUI does the same when opening. And there, with a vault selected in the list, the
+**`y`** key shows what opens it and lets you add or remove keys without leaving the screen.
 
 ## Listing and removing
 

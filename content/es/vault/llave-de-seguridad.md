@@ -44,7 +44,8 @@ dotrino-vault profile add Trabajo --key         # un perfil nuevo, ya con su lla
 
 Después, `dotrino-vault unlock` usa la llave si está enchufada y solo te pide la
 contraseña cuando hace falta. Para saltarte la llave: `dotrino-vault unlock --password`.
-La TUI hace lo mismo.
+La TUI hace lo mismo al abrir. Y en ella, con una bóveda señalada en la lista, la tecla
+**`y`** enseña con qué se abre y deja añadir o quitar llaves sin salir de la pantalla.
 
 ## Verlas y quitarlas
 
