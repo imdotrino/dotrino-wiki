@@ -97,13 +97,17 @@ each one it says where it is open, or that it is detached.
 - **Click a console**: the window switches to it instantly. The one you had **does not close**: it
   stays in the list so you can go back.
 - **Several screens on the same console** (windows, the phone) see the same thing and type into
-  it, at the same time. Only one has the **size**: the one that **pinned** it with 📌 and, if none
-  did, **the last one that attached**. The 📌 sits in the panel, under **+** (and in *View*), and
-  acts on **the console that window shows**: it pins it to that window's size, or releases it. When
-  on it is highlighted, and the expanded panel says who has the size (*Size of 2: this window
-  (87×33) · pinned*). If that screen already had the size, pinning changes nothing you can see:
-  what changes is that a screen arriving later no longer takes it. The others show it at that size, with the rest of the window empty. That screen is followed when resized or rotated; typing
-  or focusing another one doesn't change it. If it leaves, the size moves to another one watching.
+  it, at the same time. Only one has the **size**: the one that **chose** it with ⤢ and, if none
+  did, **the last one that attached**. The others show it at that size, with the rest of the
+  window empty. That screen is followed when resized or rotated; typing or focusing another one
+  doesn't change it.
+- **⤢ Use this screen's size.** It sits in the panel, under **+** (and in *View*), and acts on
+  **the console that window shows**. When on it is highlighted, and the expanded panel says who
+  has the size (*Size of 2: this window (87×33) · chosen on purpose*). If that screen already had
+  the size, nothing changes you can see: what changes is that a screen arriving later no longer
+  takes it. The choice belongs **to the screen**: if you switch to another console and come back,
+  it gets it back. While it is away, the last one that attached decides. It is released by
+  pressing ⤢ again, or when another screen chooses it.
 - **+** opens a new console in the window; **×** closes that console (if it was the window's, the
   window moves to another one).
 - **Right click on a console** in the panel (collapsed too): **Open here**, **Open in another
