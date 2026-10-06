@@ -133,10 +133,10 @@ one (detaching the current one).
 **What each console is doing.** In the panel, a console's number changes colour: **amber** when
 something is working in it and **green** when it finished and you have not looked at it yet (green
 goes away when you open that console or type in it). It lets you leave an AI agent working in one
-console and carry on in another. With Claude Code and Codex it is exact, because they say it
-themselves in the window title. With the rest (OpenCode, any command) a console counts as finished
-when its screen has not changed for one minute; set `DOTRINO_TERMINAL_IDLE_SECONDS` when starting
-the agent to change that.
+console and carry on in another. The rule is the same for any program (Claude Code, Codex,
+OpenCode, a command): while the console's title or screen keeps changing, it is working; once they
+have not changed for ten seconds, it finished. Set `DOTRINO_TERMINAL_IDLE_SECONDS` when starting
+the agent to change that: raise it if you run commands that stay silent for a long time.
 
 **And the other way round: who closes the window.** If the console ends because you typed `exit`,
 the window closes, like any terminal. If **another screen** closes it (the phone, the web, another
