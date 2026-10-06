@@ -130,6 +130,14 @@ later (from this computer or another device), press **Ctrl+]** then **d**: the w
 and the console stays alive. In a `dotrino-terminal` console, **Ctrl+]** then **n** opens another
 one (detaching the current one).
 
+**What each console is doing.** In the panel, a console's number changes colour: **amber** when
+something is working in it and **green** when it finished and you have not looked at it yet (green
+goes away when you open that console or type in it). It lets you leave an AI agent working in one
+console and carry on in another. With Claude Code and Codex it is exact, because they say it
+themselves in the window title. With the rest (OpenCode, any command) a console counts as finished
+when its screen has not changed for one minute; set `DOTRINO_TERMINAL_IDLE_SECONDS` when starting
+the agent to change that.
+
 **And the other way round: who closes the window.** If the console ends because you typed `exit`,
 the window closes, like any terminal. If **another screen** closes it (the phone, the web, another
 window's panel), your window **stays**: it opens a new console and says so at the top.

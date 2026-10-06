@@ -131,6 +131,14 @@ corriendo y volver después (desde esta computadora o desde otro aparato), pulsa
 luego **d**: la ventana se cierra y la consola sigue viva. En una consola de `dotrino-terminal`,
 **Ctrl+]** y **n** abre otra (soltando la actual).
 
+**Qué está haciendo cada consola.** En el panel, el número de una consola cambia de color:
+**ámbar** si hay algo trabajando en ella y **verde** si terminó y todavía no la has mirado (el verde
+se apaga al entrar a esa consola o al teclear en ella). Sirve para dejar un agente de IA trabajando
+en una consola y seguir en otra. Con Claude Code y Codex el aviso es exacto, porque ellos mismos lo
+dicen en el título de la ventana. Con los demás (OpenCode, un comando cualquiera) la consola se da
+por terminada cuando su pantalla lleva un minuto sin cambiar; ese tiempo se ajusta con la variable
+`DOTRINO_TERMINAL_IDLE_SECONDS` al arrancar el agente.
+
 **Y al revés: quién cierra la ventana.** Si la consola termina porque escribiste `exit`, la ventana
 se cierra, como en cualquier terminal. Si te la cierra **otra pantalla** (el teléfono, la web, el
 panel de otra ventana), tu ventana **no se va**: abre una consola nueva y lo dice arriba.
