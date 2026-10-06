@@ -131,6 +131,10 @@ corriendo y volver después (desde esta computadora o desde otro aparato), pulsa
 luego **d**: la ventana se cierra y la consola sigue viva. En una consola de `dotrino-terminal`,
 **Ctrl+]** y **n** abre otra (soltando la actual).
 
+**Y al revés: quién cierra la ventana.** Si la consola termina porque escribiste `exit`, la ventana
+se cierra, como en cualquier terminal. Si te la cierra **otra pantalla** (el teléfono, la web, el
+panel de otra ventana), tu ventana **no se va**: abre una consola nueva y lo dice arriba.
+
 ## Perfiles
 
 **Cada ventana abre en un perfil**: el último que elegiste en el menú; si no, `default`; si no,

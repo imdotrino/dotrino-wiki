@@ -130,6 +130,10 @@ later (from this computer or another device), press **Ctrl+]** then **d**: the w
 and the console stays alive. In a `dotrino-terminal` console, **Ctrl+]** then **n** opens another
 one (detaching the current one).
 
+**And the other way round: who closes the window.** If the console ends because you typed `exit`,
+the window closes, like any terminal. If **another screen** closes it (the phone, the web, another
+window's panel), your window **stays**: it opens a new console and says so at the top.
+
 ## Profiles
 
 **Every window opens in a profile**: the last one you picked in the menu; otherwise
