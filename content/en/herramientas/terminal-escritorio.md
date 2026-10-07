@@ -80,6 +80,9 @@ window's profile, and **Profile → Remove from VS Code's terminal** undoes it.
 - To undo it: `dotrino-terminal vscode --off`.
 - If you update or switch Node versions, run the command again.
 
+If the same console is open on another screen, VS Code's terminal takes the size as soon as
+you type in it.
+
 Closing the terminal tab closes its console. To leave it open and come back later, press
 **Ctrl+]** and then **d**.
 
@@ -120,17 +123,17 @@ each one it says where it is open, or that it is detached.
 - **Click a console**: the window switches to it instantly. The one you had **does not close**: it
   stays in the list so you can go back.
 - **Several screens on the same console** (windows, the phone) see the same thing and type into
-  it, at the same time. Only one has the **size**: the one that **chose** it with ⤢ and, if none
-  did, **the last one that attached**. The others show it at that size, with the rest of the
-  window empty. That screen is followed when resized or rotated; typing or focusing another one
-  doesn't change it.
+  it, at the same time. Only one has the **size**: **the last one you typed in** or, if nobody has
+  typed since, the last one that attached or chose it with ⤢. The others show it at that size,
+  with the rest of the window empty. That screen is followed when resized or rotated; focusing
+  another one, or moving the mouse in it, doesn't change it.
 - **⤢ Use this screen's size.** It sits in the panel, under **+** (and in *View*), and acts on
   **the console that window shows**. When on it is highlighted, and the expanded panel says who
   has the size (*Size of 2: this window (87×33) · chosen on purpose*). If that screen already had
   the size, nothing changes you can see: what changes is that a screen arriving later no longer
-  takes it. The choice belongs **to the screen**: if you switch to another console and come back,
+  takes it. Typing in another screen does take it. The choice belongs **to the screen**: if you switch to another console and come back,
   it gets it back. While it is away, the last one that attached decides. It is released by
-  pressing ⤢ again, or when another screen chooses it.
+  pressing ⤢ again, when another screen chooses it, or when you type in another one.
 - **+** opens a new console in the window; **×** closes that console (if it was the window's, the
   window moves to another one).
 - **Right click on a console** in the panel (collapsed too): **Open here**, **Open in another

@@ -81,6 +81,9 @@ esa ventana, y **Perfil → Quitar de la terminal de VS Code** lo deshace.
 - Para deshacerlo: `dotrino-terminal vscode --off`.
 - Si actualizas o cambias de versión de Node, vuelve a correr la orden.
 
+Si la misma consola está abierta en otra pantalla, la terminal de VS Code toma el tamaño en
+cuanto tecleas en ella.
+
 Cerrar la pestaña de la terminal cierra su consola. Para dejarla abierta y volver después,
 pulsa **Ctrl+]** y luego **d**.
 
@@ -121,17 +124,17 @@ de cada una dice dónde está abierta, o si está suelta.
 - **Clic en una consola**: la ventana pasa a ella al instante. La que tenías **no se cierra**: queda
   en la lista para volver.
 - **Varias pantallas en la misma consola** (ventanas, el teléfono) ven lo mismo y escriben en lo
-  mismo, a la vez. El **tamaño** lo tiene una sola: la que lo **eligió** con ⤢ y, si ninguna lo
-  eligió, **la última que se enganchó**. Las demás la ven a ese tamaño, con el resto de la ventana
-  vacío. Esa pantalla se sigue al redimensionarla o girarla; escribir o dar foco a otra no lo
-  cambia.
+  mismo, a la vez. El **tamaño** lo tiene una sola: **la última en la que tecleaste** o, si nadie
+  ha tecleado desde entonces, la última que se enganchó o lo eligió con ⤢. Las demás la ven a ese
+  tamaño, con el resto de la ventana vacío. Esa pantalla se sigue al redimensionarla o girarla;
+  dar foco a otra, o mover el ratón en ella, no lo cambia.
 - **⤢ Usar el tamaño de esta pantalla.** Está en el panel, debajo de **+** (y en *Ver*), y actúa
   sobre **la consola que muestra esa ventana**. Encendido se ve resaltado, y el panel desplegado
   dice de quién es el tamaño (*Tamaño de la 2: esta ventana (87×33) · elegido a propósito*). Si
   esa pantalla ya tenía el tamaño, no cambia nada a la vista: lo que cambia es que otra pantalla
-  que llegue después ya no se lo quita. La elección es **de la pantalla**: si pasas a otra consola
+  que llegue después ya no se lo quita. Teclear en otra pantalla sí se lo quita. La elección es **de la pantalla**: si pasas a otra consola
   y vuelves, la recupera. Mientras no está, manda la última que llegó. Se suelta pulsando ⤢ otra
-  vez, o cuando otra pantalla lo elige.
+  vez, cuando otra pantalla lo elige o cuando tecleas en otra.
 - **+** abre una consola nueva en la ventana; **×** cierra esa consola (si era la de la ventana,
   la ventana pasa a otra).
 - **Clic derecho sobre una consola** del panel (también colapsado): **Abrir aquí**, **Abrir en
