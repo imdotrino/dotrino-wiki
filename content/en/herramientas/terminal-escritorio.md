@@ -73,6 +73,9 @@ It makes Dotrino the default terminal in VS Code, VS Code Insiders, VSCodium and
 whichever you have installed. The rest of your settings stay as they were. Terminals you
 already had open do not change: open a new one.
 
+From the app it is the same: **Profile → Use in VS Code's terminal** sets it up with that
+window's profile, and **Profile → Remove from VS Code's terminal** undoes it.
+
 - To use a specific profile: `dotrino-terminal vscode --name work`.
 - To undo it: `dotrino-terminal vscode --off`.
 - If you update or switch Node versions, run the command again.
