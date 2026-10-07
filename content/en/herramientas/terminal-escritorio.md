@@ -60,6 +60,26 @@ terminal".
 A window always opens in the folder it was launched from. If that folder no longer exists, the
 window says so instead of opening somewhere else.
 
+## Inside VS Code
+
+The terminal in VS Code's panel can also open Dotrino Terminal consoles, so you can pick them
+up later from your phone or another device. One command sets it up:
+
+```
+dotrino-terminal vscode
+```
+
+It makes Dotrino the default terminal in VS Code, VS Code Insiders, VSCodium and Cursor,
+whichever you have installed. The rest of your settings stay as they were. Terminals you
+already had open do not change: open a new one.
+
+- To use a specific profile: `dotrino-terminal vscode --name work`.
+- To undo it: `dotrino-terminal vscode --off`.
+- If you update or switch Node versions, run the command again.
+
+Closing the terminal tab closes its console. To leave it open and come back later, press
+**Ctrl+]** and then **d**.
+
 ## Windows
 
 Open the app and you get a window with a console. The menu is at the top:
@@ -212,6 +232,7 @@ dotrino-terminal kill <id>            # close one
 dotrino-terminal profiles             # this computer's profiles
 dotrino-terminal link                 # enroll a profile
 dotrino-terminal rename <profile> <new>    # rename it
+dotrino-terminal vscode               # VS Code's terminal opens consoles from here (--off undoes it)
 ```
 
 If the console program is not running, `dotrino-terminal` starts it by itself.
