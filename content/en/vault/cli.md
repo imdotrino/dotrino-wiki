@@ -21,6 +21,8 @@ dotrino-vault devices              # enrolled / revoked devices
 dotrino-vault members              # the record: which keys are yours and what each can do
 dotrino-vault caps <ID> ±perm      # +sign -store +read +admin +approve +approval
 dotrino-vault revoke  <nonce>      # revoke a device (orders it to self-delete)
+dotrino-vault block   <ID>         # keep it out without removing it (usually blocked from the phone after an incident)
+dotrino-vault unblock <ID>         # lift the block (only here or from the admin console)
 dotrino-vault activity [n]         # audit log: signatures, renewals, enrollments, rejections
 dotrino-vault version              # installed version
 ```

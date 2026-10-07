@@ -95,7 +95,13 @@ clave**. Con varios perfiles, añade `--name <nombre>`.
   computadora no.
 - Vale al momento, sin reiniciar nada.
 - El teléfono y el navegador la recuerdan mientras sigan abiertos; al cerrarlos, se olvida.
-- Tras cinco fallos seguidos hay que esperar, cada vez más.
+- Tras tres fallos seguidos hay que esperar, cada vez más. Es un freno de esa computadora,
+  nada más.
+- Y si un mismo aparato falla tres veces seguidas, **tu bóveda avisa a los aparatos que
+  aprueban** (el teléfono, el navegador con avisos): ven quién fue y eligen **Bloquear** o
+  **Ignorar**. Bloqueado, ese aparato deja de entrar en tu bóveda y en tus computadoras
+  hasta que lo desbloquees en la bóveda (`dotrino-vault unblock <ID>`) o desde su consola
+  de administración. No se borra de la cuenta: solo queda fuera.
 
 Hace falta la versión 0.19.0 del agente (`npm install -g @dotrino/terminal-agent`) y la
 0.8.9 de la app o de la web.

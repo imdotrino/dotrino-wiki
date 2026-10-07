@@ -94,6 +94,13 @@ the code*. With several profiles, add `--name <name>`.
   are not.
 - It applies right away, with nothing to restart.
 - The phone and the browser remember it while they stay open; closing them forgets it.
+- After three failures in a row you have to wait, longer each time. That brake belongs to
+  that computer and nothing else.
+- And if the same device fails three times in a row, **your vault tells the devices that
+  approve** (the phone, the browser with notices): they see who it was and choose **Block**
+  or **Ignore**. Blocked, that device stops getting into your vault and your computers until
+  you unblock it on the vault (`dotrino-vault unblock <ID>`) or from its admin console. It is
+  not removed from the account: it is just kept out.
 - After five wrong tries in a row you have to wait, longer each time.
 
 It needs version 0.19.0 of the agent (`npm install -g @dotrino/terminal-agent`) and 0.8.9
