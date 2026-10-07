@@ -75,6 +75,30 @@ Starting the same agent twice is not allowed: the second one stops and tells you
 Links are stored in `~/.dotrino/agent/terminal-agent/<name>/`. That folder holds the
 computer's key: look after it like an SSH key.
 
+## Setting a code on a computer
+
+By default, any device of your account opens consoles on your computer. If you also want
+a code to be typed (a PIN or a password), you set it **on the computer itself**:
+
+```bash
+dotrino-terminal lock            # set or change it
+dotrino-terminal lock --off      # remove it
+dotrino-terminal lock --status   # say whether there is one
+```
+
+In the desktop app it is in the **Profile** menu: *Set or change the code…* and *Remove
+the code*. With several profiles, add `--name <name>`.
+
+- The code belongs to the profile: all its consoles share it.
+- Only your other devices are asked (the phone, the browser). The computer's own windows
+  are not.
+- It applies right away, with nothing to restart.
+- The phone and the browser remember it while they stay open; closing them forgets it.
+- After five wrong tries in a row you have to wait, longer each time.
+
+It needs version 0.19.0 of the agent (`npm install -g @dotrino/terminal-agent`) and 0.8.9
+of the app or the web.
+
 ## The other path: this device is the vault
 
 If you have no vault installed yet, the computer itself can act as the vault for

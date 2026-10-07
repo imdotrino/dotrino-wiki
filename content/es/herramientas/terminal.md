@@ -75,6 +75,31 @@ Lanzar dos veces el mismo agente no se puede: el segundo se para y te lo dice.
 Los enlaces se guardan en `~/.dotrino/agent/terminal-agent/<nombre>/`. Ahí está la
 llave de esa computadora: cuídala como una llave SSH.
 
+## Ponerle una clave a una computadora
+
+Por defecto, cualquier aparato de tu cuenta abre consolas en tu computadora. Si quieres
+que además haya que escribir una clave (un PIN o una contraseña), se pone **en la propia
+computadora**:
+
+```bash
+dotrino-terminal lock            # la pone o la cambia
+dotrino-terminal lock --off      # la quita
+dotrino-terminal lock --status   # dice si hay
+```
+
+En la app de escritorio está en el menú **Perfil → Poner o cambiar la clave… / Quitar la
+clave**. Con varios perfiles, añade `--name <nombre>`.
+
+- La clave es del perfil: todas sus consolas la comparten.
+- La piden solo los otros aparatos (el teléfono, el navegador). Las ventanas de la propia
+  computadora no.
+- Vale al momento, sin reiniciar nada.
+- El teléfono y el navegador la recuerdan mientras sigan abiertos; al cerrarlos, se olvida.
+- Tras cinco fallos seguidos hay que esperar, cada vez más.
+
+Hace falta la versión 0.19.0 del agente (`npm install -g @dotrino/terminal-agent`) y la
+0.8.9 de la app o de la web.
+
 ## La otra vía: este aparato es la bóveda
 
 Si todavía no tienes bóveda instalada, la propia computadora puede hacer de
