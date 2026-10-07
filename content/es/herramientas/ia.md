@@ -8,7 +8,11 @@ description: Dotrino IA, el bot de Telegram y Middlebot: hablar con una IA que c
 Tres piezas alrededor de la misma idea: el asistente trabaja **en tu computadora**,
 no en la cuenta de un servicio, y tú decides qué sale de ahí.
 
-## Dotrino IA — desde el navegador
+## Dotrino IA — desde el navegador (retirada)
+
+> **Retirada el 2026-10-07.** [Terminal](/herramientas/terminal/) ya hace lo mismo y más:
+> consolas, agentes de IA en tu computadora y versión nativa. `ia.dotrino.com` solo
+> muestra el aviso y `@dotrino/ia-agent` no recibe más versiones.
 
 [`ia.dotrino.com`](https://ia.dotrino.com/) · repo
 [`dotrino-ia`](https://github.com/imdotrino/dotrino-ia)

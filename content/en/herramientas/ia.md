@@ -8,7 +8,11 @@ description: Dotrino IA, the Telegram bot and Middlebot — talking to an AI tha
 Three pieces around the same idea: the assistant works **on your computer**, not
 inside a service's account, and you decide what leaves it.
 
-## Dotrino IA — from the browser
+## Dotrino IA — from the browser (retired)
+
+> **Retired on 2026-10-07.** [Terminal](/en/herramientas/terminal/) already does the same and more:
+> consoles, AI agents on your computer and a native version. `ia.dotrino.com` only
+> shows the notice and `@dotrino/ia-agent` gets no further releases.
 
 [`ia.dotrino.com`](https://ia.dotrino.com/) · repo
 [`dotrino-ia`](https://github.com/imdotrino/dotrino-ia)
