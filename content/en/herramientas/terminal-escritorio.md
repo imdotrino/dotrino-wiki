@@ -133,7 +133,7 @@ each one it says where it is open, or that it is detached.
   it gets it back. While it is away, the last one that attached decides. It is released by
   pressing ⤢ again, when another screen chooses it, or when you type in another one.
 - **+** opens a new console in the window; **×** closes that console (if it was the window's, the
-  window moves to another one).
+  window moves to the first one that is not open on another screen).
 - **Right click on a console** in the panel (collapsed too): **Open here**, **Open in another
   window** and **Close console**.
 - **View → Consoles panel** (Ctrl+Shift+B) hides or shows it.

@@ -134,7 +134,7 @@ de cada una dice dónde está abierta, o si está suelta.
   y vuelves, la recupera. Mientras no está, manda la última que llegó. Se suelta pulsando ⤢ otra
   vez, cuando otra pantalla lo elige o cuando tecleas en otra.
 - **+** abre una consola nueva en la ventana; **×** cierra esa consola (si era la de la ventana,
-  la ventana pasa a otra).
+  la ventana pasa a la primera que no esté abierta en otra pantalla).
 - **Clic derecho sobre una consola** del panel (también colapsado): **Abrir aquí**, **Abrir en
   otra ventana** y **Cerrar consola**.
 - **Ver → Panel de consolas** (Ctrl+Shift+B) lo esconde o lo muestra.
