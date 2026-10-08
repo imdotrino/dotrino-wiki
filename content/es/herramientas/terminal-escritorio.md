@@ -168,9 +168,9 @@ trabajando; cuando llevan diez segundos sin cambiar, terminó. Ese tiempo se aju
 `DOTRINO_TERMINAL_IDLE_SECONDS` al arrancar el agente: súbelo si usas comandos que pasan mucho rato
 sin escribir nada.
 
-**Y al revés: quién cierra la ventana.** Si la consola termina porque escribiste `exit`, la ventana
-se cierra, como en cualquier terminal. Si se cierra la consola de una ventana (con la **×**, o desde **otra pantalla**: el teléfono, la
-web, el panel de otra ventana), la ventana pasa a la primera consola que nadie tiene abierta; si
+**Y al revés: cerrar una consola nunca cierra la ventana.** Si se cierra la consola de una ventana
+(con la **×**, escribiendo `exit` en ella, o desde **otra pantalla**: el teléfono, la web, el panel
+de otra ventana), la ventana pasa a la primera consola que nadie tiene abierta; si
 todas lo están, a la primera de ellas; y si no queda ninguna, la ventana **sigue abierta, sin
 consola**, con su panel: el **+** abre una cuando quieras.
 

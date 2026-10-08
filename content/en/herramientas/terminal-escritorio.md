@@ -166,8 +166,8 @@ OpenCode, a command): while the console's title or screen keeps changing, it is 
 have not changed for ten seconds, it finished. Set `DOTRINO_TERMINAL_IDLE_SECONDS` when starting
 the agent to change that: raise it if you run commands that stay silent for a long time.
 
-**And the other way round: who closes the window.** If the console ends because you typed `exit`,
-the window closes, like any terminal. If a window's console is closed (with the **×**, or from **another screen**: the phone, the web,
+**And the other way round: closing a console never closes the window.** If a window's console is
+closed (with the **×**, by typing `exit` in it, or from **another screen**: the phone, the web,
 another window's panel), the window moves to the first console nobody has open; if they all are,
 to the first of them; and if none is left, the window **stays open, with no console**, with its
 panel: **+** opens one whenever you want.
