@@ -133,7 +133,7 @@ each one it says where it is open, or that it is detached.
   it gets it back. While it is away, the last one that attached decides. It is released by
   pressing ⤢ again, when another screen chooses it, or when you type in another one.
 - **+** opens a new console in the window; **×** closes that console (if it was the window's, the
-  window moves to the first one that is not open on another screen).
+  window moves to another one, or closes if none is left).
 - **Right click on a console** in the panel (collapsed too): **Open here**, **Open in another
   window** and **Close console**.
 - **View → Consoles panel** (Ctrl+Shift+B) hides or shows it.
@@ -167,8 +167,12 @@ have not changed for ten seconds, it finished. Set `DOTRINO_TERMINAL_IDLE_SECOND
 the agent to change that: raise it if you run commands that stay silent for a long time.
 
 **And the other way round: who closes the window.** If the console ends because you typed `exit`,
-the window closes, like any terminal. If **another screen** closes it (the phone, the web, another
-window's panel), your window **stays**: it opens a new console and says so at the top.
+the window closes, like any terminal. If a window's console is closed (with the **×**, or from **another screen**: the phone, the web,
+another window's panel), the window moves to the first console nobody has open; if they all are,
+to the first of them; and if none is left, the window closes.
+
+**When a console is created.** Only with **+**, or when a window opens and there is no console
+left unopened. That way consoles nobody is looking at do not pile up.
 
 ## Profiles
 
@@ -189,8 +193,8 @@ to an account** (to its vault) or **this computer only**:
 - **This computer only**: it works the same, but nobody gets in from outside.
 
 You can have several: one for your personal account, another for work. **Switching profile
-from the menu (to "No profile" too) detaches that window's console and opens one in the
-other**. Whatever was running in the previous console keeps running in its profile.
+from the menu (to "No profile" too) detaches that window's console and moves to one in the
+other** (one nobody has open; if there is none, a new one). Whatever was running in the previous console keeps running in its profile.
 
 ### Renaming a profile
 

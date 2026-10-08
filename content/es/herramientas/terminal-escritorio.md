@@ -134,7 +134,7 @@ de cada una dice dónde está abierta, o si está suelta.
   y vuelves, la recupera. Mientras no está, manda la última que llegó. Se suelta pulsando ⤢ otra
   vez, cuando otra pantalla lo elige o cuando tecleas en otra.
 - **+** abre una consola nueva en la ventana; **×** cierra esa consola (si era la de la ventana,
-  la ventana pasa a la primera que no esté abierta en otra pantalla).
+  la ventana pasa a otra, o se cierra si no queda ninguna).
 - **Clic derecho sobre una consola** del panel (también colapsado): **Abrir aquí**, **Abrir en
   otra ventana** y **Cerrar consola**.
 - **Ver → Panel de consolas** (Ctrl+Shift+B) lo esconde o lo muestra.
@@ -169,8 +169,12 @@ trabajando; cuando llevan diez segundos sin cambiar, terminó. Ese tiempo se aju
 sin escribir nada.
 
 **Y al revés: quién cierra la ventana.** Si la consola termina porque escribiste `exit`, la ventana
-se cierra, como en cualquier terminal. Si te la cierra **otra pantalla** (el teléfono, la web, el
-panel de otra ventana), tu ventana **no se va**: abre una consola nueva y lo dice arriba.
+se cierra, como en cualquier terminal. Si se cierra la consola de una ventana (con la **×**, o desde **otra pantalla**: el teléfono, la
+web, el panel de otra ventana), la ventana pasa a la primera consola que nadie tiene abierta; si
+todas lo están, a la primera de ellas; y si no queda ninguna, la ventana se cierra.
+
+**Cuándo se crea una consola.** Solo con el **+**, o al abrir una ventana cuando no hay ninguna
+consola sin abrir. Así no se acumulan consolas que nadie mira.
 
 ## Perfiles
 
@@ -190,8 +194,8 @@ Un perfil es una identidad de esta computadora para Dotrino Terminal. Cada uno p
 - **Solo de esta computadora**: funciona igual, pero nadie entra desde fuera.
 
 Puedes tener varios: uno para tu cuenta personal, otro para la del trabajo. **Cambiar de
-perfil desde el menú (también a «Sin perfil») suelta la consola de esa ventana y abre una
-en el otro**. Lo que tenías en la consola anterior sigue corriendo en su perfil.
+perfil desde el menú (también a «Sin perfil») suelta la consola de esa ventana y pasa a una del otro** (una que nadie tenga
+abierta; si no hay, una nueva). Lo que tenías en la consola anterior sigue corriendo en su perfil.
 
 ### Cambiarle el nombre a un perfil
 
