@@ -157,7 +157,7 @@ En una consola de `dotrino-terminal`, **Ctrl+]** y **d** la suelta y cierra la v
 
 **Dónde está abierta cada consola.** Un **punto verde** en la esquina de arriba a la derecha de
 una consola del panel dice que está abierta en una ventana de esta computadora (esta ventana,
-otra, o la terminal de VS Code). Sin punto, no la está mostrando ninguna.
+otra, o la terminal de VS Code). Sin punto, no la está mostrando ninguna. El punto **parpadea** cuando esa consola terminó y todavía no la has mirado.
 
 **Qué está haciendo cada consola.** En el panel, el número de una consola cambia de color:
 **ámbar** si hay algo trabajando en ella y **verde** si terminó y todavía no la has mirado (el verde
