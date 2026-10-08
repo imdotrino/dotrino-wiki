@@ -134,7 +134,7 @@ de cada una dice dónde está abierta, o si está suelta.
   y vuelves, la recupera. Mientras no está, manda la última que llegó. Se suelta pulsando ⤢ otra
   vez, cuando otra pantalla lo elige o cuando tecleas en otra.
 - **+** abre una consola nueva en la ventana; **×** cierra esa consola (si era la de la ventana,
-  la ventana pasa a otra, o se cierra si no queda ninguna).
+  la ventana pasa a otra, o queda sin consola si no hay ninguna).
 - **Clic derecho sobre una consola** del panel (también colapsado): **Abrir aquí**, **Abrir en
   otra ventana** y **Cerrar consola**.
 - **Ver → Panel de consolas** (Ctrl+Shift+B) lo esconde o lo muestra.
@@ -171,7 +171,8 @@ sin escribir nada.
 **Y al revés: quién cierra la ventana.** Si la consola termina porque escribiste `exit`, la ventana
 se cierra, como en cualquier terminal. Si se cierra la consola de una ventana (con la **×**, o desde **otra pantalla**: el teléfono, la
 web, el panel de otra ventana), la ventana pasa a la primera consola que nadie tiene abierta; si
-todas lo están, a la primera de ellas; y si no queda ninguna, la ventana se cierra.
+todas lo están, a la primera de ellas; y si no queda ninguna, la ventana **sigue abierta, sin
+consola**, con su panel: el **+** abre una cuando quieras.
 
 **Cuándo se crea una consola.** Solo con el **+**, o al abrir una ventana cuando no hay ninguna
 consola sin abrir. Así no se acumulan consolas que nadie mira.

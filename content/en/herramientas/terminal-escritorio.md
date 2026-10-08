@@ -133,7 +133,7 @@ each one it says where it is open, or that it is detached.
   it gets it back. While it is away, the last one that attached decides. It is released by
   pressing ⤢ again, when another screen chooses it, or when you type in another one.
 - **+** opens a new console in the window; **×** closes that console (if it was the window's, the
-  window moves to another one, or closes if none is left).
+  window moves to another one, or is left with no console if there is none).
 - **Right click on a console** in the panel (collapsed too): **Open here**, **Open in another
   window** and **Close console**.
 - **View → Consoles panel** (Ctrl+Shift+B) hides or shows it.
@@ -169,7 +169,8 @@ the agent to change that: raise it if you run commands that stay silent for a lo
 **And the other way round: who closes the window.** If the console ends because you typed `exit`,
 the window closes, like any terminal. If a window's console is closed (with the **×**, or from **another screen**: the phone, the web,
 another window's panel), the window moves to the first console nobody has open; if they all are,
-to the first of them; and if none is left, the window closes.
+to the first of them; and if none is left, the window **stays open, with no console**, with its
+panel: **+** opens one whenever you want.
 
 **When a console is created.** Only with **+**, or when a window opens and there is no console
 left unopened. That way consoles nobody is looking at do not pile up.
