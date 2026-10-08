@@ -84,8 +84,8 @@ esa ventana, y **Perfil → Quitar de la terminal de VS Code** lo deshace.
 Si la misma consola está abierta en otra pantalla, la terminal de VS Code toma el tamaño en
 cuanto tecleas en ella.
 
-Cerrar la pestaña de la terminal cierra su consola. Para dejarla abierta y volver después,
-pulsa **Ctrl+]** y luego **d**.
+Cerrar la pestaña de la terminal no cierra su consola: sigue abierta y la encuentras en el
+panel. Se cierra escribiendo `exit` en ella o desde el panel.
 
 ## Las ventanas
 
@@ -107,10 +107,8 @@ consola que no esté abierta en ninguna ventana**, si la hay; si no, abre una nu
 abrir la app. Para una consola nueva siempre: **Archivo → Nueva ventana con consola nueva**
 (Ctrl+Shift+T).
 
-**Al cerrar la última ventana se cierran las consolas que usaron las ventanas**, salvo las que
-dejaste **en segundo plano** (clic derecho sobre la consola en el panel → *Dejar en segundo
-plano*), las que esté mirando otro aparato y las que no se abrieron desde esta computadora. Las de
-segundo plano siguen vivas y la próxima vez que abras la app las encuentras ahí.
+**Cerrar la app no cierra ninguna consola**: siguen vivas y la próxima vez que la abras las
+encuentras ahí.
 
 ### El panel de consolas
 
@@ -138,7 +136,7 @@ de cada una dice dónde está abierta, o si está suelta.
 - **+** abre una consola nueva en la ventana; **×** cierra esa consola (si era la de la ventana,
   la ventana pasa a otra).
 - **Clic derecho sobre una consola** del panel (también colapsado): **Abrir aquí**, **Abrir en
-  otra ventana**, **Dejar en segundo plano** (o quitarla de ahí) y **Cerrar consola**.
+  otra ventana** y **Cerrar consola**.
 - **Ver → Panel de consolas** (Ctrl+Shift+B) lo esconde o lo muestra.
 - Con un `dotrino-terminal` anterior a la 0.11 el panel sale deshabilitado y lo dice: actualízalo
   desde **Perfil → Actualizar dotrino-terminal…**.
@@ -150,12 +148,16 @@ arrastrar, y la rueda del ratón sube y baja de tres en tres líneas.
 prompt y no se ejecuta hasta que pulses Enter, aunque traiga varias líneas (bash lo marca
 resaltado hasta la siguiente tecla).
 
-**Cerrar una ventana cierra la consola que está mostrando**, salvo que la esté mirando otra
-ventana u otro aparato, o que esté en segundo plano. Las consolas que dejaste atrás al cambiar desde
-el panel siguen sueltas hasta que cierres la app. Si quieres dejarla
-corriendo y volver después (desde esta computadora o desde otro aparato), pulsa **Ctrl+]** y
-luego **d**: la ventana se cierra y la consola sigue viva. En una consola de `dotrino-terminal`,
+**Cerrar una ventana nunca cierra una consola.** La consola que mostraba sigue corriendo y
+puedes volver a ella después, desde esta computadora o desde otro aparato. Una consola se cierra
+con la **×** del panel, con **Cerrar consola**, o escribiendo `exit` en ella. (Una ventana «Sin
+perfil» es la excepción: ahí no hay consola que guardar, y cerrarla termina lo que corría.)
+En una consola de `dotrino-terminal`, **Ctrl+]** y **d** la suelta y cierra la ventana, y
 **Ctrl+]** y **n** abre otra (soltando la actual).
+
+**Dónde está abierta cada consola.** Un **punto verde** en la esquina de arriba a la derecha de
+una consola del panel dice que está abierta en una ventana de esta computadora (esta ventana,
+otra, o la terminal de VS Code). Sin punto, no la está mostrando ninguna.
 
 **Qué está haciendo cada consola.** En el panel, el número de una consola cambia de color:
 **ámbar** si hay algo trabajando en ella y **verde** si terminó y todavía no la has mirado (el verde
@@ -188,10 +190,8 @@ Un perfil es una identidad de esta computadora para Dotrino Terminal. Cada uno p
 - **Solo de esta computadora**: funciona igual, pero nadie entra desde fuera.
 
 Puedes tener varios: uno para tu cuenta personal, otro para la del trabajo. **Cambiar de
-perfil desde el menú (también a «Sin perfil») cierra la consola de esa ventana y abre una
-nueva en el otro**,
-como cerrar una terminal y abrir otra. Lo que tenías en la consola anterior se termina; si
-quieres conservarlo, suéltala antes con Ctrl+] d.
+perfil desde el menú (también a «Sin perfil») suelta la consola de esa ventana y abre una
+en el otro**. Lo que tenías en la consola anterior sigue corriendo en su perfil.
 
 ### Cambiarle el nombre a un perfil
 

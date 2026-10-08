@@ -83,8 +83,8 @@ window's profile, and **Profile → Remove from VS Code's terminal** undoes it.
 If the same console is open on another screen, VS Code's terminal takes the size as soon as
 you type in it.
 
-Closing the terminal tab closes its console. To leave it open and come back later, press
-**Ctrl+]** and then **d**.
+Closing the terminal tab does not close its console: it stays open and you find it in the
+panel. Close it by typing `exit` in it or from the panel.
 
 ## Windows
 
@@ -106,10 +106,8 @@ that isn't open in any window**, if there is one; otherwise it opens a new one. 
 app starts. For a brand-new console every time: **File → New window with a new console**
 (Ctrl+Shift+T).
 
-**Closing the last window closes the consoles the windows used**, except the ones you left **in
-the background** (right click on the console in the panel → *Keep in background*), the ones
-another device is watching, and the ones not opened from this computer. Background consoles stay
-alive and you find them there next time you open the app.
+**Closing the app does not close any console**: they stay alive and you find them there next
+time you open it.
 
 ### The consoles panel
 
@@ -137,7 +135,7 @@ each one it says where it is open, or that it is detached.
 - **+** opens a new console in the window; **×** closes that console (if it was the window's, the
   window moves to another one).
 - **Right click on a console** in the panel (collapsed too): **Open here**, **Open in another
-  window**, **Keep in background** (or remove it from there) and **Close console**.
+  window** and **Close console**.
 - **View → Consoles panel** (Ctrl+Shift+B) hides or shows it.
 - With a `dotrino-terminal` older than 0.11 the panel is disabled and says so: update it from
   **Profile → Update dotrino-terminal…**.
@@ -149,12 +147,16 @@ the mouse wheel scrolls three lines at a time.
 prompt and doesn't run until you press Enter, even with several lines (bash highlights it until
 the next key).
 
-**Closing a window closes the console it is showing**, unless another window or device is watching
-it, or it is in the background. Consoles you left behind by switching from the panel stay detached
-until you close the app. To keep it running and come back
-later (from this computer or another device), press **Ctrl+]** then **d**: the window closes
-and the console stays alive. In a `dotrino-terminal` console, **Ctrl+]** then **n** opens another
-one (detaching the current one).
+**Closing a window never closes a console.** The console it was showing keeps running and you
+can come back to it later, from this computer or another device. A console is closed with the
+**×** in the panel, with **Close console**, or by typing `exit` in it. (A "No profile" window is
+the exception: there is no console to keep, and closing it ends what was running.)
+In a `dotrino-terminal` console, **Ctrl+]** then **d** detaches it and closes the window, and
+**Ctrl+]** then **n** opens another one (detaching the current one).
+
+**Where each console is open.** A **green dot** in the top right corner of a console in the
+panel means it is open in a window on this computer (this window, another one, or VS Code's
+terminal). No dot means no window is showing it.
 
 **What each console is doing.** In the panel, a console's number changes colour: **amber** when
 something is working in it and **green** when it finished and you have not looked at it yet (green
@@ -187,10 +189,8 @@ to an account** (to its vault) or **this computer only**:
 - **This computer only**: it works the same, but nobody gets in from outside.
 
 You can have several: one for your personal account, another for work. **Switching profile
-from the menu (to "No profile" too) closes that window's console and opens a new one in the
-other**, like
-closing a terminal and opening another. Whatever was running in the previous console ends; to
-keep it, detach it first with Ctrl+] d.
+from the menu (to "No profile" too) detaches that window's console and opens one in the
+other**. Whatever was running in the previous console keeps running in its profile.
 
 ### Renaming a profile
 
