@@ -1,6 +1,6 @@
 ---
 title: The games
-description: Chess, Cuarenta, Sudoku, Critters, Diamonds, Trivia and GridGame — what each one is and how it plays.
+description: Chess, Cuarenta, Sudoku, Offroad, Critters, Diamonds, Trivia and GridGame — what each one is and how it plays.
 ---
 
 # The games
@@ -49,6 +49,29 @@ difficulties, a **daily challenge**, pencil notes, undo and a timer.
 
 Every level is the **same for everyone**, so if you share one your friend plays
 exactly that challenge — and sharing earns you **a hint** to spend.
+
+### Offroad
+
+[`offroad.dotrino.com`](https://offroad.dotrino.com/) · repo
+[`dotrino-offroad`](https://github.com/imdotrino/dotrino-offroad)
+
+**Off-road truck** racing seen from above, with the whole track on screen. You race
+three computer-driven trucks on tracks with bumps that send you flying and mud that
+slows you down. **Nitros** and money bags show up on the track: first truck there
+takes them.
+
+- **Controls**: on a keyboard, `←` `→` to steer, `↑` for gas, `↓` to brake and the
+  space bar for nitro. On a phone you get on-screen buttons, and if you hold it
+  upright the track is turned to fill the screen.
+- **Garage**: prize money from each race upgrades your tires, shocks, acceleration
+  and top speed, and buys more nitros.
+- **Map**: 24 races across four regions (desert, forest, snow and volcano), with
+  branching paths and a **boss** at the end of each. A win gives 3 stars, second
+  place 2 and third 1; finishing fourth does not count. Stars open bosses and
+  regions.
+
+Every race is the **same for everyone**: share one and your friend drives that same
+track, and sharing gives you **3 nitros** (once per race).
 
 ### Critters
 

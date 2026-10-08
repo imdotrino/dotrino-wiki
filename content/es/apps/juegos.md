@@ -1,6 +1,6 @@
 ---
 title: Los juegos
-description: Ajedrez, Cuarenta, Sudoku, Critters, Diamonds, Trivia y GridGame: qué es cada uno y cómo se juega.
+description: Ajedrez, Cuarenta, Sudoku, Offroad, Critters, Diamonds, Trivia y GridGame: qué es cada uno y cómo se juega.
 ---
 
 # Los juegos
@@ -49,6 +49,29 @@ Cuatro dificultades, **reto diario** y notas a lápiz, deshacer y cronómetro.
 
 Cada nivel es el **mismo para todos**, así que si compartes uno, tu amigo juega
 exactamente ese reto — y compartirlo te da **una pista** para gastar.
+
+### Offroad
+
+[`offroad.dotrino.com`](https://offroad.dotrino.com/) · repo
+[`dotrino-offroad`](https://github.com/imdotrino/dotrino-offroad)
+
+Carreras de **camionetas todoterreno** vistas desde arriba, con la pista entera en
+pantalla. Corres contra tres camionetas que lleva la máquina, por pistas con lomas
+que te hacen saltar y charcos que te frenan. En la pista aparecen **nitros** y
+bolsas de dinero: el primero que pasa se los lleva.
+
+- **Mandos**: con teclado, `←` `→` para girar, `↑` para acelerar, `↓` para frenar
+  y la barra espaciadora para el nitro. En un teléfono salen botones en pantalla, y
+  si lo tienes en vertical la pista se gira para ocupar toda la pantalla.
+- **Taller**: con el premio de cada carrera mejoras llantas, amortiguadores,
+  aceleración y velocidad, y compras más nitros.
+- **Mapa**: 24 carreras en cuatro regiones (desierto, bosque, nieve y volcán), con
+  caminos que se bifurcan y un **jefe** al final de cada una. Ganar da 3 estrellas,
+  llegar segundo 2 y tercero 1; con el cuarto puesto la carrera no cuenta. Las
+  estrellas abren a los jefes y las regiones.
+
+Cada carrera es la **misma para todos**: si la compartes, tu amigo corre esa misma
+pista, y a ti compartirla te da **3 nitros** (una vez por carrera).
 
 ### Critters
 
