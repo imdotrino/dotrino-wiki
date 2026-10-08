@@ -156,7 +156,7 @@ In a `dotrino-terminal` console, **Ctrl+]** then **d** detaches it and closes th
 
 **Where each console is open.** A **green dot** in the top right corner of a console in the
 panel means it is open in a window on this computer (this window, another one, or VS Code's
-terminal). No dot means no window is showing it. The dot **blinks** when that console finished and you have not looked at it yet.
+terminal). No dot means no window is showing it. The dot **blinks** when that console finished and you have not looked at it yet; it stops as soon as its window has the focus.
 
 **What each console is doing.** In the panel, a console's number changes colour: **amber** when
 something is working in it and **green** when it finished and you have not looked at it yet (green
