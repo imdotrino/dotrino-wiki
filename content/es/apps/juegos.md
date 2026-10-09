@@ -73,6 +73,9 @@ los lleva. Las camionetas chocan entre sí y rebotan.
   llegar segundo 2 y tercero 1; con el cuarto puesto la carrera no cuenta. Las
   estrellas abren a los jefes y las regiones.
 
+- **Pista al azar**: un botón del mapa que arma una pista nueva cada vez, sin fin.
+  Da premio pero no estrellas.
+
 Cada carrera es la **misma para todos**: si la compartes, tu amigo corre esa misma
 pista, y a ti compartirla te da **3 nitros** (una vez por carrera).
 

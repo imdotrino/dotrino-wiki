@@ -73,6 +73,9 @@ bounce off.
   place 2 and third 1; finishing fourth does not count. Stars open bosses and
   regions.
 
+- **Random track**: a button on the map that builds a new track every time, with no
+  end. It pays a prize but no stars.
+
 Every race is the **same for everyone**: share one and your friend drives that same
 track, and sharing gives you **3 nitros** (once per race).
 
