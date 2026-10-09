@@ -431,6 +431,13 @@
           }
         },
         {
+          "slug": "versiones",
+          "title": {
+            "es": "Versiones y actualizaciones",
+            "en": "Versions and updates"
+          }
+        },
+        {
           "slug": "indice",
           "title": {
             "es": "El índice y las pruebas",

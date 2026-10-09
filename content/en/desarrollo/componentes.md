@@ -56,6 +56,21 @@ a list that **opens** the component is.
 `<dotrino-share>`: the share modal, with the QR code generated in the browser
 itself. It receives an address that is already assembled (with its `#fragment`).
 
+**`@dotrino/qr`** — repo
+[`dotrino-qr`](https://github.com/imdotrino/dotrino-qr)
+
+The ecosystem's QR: `<dotrino-qr>` shows one and `<dotrino-qr-scan>` reads one, with
+the camera or from a photo. Everything happens on the device.
+
+```
+<dotrino-qr value="https://messenger.dotrino.com/#add=K7M2Q9" caption="K7M2Q9"></dotrino-qr>
+<dotrino-qr-scan lang="en"></dotrino-qr-scan>
+```
+
+The reader opens with `scan.open = true` and reports through the events
+`dotrino-qr-scanned` (`e.detail.text`) and `dotrino-qr-cancelled`. The QR is always
+black on white; what you theme is the card.
+
 **`@dotrino/install`** — repo
 [`dotrino-install`](https://github.com/imdotrino/dotrino-install) —
 `<dotrino-install>`: the «Install app» button, including the iOS variant and

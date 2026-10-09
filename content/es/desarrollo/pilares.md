@@ -73,6 +73,14 @@ Verificación de identidad: prueba pública en los dos sentidos (un sitio web, u
 cuenta de GitHub) más una atestación firmada por un verificador tercero federado.
 Verificado no es lo mismo que revelado. **Escrito y probado, aún sin publicar.**
 
+**`@dotrino/webrtc`** — repo
+[`dotrino-webrtc`](https://github.com/imdotrino/dotrino-webrtc)
+
+WebRTC en JavaScript puro, **solo canales de datos**: lo que deja que dos máquinas
+tuyas se hablen directo en vez de dar la vuelta por internet. No se importa a mano:
+lo carga `@dotrino/proxy-client` si está instalado. Va en `optionalDependencies` de
+la pieza de Node, nunca en una app de navegador, que ya trae WebRTC.
+
 ## Para servicios y aparatos
 
 **`@dotrino/remote-agent`** — repo
@@ -87,3 +95,28 @@ revocado. Si estás escribiendo un agente, es esto y no otra cosa.
 
 Salas, asientos, turnos y emparejamiento para los juegos, sin interfaz. Reusa
 transporte, identidad y reputación.
+
+**`@dotrino/opaque`** — repo
+[`dotrino-opaque`](https://github.com/imdotrino/dotrino-opaque)
+
+Comprobar una contraseña **sin que quien la comprueba la vea nunca**. Es lo que hay
+detrás de entrar con usuario y contraseña en un
+equipo prestado. Todo entra y sale en base64url:
+
+```
+import { client, server } from '@dotrino/opaque'
+
+const l1 = client.loginStart({ password })
+const s1 = server.loginStart({ setup, record, request: l1.request, credentialId, identifiers })
+const l2 = client.loginFinish({ state: l1.state, response: s1.response, password, identifiers })
+const s2 = server.loginFinish({ state: s1.state, finalization: l2.finalization, identifiers })
+```
+
+Una contraseña equivocada, un usuario que no existe y un mensaje alterado dan el
+mismo error (`login-failed`), a propósito. El paquete no escribe criptografía
+propia: compila una librería auditada desde su código fuente.
+
+## Versiones
+
+Cómo dice cada pieza qué versión es y cómo se entera de que hay una nueva:
+[Versiones y actualizaciones](/desarrollo/versiones/).

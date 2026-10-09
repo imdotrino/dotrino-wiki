@@ -57,6 +57,21 @@ componente.
 `<dotrino-share>`: el modal de compartir, con el código QR generado en el propio
 navegador. Recibe una dirección ya armada (con su `#fragment`).
 
+**`@dotrino/qr`** — repo
+[`dotrino-qr`](https://github.com/imdotrino/dotrino-qr)
+
+El QR del ecosistema: `<dotrino-qr>` lo muestra y `<dotrino-qr-scan>` lo lee, con
+la cámara o desde una foto. Todo se hace en el aparato.
+
+```
+<dotrino-qr value="https://messenger.dotrino.com/#add=K7M2Q9" caption="K7M2Q9"></dotrino-qr>
+<dotrino-qr-scan lang="es"></dotrino-qr-scan>
+```
+
+El lector se abre con `scan.open = true` y avisa con los eventos
+`dotrino-qr-scanned` (`e.detail.text`) y `dotrino-qr-cancelled`. El QR va siempre
+negro sobre blanco; lo que se tematiza es la tarjeta.
+
 **`@dotrino/install`** — repo
 [`dotrino-install`](https://github.com/imdotrino/dotrino-install) —
 `<dotrino-install>`: el botón «Instalar app», incluida la variante de iOS y la
