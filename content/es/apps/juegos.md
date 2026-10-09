@@ -67,14 +67,19 @@ los lleva. Las camionetas chocan entre sí y rebotan.
   espaciadora para el nitro. También sirve un mando de juego. La pista se ve más
   grande con el teléfono en horizontal.
 - **Taller**: con el premio de cada carrera mejoras llantas, amortiguadores,
-  aceleración y velocidad, y compras más nitros.
+  aceleración y velocidad, sin tope (cada nivel cuesta más), y compras más nitros.
+  Las mejoras también se notan en cómo se mueve la camioneta: con mejores
+  amortiguadores rebota menos al aterrizar y con mejores llantas se ladea menos en
+  las curvas.
 - **Mapa**: 24 carreras en cuatro regiones (desierto, bosque, nieve y volcán), con
   caminos que se bifurcan y un **jefe** al final de cada una. Ganar da 3 estrellas,
   llegar segundo 2 y tercero 1; con el cuarto puesto la carrera no cuenta. Las
   estrellas abren a los jefes y las regiones.
 
-- **Pista al azar**: un botón del mapa que arma una pista nueva cada vez, sin fin.
-  Da premio pero no estrellas.
+- **Sin fin**: un botón del mapa que arma una pista nueva en cada ronda. Los rivales
+  mejoran más rápido que tu taller: el podio pasa de ronda y el cuarto puesto te
+  devuelve a la primera (se guarda tu mejor ronda). Da premio, que crece con la
+  ronda, pero no estrellas.
 
 Cada carrera es la **misma para todos**: si la compartes, tu amigo corre esa misma
 pista, y a ti compartirla te da **3 nitros** (una vez por carrera).

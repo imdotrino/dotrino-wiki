@@ -67,14 +67,18 @@ bounce off.
   space bar for nitro. A gamepad works too. The track looks bigger with the phone
   held sideways.
 - **Garage**: prize money from each race upgrades your tires, shocks, acceleration
-  and top speed, and buys more nitros.
+  and top speed, with no cap (each level costs more), and buys more nitros. Upgrades
+  also show in how the truck moves: better shocks bounce less on landing and better
+  tires lean less in corners.
 - **Map**: 24 races across four regions (desert, forest, snow and volcano), with
   branching paths and a **boss** at the end of each. A win gives 3 stars, second
   place 2 and third 1; finishing fourth does not count. Stars open bosses and
   regions.
 
-- **Random track**: a button on the map that builds a new track every time, with no
-  end. It pays a prize but no stars.
+- **Endless**: a button on the map that builds a new track every round. Rivals
+  improve faster than your garage: a podium moves you up a round and fourth place
+  sends you back to the first (your best round is kept). It pays a prize that grows
+  with the round, but no stars.
 
 Every race is the **same for everyone**: share one and your friend drives that same
 track, and sharing gives you **3 nitros** (once per race).
