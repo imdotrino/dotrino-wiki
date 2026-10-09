@@ -55,14 +55,14 @@ exactamente ese reto — y compartirlo te da **una pista** para gastar.
 [`offroad.dotrino.com`](https://offroad.dotrino.com/) · repo
 [`dotrino-offroad`](https://github.com/imdotrino/dotrino-offroad)
 
-Carreras de **camionetas todoterreno** vistas desde arriba, con la pista entera en
-pantalla. Corres contra tres camionetas que lleva la máquina, por pistas con lomas
+Carreras de **camionetas todoterreno** con la pista entera en pantalla, vista en
+perspectiva: las lomas, las cuestas y las vallas tienen relieve. Corres contra tres camionetas que lleva la máquina, por pistas con lomas
 que te hacen saltar y charcos que te frenan. En la pista aparecen **nitros** y
 bolsas de dinero: el primero que pasa se los lleva.
 
 - **Mandos**: con teclado, `←` `→` para girar, `↑` para acelerar, `↓` para frenar
   y la barra espaciadora para el nitro. En un teléfono salen botones en pantalla, y
-  si lo tienes en vertical la pista se gira para ocupar toda la pantalla.
+  la pista se ve más grande con el teléfono en horizontal.
 - **Taller**: con el premio de cada carrera mejoras llantas, amortiguadores,
   aceleración y velocidad, y compras más nitros.
 - **Mapa**: 24 carreras en cuatro regiones (desierto, bosque, nieve y volcán), con

@@ -55,14 +55,15 @@ exactly that challenge — and sharing earns you **a hint** to spend.
 [`offroad.dotrino.com`](https://offroad.dotrino.com/) · repo
 [`dotrino-offroad`](https://github.com/imdotrino/dotrino-offroad)
 
-**Off-road truck** racing seen from above, with the whole track on screen. You race
+**Off-road truck** racing with the whole track on screen, seen at an angle: bumps,
+hills and barriers have depth. You race
 three computer-driven trucks on tracks with bumps that send you flying and mud that
 slows you down. **Nitros** and money bags show up on the track: first truck there
 takes them.
 
 - **Controls**: on a keyboard, `←` `→` to steer, `↑` for gas, `↓` to brake and the
-  space bar for nitro. On a phone you get on-screen buttons, and if you hold it
-  upright the track is turned to fill the screen.
+  space bar for nitro. On a phone you get on-screen buttons, and the
+  track looks bigger with the phone held sideways.
 - **Garage**: prize money from each race upgrades your tires, shocks, acceleration
   and top speed, and buys more nitros.
 - **Map**: 24 races across four regions (desert, forest, snow and volcano), with
