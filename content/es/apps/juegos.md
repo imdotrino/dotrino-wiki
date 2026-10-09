@@ -57,12 +57,12 @@ exactamente ese reto — y compartirlo te da **una pista** para gastar.
 
 Carreras de **camionetas todoterreno** con la pista entera en pantalla, vista en
 perspectiva. Corres contra tres camionetas que lleva la máquina, por pistas anchas
-con **rampas** que te hacen volar un buen trecho, lomas, cuestas y charcos que te
-frenan. En la pista aparecen **nitros** y bolsas de dinero: el primero que pasa se
+con **rampas** que te hacen volar un buen trecho, **rocas** que hay que rodear,
+montículos, lomas y charcos que te frenan. En la pista aparecen **nitros** y bolsas de dinero: el primero que pasa se
 los lleva. Las camionetas chocan entre sí y rebotan.
 
 - **Mandos**: en un teléfono hay un **volante** (cuanto más lejos del centro pones
-  el dedo, más gira) y **pedales** de gas y freno, más el botón de nitro. Con
+  el dedo, más gira) y dos botones grandes: el pedal de gas y el nitro. Con
   teclado, `←` `→` para girar, `↑` para acelerar, `↓` para frenar y la barra
   espaciadora para el nitro. También sirve un mando de juego. La pista se ve más
   grande con el teléfono en horizontal.

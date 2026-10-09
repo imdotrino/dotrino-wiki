@@ -57,13 +57,13 @@ exactly that challenge — and sharing earns you **a hint** to spend.
 
 **Off-road truck** racing with the whole track on screen, seen at an angle. You
 race three computer-driven trucks on wide tracks with **ramps** that send you flying
-a good distance, bumps, hills and mud that slows you down. **Nitros** and money bags
+a good distance, **rocks** to drive around, mounds, hills and mud that slows you down. **Nitros** and money bags
 show up on the track: first truck there takes them. Trucks bump into each other and
 bounce off.
 
 - **Controls**: on a phone you get a **steering wheel** (the further from the centre
-  you put your finger, the harder it turns) and gas and brake **pedals**, plus the
-  nitro button. On a keyboard, `←` `→` to steer, `↑` for gas, `↓` to brake and the
+  you put your finger, the harder it turns) and two big buttons: the gas pedal
+  and nitro. On a keyboard, `←` `→` to steer, `↑` for gas, `↓` to brake and the
   space bar for nitro. A gamepad works too. The track looks bigger with the phone
   held sideways.
 - **Garage**: prize money from each race upgrades your tires, shocks, acceleration
