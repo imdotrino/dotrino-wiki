@@ -22,21 +22,21 @@ Hay dos formas de usarla:
 La app sola ya es una terminal normal. El programa de las consolas solo hace falta para usar
 **perfiles**, que es lo que deja abrir tus ventanas desde otros aparatos.
 
-**1. El programa de las consolas** (para los perfiles). Necesita Node 20 o más reciente. Lo
-más fácil es desde la propia app: **Perfil → Instalar dotrino-terminal…** abre una ventana
-aparte que lo instala en el acto; el resultado se queda a la vista hasta que pulses Enter. Cuando
-termina, los perfiles, «Enrolar…» y el panel de consolas se activan solos. O a mano:
-
-```
-npm install -g @dotrino/terminal-agent
-```
-
-Si no tienes Node, [el instalador de Dotrino](/herramientas/instalar/) lo trae y deja
-`dotrino-terminal` listo, sin permisos de administrador:
+**1. El programa de las consolas** (para los perfiles):
 
 ```
 curl -fsSL https://install.dotrino.com/install.sh | sh -s -- @dotrino/terminal-agent
 ```
+
+No pide permisos de administrador y, si no tienes Node, lo trae
+([el instalador de Dotrino](/herramientas/instalar/)). Cuando termina, los perfiles,
+«Enrolar…» y el panel de consolas de la app se activan solos.
+
+Otras dos formas de instalarlo, las dos con Node 20 o más reciente ya puesto:
+
+- Desde la propia app: **Perfil → Instalar dotrino-terminal…** abre una ventana aparte que
+  lo instala en el acto; el resultado se queda a la vista hasta que pulses Enter.
+- A mano: `npm install -g @dotrino/terminal-agent`.
 
 Cuando ya está instalado, la misma opción se llama **Actualizar dotrino-terminal…** y trae la
 versión más nueva. El agente que ya estaba corriendo sigue con la versión anterior hasta que se

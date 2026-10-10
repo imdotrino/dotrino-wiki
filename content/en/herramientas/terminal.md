@@ -14,18 +14,25 @@ your phone, a tablet, the laptop in the living room.
 **Only** a device you have linked gets in, and everything typed travels end-to-end
 encrypted.
 
+## Install
+
+On the computer you want to reach (Linux or macOS):
+
+```
+curl -fsSL https://install.dotrino.com/install.sh | sh -s -- @dotrino/terminal-agent
+```
+
+It asks for no admin rights and, if you have no Node, it brings it. When it finishes,
+open a new terminal and start the agent with `dotrino-terminal-agent`. What else this
+command does: [the Dotrino installer](/en/herramientas/instalar/).
+
 ## What you need
 
 1. [The vault](/en/vault/instalacion/) installed on one of your computers. It does not
    have to be the one you want to reach.
-2. The agent running on the computer you want to reach:
-
-```
-npx @dotrino/terminal-agent
-```
-
-   Or with [the installer](/en/herramientas/instalar/), if you would rather not
-   depend on `npx`.
+2. The agent running on the computer you want to reach: `dotrino-terminal-agent`
+   (the command above left it there). If you already have Node, it works the same
+   without installing anything: `npx @dotrino/terminal-agent`.
 
    The first time it asks you to **link** it to your vault: on the vault's computer run
    `dotrino-vault pair`, paste the invitation into the agent and approve the code it

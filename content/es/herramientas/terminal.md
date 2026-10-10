@@ -14,18 +14,25 @@ aparato: el teléfono, una tablet, la laptop de la sala.
 Entra **solo** un aparato que tú hayas enlazado, y todo lo que se escribe viaja
 cifrado de punta a punta.
 
+## Instalar
+
+En la computadora a la que quieres entrar (Linux o macOS):
+
+```
+curl -fsSL https://install.dotrino.com/install.sh | sh -s -- @dotrino/terminal-agent
+```
+
+No pide permisos de administrador y, si no tienes Node, lo trae. Cuando termina, abre
+una terminal nueva y arranca el agente con `dotrino-terminal-agent`. Qué más hace este
+comando: [el instalador de Dotrino](/herramientas/instalar/).
+
 ## Qué hace falta
 
 1. [La bóveda](/vault/instalacion/) instalada en alguna de tus computadoras. No tiene
    que ser la misma a la que quieres entrar.
-2. El agente corriendo en la computadora a la que quieres entrar:
-
-```
-npx @dotrino/terminal-agent
-```
-
-   O con [el instalador](/herramientas/instalar/), si prefieres no depender de
-   `npx`.
+2. El agente corriendo en la computadora a la que quieres entrar: `dotrino-terminal-agent`
+   (lo dejó el comando de arriba). Si ya tienes Node, vale igual sin instalar nada:
+   `npx @dotrino/terminal-agent`.
 
    La primera vez te pide **enlazarla** a tu bóveda: en la computadora de la bóveda
    corre `dotrino-vault pair`, pega la invitación en el agente y aprueba con

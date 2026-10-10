@@ -22,21 +22,21 @@ Two ways to use it:
 The app on its own is already a plain terminal. The console program is only needed for
 **profiles**, which is what lets you open your windows from other devices.
 
-**1. The console program** (for profiles). It needs Node 20 or newer. The easiest way is from
-the app itself: **Profile → Install dotrino-terminal…** opens a separate window that installs it
-right away; the result stays on screen until you press Enter. When it finishes, the profiles,
-"Enroll…" and the consoles panel light up by themselves. Or by hand:
-
-```
-npm install -g @dotrino/terminal-agent
-```
-
-If you have no Node, [the Dotrino installer](/en/herramientas/instalar/) brings it and leaves
-`dotrino-terminal` ready, with no admin rights:
+**1. The console program** (for profiles):
 
 ```
 curl -fsSL https://install.dotrino.com/install.sh | sh -s -- @dotrino/terminal-agent
 ```
+
+It asks for no admin rights and, if you have no Node, it brings it
+([the Dotrino installer](/en/herramientas/instalar/)). When it finishes, the app's profiles,
+"Enroll…" and consoles panel light up by themselves.
+
+Two other ways to install it, both with Node 20 or newer already in place:
+
+- From the app itself: **Profile → Install dotrino-terminal…** opens a separate window that
+  installs it right away; the result stays on screen until you press Enter.
+- By hand: `npm install -g @dotrino/terminal-agent`.
 
 Once installed, the same option is called **Update dotrino-terminal…** and brings the newest
 version. An agent that was already running keeps the old version until it restarts.
