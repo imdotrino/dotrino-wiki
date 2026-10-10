@@ -9,7 +9,7 @@ Three paths, all leaving **the same vault**. Pick by your system:
 
 | Your case | Path | Guide |
 |---|---|---|
-| Ubuntu / Debian / other Linux x64 | installer (`.deb` or tarball): stays as a service | [Install on Linux](/en/vault/instalar-linux/) |
+| Ubuntu / Debian / Fedora / other Linux x64 | installer (`.deb`, `.rpm` or tarball): stays as a service | [Install on Linux](/en/vault/instalar-linux/) |
 | Windows · macOS · any system with Node | **one command** (`npx`), runs in the foreground | [Install with one command](/en/vault/instalar-npx/) |
 | Docker · ARM / Raspberry | official amd64/arm64 image | [Install with Docker](/en/vault/instalar-docker/) |
 

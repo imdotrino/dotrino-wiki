@@ -9,7 +9,7 @@ Tres vías, y todas dejan **la misma bóveda**. Elige por tu sistema:
 
 | Tu caso | Vía | Guía |
 |---|---|---|
-| Ubuntu / Debian / otro Linux x64 | instalador (`.deb` o tarball): queda como servicio y arranca solo | [Instalar en Linux](/vault/instalar-linux/) |
+| Ubuntu / Debian / Fedora / otro Linux x64 | instalador (`.deb`, `.rpm` o tarball): queda como servicio y arranca solo | [Instalar en Linux](/vault/instalar-linux/) |
 | Windows · macOS · cualquier sistema con Node | **un comando** (`npx`), corre en primer plano | [Instalar con un comando](/vault/instalar-npx/) |
 | Docker · ARM / Raspberry | imagen oficial amd64/arm64 | [Instalar con Docker](/vault/instalar-docker/) |
 

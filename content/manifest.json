@@ -126,8 +126,8 @@
         {
           "slug": "instalar-linux",
           "title": {
-            "es": "Instalar en Linux (.deb / tarball)",
-            "en": "Install on Linux (.deb / tarball)"
+            "es": "Instalar en Linux (.deb / .rpm / tarball)",
+            "en": "Install on Linux (.deb / .rpm / tarball)"
           }
         },
         {
