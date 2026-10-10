@@ -15,8 +15,9 @@ clic, o en la terminal:
 sudo apt install ./dotrino-vault_*.deb
 ```
 
-Instala los binarios en `/usr/bin` y la unidad `systemd --user` para **todos** los
-usuarios de la máquina (cada uno con su propia bóveda en su `$HOME`). Arranca sola en
+Instala el servicio para **todos** los usuarios de la máquina (cada uno con su propia
+bóveda en su `$HOME`). El programa se copia a tu carpeta la primera vez que arranca, y
+desde ahí **se actualiza solo**, sin `sudo`. Arranca sola en
 tu **próximo inicio de sesión**; para levantarla ya:
 
 ```sh
@@ -34,8 +35,8 @@ sudo dnf install ./dotrino-vault-*.x86_64.rpm                           # Fedora
 sudo zypper install --allow-unsigned-rpm ./dotrino-vault-*.x86_64.rpm   # openSUSE
 ```
 
-Deja lo mismo que el `.deb`: los binarios en `/usr/bin` y el servicio para todos los
-usuarios de la máquina. Arranca en tu próximo inicio de sesión, o ya con
+Deja lo mismo que el `.deb`: el servicio para todos los usuarios de la máquina y el
+programa en tu carpeta, que se actualiza solo. Arranca en tu próximo inicio de sesión, o ya con
 `systemctl --user start dotrino-vault`.
 
 El paquete no lleva firma GPG, y por eso `zypper` pide `--allow-unsigned-rpm`. Para
@@ -59,9 +60,12 @@ el arranque de la máquina aunque no inicies sesión.
 
 ## Lo que hay que saber
 
-- Instalada con el `.deb` o el `.rpm`, la bóveda **no se actualiza sola**: avisa de que
-  hay versión nueva y `dotrino-vault update` la baja, la comprueba y te dice el comando
-  con `sudo`. Con el tarball sí se actualiza sola.
+- **Se actualiza sola**, con cualquiera de los tres instaladores (el `.deb` y el `.rpm`,
+  desde la versión 0.150.0). Una vez al día mira si hay versión nueva, la baja, comprueba
+  de dónde salió y la instala en tu carpeta. Si prefieres que te pida permiso antes:
+  `dotrino-vault update --approval on`.
+- Quitar el paquete (`sudo apt remove dotrino-vault` o `sudo dnf remove dotrino-vault`)
+  no borra tu bóveda ni tus datos: siguen en `~/.local/share/dotrino`.
 
 - El binario trae **Node embebido**: no necesitas instalar Node ni dependencias.
   Lo único que espera del sistema es `libatomic1` (el `.deb` y el `.rpm` la instalan solos).

@@ -15,8 +15,9 @@ double-click it, or:
 sudo apt install ./dotrino-vault_*.deb
 ```
 
-It installs the binaries in `/usr/bin` and the `systemd --user` unit for **every**
-user on the machine (each with their own vault in their `$HOME`). It starts on your
+It installs the service for **every** user on the machine (each with their own vault in
+their `$HOME`). The program is copied to your folder the first time it starts, and from
+there it **updates itself**, with no `sudo`. It starts on your
 **next login**; to bring it up now:
 
 ```sh
@@ -34,8 +35,8 @@ sudo dnf install ./dotrino-vault-*.x86_64.rpm                           # Fedora
 sudo zypper install --allow-unsigned-rpm ./dotrino-vault-*.x86_64.rpm   # openSUSE
 ```
 
-It leaves the same as the `.deb`: the binaries in `/usr/bin` and the service for every
-user on the machine. It starts on your next login, or right now with
+It leaves the same as the `.deb`: the service for every user on the machine and the
+program in your folder, which updates itself. It starts on your next login, or right now with
 `systemctl --user start dotrino-vault`.
 
 The package carries no GPG signature, which is why `zypper` asks for
@@ -59,9 +60,12 @@ runs from machine boot even if you never log in.
 
 ## Worth knowing
 
-- Installed from the `.deb` or the `.rpm`, the vault **does not update itself**: it tells
-  you a new version is out and `dotrino-vault update` downloads it, checks it and prints
-  the `sudo` command. The tarball install does update itself.
+- **It updates itself**, with any of the three installers (the `.deb` and the `.rpm`,
+  from version 0.150.0). Once a day it checks for a new version, downloads it, verifies
+  where it came from and installs it in your folder. If you would rather be asked first:
+  `dotrino-vault update --approval on`.
+- Removing the package (`sudo apt remove dotrino-vault` or `sudo dnf remove dotrino-vault`)
+  does not delete your vault or your data: they stay in `~/.local/share/dotrino`.
 
 - The binary embeds **Node**: nothing to install. The only thing it expects from the
   system is `libatomic1` (the `.deb` and the `.rpm` install it by themselves).
