@@ -200,12 +200,14 @@ Dotrino Terminal, each with its consoles. They show up by themselves: there is n
 up. Collapsed, each computer is a button with the first two letters of its name and, below
 it, one number per console.
 
-- **Click one of its consoles**: it opens in a **new window**, just as it was. The window you
-  are in stays on its own.
+- **Click one of its consoles**: it opens in **this same window**, just as it was, like a
+  console from here (app 0.2.50 or newer). The one you had is detached, not closed.
 - **+** next to the name (or click its initials, with the panel collapsed): opens a new
-  console on that computer.
-- In the new window everything works the same: its panel shows that computer's consoles, and
-  the window title says its name.
+  console on that computer, in this window.
+- **×** next to one of its consoles: closes it.
+- The panel does not change: it keeps showing the consoles from here and from the others,
+  with the window's one marked. To come back, click a console from here. The window title
+  says which computer you are on.
 - If that computer **asks for its code**, the window asks you when it opens. It is remembered
   while the console program keeps running; it is not saved to disk.
 

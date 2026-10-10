@@ -203,12 +203,14 @@ están encendidas** con Dotrino Terminal, cada una con sus consolas. Salen solas
 que configurar. Plegado, cada computadora es un botón con las dos primeras letras de su
 nombre y, debajo, un número por consola.
 
-- **Clic en una de sus consolas**: se abre en una **ventana nueva**, tal como estaba. La
-  ventana en la que estás sigue en la suya.
+- **Clic en una de sus consolas**: se abre en **esta misma ventana**, tal como estaba, igual
+  que una consola de aquí (app 0.2.50 o más reciente). La que tenías queda suelta, no se cierra.
 - **+** junto al nombre (o clic en sus iniciales, con el panel plegado): abre una consola
-  nueva en esa computadora.
-- En la ventana nueva todo funciona igual: su panel enseña las consolas de aquella
-  computadora, y el título de la ventana dice su nombre.
+  nueva en esa computadora, en esta ventana.
+- **×** junto a una de sus consolas: la cierra.
+- El panel no cambia: sigue enseñando las consolas de aquí y las de las otras, con la de la
+  ventana marcada. Para volver, clic en una consola de aquí. El título de la ventana dice en
+  qué computadora estás.
 - Si esa computadora **pide su clave**, la ventana te la pregunta al abrir. Se recuerda
   mientras el programa de las consolas siga corriendo; no se guarda en el disco.
 
