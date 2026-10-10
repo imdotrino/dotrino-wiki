@@ -42,6 +42,17 @@ Cuando ya está instalado, la misma opción se llama **Actualizar dotrino-termin
 versión más nueva. El agente que ya estaba corriendo sigue con la versión anterior hasta que se
 reinicia.
 
+**Actualizar la app.** En el menú **Perfil → Actualizar la app…**. Baja la versión nueva,
+comprueba su firma y la instala, todo a la vista en la ventana.
+
+- Hace falta `dotrino-terminal` 0.39.0 o más reciente, y la app 0.2.46 o más reciente.
+- Para comprobar la firma hace falta [GitHub CLI](https://cli.github.com) (`gh`) 2.49 o más
+  reciente; no hay que iniciar sesión. Sin él no se instala nada, y lo dice.
+- Si la instalaste con el `.deb` o el `.rpm`, pide tu contraseña de administrador.
+- Las ventanas abiertas siguen con la versión anterior: cierra la app y vuelve a abrirla. Tus
+  consolas no se cierran.
+- A mano: `dotrino-terminal desktop update` (`--check` solo mira si hay versión nueva).
+
 **2. La app.** Bájala de la
 [página de versiones](https://github.com/imdotrino/dotrino-terminal/releases/latest):
 
@@ -107,7 +118,7 @@ Abre la app y tienes una ventana con una consola. Arriba está el menú:
 | Editar | Copiar | Ctrl+Shift+C | ⌘C |
 | Editar | Pegar | Ctrl+Shift+V | ⌘V |
 | Ver | Panel de consolas | Ctrl+Shift+B | ⌘B |
-| Perfil | Sin perfil · la lista de perfiles · Renombrar · Enrolar… · Instalar/Actualizar dotrino-terminal… | | |
+| Perfil | Sin perfil · la lista de perfiles · Renombrar · Enrolar… · Instalar/Actualizar dotrino-terminal… · Actualizar la app… | | |
 | Ayuda | Cómo se usa (esta página) | | |
 
 Una ventana nueva usa el mismo perfil que la ventana desde la que la abriste y **se engancha a una
@@ -277,6 +288,7 @@ dotrino-terminal profiles             # los perfiles de esta computadora
 dotrino-terminal link                 # enrolar un perfil
 dotrino-terminal rename <perfil> <nuevo>   # cambiarle el nombre
 dotrino-terminal vscode               # la terminal de VS Code abre consolas de aquí (--off lo deshace)
+dotrino-terminal desktop update       # actualiza la app de escritorio (--check solo mira)
 ```
 
 Si el programa de las consolas no está corriendo, `dotrino-terminal` lo arranca solo.

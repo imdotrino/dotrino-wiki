@@ -41,6 +41,16 @@ Two other ways to install it, both with Node 20 or newer already in place:
 Once installed, the same option is called **Update dotrino-terminal…** and brings the newest
 version. An agent that was already running keeps the old version until it restarts.
 
+**Updating the app.** In the menu **Profile → Update the app…**. It downloads the new version,
+checks its signature and installs it, all in view in the window.
+
+- It needs `dotrino-terminal` 0.39.0 or newer, and the app 0.2.46 or newer.
+- Checking the signature needs [GitHub CLI](https://cli.github.com) (`gh`) 2.49 or newer; no
+  login required. Without it nothing is installed, and it says so.
+- If you installed it from the `.deb` or the `.rpm`, it asks for your administrator password.
+- Open windows keep the old version: quit the app and open it again. Your consoles stay open.
+- By hand: `dotrino-terminal desktop update` (`--check` only looks for a new version).
+
 **2. The app.** Download it from the
 [releases page](https://github.com/imdotrino/dotrino-terminal/releases/latest):
 
@@ -106,7 +116,7 @@ Open the app and you get a window with a console. The menu is at the top:
 | Edit | Copy | Ctrl+Shift+C | ⌘C |
 | Edit | Paste | Ctrl+Shift+V | ⌘V |
 | View | Consoles panel | Ctrl+Shift+B | ⌘B |
-| Profile | No profile · the list of profiles · Rename · Enroll… · Install/Update dotrino-terminal… | | |
+| Profile | No profile · the list of profiles · Rename · Enroll… · Install/Update dotrino-terminal… · Update the app… | | |
 | Help | How to use it (this page) | | |
 
 A new window uses the same profile as the window you opened it from and **attaches to a console
@@ -275,6 +285,7 @@ dotrino-terminal profiles             # this computer's profiles
 dotrino-terminal link                 # enroll a profile
 dotrino-terminal rename <profile> <new>    # rename it
 dotrino-terminal vscode               # VS Code's terminal opens consoles from here (--off undoes it)
+dotrino-terminal desktop update       # update the desktop app (--check only looks)
 ```
 
 If the console program is not running, `dotrino-terminal` starts it by itself.
