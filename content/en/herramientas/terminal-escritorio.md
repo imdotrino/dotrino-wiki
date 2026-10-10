@@ -213,6 +213,8 @@ The profile needs to be [enrolled](#enroll-a-profile), and **this computer** nee
 0.38.0 of the console program (the others do not need updating). A computer that is off does
 not show up.
 
+**If you do not see your other computers**, the panel says why below your consoles, under “Other machines” (app 0.2.47 or newer): the profile is not linked, `dotrino-terminal` is older than 0.38.0, the console program is still running the old version, or no other one is on. The command `dotrino-terminal machines` says the same.
+
 ## Profiles
 
 **Every window opens in a profile**: the last one you picked in the menu; otherwise

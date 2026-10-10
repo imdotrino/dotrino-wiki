@@ -216,6 +216,8 @@ Hace falta que el perfil esté [enrolado](#enrolar-un-perfil) y la versión 0.38
 programa de las consolas **en esta computadora** (las otras no necesitan actualizarse). Una
 computadora apagada no sale.
 
+**Si no ves tus otras computadoras**, el panel dice por qué debajo de tus consolas, en «Otras máquinas» (app 0.2.47 o más reciente): el perfil no está enlazado, `dotrino-terminal` es anterior a la 0.38.0, el programa de las consolas sigue corriendo la versión anterior, o no hay ninguna otra encendida. La orden `dotrino-terminal machines` dice lo mismo.
+
 ## Perfiles
 
 **Cada ventana abre en un perfil**: el último que elegiste en el menú; si no, `default`; si no,
