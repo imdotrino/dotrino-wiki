@@ -40,6 +40,7 @@ version. An agent that was already running keeps the old version until it restar
 | System | File | How to install |
 |---|---|---|
 | Ubuntu, Debian | `dotrino-terminal-desktop_<version>_amd64.deb` | `sudo apt install ./dotrino-terminal-desktop_*.deb` · it shows up in the menu as "Dotrino Terminal" |
+| Fedora, RHEL, openSUSE | `dotrino-terminal-desktop-<version>-1.x86_64.rpm` | `sudo dnf install ./dotrino-terminal-desktop-*.x86_64.rpm` (on openSUSE: `sudo zypper install --allow-unsigned-rpm ./dotrino-terminal-desktop-*.x86_64.rpm`) · it shows up in the menu as "Dotrino Terminal" |
 | Other Linux | `dotrino-terminal-desktop-<version>-linux-x64.tar.gz` | unpack it and run `dotrino-terminal-desktop` |
 | macOS (Apple Silicon and Intel) | `dotrino-terminal-desktop-<version>-macos-universal.zip` | unpack it and drag "Dotrino Terminal" to Applications |
 

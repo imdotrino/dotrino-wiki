@@ -41,6 +41,7 @@ reinicia.
 | Sistema | Archivo | Cómo se instala |
 |---|---|---|
 | Ubuntu, Debian | `dotrino-terminal-desktop_<versión>_amd64.deb` | `sudo apt install ./dotrino-terminal-desktop_*.deb` · aparece en el menú como «Dotrino Terminal» |
+| Fedora, RHEL, openSUSE | `dotrino-terminal-desktop-<versión>-1.x86_64.rpm` | `sudo dnf install ./dotrino-terminal-desktop-*.x86_64.rpm` (en openSUSE: `sudo zypper install --allow-unsigned-rpm ./dotrino-terminal-desktop-*.x86_64.rpm`) · aparece en el menú como «Dotrino Terminal» |
 | Otro Linux | `dotrino-terminal-desktop-<versión>-linux-x64.tar.gz` | descomprímelo y abre `dotrino-terminal-desktop` |
 | macOS (Apple Silicon e Intel) | `dotrino-terminal-desktop-<versión>-macos-universal.zip` | descomprímelo y arrastra «Dotrino Terminal» a Aplicaciones |
 
