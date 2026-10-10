@@ -289,6 +289,7 @@ dotrino-terminal link                 # enrolar un perfil
 dotrino-terminal rename <perfil> <nuevo>   # cambiarle el nombre
 dotrino-terminal vscode               # la terminal de VS Code abre consolas de aquí (--off lo deshace)
 dotrino-terminal desktop update       # actualiza la app de escritorio (--check solo mira)
+dotrino-terminal service install      # el agente arranca solo al encender (uninstall lo quita; status lo dice)
 ```
 
 Si el programa de las consolas no está corriendo, `dotrino-terminal` lo arranca solo.

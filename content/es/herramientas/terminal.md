@@ -49,6 +49,27 @@ aprobarlas: eliges una y ya estás dentro.
 Si no aparece, lo más probable es que el agente no esté corriendo. Una computadora
 apagada no sale en la lista hasta que el agente vuelve a arrancar.
 
+## Que arranque sola al encender
+
+Sin hacer nada, el agente arranca la primera vez que abres una ventana en esa computadora.
+Para que arranque solo, sin que nadie se siente delante:
+
+```bash
+dotrino-terminal service install
+```
+
+- **Linux:** queda como un servicio de tu usuario, sin contraseña de administrador. Arranca al
+  encender la máquina. Si el sistema no lo permite sin administrador, arranca al iniciar
+  sesión, y la orden te dice qué correr para cambiarlo.
+- **macOS:** arranca al iniciar sesión.
+- Con varios perfiles, cada uno tiene el suyo: `dotrino-terminal service install --name trabajo`.
+- Si ya hay un agente corriendo no se toca, para no cerrar tus consolas: el servicio toma el
+  relevo cuando ese termine o al próximo arranque.
+- `dotrino-terminal service status` dice si está puesto y si está corriendo.
+- `dotrino-terminal service uninstall` lo quita. Para el agente, así que cierra sus consolas;
+  si hay alguna abierta, pregunta antes. El perfil y su enlace no se tocan.
+- Si cambias de versión de Node, vuelve a correr `service install`.
+
 ## Cerrar el navegador no cierra la consola
 
 Lo que dejes corriendo sigue corriendo: si recargas, cierras el navegador o se te va la

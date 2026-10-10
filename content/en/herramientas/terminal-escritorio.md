@@ -286,6 +286,7 @@ dotrino-terminal link                 # enroll a profile
 dotrino-terminal rename <profile> <new>    # rename it
 dotrino-terminal vscode               # VS Code's terminal opens consoles from here (--off undoes it)
 dotrino-terminal desktop update       # update the desktop app (--check only looks)
+dotrino-terminal service install      # the agent starts by itself at boot (uninstall removes it; status tells)
 ```
 
 If the console program is not running, `dotrino-terminal` starts it by itself.

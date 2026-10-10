@@ -49,6 +49,27 @@ approved them: pick one and you are in.
 If it does not show up, the agent is most likely not running. A computer that is off
 stays out of the list until its agent starts again.
 
+## Starting by itself at boot
+
+Out of the box, the agent starts the first time you open a window on that computer. To have
+it start by itself, with nobody sitting at it:
+
+```bash
+dotrino-terminal service install
+```
+
+- **Linux:** it becomes a service of your user, with no administrator password. It starts when
+  the machine boots. If the system does not allow that without an administrator, it starts
+  when you log in, and the command tells you what to run to change it.
+- **macOS:** it starts when you log in.
+- With several profiles, each has its own: `dotrino-terminal service install --name work`.
+- An agent that is already running is left alone, so your consoles stay open: the service
+  takes over when it ends or at the next start.
+- `dotrino-terminal service status` says whether it is installed and running.
+- `dotrino-terminal service uninstall` removes it. It stops the agent, so its consoles close;
+  if any is open, it asks first. The profile and its link are untouched.
+- If you switch Node versions, run `service install` again.
+
 ## Closing the browser does not close the console
 
 Whatever you leave running keeps running: if you reload, close the browser or lose the
