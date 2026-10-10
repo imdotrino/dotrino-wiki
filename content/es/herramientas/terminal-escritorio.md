@@ -31,6 +31,13 @@ termina, los perfiles, «Enrolar…» y el panel de consolas se activan solos. O
 npm install -g @dotrino/terminal-agent
 ```
 
+Si no tienes Node, [el instalador de Dotrino](/herramientas/instalar/) lo trae y deja
+`dotrino-terminal` listo, sin permisos de administrador:
+
+```
+curl -fsSL https://install.dotrino.com/install.sh | sh -s -- @dotrino/terminal-agent
+```
+
 Cuando ya está instalado, la misma opción se llama **Actualizar dotrino-terminal…** y trae la
 versión más nueva. El agente que ya estaba corriendo sigue con la versión anterior hasta que se
 reinicia.

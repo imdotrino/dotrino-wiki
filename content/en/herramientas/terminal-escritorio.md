@@ -31,6 +31,13 @@ right away; the result stays on screen until you press Enter. When it finishes, 
 npm install -g @dotrino/terminal-agent
 ```
 
+If you have no Node, [the Dotrino installer](/en/herramientas/instalar/) brings it and leaves
+`dotrino-terminal` ready, with no admin rights:
+
+```
+curl -fsSL https://install.dotrino.com/install.sh | sh -s -- @dotrino/terminal-agent
+```
+
 Once installed, the same option is called **Update dotrino-terminal…** and brings the newest
 version. An agent that was already running keeps the old version until it restarts.
 
