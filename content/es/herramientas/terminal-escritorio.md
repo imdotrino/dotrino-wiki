@@ -42,16 +42,19 @@ Cuando ya está instalado, la misma opción se llama **Actualizar dotrino-termin
 versión más nueva. El agente que ya estaba corriendo sigue con la versión anterior hasta que se
 reinicia.
 
-**Actualizar la app.** En el menú **Perfil → Actualizar la app…**. Baja la versión nueva,
-comprueba su firma y la instala, todo a la vista en la ventana.
+**Actualizar.** Al abrir, la app mira si hay versión nueva de `dotrino-terminal` o de la app.
+Si la hay, te lo dice y eliges **Actualizar ahora** o **Después** (app 0.2.51 o más reciente).
+También está en el menú **Perfil → Actualizar dotrino-terminal y la app…**. Es una sola acción:
+primero el programa de las consolas y, a continuación, la app, todo a la vista en la ventana.
 
-- Hace falta `dotrino-terminal` 0.39.0 o más reciente, y la app 0.2.46 o más reciente.
-- Para comprobar la firma hace falta [GitHub CLI](https://cli.github.com) (`gh`) 2.49 o más
-  reciente; no hay que iniciar sesión. Sin él no se instala nada, y lo dice.
+- Para comprobar la firma de la app hace falta [GitHub CLI](https://cli.github.com) (`gh`) 2.49
+  o más reciente; no hay que iniciar sesión. Sin él la app no se instala, y lo dice.
 - Si la instalaste con el `.deb` o el `.rpm`, pide tu contraseña de administrador.
-- Las ventanas abiertas siguen con la versión anterior: cierra la app y vuelve a abrirla. Tus
-  consolas no se cierran.
-- A mano: `dotrino-terminal desktop update` (`--check` solo mira si hay versión nueva).
+- Al terminar, si la app cambió, aparece **Reiniciar la app**: se cierra y vuelve a abrir con
+  la versión nueva, en las mismas consolas. Tus consolas no se cierran.
+- El programa de las consolas que ya corría sigue con la versión anterior hasta que se reinicia.
+- A mano: `dotrino-terminal updates` dice qué hay nuevo y `dotrino-terminal desktop update`
+  actualiza la app.
 
 **2. La app.** Bájala de la
 [página de versiones](https://github.com/imdotrino/dotrino-terminal/releases/latest):
@@ -118,7 +121,7 @@ Abre la app y tienes una ventana con una consola. Arriba está el menú:
 | Editar | Copiar | Ctrl+Shift+C | ⌘C |
 | Editar | Pegar | Ctrl+Shift+V | ⌘V |
 | Ver | Panel de consolas | Ctrl+Shift+B | ⌘B |
-| Perfil | Sin perfil · la lista de perfiles · Renombrar · Enrolar… · Instalar/Actualizar dotrino-terminal… · Actualizar la app… | | |
+| Perfil | Sin perfil · la lista de perfiles · Renombrar · Enrolar… · Instalar dotrino-terminal… / Actualizar dotrino-terminal y la app… | | |
 | Ayuda | Cómo se usa (esta página) | | |
 
 Una ventana nueva usa el mismo perfil que la ventana desde la que la abriste y **se engancha a una

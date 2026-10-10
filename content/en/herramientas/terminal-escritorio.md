@@ -41,15 +41,19 @@ Two other ways to install it, both with Node 20 or newer already in place:
 Once installed, the same option is called **Update dotrino-terminal…** and brings the newest
 version. An agent that was already running keeps the old version until it restarts.
 
-**Updating the app.** In the menu **Profile → Update the app…**. It downloads the new version,
-checks its signature and installs it, all in view in the window.
+**Updating.** When it opens, the app checks for a new version of `dotrino-terminal` or of the
+app. If there is one, it tells you and you choose **Update now** or **Later** (app 0.2.51 or
+newer). It is also in the menu **Profile → Update dotrino-terminal and the app…**. It is a single
+action: first the console program and then the app, all in view in the window.
 
-- It needs `dotrino-terminal` 0.39.0 or newer, and the app 0.2.46 or newer.
-- Checking the signature needs [GitHub CLI](https://cli.github.com) (`gh`) 2.49 or newer; no
-  login required. Without it nothing is installed, and it says so.
+- Checking the app's signature needs [GitHub CLI](https://cli.github.com) (`gh`) 2.49 or newer;
+  no login required. Without it the app is not installed, and it says so.
 - If you installed it from the `.deb` or the `.rpm`, it asks for your administrator password.
-- Open windows keep the old version: quit the app and open it again. Your consoles stay open.
-- By hand: `dotrino-terminal desktop update` (`--check` only looks for a new version).
+- When it finishes, if the app changed, **Restart the app** shows up: it closes and opens again
+  with the new version, on the same consoles. Your consoles stay open.
+- A console program that was already running keeps the old version until it restarts.
+- By hand: `dotrino-terminal updates` says what is new and `dotrino-terminal desktop update`
+  updates the app.
 
 **2. The app.** Download it from the
 [releases page](https://github.com/imdotrino/dotrino-terminal/releases/latest):
@@ -116,7 +120,7 @@ Open the app and you get a window with a console. The menu is at the top:
 | Edit | Copy | Ctrl+Shift+C | ⌘C |
 | Edit | Paste | Ctrl+Shift+V | ⌘V |
 | View | Consoles panel | Ctrl+Shift+B | ⌘B |
-| Profile | No profile · the list of profiles · Rename · Enroll… · Install/Update dotrino-terminal… · Update the app… | | |
+| Profile | No profile · the list of profiles · Rename · Enroll… · Install dotrino-terminal… / Update dotrino-terminal and the app… | | |
 | Help | How to use it (this page) | | |
 
 A new window uses the same profile as the window you opened it from and **attaches to a console
