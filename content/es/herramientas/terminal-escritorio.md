@@ -185,6 +185,26 @@ consola**, con su panel: el **+** abre una cuando quieras.
 **Cuándo se crea una consola.** Solo con el **+**, o al abrir una ventana cuando no hay ninguna
 consola sin abrir. Así no se acumulan consolas que nadie mira.
 
+### Las consolas de tus otras computadoras
+
+Debajo de las consolas de esta computadora, el panel enseña **tus otras computadoras que
+están encendidas** con Dotrino Terminal, cada una con sus consolas. Salen solas: no hay nada
+que configurar. Plegado, cada computadora es un botón con las dos primeras letras de su
+nombre y, debajo, un número por consola.
+
+- **Clic en una de sus consolas**: se abre en una **ventana nueva**, tal como estaba. La
+  ventana en la que estás sigue en la suya.
+- **+** junto al nombre (o clic en sus iniciales, con el panel plegado): abre una consola
+  nueva en esa computadora.
+- En la ventana nueva todo funciona igual: su panel enseña las consolas de aquella
+  computadora, y el título de la ventana dice su nombre.
+- Si esa computadora **pide su clave**, la ventana te la pregunta al abrir. Se recuerda
+  mientras el programa de las consolas siga corriendo; no se guarda en el disco.
+
+Hace falta que el perfil esté [enrolado](#enrolar-un-perfil) y la versión 0.38.0 del
+programa de las consolas **en esta computadora** (las otras no necesitan actualizarse). Una
+computadora apagada no sale.
+
 ## Perfiles
 
 **Cada ventana abre en un perfil**: el último que elegiste en el menú; si no, `default`; si no,
@@ -250,6 +270,9 @@ dotrino-terminal --name trabajo       # en el perfil «trabajo»
 dotrino-terminal ls                   # las consolas abiertas
 dotrino-terminal attach <id>          # volver a una
 dotrino-terminal kill <id>            # cerrar una
+dotrino-terminal machines             # tus otras computadoras encendidas y sus consolas
+dotrino-terminal --machine oficina    # abre una consola EN esa computadora (por su nombre o su id)
+dotrino-terminal attach <id> --machine oficina   # volver a una de allí (ls y kill, igual)
 dotrino-terminal profiles             # los perfiles de esta computadora
 dotrino-terminal link                 # enrolar un perfil
 dotrino-terminal rename <perfil> <nuevo>   # cambiarle el nombre

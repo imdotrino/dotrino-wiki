@@ -183,6 +183,26 @@ panel: **+** opens one whenever you want.
 **When a console is created.** Only with **+**, or when a window opens and there is no console
 left unopened. That way consoles nobody is looking at do not pile up.
 
+### The consoles of your other computers
+
+Below this computer's consoles, the panel shows **your other computers that are on** with
+Dotrino Terminal, each with its consoles. They show up by themselves: there is nothing to set
+up. Collapsed, each computer is a button with the first two letters of its name and, below
+it, one number per console.
+
+- **Click one of its consoles**: it opens in a **new window**, just as it was. The window you
+  are in stays on its own.
+- **+** next to the name (or click its initials, with the panel collapsed): opens a new
+  console on that computer.
+- In the new window everything works the same: its panel shows that computer's consoles, and
+  the window title says its name.
+- If that computer **asks for its code**, the window asks you when it opens. It is remembered
+  while the console program keeps running; it is not saved to disk.
+
+The profile needs to be [enrolled](#enroll-a-profile), and **this computer** needs version
+0.38.0 of the console program (the others do not need updating). A computer that is off does
+not show up.
+
 ## Profiles
 
 **Every window opens in a profile**: the last one you picked in the menu; otherwise
@@ -248,6 +268,9 @@ dotrino-terminal --name work          # in the "work" profile
 dotrino-terminal ls                   # open consoles
 dotrino-terminal attach <id>          # go back to one
 dotrino-terminal kill <id>            # close one
+dotrino-terminal machines             # your other computers that are on, and their consoles
+dotrino-terminal --machine office     # open a console ON that computer (by its name or id)
+dotrino-terminal attach <id> --machine office   # go back to one over there (ls and kill too)
 dotrino-terminal profiles             # this computer's profiles
 dotrino-terminal link                 # enroll a profile
 dotrino-terminal rename <profile> <new>    # rename it
