@@ -153,7 +153,7 @@ compartes, manda tu decisión y no el código.
 
 Como no tenemos una cuenta tuya, **no hay nada que pedirnos que borremos**: lo tuyo está en
 tu aparato y lo borras tú. Si aun así quieres preguntar algo sobre esta política, escribe a
-**hola@dotrino.com**.
+**info@dotrino.com**.
 
 Si encuentras un fallo de seguridad, hay un canal aparte:
 [cómo reportarlo](https://github.com/imdotrino/.github/blob/main/SECURITY.md).

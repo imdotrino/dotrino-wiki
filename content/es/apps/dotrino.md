@@ -64,5 +64,5 @@ Qué queda registrado y por cuánto: [Política de privacidad](/empezar/politica
 
 ## Contacto
 
-Dudas o fallos: **hola@dotrino.com**, o un
+Dudas o fallos: **info@dotrino.com**, o un
 [issue en el repositorio](https://github.com/imdotrino/dotrino-app/issues).

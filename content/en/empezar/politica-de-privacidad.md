@@ -151,7 +151,7 @@ share, your decision is in charge, not the code.
 
 Since we don't hold an account of yours, **there's nothing to ask us to delete**: your things
 are on your device and you delete them yourself. If you'd still like to ask something about
-this policy, write to **hola@dotrino.com**.
+this policy, write to **info@dotrino.com**.
 
 If you find a security flaw, there's a separate channel:
 [how to report it](https://github.com/imdotrino/.github/blob/main/SECURITY.md).

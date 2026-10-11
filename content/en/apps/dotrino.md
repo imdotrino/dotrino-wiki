@@ -65,5 +65,5 @@ What is recorded and for how long: [Privacy policy](/en/empezar/politica-de-priv
 
 ## Contact
 
-Questions or bugs: **hola@dotrino.com**, or an
+Questions or bugs: **info@dotrino.com**, or an
 [issue in the repository](https://github.com/imdotrino/dotrino-app/issues).
