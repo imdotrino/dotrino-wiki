@@ -70,11 +70,10 @@ nuestro. Lo que nos cuentes queda en ese correo.
 Esto vale para las dos apps de Google Play: **Dotrino** (`com.dotrino.app`) e **Identidad
 Dotrino** (`com.dotrino.identity`).
 
-**Identidad Dotrino** guarda tus llaves en la caja fuerte del propio teléfono y tu perfil en
-el teléfono, y solo se lo presta a las apps de Dotrino firmadas por nosotros. **Tus llaves no
-salen del aparato.** Desde su pantalla puedes abrir las páginas de tu perfil: son las mismas
-que en la web, así que para ellas vale todo lo de arriba. Usa la cámara solo si tú la abres,
-para leer un código QR.
+**Identidad Dotrino no se conecta a internet.** Ni siquiera tiene permiso para hacerlo (desde
+la versión 0.2.7; tampoco usa la cámara). Guarda tus llaves en la caja fuerte del propio
+teléfono y tu perfil en el teléfono, y solo se lo presta a las apps de Dotrino firmadas por
+nosotros. Nada de lo que guarda sale del aparato por ella.
 
 **Dotrino** muestra las mismas páginas que la web, así que para ellas vale todo lo de arriba.
 Además:

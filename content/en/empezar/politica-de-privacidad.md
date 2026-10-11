@@ -69,10 +69,10 @@ tell us stays in that email.
 This covers both apps on Google Play: **Dotrino** (`com.dotrino.app`) and **Dotrino
 Identity** (`com.dotrino.identity`).
 
-**Dotrino Identity** keeps your keys in the phone's own safe and your profile on the phone,
-and lends them only to Dotrino apps signed by us. **Your keys never leave the device.** From
-its screen you can open your profile pages: they are the same as on the web, so everything
-above applies to them. It uses the camera only when you open it, to read a QR code.
+**Dotrino Identity does not connect to the internet.** It doesn't even have permission to
+(since version 0.2.7; it doesn't use the camera either). It keeps your keys in the phone's own
+safe and your profile on the phone, and lends them only to Dotrino apps signed by us. Nothing
+it keeps leaves the device through it.
 
 **Dotrino** shows the same pages as the web, so everything above applies to them. On top of
 that:
