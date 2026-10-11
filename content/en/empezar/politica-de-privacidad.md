@@ -5,7 +5,7 @@ description: What gets recorded when you use Dotrino, for how long, and who else
 
 # Privacy policy
 
-Last reviewed: **28 September 2026**.
+Last reviewed: **10 October 2026**.
 
 This page says **what gets recorded, for how long, and who else touches it**. If you're
 looking for the why, that's in [How your things are protected](/empezar/privacidad/).
@@ -96,11 +96,43 @@ governed by [Google's privacy policy](https://policies.google.com/privacy), not 
 Identity. The notification code stops working when you uninstall Dotrino, and our server
 deletes it the next time it tries to notify you and Google answers that it no longer exists.
 
+### The iPhone and iPad apps
+
+This covers **Dotrino** (`com.dotrino.app`) on the App Store. On iPhone and iPad there is no
+separate identity app: the app itself keeps your keys and your profile.
+
+**Dotrino** shows the same pages as the web, so everything above applies to them. On top of
+that:
+
+- **Phone notifications.** So your vault can tell you there's something to approve, the app
+  uses Apple's notification service, which comes with the phone. Apple gives the phone a
+  **notification code**, and the app registers it on our relay server next to your phone's
+  public key. The notification **carries no content**: it only says "there's something new",
+  and the text you see is put together by the phone after it fetches the request the usual
+  way. The code is kept while it keeps working. Apple sees that a notification reached that
+  phone, and when.
+- **Camera.** Only when you open it, to read a QR code (for example, when pairing the phone).
+  The image is processed on the phone and is neither stored nor sent.
+- **Face ID or Touch ID.** Only if you turn it on, to confirm it's you before approving. The
+  phone does the check: the app gets a yes or a no, never your face or your fingerprint.
+- **Your keys** are created in the phone's security chip and never leave it. **Your profile
+  and your accounts** (name, contact details if you add them, the vaults you paired the phone
+  with) are kept on the phone, in a space only Dotrino apps share. If you choose to copy them
+  to your own vault, they travel encrypted and we can't read them.
+
+**The App Store** also knows you installed the app, as with any app in its store. That's
+governed by [Apple's privacy policy](https://www.apple.com/legal/privacy/), not this one.
+
+**To delete everything:** remove each account from the Requests tab (press and hold its name)
+and uninstall the app. The notification code stops working when you uninstall it, and our
+server deletes it the next time it tries to notify you and Apple answers that it no longer
+exists.
+
 ## Who else touches something
 
 A server provider, a content delivery network, the hosting for the pages, the service
-that sends the contact form emails and, for the Android apps, Google (the store and the
-notification service). We name them, with what each one sees, in the
+that sends the contact form emails and, for the phone apps, Google or Apple (the store and
+the notification service). We name them, with what each one sees, in the
 [full list](https://github.com/imdotrino/dotrino-vault/blob/main/docs/flujos-de-datos.md) —
 it's the same technical document we use ourselves, with no watered-down version.
 

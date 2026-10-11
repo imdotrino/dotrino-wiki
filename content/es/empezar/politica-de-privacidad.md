@@ -5,7 +5,7 @@ description: Qué queda registrado cuando usas Dotrino, por cuánto tiempo y qui
 
 # Política de privacidad
 
-Última revisión: **28 de septiembre de 2026**.
+Última revisión: **10 de octubre de 2026**.
 
 Esta página dice **qué queda registrado, por cuánto tiempo y quién más lo toca**. Si lo que
 buscas es el porqué, está en [Cómo se protege lo tuyo](/empezar/privacidad/).
@@ -98,11 +98,43 @@ lo rige [la política de privacidad de Google](https://policies.google.com/priva
 Identidad Dotrino. El código de avisos deja de servir al desinstalar Dotrino, y nuestro servidor
 lo borra la siguiente vez que intenta avisarte y Google responde que ya no existe.
 
+### Las apps de iPhone y iPad
+
+Esto vale para **Dotrino** (`com.dotrino.app`) en la App Store. En iPhone y iPad no hay app de
+identidad aparte: tus llaves y tu perfil los guarda la propia app.
+
+**Dotrino** muestra las mismas páginas que la web, así que para ellas vale todo lo de arriba.
+Además:
+
+- **Avisos en el teléfono.** Para que la bóveda pueda avisarte de que tienes algo que
+  aprobar, la app usa el servicio de avisos de Apple, que viene con el teléfono. Apple le da
+  al teléfono un **código de avisos**, y la app lo registra en nuestro servidor de reenvío
+  junto a la llave pública de tu teléfono. El aviso **no lleva contenido**: solo dice «hay
+  algo nuevo», y el texto que ves lo arma el teléfono después de traer el pedido por el
+  camino de siempre. El código se guarda mientras siga sirviendo. Apple ve que a ese teléfono
+  le llegó un aviso, y cuándo.
+- **Cámara.** Solo si tú la abres, para leer un código QR (por ejemplo, al emparejar el
+  teléfono). La imagen se procesa en el teléfono y no se guarda ni se envía.
+- **Face ID o Touch ID.** Solo si lo activas, para confirmar que eres tú antes de aprobar. Lo
+  comprueba el teléfono: la app recibe un sí o un no, nunca tu cara ni tu huella.
+- **Tus llaves** se crean en el chip de seguridad del teléfono y no salen de él. **Tu perfil
+  y tus cuentas** (nombre, datos de contacto si los pones, las bóvedas con las que
+  emparejaste el teléfono) se guardan en el teléfono, en un espacio que solo comparten las
+  apps de Dotrino. Si eliges copiarlos a tu propia bóveda, viajan cifrados y nosotros no
+  podemos leerlos.
+
+**La App Store** también sabe que instalaste la app, como con cualquier app de su tienda. Eso
+lo rige [la política de privacidad de Apple](https://www.apple.com/legal/privacy/), no esta.
+
+**Para borrarlo todo:** quita cada cuenta desde la pestaña Pedidos (mantén pulsado su nombre)
+y desinstala la app. El código de avisos deja de servir al desinstalarla, y nuestro servidor
+lo borra la siguiente vez que intenta avisarte y Apple responde que ya no existe.
+
 ## Quién más toca algo
 
 Un proveedor de servidores, una red de distribución, el alojamiento de las páginas, el
-servicio que envía los correos del formulario y, en las apps de Android, Google (la tienda y
-el servicio de avisos). Los nombramos, con lo que ve cada uno, en la
+servicio que envía los correos del formulario y, en las apps del teléfono, Google o Apple
+(la tienda y el servicio de avisos). Los nombramos, con lo que ve cada uno, en la
 [lista completa](https://github.com/imdotrino/dotrino-vault/blob/main/docs/flujos-de-datos.md)
 — está en el mismo documento técnico que usamos nosotros, sin versión resumida.
 

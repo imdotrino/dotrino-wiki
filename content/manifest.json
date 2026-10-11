@@ -238,6 +238,13 @@
       },
       "pages": [
         {
+          "slug": "dotrino",
+          "title": {
+            "es": "Dotrino — la app del teléfono",
+            "en": "Dotrino — the phone app"
+          }
+        },
+        {
           "slug": "mensajeria",
           "title": {
             "es": "Chat y Messenger",
