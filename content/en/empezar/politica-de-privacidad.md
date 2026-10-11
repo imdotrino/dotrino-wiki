@@ -5,7 +5,7 @@ description: What gets recorded when you use Dotrino, for how long, and who else
 
 # Privacy policy
 
-Last reviewed: **10 October 2026**.
+Last reviewed: **11 October 2026**.
 
 This page says **what gets recorded, for how long, and who else touches it**. If you're
 looking for the why, that's in [How your things are protected](/empezar/privacidad/).
@@ -69,9 +69,10 @@ tell us stays in that email.
 This covers both apps on Google Play: **Dotrino** (`com.dotrino.app`) and **Dotrino
 Identity** (`com.dotrino.identity`).
 
-**Dotrino Identity does not connect to the internet.** It doesn't even have permission to.
-It keeps your keys in the phone's own safe and your profile on the phone, and lends them only
-to Dotrino apps signed by us. Nothing it keeps leaves the device.
+**Dotrino Identity** keeps your keys in the phone's own safe and your profile on the phone,
+and lends them only to Dotrino apps signed by us. **Your keys never leave the device.** From
+its screen you can open your profile pages: they are the same as on the web, so everything
+above applies to them. It uses the camera only when you open it, to read a QR code.
 
 **Dotrino** shows the same pages as the web, so everything above applies to them. On top of
 that:
