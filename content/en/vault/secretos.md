@@ -68,13 +68,14 @@ Values are sealed **on the service's machine**: the vault stores envelopes it ca
 and only the names are printed. Everything is private except what you mark with
 `--public`. If a line in the file is malformed, nothing is uploaded and it tells you which.
 
-What happens to what you send is up to your account:
+What happens to what you send:
 
-- **If someone can approve**, approval is **always** requested (even for a service that
-  starts without asking). With the yes it is saved, and it **can also change** variables
-  that already existed.
-- **If nobody can approve**, it is saved right away, but **only the missing ones**: the
-  ones that already exist are left alone.
+- **A new variable** is saved right away, with no approval.
+- **Changing one that already exists** asks for approval (even for a service that starts
+  without asking). If anything you send already exists, the whole batch waits together and
+  is saved once approved.
+- **If nobody in your account can approve**, the ones that already exist are left alone:
+  change them in the vault.
 - **Deleting**, never from here: that is done in the vault.
 
 A service only writes into **its own** drawer. An agent (terminal, AI, content…) uses its

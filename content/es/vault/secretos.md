@@ -67,13 +67,14 @@ Los valores se sellan **en la máquina del servicio**: la bóveda guarda sobres 
 leer, y en pantalla solo salen los nombres. Todas son privadas salvo las que marques con
 `--public`. Si una línea del archivo está mal escrita, no se sube nada y te dice cuál.
 
-Qué pasa con lo que envías lo decide tu cuenta:
+Qué pasa con lo que envías:
 
-- **Si alguien puede aprobar**, se pide aprobación **siempre** (también a un servicio que
-  arranca sin preguntar). Con el sí se guarda, y **también puede cambiar** las variables
-  que ya existían.
-- **Si nadie puede aprobar**, se guarda en el acto, pero **solo las que faltan**: las que
-  ya existen no se tocan.
+- **Una variable nueva** se guarda en el acto, sin pedir aprobación.
+- **Cambiar una que ya existe** pide aprobación (también a un servicio que arranca sin
+  preguntar). Si en lo que envías hay alguna que ya existe, todo espera junto y se guarda
+  al aprobar.
+- **Si nadie en tu cuenta puede aprobar**, las que ya existen no se tocan: se cambian en
+  la bóveda.
 - **Borrar**, nunca desde aquí: eso se hace en la bóveda.
 
 Un servicio solo escribe en **su** cajón. Un agente (terminal, IA, contenido…) usa su
