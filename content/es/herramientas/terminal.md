@@ -84,6 +84,7 @@ las consolas se pierden.
 
 Para enseñarle una foto o una captura a lo que corre en la consola, pulsa el botón de la imagen
 (arriba a la derecha de la consola) y elige una. También puedes pegarla o arrastrarla encima.
+En las apps del teléfono es la tecla **Imagen**, en la fila de teclas sobre el teclado.
 
 La imagen se envía cifrada a tu computadora, se guarda allí y su ubicación queda escrita en la
 consola, lista para que la uses. Las fotos grandes se reducen antes de salir del aparato. En tu

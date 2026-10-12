@@ -84,6 +84,7 @@ are lost.
 
 To show a photo or a screenshot to whatever runs in the console, press the image button (top
 right of the console) and pick one. You can also paste it or drag it onto the console.
+In the phone apps it is the **Image** key, in the row of keys above the keyboard.
 
 The image is sent encrypted to your computer, saved there, and its location is typed into the
 console, ready to use. Large photos are reduced before they leave the device. On your computer
