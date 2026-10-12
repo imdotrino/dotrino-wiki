@@ -294,6 +294,13 @@
           }
         },
         {
+          "slug": "realidad-aumentada",
+          "title": {
+            "es": "AR — tus obras cobran vida",
+            "en": "AR — your works come alive"
+          }
+        },
+        {
           "slug": "facturacion",
           "title": {
             "es": "Facturación electrónica (SRI)",
