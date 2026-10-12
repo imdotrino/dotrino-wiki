@@ -80,6 +80,18 @@ este aparato o desde otro. Las ves tal como estaban.
 Para cerrar una consola de verdad, pulsa la **×** de su pestaña. Si el agente se reinicia,
 las consolas se pierden.
 
+## Adjuntar una imagen
+
+Para enseñarle una foto o una captura a lo que corre en la consola, pulsa el botón de la imagen
+(arriba a la derecha de la consola) y elige una. También puedes pegarla o arrastrarla encima.
+
+La imagen se envía cifrada a tu computadora, se guarda allí y su ubicación queda escrita en la
+consola, lista para que la uses. Las fotos grandes se reducen antes de salir del aparato. En tu
+computadora se borran solas a los 7 días.
+
+Si la computadora tiene una versión anterior de la terminal, la app te avisa de que hay que
+actualizarla.
+
 ## Las ventanas de tu computadora
 
 Dotrino Terminal también es la terminal de la propia computadora (Linux y macOS): cada ventana

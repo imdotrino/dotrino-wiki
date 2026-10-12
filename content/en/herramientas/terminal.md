@@ -80,6 +80,17 @@ still open, from this device or another one. You see them exactly as they were.
 To really close a console, press the **×** on its tab. If the agent restarts, the consoles
 are lost.
 
+## Attaching an image
+
+To show a photo or a screenshot to whatever runs in the console, press the image button (top
+right of the console) and pick one. You can also paste it or drag it onto the console.
+
+The image is sent encrypted to your computer, saved there, and its location is typed into the
+console, ready to use. Large photos are reduced before they leave the device. On your computer
+they are removed on their own after 7 days.
+
+If the computer runs an earlier version of the terminal, the app tells you it needs updating.
+
 ## Your computer's windows
 
 Dotrino Terminal is also the terminal of the computer itself (Linux and macOS): every window
