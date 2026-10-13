@@ -84,10 +84,11 @@ are lost.
 
 To show a photo or a screenshot to whatever runs in the console, press the image button (top
 right of the console) and pick one. You can also paste it or drag it onto the console.
-In the phone apps it is the **Image** key, in the row of keys above the keyboard.
+In the phone apps it is the **Image** key, in the row of keys above the keyboard. On Android
+the keyboard's own image button works too (its clipboard, a GIF).
 
 The image is sent encrypted to your computer, saved there, and its location is typed into the
-console, ready to use. Large photos are reduced before they leave the device. On your computer
+console, ready to use (Claude Code shows it as `[Image #1]`). Large photos are reduced before they leave the device. On your computer
 they are removed on their own after 7 days.
 
 If the computer runs an earlier version of the terminal, the app tells you it needs updating.

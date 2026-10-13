@@ -84,10 +84,11 @@ las consolas se pierden.
 
 Para enseñarle una foto o una captura a lo que corre en la consola, pulsa el botón de la imagen
 (arriba a la derecha de la consola) y elige una. También puedes pegarla o arrastrarla encima.
-En las apps del teléfono es la tecla **Imagen**, en la fila de teclas sobre el teclado.
+En las apps del teléfono es la tecla **Imagen**, en la fila de teclas sobre el teclado. En
+Android también vale el botón de imágenes del propio teclado (su portapapeles, un GIF).
 
 La imagen se envía cifrada a tu computadora, se guarda allí y su ubicación queda escrita en la
-consola, lista para que la uses. Las fotos grandes se reducen antes de salir del aparato. En tu
+consola, lista para que la uses (Claude Code la muestra como `[Image #1]`). Las fotos grandes se reducen antes de salir del aparato. En tu
 computadora se borran solas a los 7 días.
 
 Si la computadora tiene una versión anterior de la terminal, la app te avisa de que hay que
