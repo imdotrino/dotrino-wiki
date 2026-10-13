@@ -107,8 +107,10 @@ esa ventana, y **Perfil → Quitar de la terminal de VS Code** lo deshace.
 Si la misma consola está abierta en otra pantalla, la terminal de VS Code toma el tamaño en
 cuanto tecleas en ella.
 
-Cerrar la pestaña de la terminal no cierra su consola: sigue abierta y la encuentras en el
-panel. Se cierra escribiendo `exit` en ella o desde el panel.
+Cerrar la pestaña de la terminal **cierra su consola**, con lo que esté corriendo en ella
+(programa de las consolas 0.43.2 o más reciente): VS Code no tiene panel de consolas para volver
+a ella. Salir de VS Code cierra las de todas sus pestañas. En la app, en cambio, cerrar una
+ventana deja su consola abierta.
 
 ## Las ventanas
 

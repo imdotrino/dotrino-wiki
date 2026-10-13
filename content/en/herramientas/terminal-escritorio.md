@@ -106,8 +106,9 @@ window's profile, and **Profile → Remove from VS Code's terminal** undoes it.
 If the same console is open on another screen, VS Code's terminal takes the size as soon as
 you type in it.
 
-Closing the terminal tab does not close its console: it stays open and you find it in the
-panel. Close it by typing `exit` in it or from the panel.
+Closing the terminal tab **closes its console**, along with whatever is running in it (console
+program 0.43.2 or newer): VS Code has no console panel to get back to it. Quitting VS Code closes
+the consoles of all its tabs. In the app, closing a window leaves its console open.
 
 ## Windows
 
