@@ -212,7 +212,10 @@ it, one number per console.
 - The panel does not change: it keeps showing the consoles from here and from the others,
   with the window's one marked. To come back, click a console from here. The window title
   says which computer you are on.
-- If that computer **asks for its code**, the window asks you when it opens. It is remembered
+- If that computer **asks for its code**, the panel says so and shows the **Type its code** button
+  (with the panel folded, click its initials). The window moves to that computer and you type the
+  code in the terminal, where it says "Code for…"; it is not shown while you type and ends with
+  Enter. Once in, a console opens there. It is remembered
   while the console program keeps running; it is not saved to disk.
 
 The profile needs to be [enrolled](#enroll-a-profile), and **this computer** needs version

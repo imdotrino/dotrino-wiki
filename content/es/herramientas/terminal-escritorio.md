@@ -215,7 +215,10 @@ nombre y, debajo, un número por consola.
 - El panel no cambia: sigue enseñando las consolas de aquí y las de las otras, con la de la
   ventana marcada. Para volver, clic en una consola de aquí. El título de la ventana dice en
   qué computadora estás.
-- Si esa computadora **pide su clave**, la ventana te la pregunta al abrir. Se recuerda
+- Si esa computadora **pide su clave**, en el panel sale «pide su clave» y el botón **Escribir la
+  clave** (con el panel plegado, clic en sus iniciales). La ventana pasa a esa computadora y la
+  clave se teclea en la terminal, donde dice «Clave de…»; no se ve mientras la escribes y se
+  termina con Intro. Al entrar se abre una consola allí. Se recuerda
   mientras el programa de las consolas siga corriendo; no se guarda en el disco.
 
 Hace falta que el perfil esté [enrolado](#enrolar-un-perfil) y la versión 0.38.0 del
