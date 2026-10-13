@@ -177,8 +177,8 @@ In a `dotrino-terminal` console, **Ctrl+]** then **d** detaches it and closes th
 **Ctrl+]** then **n** opens another one (detaching the current one).
 
 **Where each console is open.** A **green dot** in the top right corner of a console in the
-panel means it is open in a window on this computer (this window, another one, or VS Code's
-terminal). No dot means no window is showing it. The dot **blinks** when that console finished and you have not looked at it yet; it stops as soon as its window has the focus.
+panel means it is open in a window of the app on this computer (this window or another one). No
+dot means no window of the app is showing it; VS Code's terminal does not count. The dot **blinks** when that console finished and you have not looked at it yet; it stops as soon as its window has the focus.
 
 **What each console is doing.** In the panel, a console's number changes colour: **amber** when
 something is working in it and **green** when it finished and you have not looked at it yet (green
