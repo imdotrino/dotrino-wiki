@@ -215,14 +215,14 @@ nombre y, debajo, un número por consola.
 
 - **Clic en una de sus consolas**: se abre en **esta misma ventana**, tal como estaba, igual
   que una consola de aquí (app 0.2.50 o más reciente). La que tenías queda suelta, no se cierra.
-- **+** junto al nombre (o clic en sus iniciales, con el panel plegado): abre una consola
+- **Nueva consola +** bajo el nombre (o el «+» bajo sus iniciales, con el panel plegado): abre una consola
   nueva en esa computadora, en esta ventana.
 - **×** junto a una de sus consolas: la cierra.
 - El panel no cambia: sigue enseñando las consolas de aquí y las de las otras, con la de la
   ventana marcada. Para volver, clic en una consola de aquí. El título de la ventana dice en
   qué computadora estás.
-- Si esa computadora **pide su clave**, en el panel sale «pide su clave» y el botón **Escribir la
-  clave** (con el panel plegado, clic en sus iniciales). La ventana pasa a esa computadora y la
+- Si esa computadora **pide su clave**, en el panel sale «pide su clave» y, debajo de su nombre,
+  **Escribir la clave** (con el panel plegado, el botón «>» bajo sus iniciales). La ventana pasa a esa computadora y la
   clave se teclea en la terminal, donde dice «Clave de…»; no se ve mientras la escribes y se
   termina con Intro. Al entrar se abre una consola allí. Se recuerda
   mientras el programa de las consolas siga corriendo; no se guarda en el disco.

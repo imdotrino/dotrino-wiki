@@ -211,14 +211,14 @@ it, one number per console.
 
 - **Click one of its consoles**: it opens in **this same window**, just as it was, like a
   console from here (app 0.2.50 or newer). The one you had is detached, not closed.
-- **+** next to the name (or click its initials, with the panel collapsed): opens a new
+- **New console +** under the name (or the "+" under its initials, with the panel collapsed): opens a new
   console on that computer, in this window.
 - **×** next to one of its consoles: closes it.
 - The panel does not change: it keeps showing the consoles from here and from the others,
   with the window's one marked. To come back, click a console from here. The window title
   says which computer you are on.
-- If that computer **asks for its code**, the panel says so and shows the **Type its code** button
-  (with the panel folded, click its initials). The window moves to that computer and you type the
+- If that computer **asks for its code**, the panel says so and shows **Type its code** under its
+  name (with the panel folded, the ">" button under its initials). The window moves to that computer and you type the
   code in the terminal, where it says "Code for…"; it is not shown while you type and ends with
   Enter. Once in, a console opens there. It is remembered
   while the console program keeps running; it is not saved to disk.
