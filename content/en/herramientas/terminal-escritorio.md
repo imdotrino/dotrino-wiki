@@ -233,6 +233,10 @@ it, one number per console.
 - The panel does not change: it keeps showing the consoles from here and from the others,
   with the window's one marked. To come back, click a console from here. The window title
   says which computer you are on.
+- Closing a console of another computer or changing its size goes over the network and can take a
+  few seconds: meanwhile the window shows a notice at the bottom ("Closing the console…",
+  "Applying the size…") that goes away by itself once the other computer confirms it (app 0.2.66
+  or newer).
 - If that computer **asks for its code**, the panel says so and shows **Type its code** under its
   name (with the panel folded, the ">" button under its initials). The window moves to that computer and you type the
   code in the terminal, where it says "Code for…"; it is not shown while you type and ends with

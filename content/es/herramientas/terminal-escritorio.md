@@ -236,6 +236,9 @@ nombre y, debajo, un número por consola.
 - El panel no cambia: sigue enseñando las consolas de aquí y las de las otras, con la de la
   ventana marcada. Para volver, clic en una consola de aquí. El título de la ventana dice en
   qué computadora estás.
+- Cerrar una consola de otra computadora o cambiarle el tamaño va por la red y puede tardar unos
+  segundos: mientras, la ventana muestra abajo un aviso («Cerrando la consola…», «Aplicando el
+  tamaño…») que se quita solo cuando la otra computadora lo confirma (app 0.2.66 o más reciente).
 - Si esa computadora **pide su clave**, en el panel sale «pide su clave» y, debajo de su nombre,
   **Escribir la clave** (con el panel plegado, el botón «>» bajo sus iniciales). La ventana pasa a esa computadora y la
   clave se teclea en la terminal, donde dice «Clave de…»; no se ve mientras la escribes y se
