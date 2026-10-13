@@ -180,9 +180,10 @@ perfil» es la excepción: ahí no hay consola que guardar, y cerrarla termina l
 En una consola de `dotrino-terminal`, **Ctrl+]** y **d** la suelta y cierra la ventana, y
 **Ctrl+]** y **n** abre otra (soltando la actual).
 
-**Dónde está abierta cada consola.** Un **punto verde** en la esquina de arriba a la derecha de
-una consola del panel dice que está atendida en esta computadora: abierta en una ventana de la app
-(esta u otra) o en la terminal de VS Code. Sin punto, no la está mostrando nadie aquí. Vale igual para las consolas de tus otras computadoras: el punto dice que una ventana
+**Dónde está abierta cada consola.** Un punto en la esquina de arriba a la derecha de una consola
+del panel dice que está atendida en esta computadora: **verde** si está abierta en una ventana de
+la app (esta u otra), **azul** si solo está en la terminal de VS Code (app 0.2.63 o más reciente).
+Sin punto, no la está mostrando nadie aquí. Vale igual para las consolas de tus otras computadoras: el punto dice que una ventana
 de **esta** computadora la muestra, no lo que tenga abierto la otra. Con clic derecho en una
 consola del panel, de aquí o de otra computadora, puedes abrirla aquí, abrirla en otra ventana o
 cerrarla. El punto **parpadea** cuando esa consola terminó y todavía no la has mirado; deja de parpadear en cuanto su ventana tiene el foco. En una consola que solo está en la terminal de VS Code el punto no parpadea.

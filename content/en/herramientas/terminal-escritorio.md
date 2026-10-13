@@ -178,9 +178,10 @@ the exception: there is no console to keep, and closing it ends what was running
 In a `dotrino-terminal` console, **Ctrl+]** then **d** detaches it and closes the window, and
 **Ctrl+]** then **n** opens another one (detaching the current one).
 
-**Where each console is open.** A **green dot** in the top right corner of a console in the
-panel means it is attended on this computer: open in a window of the app (this one or another) or
-in VS Code's terminal. No dot means nobody is showing it here. The same goes for consoles of your other computers: the dot means a
+**Where each console is open.** A dot in the top right corner of a console in the panel means it
+is attended on this computer: **green** if it is open in a window of the app (this one or
+another), **blue** if it is only in VS Code's terminal (app 0.2.63 or newer). No dot means nobody
+is showing it here. The same goes for consoles of your other computers: the dot means a
 window on **this** computer is showing it, not what the other one has open. Right-click a console
 in the panel, from here or from another computer, to open it here, open it in another window or
 close it. The dot **blinks** when that console finished and you have not looked at it yet; it stops as soon as its window has the focus. On a console that is only in VS Code's terminal the dot does not blink.
