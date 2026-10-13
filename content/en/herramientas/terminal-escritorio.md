@@ -52,9 +52,15 @@ action: first the console program and then the app, all in view in the window.
 - If you installed it from the `.deb` or the `.rpm`, it asks for your administrator password.
 - When it finishes, if the app changed, **Restart the app** shows up: it closes and opens again
   with the new version, on the same consoles. Your consoles stay open.
-- A console program that was already running keeps the old version until it restarts.
-- By hand: `dotrino-terminal updates` says what is new and `dotrino-terminal desktop update`
-  updates the app.
+- A console program that was already running keeps the old version until it restarts. After
+  the step above, the app offers **Close all terminals** so it starts with the new one (app
+  0.2.67 and console program 0.45.0, or newer). It says how many will be closed: the ones in the
+  windows, in your editor and the ones your other devices are looking at, with whatever runs in
+  them. The windows stay open, on a new console. With **Later** nothing changes and it offers it
+  again when you open the app.
+- By hand: `dotrino-terminal updates` says what is new, `dotrino-terminal desktop update`
+  updates the app, `dotrino-terminal agents` says which version each profile runs and
+  `dotrino-terminal restart` restarts it (closes its consoles; it asks first).
 
 **2. The app.** Download it from the
 [releases page](https://github.com/imdotrino/dotrino-terminal/releases/latest):
@@ -322,6 +328,8 @@ dotrino-terminal link                 # enroll a profile
 dotrino-terminal rename <profile> <new>    # rename it
 dotrino-terminal vscode               # VS Code's terminal opens consoles from here (--off undoes it)
 dotrino-terminal desktop update       # update the desktop app (--check only looks)
+dotrino-terminal agents               # which version of the console program each profile runs
+dotrino-terminal restart              # restart it to use the installed version (closes its consoles)
 dotrino-terminal service install      # the agent starts by itself at boot (uninstall removes it; status tells)
 ```
 

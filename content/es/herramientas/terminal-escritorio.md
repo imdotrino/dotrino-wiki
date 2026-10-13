@@ -54,8 +54,14 @@ primero el programa de las consolas y, a continuación, la app, todo a la vista 
 - Al terminar, si la app cambió, aparece **Reiniciar la app**: se cierra y vuelve a abrir con
   la versión nueva, en las mismas consolas. Tus consolas no se cierran.
 - El programa de las consolas que ya corría sigue con la versión anterior hasta que se reinicia.
-- A mano: `dotrino-terminal updates` dice qué hay nuevo y `dotrino-terminal desktop update`
-  actualiza la app.
+  Después de lo anterior, la app te ofrece **Cerrar todas las terminales** para que arranque con
+  la nueva (app 0.2.67 y programa de las consolas 0.45.0, o más recientes). Dice cuántas se
+  cierran: las de las ventanas, las de tu editor y las que miran tus otros aparatos, con lo que
+  esté corriendo en ellas. Las ventanas no se cierran: siguen con una consola nueva. Con
+  **Después** todo sigue como estaba y lo vuelve a ofrecer al abrir la app.
+- A mano: `dotrino-terminal updates` dice qué hay nuevo, `dotrino-terminal desktop update`
+  actualiza la app, `dotrino-terminal agents` dice con qué versión corre cada perfil y
+  `dotrino-terminal restart` lo reinicia (cierra sus consolas; pregunta antes).
 
 **2. La app.** Bájala de la
 [página de versiones](https://github.com/imdotrino/dotrino-terminal/releases/latest):
@@ -324,6 +330,8 @@ dotrino-terminal link                 # enrolar un perfil
 dotrino-terminal rename <perfil> <nuevo>   # cambiarle el nombre
 dotrino-terminal vscode               # la terminal de VS Code abre consolas de aquí (--off lo deshace)
 dotrino-terminal desktop update       # actualiza la app de escritorio (--check solo mira)
+dotrino-terminal agents               # con qué versión corre el programa de las consolas en cada perfil
+dotrino-terminal restart              # lo reinicia para usar la versión instalada (cierra sus consolas)
 dotrino-terminal service install      # el agente arranca solo al encender (uninstall lo quita; status lo dice)
 ```
 
