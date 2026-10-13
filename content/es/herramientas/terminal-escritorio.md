@@ -34,7 +34,7 @@ No pide permisos de administrador y, si no tienes Node, lo trae
 
 Otras dos formas de instalarlo, las dos con Node 20 o más reciente ya puesto:
 
-- Desde la propia app: **Perfil → Instalar dotrino-terminal…** abre una ventana aparte que
+- Desde la propia app: **Herramientas → Instalar dotrino-terminal…** abre una ventana aparte que
   lo instala en el acto; el resultado se queda a la vista hasta que pulses Enter.
 - A mano: `npm install -g @dotrino/terminal-agent`.
 
@@ -44,7 +44,7 @@ reinicia.
 
 **Actualizar.** Al abrir, la app mira si hay versión nueva de `dotrino-terminal` o de la app.
 Si la hay, te lo dice y eliges **Actualizar ahora** o **Después** (app 0.2.51 o más reciente).
-También está en el menú **Perfil → Actualizar dotrino-terminal y la app…**. Es una sola acción:
+También está en el menú **Herramientas → Actualizar dotrino-terminal y la app…**. Es una sola acción:
 primero el programa de las consolas y, a continuación, la app, todo a la vista en la ventana.
 
 - La firma de la app se comprueba antes de instalarla, sin instalar nada más (programa de las
@@ -103,8 +103,8 @@ Deja a Dotrino como terminal por defecto en VS Code, VS Code Insiders, VSCodium 
 que tengas instalados. El resto de tu configuración queda como estaba. Las terminales que ya
 tenías abiertas no cambian: abre una nueva.
 
-Desde la app es lo mismo: **Perfil → Usar en la terminal de VS Code** lo pone con el perfil de
-esa ventana, y **Perfil → Quitar de la terminal de VS Code** lo deshace.
+Desde la app es lo mismo: **Herramientas → Usar en la terminal de VS Code** lo pone con el perfil de
+esa ventana, y **Herramientas → Quitar de la terminal de VS Code** lo deshace.
 
 - Para usar un perfil concreto: `dotrino-terminal vscode --name trabajo`.
 - Para deshacerlo: `dotrino-terminal vscode --off`.
@@ -123,7 +123,7 @@ ventana deja su consola abierta.
 Claude Code puede mantener al día la tarjeta «de qué va» de la consola en la que corre: qué
 está haciendo, qué terminó y qué espera. Se instala una vez por computadora:
 
-- En la app: **Perfil → Notas con Claude Code: instalar** (y **quitar** para deshacerlo).
+- En la app: **Herramientas → Notas con Claude Code: instalar** (y **quitar** para deshacerlo).
 - O con el comando `dotrino-terminal claude` (`--off` lo quita, `--status` dice si está puesto).
 
 Hace falta el programa de las consolas 0.44.0 o más reciente y haber abierto Claude Code al menos
@@ -148,7 +148,8 @@ Abre la app y tienes una ventana con una consola. Arriba está el menú:
 | Editar | Copiar | Ctrl+Shift+C | ⌘C |
 | Editar | Pegar | Ctrl+Shift+V | ⌘V |
 | Ver | Panel de consolas | Ctrl+Shift+B | ⌘B |
-| Perfil | Sin perfil · la lista de perfiles · Renombrar · Enrolar… · Instalar dotrino-terminal… / Actualizar dotrino-terminal y la app… | | |
+| Perfil | Sin perfil · la lista de perfiles · Renombrar · Poner o quitar la clave · Enrolar… | | |
+| Herramientas | Reiniciar el agente… · Usar en la terminal de VS Code · Notas con Claude Code · Instalar dotrino-terminal… / Actualizar dotrino-terminal y la app… | | |
 | Ayuda | Cómo se usa (esta página) · Uso de red… | | |
 
 Una ventana nueva usa el mismo perfil que la ventana desde la que la abriste y **se engancha a una
@@ -189,7 +190,7 @@ de cada una dice dónde está abierta, o si está suelta.
   otra ventana** y **Cerrar consola**.
 - **Ver → Panel de consolas** (Ctrl+Shift+B) lo esconde o lo muestra.
 - Con un `dotrino-terminal` anterior a la 0.11 el panel sale deshabilitado y lo dice: actualízalo
-  desde **Perfil → Actualizar dotrino-terminal…**.
+  desde **Herramientas → Actualizar dotrino-terminal…**.
 
 A la derecha, cuando hay historial, una **barra de desplazamiento** enseña dónde estás; se puede
 arrastrar, y la rueda del ratón sube y baja de tres en tres líneas.
@@ -287,12 +288,15 @@ abierta; si no hay, una nueva). Lo que tenías en la consola anterior sigue corr
 ### Cambiarle el nombre a un perfil
 
 El nombre de un perfil es solo tuyo, de esta computadora: no lo ve tu cuenta. Para cambiarlo,
-**Perfil → Renombrar «…»…** escribe en tu consola `dotrino-terminal rename <perfil> `;
-completa el nombre nuevo y pulsa **Enter**. La ventana sigue, ya en el perfil con su nombre
-nuevo. Es el mismo aparato: no hace falta volver a enrolar.
+**Perfil → Renombrar «…»…** te pide el nombre nuevo en la misma ventana, aparte de tu consola:
+escríbelo y pulsa **Enter**. La ventana sigue, ya en el perfil con su nombre nuevo. Es el mismo aparato: no hace falta volver a enrolar.
 
 Renombrarlo reinicia el programa de ese perfil, así que **se cierran sus consolas abiertas**.
-Si hay otras además de la tuya, te pregunta antes.
+Te dice cuántas son y te pregunta antes.
+
+**Herramientas → Reiniciar el agente…** reinicia el programa de ese perfil cuando quieras (por
+ejemplo, para que use una versión recién instalada). También **cierra sus consolas abiertas**:
+te dice cuántas y te pregunta antes. En una terminal es `dotrino-terminal restart`.
 
 ## Enrolar un perfil
 
@@ -347,7 +351,7 @@ Si el programa de las consolas no está corriendo, `dotrino-terminal` lo arranca
 ## Si algo no funciona
 
 - **«Enrolar…» en gris y la nota «Para usar perfiles, instala dotrino-terminal»** en el menú
-  Perfil: falta el paso 1 de [Instalar](#instalar). Usa **Perfil → Instalar dotrino-terminal…**.
+  Perfil: falta el paso 1 de [Instalar](#instalar). Usa **Herramientas → Instalar dotrino-terminal…**.
   Sin él la app funciona igual, sin perfil.
 - **La instalación dice EACCES**: tu npm instala en una carpeta del sistema. Usa
   [nvm](https://github.com/nvm-sh/nvm), o instálalo con `sudo` desde otra terminal.
