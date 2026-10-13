@@ -181,12 +181,11 @@ En una consola de `dotrino-terminal`, **Ctrl+]** y **d** la suelta y cierra la v
 **Ctrl+]** y **n** abre otra (soltando la actual).
 
 **Dónde está abierta cada consola.** Un **punto verde** en la esquina de arriba a la derecha de
-una consola del panel dice que está abierta en una ventana de la app en esta computadora (esta
-ventana u otra). Sin punto, no la está mostrando ninguna ventana de la app; la terminal de VS Code
-no cuenta. Vale igual para las consolas de tus otras computadoras: el punto dice que una ventana
+una consola del panel dice que está atendida en esta computadora: abierta en una ventana de la app
+(esta u otra) o en la terminal de VS Code. Sin punto, no la está mostrando nadie aquí. Vale igual para las consolas de tus otras computadoras: el punto dice que una ventana
 de **esta** computadora la muestra, no lo que tenga abierto la otra. Con clic derecho en una
 consola del panel, de aquí o de otra computadora, puedes abrirla aquí, abrirla en otra ventana o
-cerrarla. El punto **parpadea** cuando esa consola terminó y todavía no la has mirado; deja de parpadear en cuanto su ventana tiene el foco.
+cerrarla. El punto **parpadea** cuando esa consola terminó y todavía no la has mirado; deja de parpadear en cuanto su ventana tiene el foco. En una consola que solo está en la terminal de VS Code el punto no parpadea.
 
 **El aviso al terminar.** Al terminar, la consola solo pasa a verde. Si un minuto después nadie la ha atendido (ni mirado en su ventana), suena el trino de Dotrino, una vez aunque haya varias ventanas (app 0.2.61 o más reciente; antes sonaba al terminar). Suena en su versión baja; con la variable de entorno `DOTRINO_TERMINAL_RING=standard` o `high` al abrir la app suena más fuerte (app 0.2.60 o más reciente).
 
