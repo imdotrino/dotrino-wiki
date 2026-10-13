@@ -47,8 +47,9 @@ Si la hay, te lo dice y eliges **Actualizar ahora** o **Después** (app 0.2.51 o
 También está en el menú **Perfil → Actualizar dotrino-terminal y la app…**. Es una sola acción:
 primero el programa de las consolas y, a continuación, la app, todo a la vista en la ventana.
 
-- Para comprobar la firma de la app hace falta [GitHub CLI](https://cli.github.com) (`gh`) 2.49
-  o más reciente; no hay que iniciar sesión. Sin él la app no se instala, y lo dice.
+- La firma de la app se comprueba antes de instalarla, sin instalar nada más (programa de las
+  consolas 0.43.1 o más reciente; antes hacía falta GitHub CLI). Si no cuadra, la app no se
+  instala, y lo dice.
 - Si la instalaste con el `.deb` o el `.rpm`, pide tu contraseña de administrador.
 - Al terminar, si la app cambió, aparece **Reiniciar la app**: se cierra y vuelve a abrir con
   la versión nueva, en las mismas consolas. Tus consolas no se cierran.

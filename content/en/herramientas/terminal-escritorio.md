@@ -46,8 +46,9 @@ app. If there is one, it tells you and you choose **Update now** or **Later** (a
 newer). It is also in the menu **Profile → Update dotrino-terminal and the app…**. It is a single
 action: first the console program and then the app, all in view in the window.
 
-- Checking the app's signature needs [GitHub CLI](https://cli.github.com) (`gh`) 2.49 or newer;
-  no login required. Without it the app is not installed, and it says so.
+- The app's signature is checked before installing it, with nothing else to install (console
+  program 0.43.1 or newer; it used to need GitHub CLI). If it does not check out, the app is not
+  installed, and it says so.
 - If you installed it from the `.deb` or the `.rpm`, it asks for your administrator password.
 - When it finishes, if the app changed, **Restart the app** shows up: it closes and opens again
   with the new version, on the same consoles. Your consoles stay open.
