@@ -110,6 +110,18 @@ Closing the terminal tab **closes its console**, along with whatever is running 
 program 0.43.2 or newer): VS Code has no console panel to get back to it. Quitting VS Code closes
 the consoles of all its tabs. In the app, closing a window leaves its console open.
 
+## With Claude Code
+
+Claude Code can keep the "what this is about" card of the console it runs in up to date: what it
+is doing, what it finished and what it is waiting for. Install it once per computer:
+
+- In the app: **Profile → Notes with Claude Code: install** (and **remove** to undo it).
+- Or with the command `dotrino-terminal claude` (`--off` removes it, `--status` says whether it is set).
+
+It needs console program 0.44.0 or newer and Claude Code opened at least once. It applies to new
+sessions; outside a Dotrino Terminal console it does nothing. Your personal notes are not touched:
+Claude only writes the task and the console's title.
+
 ## Windows
 
 Open the app and you get a window with a console. The menu is at the top:

@@ -112,6 +112,18 @@ Cerrar la pestaña de la terminal **cierra su consola**, con lo que esté corrie
 a ella. Salir de VS Code cierra las de todas sus pestañas. En la app, en cambio, cerrar una
 ventana deja su consola abierta.
 
+## Con Claude Code
+
+Claude Code puede mantener al día la tarjeta «de qué va» de la consola en la que corre: qué
+está haciendo, qué terminó y qué espera. Se instala una vez por computadora:
+
+- En la app: **Perfil → Notas con Claude Code: instalar** (y **quitar** para deshacerlo).
+- O con el comando `dotrino-terminal claude` (`--off` lo quita, `--status` dice si está puesto).
+
+Hace falta el programa de las consolas 0.44.0 o más reciente y haber abierto Claude Code al menos
+una vez. Vale para las sesiones nuevas; fuera de una consola de Dotrino Terminal no hace nada.
+Tus notas personales no se tocan: Claude solo escribe la tarea y el título de la consola.
+
 ## Las ventanas
 
 Abre la app y tienes una ventana con una consola. Arriba está el menú:
