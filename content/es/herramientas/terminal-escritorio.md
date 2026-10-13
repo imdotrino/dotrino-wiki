@@ -164,7 +164,8 @@ de cada una dice dónde está abierta, o si está suelta.
   tamaño, con el resto de la ventana vacío. Esa pantalla se sigue al redimensionarla o girarla;
   dar foco a otra, o mover el ratón en ella, no lo cambia.
 - **⤢ Usar el tamaño de esta pantalla.** Está en el panel, debajo de **+** (y en *Ver*), y actúa
-  sobre **la consola que muestra esa ventana**. Encendido se ve resaltado, y el panel desplegado
+  sobre **la consola que muestra esa ventana**. Cada computadora tiene el suyo bajo su **+**: está
+  habilitado el de la computadora donde vive esa consola (app 0.2.65 o más reciente). Encendido se ve resaltado, y el panel desplegado
   dice de quién es el tamaño (*Tamaño de la 2: esta ventana (87×33) · elegido a propósito*). Si
   esa pantalla ya tenía el tamaño, no cambia nada a la vista: lo que cambia es que otra pantalla
   que llegue después ya no se lo quita. Teclear en otra pantalla sí se lo quita. La elección es **de la pantalla**: si pasas a otra consola

@@ -161,7 +161,8 @@ each one it says where it is open, or that it is detached.
   typed since, the last one that attached or chose it with ⤢. The others show it at that size,
   with the rest of the window empty. That screen is followed when resized or rotated; focusing
   another one, or moving the mouse in it, doesn't change it.
-- **⤢ Use this screen's size.** It sits in the panel, under **+** (and in *View*), and acts on
+- **⤢ Use this screen's size.** It sits in the panel, under **+** (and in *View*); each computer has its own under
+  its **+**, and the enabled one is the computer where that console lives (app 0.2.65 or newer). It acts on
   **the console that window shows**. When on it is highlighted, and the expanded panel says who
   has the size (*Size of 2: this window (87×33) · chosen on purpose*). If that screen already had
   the size, nothing changes you can see: what changes is that a screen arriving later no longer
