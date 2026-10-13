@@ -96,6 +96,13 @@ ven una vez.
 
 ## Para desarrollar
 
+**`@dotrino/prerender`** — repo
+[`dotrino-prerender`](https://github.com/imdotrino/dotrino-prerender) — hace que el
+HTML de una app llegue con contenido. Una app de una sola página sirve el cuerpo
+vacío, y quien la lee sin ejecutar JavaScript no encuentra nada. Se añade
+`prerender()` a los `plugins` de `vite.config` y el build escribe el título, la
+descripción y los enlaces al ecosistema; el bloque se quita solo en el navegador.
+
 **`@dotrino/inspector`** — repo
 [`dotrino-inspector`](https://github.com/imdotrino/dotrino-inspector) — el
 inspector del ecosistema: mirar por dentro lo que una app está haciendo contra los

@@ -94,6 +94,13 @@ receipts and its panel.
 
 ## For development
 
+**`@dotrino/prerender`** — repo
+[`dotrino-prerender`](https://github.com/imdotrino/dotrino-prerender) — makes an
+app's HTML arrive with content. A single-page app serves an empty body, and whoever
+reads it without running JavaScript finds nothing. Add `prerender()` to the
+`plugins` in `vite.config` and the build writes the title, the description and the
+links to the ecosystem; the block removes itself in the browser.
+
 **`@dotrino/inspector`** — repo
 [`dotrino-inspector`](https://github.com/imdotrino/dotrino-inspector) — the
 ecosystem's inspector: look inside what an app is doing against the pillars while
