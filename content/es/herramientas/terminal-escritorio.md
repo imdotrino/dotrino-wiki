@@ -128,7 +128,13 @@ está haciendo, qué terminó y qué espera. Se instala una vez por computadora:
 
 Hace falta el programa de las consolas 0.44.0 o más reciente y haber abierto Claude Code al menos
 una vez. Vale para las sesiones nuevas; fuera de una consola de Dotrino Terminal no hace nada.
-Tus notas personales no se tocan: Claude solo escribe la tarea y el título de la consola.
+Tus notas personales no se tocan: Claude solo escribe la tarea y el título de la consola. En la
+tarjeta, la **×** junto a tu nota la borra, igual que la de la tarea (app 0.2.69 o más reciente).
+
+**Uso de red.** **Ayuda → Uso de red…** imprime, en la misma ventana, por dónde va cada
+conexión con tus otros aparatos (directo, por TURN o por el proxy) y cuánto pasó por cada camino.
+Es el mismo informe que el botón de red de las apps web (app 0.2.69 y programa de las consolas
+0.46.0, o más recientes).
 
 ## Las ventanas
 
@@ -143,7 +149,7 @@ Abre la app y tienes una ventana con una consola. Arriba está el menú:
 | Editar | Pegar | Ctrl+Shift+V | ⌘V |
 | Ver | Panel de consolas | Ctrl+Shift+B | ⌘B |
 | Perfil | Sin perfil · la lista de perfiles · Renombrar · Enrolar… · Instalar dotrino-terminal… / Actualizar dotrino-terminal y la app… | | |
-| Ayuda | Cómo se usa (esta página) | | |
+| Ayuda | Cómo se usa (esta página) · Uso de red… | | |
 
 Una ventana nueva usa el mismo perfil que la ventana desde la que la abriste y **se engancha a una
 consola que no esté abierta en ninguna ventana**, si la hay; si no, abre una nueva. Igual al
@@ -332,6 +338,7 @@ dotrino-terminal vscode               # la terminal de VS Code abre consolas de 
 dotrino-terminal desktop update       # actualiza la app de escritorio (--check solo mira)
 dotrino-terminal agents               # con qué versión corre el programa de las consolas en cada perfil
 dotrino-terminal restart              # lo reinicia para usar la versión instalada (cierra sus consolas)
+dotrino-terminal network              # por dónde va cada conexión con tus otros aparatos y cuánto pasó
 dotrino-terminal service install      # el agente arranca solo al encender (uninstall lo quita; status lo dice)
 ```
 

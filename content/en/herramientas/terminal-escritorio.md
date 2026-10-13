@@ -126,7 +126,12 @@ is doing, what it finished and what it is waiting for. Install it once per compu
 
 It needs console program 0.44.0 or newer and Claude Code opened at least once. It applies to new
 sessions; outside a Dotrino Terminal console it does nothing. Your personal notes are not touched:
-Claude only writes the task and the console's title.
+Claude only writes the task and the console's title. On the card, the **×** next to your note deletes it, like the task's (app 0.2.69 or newer).
+
+**Network use.** **Help → Network use…** prints, in the same window, which path each connection
+with your other devices takes (direct, via TURN or through the proxy) and how much went through
+each. It is the same report as the network button of the web apps (app 0.2.69 and console program
+0.46.0, or newer).
 
 ## Windows
 
@@ -141,7 +146,7 @@ Open the app and you get a window with a console. The menu is at the top:
 | Edit | Paste | Ctrl+Shift+V | ⌘V |
 | View | Consoles panel | Ctrl+Shift+B | ⌘B |
 | Profile | No profile · the list of profiles · Rename · Enroll… · Install dotrino-terminal… / Update dotrino-terminal and the app… | | |
-| Help | How to use it (this page) | | |
+| Help | How to use it (this page) · Network use… | | |
 
 A new window uses the same profile as the window you opened it from and **attaches to a console
 that isn't open in any window**, if there is one; otherwise it opens a new one. The same when the
@@ -330,6 +335,7 @@ dotrino-terminal vscode               # VS Code's terminal opens consoles from h
 dotrino-terminal desktop update       # update the desktop app (--check only looks)
 dotrino-terminal agents               # which version of the console program each profile runs
 dotrino-terminal restart              # restart it to use the installed version (closes its consoles)
+dotrino-terminal network              # which path each connection with your other devices takes, and how much went through
 dotrino-terminal service install      # the agent starts by itself at boot (uninstall removes it; status tells)
 ```
 
