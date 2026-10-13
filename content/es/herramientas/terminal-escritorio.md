@@ -188,6 +188,8 @@ de **esta** computadora la muestra, no lo que tenga abierto la otra. Con clic de
 consola del panel, de aquí o de otra computadora, puedes abrirla aquí, abrirla en otra ventana o
 cerrarla. El punto **parpadea** cuando esa consola terminó y todavía no la has mirado; deja de parpadear en cuanto su ventana tiene el foco.
 
+**El aviso al terminar.** Cuando una consola termina suena el trino de Dotrino, una vez aunque haya varias ventanas. Suena en su versión baja; con la variable de entorno `DOTRINO_TERMINAL_RING=standard` o `high` al abrir la app suena más fuerte (app 0.2.60 o más reciente).
+
 **Qué está haciendo cada consola.** En el panel, el número de una consola cambia de color:
 **ámbar** si hay algo trabajando en ella y **verde** si terminó y todavía no la has mirado (el verde
 se apaga al entrar a esa consola o al teclear en ella). Sirve para dejar un agente de IA trabajando

@@ -185,6 +185,8 @@ window on **this** computer is showing it, not what the other one has open. Righ
 in the panel, from here or from another computer, to open it here, open it in another window or
 close it. The dot **blinks** when that console finished and you have not looked at it yet; it stops as soon as its window has the focus.
 
+**The ring when it finishes.** When a console finishes, Dotrino's chirp plays, once even with several windows open. It plays in its low version; with the environment variable `DOTRINO_TERMINAL_RING=standard` or `high` when opening the app it plays louder (app 0.2.60 or newer).
+
 **What each console is doing.** In the panel, a console's number changes colour: **amber** when
 something is working in it and **green** when it finished and you have not looked at it yet (green
 goes away when you open that console or type in it). It lets you leave an AI agent working in one
