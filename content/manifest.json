@@ -336,6 +336,13 @@
           }
         },
         {
+          "slug": "iatosvg",
+          "title": {
+            "es": "iatosvg — Illustrator a SVG",
+            "en": "iatosvg — Illustrator to SVG"
+          }
+        },
+        {
           "slug": "android",
           "title": {
             "es": "Android Launcher",
