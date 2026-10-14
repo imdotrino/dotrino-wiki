@@ -80,7 +80,8 @@ El enganche de despliegue por servidor: recibe el aviso de un `git push`
 **`dotrino-names`** — repo
 [`dotrino-names`](https://github.com/imdotrino/dotrino-names), servicio
 `names.dotrino.com`: el **directorio de nombres**. Traduce un nombre legible al id de
-una cuenta, para escribir `laptop@blue-cat` en vez de `laptop@AB12-CD34-EF56`. Cada
+una cuenta, para escribir `blue-cat.dotrino.com` (o un dominio tuyo, probando que es tuyo) en vez de
+`AB12-CD34-EF56`, y `laptop.blue-cat.dotrino.com` para un aparato. Cada
 cuenta puede pedir uno gratis, generado y fijo; elegir uno propio cuesta USD 0,99 al año más
 impuestos. Lo resuelve el proxio, y cualquiera puede comprobar que el registro no se
 reescribió.

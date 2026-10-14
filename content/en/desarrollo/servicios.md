@@ -78,7 +78,8 @@ with HMAC) and updates the service.
 **`dotrino-names`** — repo
 [`dotrino-names`](https://github.com/imdotrino/dotrino-names), service
 `names.dotrino.com`: the **name directory**. It maps a readable name to an account id,
-so you can type `laptop@blue-cat` instead of `laptop@AB12-CD34-EF56`. Every account can
+so you can type `blue-cat.dotrino.com` (or a domain of yours, proving it is yours) instead of
+`AB12-CD34-EF56`, and `laptop.blue-cat.dotrino.com` for a device. Every account can
 ask for one for free, generated and fixed; choosing your own costs USD 0.99 a year plus taxes.
 The proxy resolves it, and anyone can check that the record was not rewritten.
 
