@@ -86,8 +86,12 @@ cuenta puede pedir uno gratis, generado y fijo; elegir uno propio cuesta USD 0,9
 impuestos. Lo resuelve el proxio, y cualquiera puede comprobar que el registro no se
 reescribió.
 
-**Todavía no está abierto**: hay diseño y el núcleo del registro (`@dotrino/names`,
-sin publicar). El diseño está en
+**Cómo se usa**: entra en [names.dotrino.com](https://names.dotrino.com/) con tu perfil en
+el navegador. Ahí pides tu nombre gratis, reservas el que quieras (se paga con PayPal; para un
+dominio tuyo, antes publicas en su DNS un registro TXT con el valor que te enseña la página) y
+le pones nombre a cada aparato de tu cuenta. El nombre gratis se mantiene mientras uses tu
+cuenta: tras un mes sin uso caduca y durante seis meses lo puedes recuperar. **Lo que falta**:
+que el proxio y las apps resuelvan los nombres. El diseño está en
 [`docs/DISENO.md`](https://github.com/imdotrino/dotrino-names/blob/main/docs/DISENO.md).
 
 ## Para conectar Dotrino con lo que ya tienes

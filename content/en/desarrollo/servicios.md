@@ -83,8 +83,12 @@ so you can type `blue-cat.dotrino.com` (or a domain of yours, proving it is your
 ask for one for free, generated and fixed; choosing your own costs USD 0.99 a year plus taxes.
 The proxy resolves it, and anyone can check that the record was not rewritten.
 
-**Not open yet**: there is a design and the core of the record (`@dotrino/names`,
-unpublished). The design is in
+**How to use it**: open [names.dotrino.com](https://names.dotrino.com/) with your profile in
+the browser. There you get your free name, reserve the one you want (paid with PayPal; for a
+domain of yours, first publish a TXT record in its DNS with the value the page shows you) and
+name each device of your account. The free name stays while you use your account: after a
+month without use it expires, and for six months you can get it back. **Still missing**: the
+proxy and the apps resolving names. The design is in
 [`docs/DISENO.md`](https://github.com/imdotrino/dotrino-names/blob/main/docs/DISENO.md).
 
 ## Connecting Dotrino to what you already run
