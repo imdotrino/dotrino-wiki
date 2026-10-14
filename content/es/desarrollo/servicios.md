@@ -75,6 +75,20 @@ para probar el ecosistema de punta a punta.
 El enganche de despliegue por servidor: recibe el aviso de un `git push`
 (autenticado con HMAC) y actualiza el servicio.
 
+## Nombres para las cuentas
+
+**`dotrino-names`** — repo
+[`dotrino-names`](https://github.com/imdotrino/dotrino-names), servicio
+`names.dotrino.com`: el **directorio de nombres**. Traduce un nombre legible al id de
+una cuenta, para escribir `laptop@blue-cat` en vez de `laptop@AB12-CD34-EF56`. Toda
+cuenta recibe uno gratis, generado y fijo; elegir uno propio cuesta USD 0,99 al año más
+impuestos. Lo resuelve el proxio, y cualquiera puede comprobar que el registro no se
+reescribió.
+
+**Todavía no está abierto**: hay diseño y el núcleo del registro (`@dotrino/names`,
+sin publicar). El diseño está en
+[`docs/DISENO.md`](https://github.com/imdotrino/dotrino-names/blob/main/docs/DISENO.md).
+
 ## Para conectar Dotrino con lo que ya tienes
 
 **`dotrino-sso`** — repo

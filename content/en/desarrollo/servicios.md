@@ -73,6 +73,19 @@ ecosystem end to end.
 The per-host deploy hook: it receives the notice of a `git push` (authenticated
 with HMAC) and updates the service.
 
+## Names for accounts
+
+**`dotrino-names`** — repo
+[`dotrino-names`](https://github.com/imdotrino/dotrino-names), service
+`names.dotrino.com`: the **name directory**. It maps a readable name to an account id,
+so you can type `laptop@blue-cat` instead of `laptop@AB12-CD34-EF56`. Every account gets
+one for free, generated and fixed; choosing your own costs USD 0.99 a year plus taxes.
+The proxy resolves it, and anyone can check that the record was not rewritten.
+
+**Not open yet**: there is a design and the core of the record (`@dotrino/names`,
+unpublished). The design is in
+[`docs/DISENO.md`](https://github.com/imdotrino/dotrino-names/blob/main/docs/DISENO.md).
+
 ## Connecting Dotrino to what you already run
 
 **`dotrino-sso`** — repo
