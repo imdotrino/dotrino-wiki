@@ -89,6 +89,14 @@ historial, no contando eventos.
 notificaciones del navegador y Web Push (contra la bóveda y el proxy), con acuses
 de apertura y su panel.
 
+**`@dotrino/theme`** — repo
+[`dotrino-theme`](https://github.com/imdotrino/dotrino-theme) — el tema del
+ecosistema, «Cool & Cozy», en una hoja: los colores en claro y en oscuro, las
+tipografías empaquetadas (Quicksand y Comfortaa, sin pedir nada a Google) y las
+variables que leen la barra, el support y el perfil. Toda app lo importa
+(`import '@dotrino/theme/theme.css'`) y escribe su CSS con los tokens `--dt-*`.
+Claro u oscuro lo decide el sistema; `setTheme()` deja elegir al usuario.
+
 **`@dotrino/tutorial`** — repo
 [`dotrino-tutorial`](https://github.com/imdotrino/dotrino-tutorial) —
 `<dotrino-tutorial>`: burbujas de primeros pasos ancladas a la interfaz, que se

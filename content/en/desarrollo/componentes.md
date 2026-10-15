@@ -88,6 +88,14 @@ state, not by counting events.
 browser notifications and Web Push (against the vault and the proxy), with read
 receipts and its panel.
 
+**`@dotrino/theme`** — repo
+[`dotrino-theme`](https://github.com/imdotrino/dotrino-theme) — the ecosystem's
+theme, "Cool & Cozy", in one stylesheet: the colours in light and dark, the bundled
+fonts (Quicksand and Comfortaa, nothing fetched from Google) and the variables the
+top bar, support and profile read. Every app imports it
+(`import '@dotrino/theme/theme.css'`) and writes its CSS with the `--dt-*` tokens.
+Light or dark follows the system; `setTheme()` lets the user choose.
+
 **`@dotrino/tutorial`** — repo
 [`dotrino-tutorial`](https://github.com/imdotrino/dotrino-tutorial) —
 `<dotrino-tutorial>`: onboarding bubbles anchored to the UI, shown once.
