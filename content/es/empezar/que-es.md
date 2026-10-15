@@ -41,8 +41,8 @@ Esto es lo que las apps hacen por ti sin que tengas que configurar nada:
 
 - Las aplicaciones comparten **identidad, transporte y almacenamiento cifrado**,
   bajo licencia MIT, sin anuncios, sin cookies y sin JavaScript de terceros.
-- **La clave vive en tu dispositivo.** Tú eres tu propio certificador: enrolas tus
-  aparatos y firmas por ti, sin pedirle permiso a ningún portero central.
+- **La clave vive en tu dispositivo.** Tú decides qué aparatos son tuyos: los
+  das de alta y firmas por ti, sin pedirle permiso a ningún portero central.
 - **Tu contenido vive en tu almacén**, cifrado de punta a punta.
 - Lo compartible viaja por el *fragmento* de la URL (`#…`), que **nunca llega al
   servidor** y no se puede indexar.
@@ -51,7 +51,7 @@ Esto es lo que las apps hacen por ti sin que tengas que configurar nada:
 
 | Pieza | Qué hace |
 |---|---|
-| [La bóveda](/vault/modelo/) | tu certificador personal y tu almacén, en tu máquina |
+| [La bóveda](/vault/modelo/) | decide qué aparatos son tuyos y guarda lo tuyo, en tu máquina |
 | Las apps (`*.dotrino.com`) | resuelven problemas reales — mensajería, ubicación, juegos… — sin rastrearte |
 | Los pilares (`@dotrino/*`) | identidad, transporte, almacén, reputación: librerías que todas las apps comparten |
 

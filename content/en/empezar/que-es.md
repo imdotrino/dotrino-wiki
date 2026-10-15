@@ -43,8 +43,8 @@ This is what the apps do for you without you configuring anything:
 
 - The applications share **identity, transport and encrypted storage**, under the MIT
   license, with no ads, no cookies and no third-party JavaScript.
-- **The key lives on your device.** You are your own certifier: you enroll your
-  devices and sign for yourself, without asking any central gatekeeper.
+- **The key lives on your device.** You decide which devices are yours: you add
+  them and sign for yourself, without asking any central gatekeeper.
 - **Your content lives in your store**, encrypted end to end.
 - Anything shareable travels in the URL *fragment* (`#…`), which **never reaches the
   server** and cannot be indexed.
@@ -53,7 +53,7 @@ This is what the apps do for you without you configuring anything:
 
 | Piece | What it does |
 |---|---|
-| [The vault](/en/vault/modelo/) | your personal certifier and store, on your machine |
+| [The vault](/en/vault/modelo/) | decides which devices are yours and keeps your stuff, on your machine |
 | The apps (`*.dotrino.com`) | solve real problems — messaging, location, games… — without tracking you |
 | The pillars (`@dotrino/*`) | identity, transport, storage, reputation: libraries every app shares |
 
