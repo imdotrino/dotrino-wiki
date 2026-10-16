@@ -35,7 +35,7 @@ It asks for no admin rights and, if you have no Node, it brings it
 On **Windows** that installer does not work: with [Node](https://nodejs.org/) installed, in
 PowerShell, `npm install -g @dotrino/terminal-agent`. The consoles run PowerShell.
 
-Two other ways to install it, both with Node 20 or newer already in place:
+Two other ways to install it, both with Node 22.12 or newer (or 20.19) already in place:
 
 - From the app itself: **Tools → Install dotrino-terminal…** opens a separate window that
   installs it right away; the result stays on screen until you press Enter.
@@ -361,7 +361,7 @@ If the console program is not running, `dotrino-terminal` starts it by itself.
   dotrino-terminal…**. Without it the app works anyway, with no profile.
 - **The install says EACCES**: your npm installs into a system folder. Use
   [nvm](https://github.com/nvm-sh/nvm), or install it with `sudo` from another terminal.
-- **"Can't find npm"**: Node is missing. Install Node 20 or newer from
+- **"Can't find npm"**: Node is missing. Install Node 22.12 or newer from
   [nodejs.org](https://nodejs.org).
 - **"An agent is running that does not accept windows"**: a version older than 0.6.0 is
   running (for example as a service). Stop it and start the new one:

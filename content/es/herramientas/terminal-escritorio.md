@@ -35,7 +35,7 @@ No pide permisos de administrador y, si no tienes Node, lo trae
 En **Windows** ese instalador no sirve: con [Node](https://nodejs.org/) instalado, en PowerShell,
 `npm install -g @dotrino/terminal-agent`. Las consolas son de PowerShell.
 
-Otras dos formas de instalarlo, las dos con Node 20 o más reciente ya puesto:
+Otras dos formas de instalarlo, las dos con Node 22.12 o más reciente (o 20.19) ya puesto:
 
 - Desde la propia app: **Herramientas → Instalar dotrino-terminal…** abre una ventana aparte que
   lo instala en el acto; el resultado se queda a la vista hasta que pulses Enter.
@@ -363,7 +363,7 @@ Si el programa de las consolas no está corriendo, `dotrino-terminal` lo arranca
   Sin él la app funciona igual, sin perfil.
 - **La instalación dice EACCES**: tu npm instala en una carpeta del sistema. Usa
   [nvm](https://github.com/nvm-sh/nvm), o instálalo con `sudo` desde otra terminal.
-- **«No encuentro npm»**: falta Node. Instala Node 20 o más reciente desde
+- **«No encuentro npm»**: falta Node. Instala Node 22.12 o más reciente desde
   [nodejs.org](https://nodejs.org).
 - **«Hay un agente corriendo que no acepta ventanas»**: tienes corriendo una versión anterior
   a la 0.6.0 (por ejemplo, como servicio). Detenla y vuelve a arrancarla con la nueva:
