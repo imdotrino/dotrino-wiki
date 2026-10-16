@@ -1,11 +1,11 @@
 ---
 title: Terminal on your computer
-description: The Dotrino Terminal app for Linux and macOS. Every window you open can be picked up from the browser on another device of yours.
+description: The Dotrino Terminal app for Linux, macOS and Windows. Every window you open can be picked up from the browser on another device of yours.
 ---
 
 # Terminal on your computer
 
-Dotrino Terminal is also the terminal of your own computer, on Linux and macOS. You use it
+Dotrino Terminal is also the terminal of your own computer, on Linux, macOS and Windows. You use it
 like any terminal, with one difference: **every window you open can be picked up from the
 browser on another device of yours** (your phone, another computer), right where you left
 it. That is what [`terminal.dotrino.com`](https://terminal.dotrino.com/consoles) is for.
@@ -31,6 +31,9 @@ curl -fsSL https://install.dotrino.com/install.sh | sh -s -- @dotrino/terminal-a
 It asks for no admin rights and, if you have no Node, it brings it
 ([the Dotrino installer](/en/herramientas/instalar/)). When it finishes, the app's profiles,
 "Enroll…" and consoles panel light up by themselves.
+
+On **Windows** that installer does not work: with [Node](https://nodejs.org/) installed, in
+PowerShell, `npm install -g @dotrino/terminal-agent`. The consoles run PowerShell.
 
 Two other ways to install it, both with Node 20 or newer already in place:
 
@@ -71,9 +74,14 @@ action: first the console program and then the app, all in view in the window.
 | Fedora, RHEL, openSUSE | `dotrino-terminal-desktop-<version>-1.x86_64.rpm` | `sudo dnf install ./dotrino-terminal-desktop-*.x86_64.rpm` (on openSUSE: `sudo zypper install --allow-unsigned-rpm ./dotrino-terminal-desktop-*.x86_64.rpm`) · it shows up in the menu as "Dotrino Terminal" |
 | Other Linux | `dotrino-terminal-desktop-<version>-linux-x64.tar.gz` | unpack it and run `dotrino-terminal-desktop` |
 | macOS (Apple Silicon and Intel) | `dotrino-terminal-desktop-<version>-macos-universal.zip` | unpack it and drag "Dotrino Terminal" to Applications |
+| Windows 10 and 11 | `dotrino-terminal-desktop-<version>-windows-x64.zip` | unpack it into a folder of yours (for example, `Documents`) and open `dotrino-terminal-desktop.exe` |
 
 On macOS the app is not signed by Apple yet, so the first time the system won't open it with
 a double click. Open it with **right click → Open** and confirm. You only do this once.
+
+On Windows it is not signed yet either: the first time you get "Windows protected your PC". Click
+**More info → Run anyway**. To keep it at hand, right click the `.exe` → **Pin to Start**. If you
+keep it in a folder of yours, "Update" replaces it with the new one by itself.
 
 ## As your desktop's terminal (XFCE and Thunar)
 
