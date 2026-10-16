@@ -7,9 +7,9 @@ description: An installer for your user, with no administrator rights, with the 
 
 1. Download `dotrino-vault-X.Y.Z-windows-x64-setup.exe` from the
    [releases page](https://github.com/imdotrino/dotrino-vault/releases/latest).
-2. Open it. Windows may warn that the publisher is unknown: click **More info → Run
-   anyway**. The installer is not signed by a publisher registered with Microsoft; what
-   proves where it came from is below.
+2. Open it. Windows warns that the publisher is unknown: click **More info → Run
+   anyway**. The installer is not signed by a publisher registered with Microsoft, and it
+   will not be; what proves where it came from is below.
 3. Leave **Start the vault when I sign in** ticked and finish.
 
 It does not ask for administrator rights: it installs for you alone, in
@@ -30,8 +30,10 @@ While it is off, the vault only runs when you open it.
 
 ## Update and uninstall
 
-- **Update:** install the new version on top. On Windows the vault does not update on
-  its own yet.
+- **Update:** there is nothing to do. Once a day the vault checks for a new version,
+  verifies it and installs it; it closes for a moment and comes back on its own, and so does
+  the window. To have it ask for your permission on your phone first, turn it on in
+  **Settings**.
 - **Uninstall:** from *Settings → Apps*. Your data stays in
   `%LOCALAPPDATA%\Dotrino\vault`: it is your account, and deleting it is a separate
   decision.

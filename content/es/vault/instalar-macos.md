@@ -24,8 +24,9 @@ vuelve a levantar si se cae. Si mueves la app de carpeta, apágalo y vuelve a en
 
 ## Actualizar y desinstalar
 
-- **Actualizar:** reemplaza la app por la nueva. En macOS la bóveda todavía no se
-  actualiza sola.
+- **Actualizar:** no hace falta. Una vez al día la bóveda mira si hay versión nueva, la
+  comprueba y cambia la app por la nueva. Necesita poder escribir en la carpeta donde está la
+  app (en *Aplicaciones*, si tu usuario es administrador).
 - **Desinstalar:** apaga el arranque en Ajustes y borra la app. Tus datos se quedan en
   `~/.local/share/dotrino/vault`.
 

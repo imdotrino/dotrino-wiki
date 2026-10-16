@@ -24,8 +24,9 @@ off and on again.
 
 ## Update and uninstall
 
-- **Update:** replace the app with the new one. On macOS the vault does not update on its
-  own yet.
+- **Update:** there is nothing to do. Once a day the vault checks for a new version,
+  verifies it and replaces the app with the new one. It needs to be able to write to the
+  folder the app is in (*Applications*, if your user is an administrator).
 - **Uninstall:** turn start at sign-in off in Settings and delete the app. Your data stays
   in `~/.local/share/dotrino/vault`.
 
