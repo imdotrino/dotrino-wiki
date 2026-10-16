@@ -30,6 +30,13 @@ order for the daemon. If the daemon isn't running, the TUI offers to start it wi
 When pairing, the vault **first asks which account the device joins** (the active
 one, a new one, or connecting a service with its namespace) and only then shows the QR.
 
+Each device says **where it runs**, next to its name: what it is (a command, a browser,
+the extension, iOS or Android), on which system and what the machine is called —for
+example `node · Linux 7.0.0 · my-pc` or `browser · Windows · Chrome`—. A browser does not
+know the computer's name, so it shows the browser. You also see it before accepting a
+pairing. A device connected earlier shows it as soon as it updates and talks to the
+vault again.
+
 ## Keys
 
 Mnemonics are English and don't change with the language (`l` toggles

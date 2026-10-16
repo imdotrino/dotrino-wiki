@@ -30,6 +30,13 @@ Al emparejar, la bóveda **pregunta primero a qué cuenta entra el dispositivo**
 activa, una nueva, o conectar un servicio con su namespace) y recién después muestra
 el QR.
 
+Cada dispositivo dice **dónde corre**, al lado de su nombre: qué es (un comando, un
+navegador, la extensión, iOS o Android), en qué sistema y cómo se llama la máquina —por
+ejemplo `node · Linux 7.0.0 · mi-pc` o `browser · Windows · Chrome`—. Un navegador no
+sabe el nombre de la computadora, así que enseña el navegador. Lo ves también antes de
+aceptar un emparejamiento. Un dispositivo conectado antes lo enseña en cuanto se
+actualiza y vuelve a hablar con la bóveda.
+
 ## Teclas
 
 Los mnemónicos son en inglés y no cambian con el idioma (`l` conmuta español/English).
