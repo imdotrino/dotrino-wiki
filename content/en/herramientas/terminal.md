@@ -33,6 +33,9 @@ npm install -g @dotrino/terminal-agent
 dotrino-terminal-agent
 ```
 
+If PowerShell says "running scripts is disabled on this system", use `dotrino-terminal.cmd`
+and `dotrino-terminal-agent.cmd`, which are the same commands.
+
 The consoles you open from another device run **PowerShell**. On Windows there is the agent,
 not the desktop app.
 

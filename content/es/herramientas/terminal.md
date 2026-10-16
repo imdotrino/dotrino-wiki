@@ -33,6 +33,9 @@ npm install -g @dotrino/terminal-agent
 dotrino-terminal-agent
 ```
 
+Si PowerShell dice que «la ejecución de scripts está deshabilitada», usa `dotrino-terminal.cmd`
+y `dotrino-terminal-agent.cmd`, que son los mismos comandos.
+
 Las consolas que abras desde otro aparato son de **PowerShell**. En Windows está el agente,
 no la app de escritorio.
 
