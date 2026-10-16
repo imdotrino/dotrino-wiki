@@ -26,6 +26,16 @@ No pide permisos de administrador y, si no tienes Node, lo trae. Cuando termina,
 una terminal nueva y arranca el agente con `dotrino-terminal-agent`. Qué más hace este
 comando: [el instalador de Dotrino](/herramientas/instalar/).
 
+**En Windows**, con [Node](https://nodejs.org/) instalado, en PowerShell:
+
+```
+npm install -g @dotrino/terminal-agent
+dotrino-terminal-agent
+```
+
+Las consolas que abras desde otro aparato son de **PowerShell**. En Windows está el agente,
+no la app de escritorio.
+
 ## Qué hace falta
 
 1. [La bóveda](/vault/instalacion/) instalada en alguna de tus computadoras. No tiene
@@ -62,6 +72,7 @@ dotrino-terminal service install
   encender la máquina. Si el sistema no lo permite sin administrador, arranca al iniciar
   sesión, y la orden te dice qué correr para cambiarlo.
 - **macOS:** arranca al iniciar sesión.
+- **Windows:** arranca al iniciar sesión, sin ventana y sin contraseña de administrador.
 - Con varios perfiles, cada uno tiene el suyo: `dotrino-terminal service install --name trabajo`.
 - Si ya hay un agente corriendo no se toca, para no cerrar tus consolas: el servicio toma el
   relevo cuando ese termine o al próximo arranque.

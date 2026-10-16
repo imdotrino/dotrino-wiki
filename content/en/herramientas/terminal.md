@@ -26,6 +26,16 @@ It asks for no admin rights and, if you have no Node, it brings it. When it fini
 open a new terminal and start the agent with `dotrino-terminal-agent`. What else this
 command does: [the Dotrino installer](/en/herramientas/instalar/).
 
+**On Windows**, with [Node](https://nodejs.org/) installed, in PowerShell:
+
+```
+npm install -g @dotrino/terminal-agent
+dotrino-terminal-agent
+```
+
+The consoles you open from another device run **PowerShell**. On Windows there is the agent,
+not the desktop app.
+
 ## What you need
 
 1. [The vault](/en/vault/instalacion/) installed on one of your computers. It does not
@@ -62,6 +72,7 @@ dotrino-terminal service install
   the machine boots. If the system does not allow that without an administrator, it starts
   when you log in, and the command tells you what to run to change it.
 - **macOS:** it starts when you log in.
+- **Windows:** it starts when you log in, with no window and no admin password.
 - With several profiles, each has its own: `dotrino-terminal service install --name work`.
 - An agent that is already running is left alone, so your consoles stay open: the service
   takes over when it ends or at the next start.
