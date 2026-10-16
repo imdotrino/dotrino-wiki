@@ -131,6 +131,20 @@
           }
         },
         {
+          "slug": "instalar-windows",
+          "title": {
+            "es": "Instalar en Windows",
+            "en": "Install on Windows"
+          }
+        },
+        {
+          "slug": "instalar-macos",
+          "title": {
+            "es": "Instalar en macOS",
+            "en": "Install on macOS"
+          }
+        },
+        {
           "slug": "instalar-npx",
           "title": {
             "es": "Instalar con un comando (npx)",
@@ -156,6 +170,13 @@
           "title": {
             "es": "CLI de control",
             "en": "Control CLI"
+          }
+        },
+        {
+          "slug": "ventana",
+          "title": {
+            "es": "La ventana de la bóveda",
+            "en": "The vault window"
           }
         },
         {
