@@ -249,4 +249,4 @@ fs.writeFileSync(path.join(DIST, 'robots.txt'), `User-agent: *\nAllow: /\nSitema
 fs.writeFileSync(path.join(DIST, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${u}</loc></url>`).join('\n')}\n</urlset>\n`)
 fs.writeFileSync(path.join(DIST, '.nojekyll'), '')
 fs.writeFileSync(path.join(DIST, 'CNAME'), 'wiki.dotrino.com\n')
-console.log(`wiki: ${urls.length} páginas → dist/  (commit ${COMMIT})`)
+console.log(`wiki: ${urls.length} pages → dist/  (commit ${COMMIT})`)
