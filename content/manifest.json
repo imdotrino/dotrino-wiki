@@ -229,6 +229,13 @@
           }
         },
         {
+          "slug": "respaldo",
+          "title": {
+            "es": "Respaldo: exportar e importar",
+            "en": "Backup: export and import"
+          }
+        },
+        {
           "slug": "aprobacion",
           "title": {
             "es": "Aprobación desde el teléfono",
