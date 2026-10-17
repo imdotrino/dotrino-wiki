@@ -80,7 +80,11 @@ If there are conflicts and you did not say what to do, **nothing is imported**.
 - **History is not saved**: a backup is what there is now.
 - **Passwords left out.** If one was saved before the vault had its recovery copy, the backup
   tells you. Open it once from a device with the `contrasenas` permission and back up again.
-- Today this is done from the vault installed on your computer. The browser vault and the one in
-  the extension will get it later.
+- It also works without the command line: in the vault screen (`dotrino-vault tui`, or the
+  window) press `o` on a vault; in the browser, in the `vault.dotrino.com` console, «Backup»
+  section; and in the extension, in the tab that acts as the vault.
+- **In the extension, the manager's passwords do not go**: they live apart, with their own
+  recovery copy. The extension's backup holds the drawers, and if you import one with passwords
+  it tells you how many were left out.
 
 Design: [`docs/respaldo.md`](https://github.com/imdotrino/dotrino-vault/blob/main/docs/respaldo.md).

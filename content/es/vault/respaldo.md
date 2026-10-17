@@ -82,7 +82,11 @@ Si hay choques y no dijiste qué hacer, **no se importa nada**.
 - **Contraseñas que no entran.** Si alguna se guardó antes de que la bóveda tuviera su copia de
   recuperación, el respaldo te lo avisa. Ábrela una vez desde un aparato con el permiso
   `contrasenas` y repite el respaldo.
-- Hoy se hace desde la bóveda instalada en tu computadora. En la bóveda del navegador y en la de
-  la extensión llegará después.
+- También se hace sin la línea de comandos: en la pantalla de la bóveda (`dotrino-vault tui`, o la
+  ventana) pulsa `o` sobre una bóveda; en el navegador, en la consola `vault.dotrino.com`, sección
+  «Respaldo»; y en la extensión, en la pestaña que hace de bóveda.
+- **En la extensión no van las contraseñas del gestor**: viven aparte, con su propia copia de
+  recuperación. El respaldo de la extensión lleva los cajones, y si importas uno con contraseñas,
+  te dice cuántas se quedaron fuera.
 
 Diseño: [`docs/respaldo.md`](https://github.com/imdotrino/dotrino-vault/blob/main/docs/respaldo.md).
