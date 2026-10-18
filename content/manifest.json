@@ -329,6 +329,13 @@
           }
         },
         {
+          "slug": "gastos",
+          "title": {
+            "es": "Ingresos y gastos del mes",
+            "en": "Monthly income and expenses"
+          }
+        },
+        {
           "slug": "facturacion",
           "title": {
             "es": "Facturación electrónica (SRI)",
