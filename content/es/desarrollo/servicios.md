@@ -94,6 +94,17 @@ cuenta: tras un mes sin uso caduca y durante seis meses lo puedes recuperar. **L
 que el proxio y las apps resuelvan los nombres. El diseño está en
 [`docs/DISENO.md`](https://github.com/imdotrino/dotrino-names/blob/main/docs/DISENO.md).
 
+## La bóveda en la nube
+
+**`dotrino-accounts`** — repo
+[`dotrino-accounts`](https://github.com/imdotrino/dotrino-accounts), servicio
+`accounts.dotrino.com`: vende y administra la **bóveda en la nube**. Cobra la suscripción con
+PayPal, crea cada bóveda en AWS (una pila por bóveda, con la plantilla de la release de
+`dotrino-vault`), la enciende o la apaga según lo pagado y, si no se pudo crear, devuelve el
+primer mes. Se compra en [vault.dotrino.com/hosted](https://vault.dotrino.com/hosted); el uso
+está en [La bóveda en la nube](/vault/nube/) y el diseño en
+[`docs/DISENO.md`](https://github.com/imdotrino/dotrino-accounts/blob/main/docs/DISENO.md).
+
 ## Para conectar Dotrino con lo que ya tienes
 
 **`dotrino-sso`** — repo

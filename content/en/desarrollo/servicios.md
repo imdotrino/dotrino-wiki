@@ -91,6 +91,18 @@ month without use it expires, and for six months you can get it back. **Still mi
 proxy and the apps resolving names. The design is in
 [`docs/DISENO.md`](https://github.com/imdotrino/dotrino-names/blob/main/docs/DISENO.md).
 
+## The vault in the cloud
+
+**`dotrino-accounts`** — repo
+[`dotrino-accounts`](https://github.com/imdotrino/dotrino-accounts), service
+`accounts.dotrino.com`: sells and runs the **vault in the cloud**. It charges the subscription
+with PayPal, creates each vault in AWS (one stack per vault, from the template in the
+`dotrino-vault` release), turns it on or off according to what was paid and, if it could not be
+created, refunds the first month. It is bought at
+[vault.dotrino.com/hosted](https://vault.dotrino.com/hosted); usage is in
+[The vault in the cloud](/en/vault/nube/) and the design in
+[`docs/DISENO.md`](https://github.com/imdotrino/dotrino-accounts/blob/main/docs/DISENO.md).
+
 ## Connecting Dotrino to what you already run
 
 **`dotrino-sso`** — repo

@@ -93,6 +93,19 @@ pedir JSON y pasar audio a texto. Los errores traen un código distinto según q
 hacer (llave rechazada, tope de uso, sin conexión). Lo usa
 [Expenses](/apps/gastos/).
 
+## Cobros
+
+**`@dotrino/pay`** — repo
+[`dotrino-pay`](https://github.com/imdotrino/dotrino-pay)
+
+Los cobros del ecosistema en un solo sitio, para que cada servicio que cobra no escriba su
+propio cliente del proveedor. Hoy trae PayPal: pago suelto, suscripción, devolver un cobro y
+comprobar que un aviso lo mandó PayPal; y el precio con impuestos (`priceWithTax`). Los fallos
+llevan un código que dice qué hacer (`payment-declined` es del comprador, `provider-error` del
+proveedor). Lo usan [dotrino-names](https://github.com/imdotrino/dotrino-names) y
+[dotrino-accounts](https://github.com/imdotrino/dotrino-accounts). Solo en el servidor: la
+llave del proveedor nunca va al navegador.
+
 ## Para servicios y aparatos
 
 **`@dotrino/remote-agent`** — repo

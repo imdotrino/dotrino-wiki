@@ -93,6 +93,19 @@ compatibles (DeepSeek, Groq, OpenRouter, Ollama), Claude and Gemini: ask, ask fo
 turn audio into text. Errors carry a different code for each fix (key rejected, usage
 limit, offline). Used by [Expenses](/en/apps/gastos/).
 
+## Payments
+
+**`@dotrino/pay`** — repo
+[`dotrino-pay`](https://github.com/imdotrino/dotrino-pay)
+
+The ecosystem's payments in one place, so that each service that charges does not write its own
+provider client. Today it has PayPal: one-off payment, subscription, refunding a charge and
+checking that a notice came from PayPal; and the price with taxes (`priceWithTax`). Failures
+carry a code that says what to do (`payment-declined` is the buyer's, `provider-error` the
+provider's). Used by [dotrino-names](https://github.com/imdotrino/dotrino-names) and
+[dotrino-accounts](https://github.com/imdotrino/dotrino-accounts). Server only: the provider's
+key never goes to the browser.
+
 ## For services and devices
 
 **`@dotrino/remote-agent`** — repo
