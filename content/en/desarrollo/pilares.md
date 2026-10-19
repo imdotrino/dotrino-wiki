@@ -82,6 +82,17 @@ talk directly instead of going around through the internet. It is not imported b
 hand: `@dotrino/proxy-client` loads it if it is installed. It goes in the Node
 piece's `optionalDependencies`, never in a browser app, which already has WebRTC.
 
+## AI with the user's key
+
+**`@dotrino/ai`** — repo
+[`dotrino-ai`](https://github.com/imdotrino/dotrino-ai)
+
+Talking to an AI model **with the user's own key**, straight from their browser or PC to
+the provider they chose: it goes through no Dotrino server. No dependencies. OpenAI and
+compatibles (DeepSeek, Groq, OpenRouter, Ollama), Claude and Gemini: ask, ask for JSON and
+turn audio into text. Errors carry a different code for each fix (key rejected, usage
+limit, offline). Used by [Expenses](/en/apps/gastos/).
+
 ## For services and devices
 
 **`@dotrino/remote-agent`** — repo

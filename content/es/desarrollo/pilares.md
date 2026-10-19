@@ -81,6 +81,18 @@ tuyas se hablen directo en vez de dar la vuelta por internet. No se importa a ma
 lo carga `@dotrino/proxy-client` si está instalado. Va en `optionalDependencies` de
 la pieza de Node, nunca en una app de navegador, que ya trae WebRTC.
 
+## IA con la llave del usuario
+
+**`@dotrino/ai`** — repo
+[`dotrino-ai`](https://github.com/imdotrino/dotrino-ai)
+
+Hablar con un modelo de IA **con la llave del usuario**, directo desde su navegador o su PC
+al proveedor que él eligió: no pasa por ningún servidor de Dotrino. Sin dependencias.
+OpenAI y compatibles (DeepSeek, Groq, OpenRouter, Ollama), Claude y Gemini: preguntar,
+pedir JSON y pasar audio a texto. Los errores traen un código distinto según qué hay que
+hacer (llave rechazada, tope de uso, sin conexión). Lo usa
+[Expenses](/apps/gastos/).
+
 ## Para servicios y aparatos
 
 **`@dotrino/remote-agent`** — repo
