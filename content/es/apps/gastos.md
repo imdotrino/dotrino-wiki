@@ -13,8 +13,8 @@ y al final del mes sabes en qué se fue el dinero. Lo que anotas se guarda en
 [tu almacén](/empezar/privacidad/), dentro de tu perfil: no pasa por los servidores de
 Dotrino.
 
-> La app está **en desarrollo**. Hoy se anota a mano o con una frase. El dictado, la ayuda
-> de una IA con tu propia llave y la lectura de los avisos del banco en tu correo vienen
+> La app está **en desarrollo**. Hoy se anota a mano o con una frase, y puedes darle tu
+> propia llave de IA. El dictado y la lectura de los avisos del banco en tu correo vienen
 > después.
 
 ## Anotar un movimiento
@@ -54,6 +54,23 @@ Si una regla cae el día 31 y el mes es más corto, se anota en su último día.
 La pestaña **Resumen** reparte los gastos y los ingresos del mes por categoría, de mayor a
 menor, y te dice cuánto gastaste más o menos que el mes anterior. Desde ahí descargas el mes
 en **CSV** para abrirlo en una hoja de cálculo.
+
+## Tu propia IA (opcional)
+
+En **Ajustes → Tu IA** puedes poner la llave de un proveedor de IA que ya uses: OpenAI,
+Anthropic (Claude), Google Gemini, DeepSeek, Groq, OpenRouter, o un modelo en tu propia
+computadora con Ollama. Con ella:
+
+- **las frases las entiende tu modelo**, así que puedes escribir más libre («llené el tanque
+  ayer, 30 dólares»). Igual revisas lo que entendió antes de guardar;
+- en **Resumen**, el botón **Descríbeme el mes** te lo cuenta en tres o cuatro frases.
+
+La llamada sale de tu navegador directo a ese proveedor, con tu llave y a tu cuenta: Dotrino
+no la ve. La llave se guarda cifrada con la llave de tu cuenta. Al proveedor va lo que
+escribes en el cuadro de frases y, para el resumen, solo los totales por categoría (nunca
+tus notas). Si el proveedor no contesta, la app te lo dice y entiende la frase con sus
+reglas. Pulsa **Probar** antes de guardar para saber si la llave funciona; **Quitar la
+llave** la borra.
 
 ## Ajustes
 

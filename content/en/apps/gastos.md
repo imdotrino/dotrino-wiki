@@ -13,8 +13,8 @@ calendar, and at the end of the month you know where the money went. What you re
 kept in [your storage](/en/empezar/privacidad/), inside your profile: it does not go through
 Dotrino's servers.
 
-> The app is **in development**. Today you record by hand or with a sentence. Dictation,
-> help from an AI with your own key, and reading your bank's notices from your email come
+> The app is **in development**. Today you record by hand or with a sentence, and you can
+> give it your own AI key. Dictation and reading your bank's notices from your email come
 > later.
 
 ## Recording a movement
@@ -54,6 +54,23 @@ If a rule falls on the 31st and the month is shorter, it is recorded on its last
 The **Summary** tab splits the month's expenses and income by category, largest first, and
 tells you how much more or less you spent than the previous month. From there you download
 the month as **CSV** to open it in a spreadsheet.
+
+## Your own AI (optional)
+
+In **Settings → Your AI** you can enter the key of an AI provider you already use: OpenAI,
+Anthropic (Claude), Google Gemini, DeepSeek, Groq, OpenRouter, or a model on your own
+computer with Ollama. With it:
+
+- **your model reads the sentences**, so you can write more freely (“filled the tank
+  yesterday, 30 dollars”). You still check what it understood before saving;
+- in **Summary**, the **Describe my month** button tells it to you in three or four sentences.
+
+The call goes from your browser straight to that provider, with your key and on your account:
+Dotrino does not see it. The key is kept encrypted with your account key. The provider gets
+what you type in the sentence box and, for the summary, only the totals per category (never
+your notes). If the provider does not answer, the app tells you and reads the sentence with
+its rules. Tap **Test** before saving to know whether the key works; **Remove the key**
+deletes it.
 
 ## Settings
 
