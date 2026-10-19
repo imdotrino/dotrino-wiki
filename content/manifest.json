@@ -215,6 +215,13 @@
           }
         },
         {
+          "slug": "nube",
+          "title": {
+            "es": "La bóveda en la nube",
+            "en": "The vault in the cloud"
+          }
+        },
+        {
           "slug": "registro-selladores",
           "title": {
             "es": "El registro público de selladores",
