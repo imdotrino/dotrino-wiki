@@ -13,9 +13,8 @@ calendar, and at the end of the month you know where the money went. What you re
 kept in [your storage](/en/empezar/privacidad/), inside your profile: it does not go through
 Dotrino's servers.
 
-> The app is **in development**. Today you record by hand, with a sentence or by dictating,
-> and you can give it your own AI key. Reading your bank's notices from your email comes
-> later.
+> The app is **in development**. Today you record by hand, with a sentence, by dictating or
+> from your bank's notices in your email, and you can give it your own AI key.
 
 ## Recording a movement
 
@@ -75,6 +74,39 @@ what you type in the sentence box and, for the summary, only the totals per cate
 your notes). If the provider does not answer, the app tells you and reads the sentence with
 its rules. Tap **Test** before saving to know whether the key works; **Remove the key**
 deletes it.
+
+## Email
+
+The emails your bank sends about a purchase, a transfer or a deposit become movements **to
+confirm**: they show in the **To confirm** tab and do not count until you accept them. There you
+can **Accept**, **Review** (change something before saving) or **Discard**. An email already
+seen does not come in again.
+
+Two ways to bring them in:
+
+- **Paste it.** Copy the bank's email and paste it in “Paste a notice from your bank”. The app
+  finds the amount (the operation's, not your balance), whether money came in or went out,
+  where and when.
+- **From your mailbox, with the agent on your computer.** A small program running on your PC
+  reads the notices in your email and hands them to the app when you open it. Your email user
+  and password are kept encrypted in your [vault](/en/vault/emparejar/): the app never sees
+  them. With the PC off the app works the same; only new mail does not arrive.
+
+To set up the agent:
+
+1. On your vault's PC, get an invitation: `dotrino-vault pair --service expenses --scope sign`.
+2. On the PC where it will run (it can be the same): `npx @dotrino/expenses-agent`, paste the
+   invitation and approve the code in your vault.
+3. `npx @dotrino/expenses-agent setup` asks for the mail server, your user, the password, the
+   folder and, if you want, the bank's senders (so only those emails are read).
+4. `npx @dotrino/expenses-agent check` checks that it gets into your mailbox.
+
+**Gmail and Outlook require an “app password”**, not your usual one: you get it in your Google
+account (Security → App passwords, with 2-step verification on) or your Microsoft account.
+Servers: `imap.gmail.com`, `outlook.office365.com`.
+
+This browser must be linked to your vault to find the agent. If your AI is set up, the email
+text is sent to it to be read; otherwise the app reads it with its rules.
 
 ## Dictation
 

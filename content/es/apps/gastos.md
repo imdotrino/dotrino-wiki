@@ -13,8 +13,8 @@ y al final del mes sabes en qué se fue el dinero. Lo que anotas se guarda en
 [tu almacén](/empezar/privacidad/), dentro de tu perfil: no pasa por los servidores de
 Dotrino.
 
-> La app está **en desarrollo**. Hoy se anota a mano, con una frase o dictando, y puedes
-> darle tu propia llave de IA. La lectura de los avisos del banco en tu correo viene después.
+> La app está **en desarrollo**. Hoy se anota a mano, con una frase, dictando o con los avisos
+> del banco de tu correo, y puedes darle tu propia llave de IA.
 
 ## Anotar un movimiento
 
@@ -74,6 +74,38 @@ escribes en el cuadro de frases y, para el resumen, solo los totales por categor
 tus notas). Si el proveedor no contesta, la app te lo dice y entiende la frase con sus
 reglas. Pulsa **Probar** antes de guardar para saber si la llave funciona; **Quitar la
 llave** la borra.
+
+## Correo
+
+Los avisos con los que tu banco te cuenta un consumo, una transferencia o un depósito se
+convierten en movimientos **por confirmar**: aparecen en la pestaña **Por confirmar** y no
+cuentan hasta que los aceptas. Ahí puedes **Aceptar**, **Revisar** (cambiar algo antes de
+guardarlo) o **Descartar**. Un correo ya visto no vuelve a entrar.
+
+Hay dos formas de traerlos:
+
+- **Pegarlo a mano.** Copia el correo del banco y pégalo en «Pegar un aviso del banco». La app
+  busca el importe (el de la operación, no tu saldo), si entró o salió, dónde y cuándo.
+- **Desde tu buzón, con el agente en tu computadora.** Un programa pequeño que corre en tu PC
+  lee los avisos de tu correo y se los pasa a la app cuando la abres. Tu usuario y tu
+  contraseña del correo se guardan cifrados en tu [bóveda](/vault/emparejar/): la app no los
+  ve nunca. Con el PC apagado la app funciona igual; solo no llega correo nuevo.
+
+Para poner el agente:
+
+1. En el PC de tu bóveda, saca una invitación: `dotrino-vault pair --service expenses --scope sign`.
+2. En el PC donde va a correr (puede ser el mismo): `npx @dotrino/expenses-agent`, pega la
+   invitación y aprueba el código en tu bóveda.
+3. `npx @dotrino/expenses-agent setup` te pide el servidor de correo, tu usuario, la contraseña,
+   la carpeta y, si quieres, los remitentes del banco (así solo se leen esos correos).
+4. `npx @dotrino/expenses-agent check` comprueba que entra a tu buzón.
+
+**Gmail y Outlook piden una «contraseña de aplicación»**, no la de siempre: se saca en la
+cuenta de Google (Seguridad → Contraseñas de aplicaciones, con la verificación en dos pasos
+encendida) o de Microsoft. Servidores: `imap.gmail.com`, `outlook.office365.com`.
+
+Este navegador tiene que estar enlazado a tu bóveda para encontrar el agente. Si tienes tu IA
+configurada, el texto del correo se le manda para leerlo; si no, lo lee la app con sus reglas.
 
 ## Dictado
 
