@@ -13,9 +13,6 @@ calendar, and at the end of the month you know where the money went. What you re
 kept in [your storage](/en/empezar/privacidad/), inside your profile: it does not go through
 Dotrino's servers.
 
-> The app is **in development**. Today you record by hand, with a sentence, by dictating or
-> from your bank's notices in your email, and you can give it your own AI key.
-
 ## Recording a movement
 
 Two ways:
@@ -51,6 +48,16 @@ confirm it. If that payment did not happen that month, discard it and it will no
 for that month.
 
 If a rule falls on the 31st and the month is shorter, it is recorded on its last day.
+
+### Reminders
+
+What is still to confirm and is due today, overdue, or due in the next three days shows above
+the month, under “To pay or receive”. Tap it to go to that day.
+
+If you want a notice **even with the app closed**, turn it on in **Settings → Reminders**: on
+each due day, at 9:00, this device shows you a notification. It is turned on separately on each
+device. The notice only says you have a payment or an income: neither the name nor the amount
+leave your device.
 
 ## The summary
 

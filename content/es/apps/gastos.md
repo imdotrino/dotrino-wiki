@@ -13,9 +13,6 @@ y al final del mes sabes en qué se fue el dinero. Lo que anotas se guarda en
 [tu almacén](/empezar/privacidad/), dentro de tu perfil: no pasa por los servidores de
 Dotrino.
 
-> La app está **en desarrollo**. Hoy se anota a mano, con una frase, dictando o con los avisos
-> del banco de tu correo, y puedes darle tu propia llave de IA.
-
 ## Anotar un movimiento
 
 Hay dos formas:
@@ -51,6 +48,16 @@ punteado y un punto en el día del calendario, y **no cuenta en los totales** ha
 confirmas. Si ese mes no hubo ese pago, descártalo y ya no vuelve a aparecer en ese mes.
 
 Si una regla cae el día 31 y el mes es más corto, se anota en su último día.
+
+### Recordatorios
+
+Lo que está por confirmar y vence hoy, ya venció o vence en los próximos tres días aparece
+arriba del mes, en «Por pagar o cobrar». Púlsalo para ir a ese día.
+
+Si quieres que te avise **aunque la app esté cerrada**, enciéndelo en **Ajustes →
+Recordatorios**: el día de cada pago, a las 9:00, este aparato te muestra una notificación. Se
+enciende en cada aparato por separado. El aviso solo dice que tienes un pago o un cobro: ni el
+nombre ni el importe salen de tu aparato.
 
 ## El resumen
 
