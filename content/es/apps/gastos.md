@@ -91,7 +91,8 @@ Hay dos formas de traerlos:
   contraseña del correo se guardan cifrados en tu [bóveda](/vault/emparejar/): la app no los
   ve nunca. Con el PC apagado la app funciona igual; solo no llega correo nuevo.
 
-Para poner el agente:
+Para poner el agente (repo
+[`dotrino-expenses-agent`](https://github.com/imdotrino/dotrino-expenses-agent)):
 
 1. En el PC de tu bóveda, saca una invitación: `dotrino-vault pair --service expenses --scope sign`.
 2. En el PC donde va a correr (puede ser el mismo): `npx @dotrino/expenses-agent`, pega la

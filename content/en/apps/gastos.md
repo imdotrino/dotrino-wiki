@@ -92,7 +92,8 @@ Two ways to bring them in:
   and password are kept encrypted in your [vault](/en/vault/emparejar/): the app never sees
   them. With the PC off the app works the same; only new mail does not arrive.
 
-To set up the agent:
+To set up the agent (repo
+[`dotrino-expenses-agent`](https://github.com/imdotrino/dotrino-expenses-agent)):
 
 1. On your vault's PC, get an invitation: `dotrino-vault pair --service expenses --scope sign`.
 2. On the PC where it will run (it can be the same): `npx @dotrino/expenses-agent`, paste the
