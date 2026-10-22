@@ -93,6 +93,15 @@ compatibles (DeepSeek, Groq, OpenRouter, Ollama), Claude and Gemini: ask, ask fo
 turn audio into text. Errors carry a different code for each fix (key rejected, usage
 limit, offline). Used by [Expenses](/en/apps/gastos/).
 
+**`@dotrino/dictation`** — repo
+[`dotrino-dictation`](https://github.com/imdotrino/dotrino-dictation)
+
+Speaking instead of typing: `<dotrino-dictation>` is a microphone button that returns text.
+The app chooses where the voice goes: to Whisper **on the device itself** (the model is
+downloaded once, ~77 MB, and the voice never leaves it) or to the user's AI provider with
+their key (`@dotrino/ai`). It never uses the browser's own dictation, which sends the voice to
+Google or Apple. Used by [Expenses](/en/apps/gastos/).
+
 ## Payments
 
 **`@dotrino/pay`** — repo

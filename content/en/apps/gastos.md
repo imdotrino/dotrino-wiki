@@ -13,8 +13,8 @@ calendar, and at the end of the month you know where the money went. What you re
 kept in [your storage](/en/empezar/privacidad/), inside your profile: it does not go through
 Dotrino's servers.
 
-> The app is **in development**. Today you record by hand or with a sentence, and you can
-> give it your own AI key. Dictation and reading your bank's notices from your email come
+> The app is **in development**. Today you record by hand, with a sentence or by dictating,
+> and you can give it your own AI key. Reading your bank's notices from your email comes
 > later.
 
 ## Recording a movement
@@ -27,6 +27,10 @@ Two ways:
   `taxi 3 yesterday`. The app finds the amount, guesses whether it is an expense or income,
   the category and the day, and shows you the form already filled in. **Nothing is saved
   until you check it.**
+
+With [dictation](#dictation) on, a microphone shows next to the box: tap it, say the
+sentence (“lunch, four dollars fifty”) and tap it again. What you said lands in the box and
+is read just like typed text.
 
 To change a recorded movement, tap it in the list: you can edit or delete it.
 
@@ -71,6 +75,20 @@ what you type in the sentence box and, for the summary, only the totals per cate
 your notes). If the provider does not answer, the app tells you and reads the sentence with
 its rules. Tap **Test** before saving to know whether the key works; **Remove the key**
 deletes it.
+
+## Dictation
+
+In **Settings → Dictation** you choose whether to use it and where your voice becomes text:
+
+- **On this device**: the first time you tap the microphone, the voice model is downloaded
+  (about 77 MB, from huggingface.co) and kept. From then on your voice becomes text on your
+  device and never leaves it. It also works offline.
+- **With your AI**: your voice goes to [your AI](#your-own-ai-optional) provider with your
+  key. OpenAI, Groq and Gemini can do it; if yours cannot, the option is disabled and says
+  why.
+- **Off**, which is how it starts: no microphone.
+
+The app never uses the browser's own dictation, which sends your voice to Google or Apple.
 
 ## Settings
 

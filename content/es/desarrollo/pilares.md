@@ -93,6 +93,15 @@ pedir JSON y pasar audio a texto. Los errores traen un código distinto según q
 hacer (llave rechazada, tope de uso, sin conexión). Lo usa
 [Expenses](/apps/gastos/).
 
+**`@dotrino/dictation`** — repo
+[`dotrino-dictation`](https://github.com/imdotrino/dotrino-dictation)
+
+Dictar en vez de escribir: `<dotrino-dictation>` es un botón de micrófono que devuelve texto.
+La app elige adónde va la voz: a Whisper **en el propio aparato** (el modelo se descarga una
+vez, ~77 MB, y la voz no sale de ahí) o al proveedor de IA del usuario con su llave
+(`@dotrino/ai`). Nunca usa el dictado del navegador, que manda la voz a Google o a Apple. Lo
+usa [Expenses](/apps/gastos/).
+
 ## Cobros
 
 **`@dotrino/pay`** — repo

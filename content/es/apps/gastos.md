@@ -13,9 +13,8 @@ y al final del mes sabes en qué se fue el dinero. Lo que anotas se guarda en
 [tu almacén](/empezar/privacidad/), dentro de tu perfil: no pasa por los servidores de
 Dotrino.
 
-> La app está **en desarrollo**. Hoy se anota a mano o con una frase, y puedes darle tu
-> propia llave de IA. El dictado y la lectura de los avisos del banco en tu correo vienen
-> después.
+> La app está **en desarrollo**. Hoy se anota a mano, con una frase o dictando, y puedes
+> darle tu propia llave de IA. La lectura de los avisos del banco en tu correo viene después.
 
 ## Anotar un movimiento
 
@@ -27,6 +26,10 @@ Hay dos formas:
   `taxi 3 ayer`, `arriendo 350 el 5`. La app busca el importe, adivina si es gasto o
   ingreso, la categoría y el día, y te enseña el formulario ya lleno. **Nada se guarda sin
   que lo revises.**
+
+Con el [dictado](#dictado) encendido, al lado del cuadro aparece un micrófono: púlsalo, di la
+frase («almuerzo, cuatro dólares con cincuenta») y vuelve a pulsarlo. Lo que dijiste cae en
+el cuadro y se entiende igual que lo escrito.
 
 Para tocar un movimiento ya anotado, púlsalo en la lista: puedes cambiarlo o eliminarlo.
 
@@ -71,6 +74,20 @@ escribes en el cuadro de frases y, para el resumen, solo los totales por categor
 tus notas). Si el proveedor no contesta, la app te lo dice y entiende la frase con sus
 reglas. Pulsa **Probar** antes de guardar para saber si la llave funciona; **Quitar la
 llave** la borra.
+
+## Dictado
+
+En **Ajustes → Dictado** eliges si usarlo y dónde se convierte tu voz en texto:
+
+- **En este aparato**: la primera vez que pulsas el micrófono se descarga el modelo de voz
+  (unos 77 MB, desde huggingface.co) y queda guardado. Desde ahí tu voz se convierte en texto
+  en tu aparato y no sale de él. Funciona también sin conexión.
+- **Con tu IA**: tu voz va al proveedor de [tu IA](#tu-propia-ia-opcional) con tu llave.
+  Sirven OpenAI, Groq y Gemini; si tu proveedor no convierte voz en texto, la opción sale
+  deshabilitada y te dice por qué.
+- **Apagado**, que es como empieza: no hay micrófono.
+
+La app nunca usa el dictado del navegador, que manda tu voz a Google o a Apple.
 
 ## Ajustes
 
