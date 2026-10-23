@@ -66,8 +66,8 @@ tell us stays in that email.
 
 ### The Android apps
 
-This covers both apps on Google Play: **Dotrino** (`com.dotrino.app`) and **Dotrino
-Identity** (`com.dotrino.identity`).
+This covers **Dotrino** (`com.dotrino.app`) and **Dotrino Identity**
+(`com.dotrino.identity`). **Terminal** has its own section right below.
 
 **Dotrino Identity does not connect to the internet.** It doesn't even have permission to
 (since version 0.2.7; it doesn't use the camera either). It keeps your keys in the phone's own
@@ -96,6 +96,26 @@ governed by [Google's privacy policy](https://policies.google.com/privacy), not 
 **To delete everything:** uninstall both apps. Your keys and your profile go with Dotrino
 Identity. The notification code stops working when you uninstall Dotrino, and our server
 deletes it the next time it tries to notify you and Google answers that it no longer exists.
+
+### Terminal (Android)
+
+**Terminal** (`com.dotrino.terminal`) opens consoles on **your own machines**, the ones running
+the Terminal agent. What you type and what the console shows travels **sealed between your
+phone and your machine**: directly when possible, and otherwise through our relay server, which
+can't read it. We keep nothing from your consoles.
+
+- **Images.** Only the one you choose to attach. It travels sealed to your machine, like what
+  you type. It never reaches a server of ours in the clear and isn't stored there.
+- **Camera.** Only when you open it, to read a QR code. The image is processed on the phone and
+  is neither stored nor sent.
+- **Fingerprint or face.** Only if you turn it on, to confirm it's you. The phone checks it: the
+  app gets a yes or a no.
+- **Your keys and your profile** live in Dotrino Identity, as with the other apps.
+- **No notifications, no statistics and no crash reports.** Terminal uses neither Firebase nor
+  any other third-party service.
+
+**To delete everything:** uninstall the app. The consoles stay on your machines, which are
+yours: close them there or stop the agent.
 
 ### The iPhone and iPad apps
 

@@ -5,7 +5,7 @@ description: Qué queda registrado cuando usas Dotrino, por cuánto tiempo y qui
 
 # Política de privacidad
 
-Última revisión: **11 de octubre de 2026**.
+Última revisión: **23 de octubre de 2026**.
 
 Esta página dice **qué queda registrado, por cuánto tiempo y quién más lo toca**. Si lo que
 buscas es el porqué, está en [Cómo se protege lo tuyo](/empezar/privacidad/).
@@ -67,8 +67,8 @@ nuestro. Lo que nos cuentes queda en ese correo.
 
 ### Las apps de Android
 
-Esto vale para las dos apps de Google Play: **Dotrino** (`com.dotrino.app`) e **Identidad
-Dotrino** (`com.dotrino.identity`).
+Esto vale para **Dotrino** (`com.dotrino.app`) e **Identidad Dotrino**
+(`com.dotrino.identity`). **Terminal** tiene su apartado justo debajo.
 
 **Identidad Dotrino no se conecta a internet.** Ni siquiera tiene permiso para hacerlo (desde
 la versión 0.2.7; tampoco usa la cámara). Guarda tus llaves en la caja fuerte del propio
@@ -98,6 +98,26 @@ lo rige [la política de privacidad de Google](https://policies.google.com/priva
 **Para borrarlo todo:** desinstala las dos apps. Tus llaves y tu perfil se borran con
 Identidad Dotrino. El código de avisos deja de servir al desinstalar Dotrino, y nuestro servidor
 lo borra la siguiente vez que intenta avisarte y Google responde que ya no existe.
+
+### Terminal (Android)
+
+**Terminal** (`com.dotrino.terminal`) abre consolas en **tus propias máquinas**, las que tienen
+instalado el agente de Terminal. Lo que escribes y lo que muestra la consola viaja **cerrado
+entre tu teléfono y tu máquina**: va directo cuando se puede, y si no, por nuestro servidor de
+reenvío, que no puede leerlo. No guardamos nada de tus consolas.
+
+- **Imágenes.** Solo la que tú eliges adjuntar. Viaja cerrada a tu máquina, igual que lo que
+  escribes. No pasa por ningún servidor nuestro en claro y no se guarda en él.
+- **Cámara.** Solo si tú la abres, para leer un código QR. La imagen se procesa en el teléfono
+  y no se guarda ni se envía.
+- **Huella o cara.** Solo si lo activas, para confirmar que eres tú. Lo comprueba el teléfono:
+  la app recibe un sí o un no.
+- **Tus llaves y tu perfil** viven en Identidad Dotrino, como en las demás apps.
+- **Sin avisos, sin estadísticas y sin informes de errores.** Terminal no usa Firebase ni
+  ningún otro servicio de terceros.
+
+**Para borrarlo todo:** desinstala la app. Las consolas siguen en tus máquinas, que son tuyas:
+se cierran desde ahí o al parar el agente.
 
 ### Las apps de iPhone y iPad
 
