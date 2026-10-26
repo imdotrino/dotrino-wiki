@@ -113,7 +113,7 @@ dotrino-vault atrest rekey --machine     # y de vuelta a la clave de esta máqui
 ```
 
 `rekey` descifra **todo** antes de escribir nada y verifica cada archivo; si algo falla,
-lo de antes queda intacto y deja una copia `.bak-rekey`. **Editar `atrest.json` a mano no
+lo de antes queda intacto y deja una copia `.bak-rekey`. La contraseña del perfil lleva por fuera esta clave, así que `rekey` también la vuelve a cerrar con la nueva, sin pedírtela. **Editar `atrest.json` a mano no
 vale**: la clave cambiaría sin recifrar y el perfil quedaría ilegible.
 
 Sobre un perfil que ya tiene identidad, `rekey` avisa de lo que dijimos arriba —que una

@@ -114,7 +114,7 @@ dotrino-vault atrest rekey --machine     # and back to this machine's key
 ```
 
 `rekey` decrypts **everything** before writing anything and verifies each file; if
-something fails, what was there stays intact and a `.bak-rekey` copy is left behind.
+something fails, what was there stays intact and a `.bak-rekey` copy is left behind. The profile password is wrapped with this key on the outside, so `rekey` re-wraps it with the new one too, without asking for it.
 **Editing `atrest.json` by hand does not work**: the key would change without
 re-encrypting, and the profile would be unreadable.
 

@@ -50,6 +50,11 @@ caracteres —varias palabras al azar— y tras 5 intentos fallidos cada intento
 espera cada vez más. En vez de la contraseña, o además de ella, el perfil puede
 abrirse con una [llave de seguridad](/vault/llave-de-seguridad/).
 
+**Sin contraseña** el perfil abre solo: su llave queda guardada con la de esta máquina, así
+que una copia del disco que salga de ella no la abre. Con contraseña hacen falta las dos
+cosas: la contraseña y esta máquina. Quitar la contraseña o volver a ponerla no cambia nada
+de lo guardado.
+
 **Qué protege y qué no, dicho sin adornos:** protege la consola — que otro que se
 siente en tu máquina vea o toque esa bóveda. **No** cifra la llave en el disco (de eso
 se encarga el [cifrado en reposo](/vault/seguridad/), que hoy no usa la contraseña).

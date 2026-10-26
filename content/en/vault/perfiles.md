@@ -50,6 +50,11 @@ characters —several random words— and after 5 failures each new attempt wait
 Instead of the password, or together with it, the profile can open with a
 [security key](/en/vault/llave-de-seguridad/).
 
+**Without a password** the profile opens by itself: its key is kept with this machine's key,
+so a copy of the disk taken elsewhere does not open it. With a password you need both: the
+password and this machine. Removing the password or setting it again changes nothing that is
+stored.
+
 **What it protects, plainly:** the console — someone sitting at your machine seeing
 or touching that vault. It does **not** encrypt the key on disk (that's
 [encryption at rest](/en/vault/seguridad/), which today doesn't use the password).
