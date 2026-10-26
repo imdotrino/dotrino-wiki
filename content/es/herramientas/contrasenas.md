@@ -143,6 +143,13 @@ dónde puede ayudar y espera a que tú lo pidas. Es a propósito — rellenar so
 decidir por ti en qué campo va cada dato, y equivocarse ahí significa escribir una
 contraseña en el sitio equivocado.
 
+Si lo quieres, hay un ajuste: **«Rellenar al abrir la página»**, en la ventana de la
+extensión. Viene apagado. Encendido, al abrir una página de acceso pone el usuario y la
+contraseña sin que pulses nada, pero solo cuando no hay duda de cuál usar: la única
+guardada para ese sitio o la que marcaste como predeterminada. Sirve sobre todo para un
+navegador que maneja un programa. El precio: lo que se rellena lo puede leer la página
+en cuanto se abre.
+
 ## Una contraseña nueva
 
 Cuando pulsas el botón de una **casilla de contraseña vacía**, lo primero que ves es una

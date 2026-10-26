@@ -145,6 +145,12 @@ where it can help and waits for you to ask. That is on purpose — filling on it
 deciding for you which field each value goes into, and getting that wrong means typing a
 password into the wrong place.
 
+If you want it, there is a setting: **“Fill in when the page opens”**, in the extension’s
+window. It comes off. When on, opening a sign-in page puts in the username and password
+without a click, but only when it is clear which one to use: the only one saved for that
+site, or the one you marked as default. It is mostly for a browser that a program drives.
+The price: what gets filled in can be read by the page as soon as it opens.
+
 ## A new password
 
 When you press the button on an **empty password box**, the first thing you see is a
