@@ -16,15 +16,22 @@ alguien lo que estás haciendo, para que un servicio ajeno te avise de algo
 ## Con un comando
 
 ```
-npx @dotrino/tunnel --port 3000
+npx @dotrino/tunnel 3000
 ```
 
-Te devuelve una dirección `https://r.dotrino.com/<llave>/…` que apunta a tu
+La primera vez te pide **enrolarlo en tu bóveda**, como cualquier otro aparato: pegas
+la invitación de tu bóveda y escribes en ella el código que te enseña para aprobarlo.
+Después te devuelve una dirección `https://r.dotrino.com/<llave>/…` que apunta a tu
 puerto local.
 
-> **La llave de la dirección es el secreto.** Quien la tenga llega a tu servicio,
-> así que se comparte con el mismo cuidado que una contraseña. Cuando dejes de
-> necesitarla, corta el túnel.
+> **La dirección es de ese túnel y de nadie más.** Sale de la llave del propio túnel, y
+> solo él puede atenderla: nadie puede quedarse con tu dirección ni hacerse pasar por
+> tu túnel. Quien tenga la dirección sí puede mandarle peticiones, así que compártela
+> con cuidado y corta el túnel cuando dejes de necesitarlo.
+
+**Cada túnel es un aparato de tu cuenta.** Para tener otro, ponle otro nombre
+(`npx @dotrino/tunnel 8080 --name api`): aparece como un aparato más en tu bóveda, y
+desde ahí lo quitas cuando quieras. `npx @dotrino/tunnel info` te dice cuál es.
 
 ## Como librería
 
@@ -35,6 +42,8 @@ un manejador en vez de un puerto. Su README tiene la API.
 
 La página `r.dotrino.com` no es solo una presentación: es un **probador**. Puedes
 ver en vivo las peticiones que llegan al túnel y responderlas a mano, que es la
-forma rápida de entender qué te está mandando el servicio del otro lado.
+forma rápida de entender qué te está mandando el servicio del otro lado. Ahí el
+aparato es tu navegador: hace falta tener un perfil de Dotrino en él, y la dirección
+sale de su llave.
 
 Límites: **1 MB** por petición y 30 segundos de espera.
