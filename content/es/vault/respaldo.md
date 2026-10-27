@@ -27,7 +27,7 @@ Un cajón se nombra así:
 |---|---|
 | `proxy` | el cajón del servicio `proxy` |
 | `@me` | los datos de tu perfil |
-| `contrasenas` | la bóveda de contraseñas |
+| `passwords` | la bóveda de contraseñas |
 | `AB12-CD34` | el cajón de ese aparato |
 
 ## Exportar
@@ -81,7 +81,7 @@ Si hay choques y no dijiste qué hacer, **no se importa nada**.
 - **No se guarda el historial** de cada variable: un respaldo es lo que hay ahora.
 - **Contraseñas que no entran.** Si alguna se guardó antes de que la bóveda tuviera su copia de
   recuperación, el respaldo te lo avisa. Ábrela una vez desde un aparato con el permiso
-  `contrasenas` y repite el respaldo.
+  `passwords` y repite el respaldo.
 - También se hace sin la línea de comandos: en la pantalla de la bóveda (`dotrino-vault tui`, o la
   ventana) pulsa `o` sobre una bóveda; en el navegador, en la consola `vault.dotrino.com`, sección
   «Respaldo»; y en la extensión, en la pestaña que hace de bóveda.

@@ -50,7 +50,7 @@ ella se porte bien.
 
 ```sh
 dotrino-vault members            # el acta: qué llaves son tuyas y qué puede cada una
-dotrino-vault caps <ID> +firma   # cambia permisos (+firma -guarda +lee +administra +aprueba +permiso)
+dotrino-vault caps <ID> +sign   # cambia permisos (+sign -store +read +admin +approve +unattended)
 ```
 
 ## Si se pierde la llave que sella, se pierde la cuenta

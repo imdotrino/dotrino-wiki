@@ -13,7 +13,7 @@ el servidor desatendido no pide; la PC en la que trabajas, sí.
 Por defecto **nadie pide**. Se fija al enrolar, o después como un permiso más:
 
 ```sh
-dotrino-vault caps <ID-del-teléfono> +aprueba     # QUIÉN aprueba (no viaja en un QR)
+dotrino-vault caps <ID-del-teléfono> +approve     # QUIÉN aprueba (no viaja en un QR)
 dotrino-vault pair --service claude --approval    # el que entre pedirá permiso
 dotrino-vault caps <ID> +permiso | -permiso       # ponerlo o quitarlo después
 ```

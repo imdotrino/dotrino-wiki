@@ -39,7 +39,7 @@ enseña el código; de vuelta en la primera, `a` y el código.
 Dos cosas que importan de esto:
 
 - **Entra con SU propia llave**, no con una de aparato inventada. Por eso después se le
-  puede dar `+sella` y ser el respaldo de verdad.
+  puede dar `+sealer` y ser el respaldo de verdad.
 - **El código hay que teclearlo**, como en cualquier emparejamiento. Una invitación
   interceptada no basta para entrar.
 
@@ -53,18 +53,18 @@ Con `--kms` ese perfil **nace** con su clave de disco en el KMS
 
 ## Sellar es un permiso, y se quita
 
-Entrar no da poder. Como `administra`, **sellar no se empareja**: se concede a mano, desde
+Entrar no da poder. Como `admin`, **sellar no se empareja**: se concede a mano, desde
 la bóveda que manda, y se retira igual.
 
 ```sh
 dotrino-vault members                 # mira el ID de la nueva
-dotrino-vault caps 622C-A2C0 +sella   # ahora puede sellar el acta
-dotrino-vault caps 622C-A2C0 -sella   # y ya no
+dotrino-vault caps 622C-A2C0 +sealer   # ahora puede sellar el acta
+dotrino-vault caps 622C-A2C0 -sealer   # y ya no
 ```
 
 En la TUI: Dispositivos → la bóveda nueva → `c` → marca «sella» → `G`.
 
-**Antes de darle `+sella`, ponle contraseña a esa cuenta en la bóveda nueva**
+**Antes de darle `+sealer`, ponle contraseña a esa cuenta en la bóveda nueva**
 (`dotrino-vault profile password`, o `c` en su TUI). Sin contraseña, su llave queda cerrada
 solo con la de la máquina, y cualquiera con acceso a esa máquina podría sellar el acta en
 tu nombre.
@@ -102,7 +102,7 @@ docker logs -f dotrino-vault
 
 # de vuelta en TU máquina
 dotrino-vault approve 767527
-dotrino-vault caps 622C-A2C0 +sella
+dotrino-vault caps 622C-A2C0 +sealer
 ```
 
 Al contenedor no se entra **nunca**.

@@ -26,7 +26,7 @@ A drawer is named like this:
 |---|---|
 | `proxy` | the drawer of the `proxy` service |
 | `@me` | your profile data |
-| `contrasenas` (or `passwords`) | the password vault |
+| `passwords` | the password vault |
 | `AB12-CD34` | that device's drawer |
 
 ## Export
@@ -79,7 +79,7 @@ If there are conflicts and you did not say what to do, **nothing is imported**.
   the one here in place.
 - **History is not saved**: a backup is what there is now.
 - **Passwords left out.** If one was saved before the vault had its recovery copy, the backup
-  tells you. Open it once from a device with the `contrasenas` permission and back up again.
+  tells you. Open it once from a device with the `passwords` permission and back up again.
 - It also works without the command line: in the vault screen (`dotrino-vault tui`, or the
   window) press `o` on a vault; in the browser, in the `vault.dotrino.com` console, «Backup»
   section; and in the extension, in the tab that acts as the vault.

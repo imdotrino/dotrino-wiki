@@ -13,7 +13,7 @@ drawer** — the unattended server doesn't ask; the PC you work on does.
 By default **nobody asks**. It is set at enrollment, or later like any permission:
 
 ```sh
-dotrino-vault caps <phone-ID> +aprueba          # WHO approves (never travels in a QR)
+dotrino-vault caps <phone-ID> +approve          # WHO approves (never travels in a QR)
 dotrino-vault pair --service claude --approval  # whoever enters will ask
 dotrino-vault caps <ID> +permiso | -permiso     # set or unset it later
 ```
