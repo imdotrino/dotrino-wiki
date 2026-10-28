@@ -31,8 +31,20 @@ llaves y por lo tanto varias cuentas.
          · sellador (master): UNA sola llave firma el acta (la bóveda, normalmente)
          · miembros: una LLAVE cada uno, con capacidades
              sign · store · read   → un dispositivo tuyo
-             secrets + cn          → un servicio: abre SOLO su propio cajón
+             + cn (su cajón)       → un servicio: abre SOLO ese cajón
          · llavero: la clave de contenido, envuelta para cada miembro
+```
+
+### Dispositivo o servicio
+
+La única diferencia es el **`cn`** (el nombre del cajón). Un **dispositivo** (sin `cn`) es un
+aparato tuyo: con `sign` firma como tú y lee tus datos. Un **servicio** (`cn: <cajón>`) es un
+programa que corre por ti: abre solo su cajón, con `sign` firma solo dentro de él y no ve tus
+datos. Se pasa de uno a otro **sin volver a emparejar**, con la misma llave:
+
+```sh
+dotrino-vault caps <ID> +secrets:tunnel   # pasa a ser el servicio «tunnel»
+dotrino-vault caps <ID> -secrets:tunnel   # vuelve a ser un dispositivo
 ```
 
 **El nombre de la cuenta es el `profileId`**: la pubkey de la llave donde nació, y no

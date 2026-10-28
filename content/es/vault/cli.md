@@ -20,6 +20,7 @@ dotrino-vault reject  <deviceId>   # rechaza un dispositivo pendiente
 dotrino-vault devices              # dispositivos enrolados / revocados
 dotrino-vault members              # el acta: qué llaves son tuyas y qué puede cada una
 dotrino-vault caps <ID> ±permiso   # +sign -store +read +admin +approve +unattended
+dotrino-vault caps <ID> +secrets:<cajón>  # lo hace servicio de ese cajón; -secrets:<cajón> lo vuelve dispositivo
 dotrino-vault revoke  <nonce>      # revoca un dispositivo (le ordena autoborrarse)
 dotrino-vault block   <ID>         # lo deja fuera sin quitarlo (lo normal: bloquear desde el teléfono tras un incidente)
 dotrino-vault unblock <ID>         # le quita el bloqueo (solo aquí o desde la consola de administración)

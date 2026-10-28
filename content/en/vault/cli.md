@@ -19,7 +19,8 @@ dotrino-vault approve <code>       # approve by typing the 6 digits the device S
 dotrino-vault reject  <deviceId>   # reject a pending device
 dotrino-vault devices              # enrolled / revoked devices
 dotrino-vault members              # the record: which keys are yours and what each can do
-dotrino-vault caps <ID> ±perm      # +sign -store +read +admin +approve +approval
+dotrino-vault caps <ID> ±perm      # +sign -store +read +admin +approve +unattended
+dotrino-vault caps <ID> +secrets:<drawer>  # makes it that drawer's service; -secrets:<drawer> makes it a device again
 dotrino-vault revoke  <nonce>      # revoke a device (orders it to self-delete)
 dotrino-vault block   <ID>         # keep it out without removing it (usually blocked from the phone after an incident)
 dotrino-vault unblock <ID>         # lift the block (only here or from the admin console)

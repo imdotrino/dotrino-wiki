@@ -31,8 +31,20 @@ therefore several accounts.
          · sealer (master): ONE key signs the record (normally the vault)
          · members: one KEY each, with capabilities
              sign · store · read   → a device of yours
-             secrets + cn          → a service: opens ONLY its own drawer
+             + cn (its drawer)     → a service: opens ONLY that drawer
          · keyring: the content key, wrapped for each member
+```
+
+### Device or service
+
+The only difference is the **`cn`** (the drawer's name). A **device** (no `cn`) is a machine of
+yours: with `sign` it signs as you and reads your data. A **service** (`cn: <drawer>`) is a
+program running for you: it opens only its drawer, with `sign` it signs only inside it, and it
+does not see your data. You switch between them **without pairing again**, with the same key:
+
+```sh
+dotrino-vault caps <ID> +secrets:tunnel   # becomes the "tunnel" service
+dotrino-vault caps <ID> -secrets:tunnel   # becomes a device again
 ```
 
 **The account's name is the `profileId`**: the pubkey of the key where it was born,
