@@ -448,6 +448,13 @@
             "es": "El túnel",
             "en": "The tunnel"
           }
+        },
+        {
+          "slug": "contenido",
+          "title": {
+            "es": "Content: tus audios en tu computadora",
+            "en": "Content: your audio on your computer"
+          }
         }
       ]
     },
