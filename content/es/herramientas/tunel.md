@@ -19,19 +19,29 @@ alguien lo que estás haciendo, para que un servicio ajeno te avise de algo
 npx @dotrino/tunnel 3000
 ```
 
-La primera vez te pide **enrolarlo en tu bóveda**, como cualquier otro aparato: pegas
-la invitación de tu bóveda y escribes en ella el código que te enseña para aprobarlo.
-Después te devuelve una dirección `https://r.dotrino.com/<llave>/…` que apunta a tu
-puerto local.
+Te devuelve una dirección `https://r.dotrino.com/<llave>/…` que apunta a tu puerto
+local. **No necesitas bóveda**: la primera vez el túnel se crea su propia identidad, y
+con ella se presenta.
+
+Si después quieres que forme parte de tu cuenta, **emparéjalo con tu bóveda**:
+
+```
+npx @dotrino/tunnel enroll
+```
+
+Pegas la invitación de tu bóveda y escribes en ella el código que te enseña para
+aprobarlo. **La dirección cambia**: el túnel entra a tu cuenta con una llave nueva,
+porque cada llave pertenece a una sola cuenta.
 
 > **La dirección es de ese túnel y de nadie más.** Sale de la llave del propio túnel, y
 > solo él puede atenderla: nadie puede quedarse con tu dirección ni hacerse pasar por
 > tu túnel. Quien tenga la dirección sí puede mandarle peticiones, así que compártela
 > con cuidado y corta el túnel cuando dejes de necesitarlo.
 
-**Cada túnel es un aparato de tu cuenta.** Para tener otro, ponle otro nombre
-(`npx @dotrino/tunnel 8080 --name api`): aparece como un aparato más en tu bóveda, y
-desde ahí lo quitas cuando quieras. `npx @dotrino/tunnel info` te dice cuál es.
+**Cada túnel es un aparato.** Para tener otro, ponle otro nombre
+(`npx @dotrino/tunnel 8080 --name api`). Si lo emparejas, aparece como un aparato más en
+tu bóveda, y desde ahí lo quitas cuando quieras. `npx @dotrino/tunnel info` te dice cuál
+es y si ya está en tu cuenta.
 
 ## Como librería
 

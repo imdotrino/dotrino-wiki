@@ -19,20 +19,29 @@ notify you (*webhooks*), or for a bot to find you.
 npx @dotrino/tunnel 3000
 ```
 
-The first time, it asks you to **enroll it in your vault**, like any other device: you
-paste your vault's invitation and type into the vault the code it shows you to approve
-it. Then it hands you an address, `https://r.dotrino.com/<key>/…`, pointing at your
-local port.
+It hands you an address, `https://r.dotrino.com/<key>/…`, pointing at your local port.
+**You don't need a vault**: the first time, the tunnel creates its own identity and
+uses it to present itself.
+
+If you later want it to be part of your account, **pair it with your vault**:
+
+```
+npx @dotrino/tunnel enroll
+```
+
+You paste your vault's invitation and type into the vault the code it shows you to
+approve it. **The address changes**: the tunnel joins your account with a new key,
+because each key belongs to a single account.
 
 > **The address belongs to that tunnel and nobody else.** It comes from the tunnel's own
 > key, and only it can answer: nobody can take over your address or pose as your
 > tunnel. Whoever has the address can still send it requests, so share it with care and
 > close the tunnel when you no longer need it.
 
-**Each tunnel is a device of your account.** For another one, give it another name
-(`npx @dotrino/tunnel 8080 --name api`): it shows up as one more device in your vault,
-and you remove it from there whenever you want. `npx @dotrino/tunnel info` tells you
-which one it is.
+**Each tunnel is a device.** For another one, give it another name
+(`npx @dotrino/tunnel 8080 --name api`). Once paired, it shows up as one more device in
+your vault, and you remove it from there whenever you want. `npx @dotrino/tunnel info`
+tells you which one it is and whether it's in your account yet.
 
 ## As a library
 
