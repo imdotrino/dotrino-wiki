@@ -56,4 +56,4 @@ forma rápida de entender qué te está mandando el servicio del otro lado. Ahí
 aparato es tu navegador: hace falta tener un perfil de Dotrino en él, y la dirección
 sale de su llave.
 
-Límites: **1 MB** por petición y 30 segundos de espera.
+Límites: **50 MB** por petición o respuesta. Si pasan 30 segundos sin que llegue nada, se corta.

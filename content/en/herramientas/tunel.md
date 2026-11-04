@@ -56,4 +56,4 @@ the quick way to understand what the service on the other side is sending you. T
 the device is your browser: it needs a Dotrino profile, and the address comes from its
 key.
 
-Limits: **1 MB** per request and a 30-second timeout.
+Limits: **50 MB** per request or response. If nothing arrives for 30 seconds, it is cut off.
