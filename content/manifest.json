@@ -350,6 +350,13 @@
           }
         },
         {
+          "slug": "grabadora",
+          "title": {
+            "es": "Grabadora",
+            "en": "Recorder"
+          }
+        },
+        {
           "slug": "perfil",
           "title": {
             "es": "Perfil y calificaciones",
