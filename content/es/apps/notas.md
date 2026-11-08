@@ -11,24 +11,32 @@ description: Un bloc de notas que te sigue entre el teléfono y la computadora. 
 Notes es un bloc de notas. Escribes en un aparato y sigues en otro. Lo que escribes se guarda en
 [tu almacén](/empezar/privacidad/), dentro de tu perfil: no pasa por los servidores de Dotrino.
 
-## Escribir
+## El panel de tus notas
+
+Las notas se administran en el panel de la izquierda:
 
 - **Nueva nota** abre una nota en blanco. La **primera línea es el título**.
-- Se guarda sola mientras escribes. Arriba de la nota dice «Guardando…» y después cuándo se editó.
+- Pulsa una nota de la lista para abrirla.
 - **📌** la fija arriba de la lista. Vuelve a pulsarlo para soltarla.
 - **🗑** la elimina, después de confirmar. Se elimina en todos tus aparatos y no se puede deshacer.
 - El cuadro **Buscar** encuentra las notas que tienen todas las palabras que escribas, sin
   importar mayúsculas ni tildes.
 
-En el teléfono la nota ocupa la pantalla: la flecha, o el botón de volver del teléfono, te
-devuelve a la lista.
+**«** pliega el panel para escribir con toda la pantalla; **☰** lo vuelve a abrir. La app recuerda
+cómo lo dejaste. En el teléfono el panel se abre encima con **☰** y se cierra al elegir una nota,
+al tocar fuera o con el botón de volver.
+
+## Escribir
+
+A la derecha queda la nota abierta. Se guarda sola mientras escribes: arriba dice «Guardando…» y
+después cuándo se editó.
 
 ## Tenerlas en todos tus aparatos
 
 Tus notas llegan a tus otros aparatos a través de tu [bóveda](/vault/emparejar/). Hace falta que
 cada aparato esté enlazado a ella con el mismo perfil. Viajan cifradas con la llave de tu cuenta.
 
-Arriba de la lista hay un punto de color:
+Arriba del panel hay un punto de color:
 
 | Color | Qué quiere decir |
 |---|---|

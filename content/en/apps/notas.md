@@ -11,22 +11,31 @@ description: A notepad that follows you between your phone and your computer. Yo
 Notes is a notepad. You write on one device and continue on another. What you write is kept in
 [your storage](/en/empezar/privacidad/), inside your profile: it does not go through Dotrino's servers.
 
-## Writing
+## The panel of your notes
+
+Notes are managed in the panel on the left:
 
 - **New note** opens a blank note. The **first line is the title**.
-- It saves itself while you type. Above the note it says “Saving…” and then when it was edited.
+- Press a note in the list to open it.
 - **📌** pins it to the top of the list. Press it again to unpin.
 - **🗑** deletes it, after you confirm. It is deleted on all your devices and cannot be undone.
 - The **Search** box finds the notes that have all the words you type, ignoring case and accents.
 
-On a phone the note fills the screen: the arrow, or the phone's back button, takes you back to the list.
+**«** collapses the panel so you can write with the whole screen; **☰** opens it again. The app
+remembers how you left it. On a phone the panel opens on top with **☰** and closes when you pick a
+note, tap outside or press back.
+
+## Writing
+
+The open note is on the right. It saves itself while you type: at the top it says “Saving…” and then
+when it was edited.
 
 ## Having them on all your devices
 
 Your notes reach your other devices through your [vault](/en/vault/emparejar/). Each device has to
 be linked to it with the same profile. They travel encrypted with your account key.
 
-Above the list there is a colored dot:
+Above the panel there is a colored dot:
 
 | Color | What it means |
 |---|---|
