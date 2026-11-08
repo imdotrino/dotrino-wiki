@@ -343,6 +343,13 @@
           }
         },
         {
+          "slug": "notas",
+          "title": {
+            "es": "Notas en todos tus aparatos",
+            "en": "Notes on all your devices"
+          }
+        },
+        {
           "slug": "facturacion",
           "title": {
             "es": "Facturación electrónica (SRI)",
