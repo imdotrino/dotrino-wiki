@@ -119,7 +119,7 @@ reenvío, que no puede leerlo. No guardamos nada de tus consolas.
 **Para borrarlo todo:** desinstala la app. Las consolas siguen en tus máquinas, que son tuyas:
 se cierran desde ahí o al parar el agente.
 
-### Notas (Android, iPhone y iPad)
+### Notas (Android y iPhone)
 
 **Notas** (`com.dotrino.notes`) guarda tus notas **cifradas en el propio teléfono**. Funciona sin
 conexión y no necesita cuenta.

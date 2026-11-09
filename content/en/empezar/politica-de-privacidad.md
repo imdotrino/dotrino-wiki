@@ -117,7 +117,7 @@ can't read it. We keep nothing from your consoles.
 **To delete everything:** uninstall the app. The consoles stay on your machines, which are
 yours: close them there or stop the agent.
 
-### Notes (Android, iPhone and iPad)
+### Notes (Android and iPhone)
 
 **Notes** (`com.dotrino.notes`) keeps your notes **encrypted on the phone itself**. It works
 offline and needs no account.
