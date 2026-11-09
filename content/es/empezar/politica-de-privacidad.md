@@ -5,7 +5,7 @@ description: Qué queda registrado cuando usas Dotrino, por cuánto tiempo y qui
 
 # Política de privacidad
 
-Última revisión: **23 de octubre de 2026**.
+Última revisión: **9 de noviembre de 2026**.
 
 Esta página dice **qué queda registrado, por cuánto tiempo y quién más lo toca**. Si lo que
 buscas es el porqué, está en [Cómo se protege lo tuyo](/empezar/privacidad/).
@@ -118,6 +118,24 @@ reenvío, que no puede leerlo. No guardamos nada de tus consolas.
 
 **Para borrarlo todo:** desinstala la app. Las consolas siguen en tus máquinas, que son tuyas:
 se cierran desde ahí o al parar el agente.
+
+### Notas (Android, iPhone y iPad)
+
+**Notas** (`com.dotrino.notes`) guarda tus notas **cifradas en el propio teléfono**. Funciona sin
+conexión y no necesita cuenta.
+
+- **Si enlazas el teléfono a tu bóveda**, tus notas se copian a ella **cerradas**, por el camino
+  de siempre (directo cuando se puede, y si no, por nuestro servidor de reenvío, que no puede
+  leerlas). Si no lo enlazas, no salen del teléfono.
+- **Cámara.** Solo si tú la abres, para leer el código de emparejar con la bóveda. La imagen se
+  procesa en el teléfono y no se guarda ni se envía.
+- **Tus llaves y tu perfil** viven en Identidad Dotrino (Android) o en el espacio que comparten
+  las apps de Dotrino (iPhone), como en las demás apps.
+- **Sin avisos, sin estadísticas y sin informes de errores.** Notas no usa Firebase ni ningún
+  otro servicio de terceros.
+
+**Para borrarlo todo:** borra las notas desde la app (el borrado llega también a tu bóveda y a
+tus otros aparatos) y desinstálala.
 
 ### Las apps de iPhone y iPad
 

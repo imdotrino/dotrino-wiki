@@ -5,7 +5,7 @@ description: What gets recorded when you use Dotrino, for how long, and who else
 
 # Privacy policy
 
-Last reviewed: **11 October 2026**.
+Last reviewed: **9 November 2026**.
 
 This page says **what gets recorded, for how long, and who else touches it**. If you're
 looking for the why, that's in [How your things are protected](/empezar/privacidad/).
@@ -116,6 +116,24 @@ can't read it. We keep nothing from your consoles.
 
 **To delete everything:** uninstall the app. The consoles stay on your machines, which are
 yours: close them there or stop the agent.
+
+### Notes (Android, iPhone and iPad)
+
+**Notes** (`com.dotrino.notes`) keeps your notes **encrypted on the phone itself**. It works
+offline and needs no account.
+
+- **If you link the phone to your vault**, your notes are copied to it **sealed**, along the
+  usual path (direct when possible, otherwise through our relay server, which can't read them).
+  If you don't link it, they never leave the phone.
+- **Camera.** Only if you open it, to read the code that pairs it with your vault. The image is
+  processed on the phone and is neither stored nor sent.
+- **Your keys and your profile** live in Dotrino Identity (Android) or in the space the Dotrino
+  apps share (iPhone), as with the other apps.
+- **No notifications, no statistics and no crash reports.** Notes uses neither Firebase nor any
+  other third-party service.
+
+**To delete everything:** delete your notes in the app (the deletion also reaches your vault and
+your other devices) and uninstall it.
 
 ### The iPhone and iPad apps
 
