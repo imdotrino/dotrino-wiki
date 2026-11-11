@@ -222,6 +222,11 @@ Many sites leave you at a different address once you're in — you type on a sig
 end up on the service itself. The prompt still shows up, in the tab you signed in from, and
 it names **the address where you typed the password**, which is where you'll need it again.
 
+Some sites ask for your email on one screen and your password on the next, like Google.
+There the prompt shows up **once, with both**, when you move past the password screen: the
+email is remembered in the meantime, without asking anything. If the password was wrong and
+the site asks for it again, no prompt shows up.
+
 ### Two accounts that look the same are still two
 
 You can have two accounts on the same site with the same email —one for work, one

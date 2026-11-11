@@ -218,6 +218,11 @@ Muchos sitios te dejan en otra dirección al entrar —escribes en una página d
 acabas en la del servicio—. El aviso sale igual, en la pestaña donde entraste, y dice
 **la dirección donde escribiste la contraseña**, que es donde vas a volver a necesitarla.
 
+Hay sitios que piden el correo en una pantalla y la contraseña en la siguiente, como Google.
+Ahí el aviso sale **una vez, con los dos**, al pasar de la pantalla de la contraseña: el
+correo se recuerda mientras tanto, sin preguntar nada. Si la contraseña era mala y el sitio
+te la vuelve a pedir, no sale aviso.
+
 ### Dos cuentas que se ven iguales siguen siendo dos
 
 Puedes tener dos cuentas del mismo sitio con el mismo correo —una de trabajo y otra
