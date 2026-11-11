@@ -153,8 +153,9 @@ mostly for a browser that a program drives. The price: what gets filled in can b
 page as soon as it opens.
 
 Below it there is a second setting, **“And sign in without a click”**, which can only be on
-together with the first. After filling in, it presses the sign-in button if every box in the
-form is filled. It does this **once per form**: if the password does not work and the same
+together with the first. After filling in, it counts 10 seconds, with a notice at the bottom
+and a **Cancel** button, and at zero it presses the sign-in button if every box in the form is
+still filled. It does this **once per form**: if the password does not work and the same
 form comes back, it does not repeat. If a different form shows up (the second step of a
 sign-in), that one does get sent.
 

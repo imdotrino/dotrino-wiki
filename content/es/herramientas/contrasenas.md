@@ -151,8 +151,8 @@ predeterminada. Sirve sobre todo para un navegador que maneja un programa. El pr
 se rellena lo puede leer la página en cuanto se abre.
 
 Debajo hay un segundo ajuste, **«Y entrar sin pulsar»**, que solo se puede encender con el
-primero. Después de rellenar pulsa el botón de entrar, si todas las casillas del formulario
-están llenas. Lo hace **una vez por formulario**: si la contraseña no sirve y vuelve el mismo
+primero. Después de rellenar cuenta 10 segundos, con un aviso abajo y un botón **Cancelar**,
+y al llegar a cero pulsa el botón de entrar si todas las casillas del formulario siguen llenas. Lo hace **una vez por formulario**: si la contraseña no sirve y vuelve el mismo
 formulario, no lo repite. Si aparece otro formulario distinto (el segundo paso de un acceso),
 ese sí lo envía.
 
