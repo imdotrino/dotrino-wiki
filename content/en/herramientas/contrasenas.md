@@ -145,11 +145,18 @@ where it can help and waits for you to ask. That is on purpose — filling on it
 deciding for you which field each value goes into, and getting that wrong means typing a
 password into the wrong place.
 
-If you want it, there is a setting: **“Fill in when the page opens”**, in the extension’s
-window. It comes off. When on, opening a sign-in page puts in the username and password
-without a click, but only when it is clear which one to use: the only one saved for that
-site, or the one you marked as default. It is mostly for a browser that a program drives.
-The price: what gets filled in can be read by the page as soon as it opens.
+If you want it, there is a setting: **“Fill in when this site opens”**, in the extension’s
+window. It comes off and applies **only to the site** where you turn it on. When on, opening a
+sign-in page puts in the username and password without a click, but only when it is clear
+which one to use: the only one saved for that site, or the one you marked as default. It is
+mostly for a browser that a program drives. The price: what gets filled in can be read by the
+page as soon as it opens.
+
+Below it there is a second setting, **“And sign in without a click”**, which can only be on
+together with the first. After filling in, it presses the sign-in button if every box in the
+form is filled. It does this **once per form**: if the password does not work and the same
+form comes back, it does not repeat. If a different form shows up (the second step of a
+sign-in), that one does get sent.
 
 ## A new password
 

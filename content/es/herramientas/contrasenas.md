@@ -143,12 +143,18 @@ dónde puede ayudar y espera a que tú lo pidas. Es a propósito — rellenar so
 decidir por ti en qué campo va cada dato, y equivocarse ahí significa escribir una
 contraseña en el sitio equivocado.
 
-Si lo quieres, hay un ajuste: **«Rellenar al abrir la página»**, en la ventana de la
-extensión. Viene apagado. Encendido, al abrir una página de acceso pone el usuario y la
-contraseña sin que pulses nada, pero solo cuando no hay duda de cuál usar: la única
-guardada para ese sitio o la que marcaste como predeterminada. Sirve sobre todo para un
-navegador que maneja un programa. El precio: lo que se rellena lo puede leer la página
-en cuanto se abre.
+Si lo quieres, hay un ajuste: **«Rellenar al abrir este sitio»**, en la ventana de la
+extensión. Viene apagado y vale **solo para el sitio** en el que lo enciendes. Encendido, al
+abrir una página de acceso pone el usuario y la contraseña sin que pulses nada, pero solo
+cuando no hay duda de cuál usar: la única guardada para ese sitio o la que marcaste como
+predeterminada. Sirve sobre todo para un navegador que maneja un programa. El precio: lo que
+se rellena lo puede leer la página en cuanto se abre.
+
+Debajo hay un segundo ajuste, **«Y entrar sin pulsar»**, que solo se puede encender con el
+primero. Después de rellenar pulsa el botón de entrar, si todas las casillas del formulario
+están llenas. Lo hace **una vez por formulario**: si la contraseña no sirve y vuelve el mismo
+formulario, no lo repite. Si aparece otro formulario distinto (el segundo paso de un acceso),
+ese sí lo envía.
 
 ## Una contraseña nueva
 
