@@ -450,6 +450,13 @@
           }
         },
         {
+          "slug": "escritorio-remoto",
+          "title": {
+            "es": "Escritorio remoto — tu escritorio desde otro aparato",
+            "en": "Remote desktop — your desktop from another device"
+          }
+        },
+        {
           "slug": "ia",
           "title": {
             "es": "Asistentes de IA en tu máquina",
