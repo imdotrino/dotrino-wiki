@@ -1,6 +1,6 @@
 ---
 title: Contexto de una carpeta para Claude Code (dotrino-context)
-description: Busca por significado en los documentos, la memoria, los commits y las conversaciones de una carpeta, en tu máquina, y le da a Claude Code el contexto que responde a cada mensaje.
+description: Busca por significado en los documentos, la memoria y los commits de una carpeta, en tu máquina, y le da a Claude Code el contexto que responde a cada mensaje.
 ---
 
 # Contexto de una carpeta para Claude Code
@@ -10,7 +10,7 @@ description: Busca por significado en los documentos, la memoria, los commits y 
 
 Cuando trabajas con Claude Code en un proyecto grande, lo que necesita saber está
 repartido: documentos de diseño, la memoria que Claude guarda de sesiones anteriores,
-el porqué de cada cambio en los commits y lo que se habló en otras conversaciones.
+y el porqué de cada cambio en los commits.
 `dotrino-context` lo junta en una base que vive **en tu máquina** y le trae a Claude
 lo que responde a lo que preguntas, en cada mensaje.
 
@@ -24,10 +24,12 @@ base es un archivo dentro de la carpeta.
 | `doc` | Todos los `.md` de la carpeta (sin `node_modules`, `dist`, carpetas ocultas…) | al cambiar el archivo |
 | `memory` | La memoria de Claude Code de esa carpeta y de sus subcarpetas | al cambiar la nota |
 | `git` | Los mensajes de commit de los repos que haya dentro, uno por commit | al cambiar el HEAD |
-| `conv` | Las conversaciones de Claude Code: solo lo que escribiste y el texto de la respuesta | cuando llevan 10 min sin cambiar |
 
-A los commits y las conversaciones se les tapa lo que parezca un secreto (llaves,
-tokens, `password=…`) antes de guardarlos. Es una red, no una garantía.
+A los commits se les tapa lo que parezca un secreto (llaves, tokens, `password=…`) antes
+de guardarlos. Es una red, no una garantía.
+
+Las conversaciones de Claude Code **no** se guardan: se probaron y traían más ruido que
+ayuda, porque lo que valía de ellas ya estaba en una nota de memoria o en un documento.
 
 ## Cómo decide qué contexto darte
 
@@ -36,7 +38,7 @@ tokens, `password=…`) antes de guardarlos. Es una red, no una garantía.
 3. Solo pasa lo que de verdad responde: lo que queda por debajo de un umbral, o muy
    por debajo del mejor resultado, se queda fuera. Como mucho, 6 trozos por mensaje.
 4. Cada resultado dice su **tipo** y su **fecha**. Si dos se contradicen: un `doc` o
-   una `memory` (lo vigente) ganan a un `git` o una `conv` (la historia); la norma de
+   una `memory` (lo vigente) ganan a un `git` (la historia); la norma de
    la carpeta gana a todo; entre iguales, el más nuevo.
 
 La base **refleja los archivos**: para que olvide algo, se corrige o se borra el `.md`

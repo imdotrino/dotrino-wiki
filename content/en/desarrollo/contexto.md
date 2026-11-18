@@ -1,6 +1,6 @@
 ---
 title: Folder context for Claude Code (dotrino-context)
-description: Searches a folder's documents, memory, commits and conversations by meaning, on your machine, and gives Claude Code the context that answers each message.
+description: Searches a folder's documents, memory and commits by meaning, on your machine, and gives Claude Code the context that answers each message.
 ---
 
 # Folder context for Claude Code
@@ -10,7 +10,7 @@ description: Searches a folder's documents, memory, commits and conversations by
 
 When you work with Claude Code on a large project, what it needs to know is spread out:
 design documents, the memory Claude keeps from earlier sessions, the reason behind each
-change in the commits, and what was said in other conversations. `dotrino-context`
+change in the commits. `dotrino-context`
 gathers it into a database that lives **on your machine** and brings Claude what answers
 your question, with every message.
 
@@ -24,9 +24,11 @@ is a file inside the folder.
 | `doc` | Every `.md` in the folder (no `node_modules`, `dist`, hidden folders…) | when the file changes |
 | `memory` | Claude Code's memory for the folder and its subfolders | when the note changes |
 | `git` | Commit messages of the repos inside, one per commit | when HEAD changes |
-| `conv` | Claude Code conversations: only what you wrote and the reply text | after 10 min without changes |
 
-Commits and conversations have anything that looks like a secret (keys, tokens,
+Claude Code conversations are **not** stored: they were tried and brought more noise than
+help, since whatever was worth keeping already lived in a memory note or a document.
+
+Commits have anything that looks like a secret (keys, tokens,
 `password=…`) masked before they are stored. It is a net, not a guarantee.
 
 ## How it picks your context
@@ -36,7 +38,7 @@ Commits and conversations have anything that looks like a secret (keys, tokens,
 3. Only what really answers gets through: anything under a threshold, or far below the
    best result, stays out. At most 6 chunks per message.
 4. Each result states its **kind** and **date**. When two disagree: a `doc` or a
-   `memory` (current state) beat a `git` or a `conv` (history); the folder's norms beat
+   `memory` (current state) beat a `git` (history); the folder's norms beat
    everything; between equals, the newer one wins.
 
 The database **mirrors the files**: to make it forget something, fix or delete the `.md`
