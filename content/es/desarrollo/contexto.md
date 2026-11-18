@@ -77,7 +77,9 @@ solo en cada mensaje, añade el hook en `.claude/settings.local.json` de esa car
 ```
 
 El hook le pregunta al servidor de la carpeta por un socket local, así que no vuelve a
-cargar los modelos. Los mensajes de menos de 4 palabras no se buscan. El servidor se
+cargar los modelos. Busca con tu mensaje **y con el turno anterior**, así que un «sí, córrela»
+se entiende por lo que se venía hablando, y no repite lo que ya trajo en la misma sesión. Un
+mensaje de una sola palabra no se busca. El servidor se
 apaga al cerrar Claude Code.
 
 ## Con GPU

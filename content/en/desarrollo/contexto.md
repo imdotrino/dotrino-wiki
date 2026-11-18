@@ -77,7 +77,9 @@ own with every message, add the hook to that folder's `.claude/settings.local.js
 ```
 
 The hook asks the folder's server over a local socket, so it does not load the models
-again. Messages under 4 words are not searched. The server stops when Claude Code closes.
+again. It searches with your message **and the previous turn**, so a «yes, run it» is
+understood from what was being discussed, and it does not repeat what it already brought in
+the same session. A one-word message is not searched. The server stops when Claude Code closes.
 
 ## With a GPU
 
