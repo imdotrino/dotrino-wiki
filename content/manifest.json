@@ -534,6 +534,13 @@
             "es": "El índice y las pruebas",
             "en": "The index and the tests"
           }
+        },
+        {
+          "slug": "contexto",
+          "title": {
+            "es": "Contexto para Claude Code (dotrino-context)",
+            "en": "Context for Claude Code (dotrino-context)"
+          }
         }
       ]
     }
