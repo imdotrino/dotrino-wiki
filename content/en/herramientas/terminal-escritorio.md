@@ -341,6 +341,7 @@ dotrino-terminal kill <id>            # close one
 dotrino-terminal machines             # your other computers that are on, and their consoles
 dotrino-terminal --machine office     # open a console ON that computer (by its name or id)
 dotrino-terminal attach <id> --machine office   # go back to one over there (ls and kill too)
+dotrino-terminal run --machine office -- 'git status'   # run a command there without a console: its output and exit code
 dotrino-terminal profiles             # this computer's profiles
 dotrino-terminal link                 # enroll a profile
 dotrino-terminal rename <profile> <new>    # rename it

@@ -343,6 +343,7 @@ dotrino-terminal kill <id>            # cerrar una
 dotrino-terminal machines             # tus otras computadoras encendidas y sus consolas
 dotrino-terminal --machine oficina    # abre una consola EN esa computadora (por su nombre o su id)
 dotrino-terminal attach <id> --machine oficina   # volver a una de allí (ls y kill, igual)
+dotrino-terminal run --machine oficina -- 'git status'   # corre una orden allí sin abrir consola: su salida y su código
 dotrino-terminal profiles             # los perfiles de esta computadora
 dotrino-terminal link                 # enrolar un perfil
 dotrino-terminal rename <perfil> <nuevo>   # cambiarle el nombre
