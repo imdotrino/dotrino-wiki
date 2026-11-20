@@ -287,6 +287,13 @@
           }
         },
         {
+          "slug": "efimeral",
+          "title": {
+            "es": "Efimeral — mensajes de 60 segundos",
+            "en": "Efimeral — 60-second messages"
+          }
+        },
+        {
           "slug": "eco",
           "title": {
             "es": "Eco — publicar en tu zona",
