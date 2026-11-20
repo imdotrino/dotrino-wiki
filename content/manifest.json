@@ -287,10 +287,10 @@
           }
         },
         {
-          "slug": "efimeral",
+          "slug": "temp",
           "title": {
-            "es": "Efimeral — mensajes de 60 segundos",
-            "en": "Efimeral — 60-second messages"
+            "es": "Temp — mensajes de 60 segundos",
+            "en": "Temp — 60-second messages"
           }
         },
         {

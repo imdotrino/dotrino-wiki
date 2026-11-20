@@ -1,12 +1,12 @@
 ---
-title: Efimeral — mensajes que duran 60 segundos
+title: Temp — mensajes que duran 60 segundos
 description: Un chat sin cuenta y sin historial para pasarte algo que hay que copiar.
 ---
 
-# Efimeral — mensajes que duran 60 segundos
+# Temp — mensajes que duran 60 segundos
 
-[`efimeral.dotrino.com`](https://efimeral.dotrino.com/) · repo
-[`dotrino-efimeral`](https://github.com/imdotrino/dotrino-efimeral)
+[`temp.dotrino.com`](https://temp.dotrino.com/) · repo
+[`dotrino-temp`](https://github.com/imdotrino/dotrino-temp)
 
 Sirve para pasarte algo que hay que copiar —un código, un enlace, una clave— entre dos
 aparatos o dos personas, sin dejarlo guardado en ningún sitio. No hay cuenta ni historial.
@@ -14,7 +14,7 @@ aparatos o dos personas, sin dejarlo guardado en ningún sitio. No hay cuenta ni
 ## Cómo se usa
 
 1. Elige un canal de hasta 3 letras o números, o pulsa **Al azar**. El canal es la
-   dirección: `efimeral.dotrino.com/abc`.
+   dirección: `temp.dotrino.com/abc`.
 2. Abre la misma dirección en el otro aparato, o pásasela a la otra persona.
 3. Escribe. Cada mensaje tiene un botón para **copiarlo**.
 4. A los 60 segundos el mensaje se borra. La barra de abajo de cada mensaje enseña cuánto
