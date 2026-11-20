@@ -1,6 +1,6 @@
 ---
 title: Temp — mensajes que duran 60 segundos
-description: Un chat sin cuenta y sin historial para pasarte algo que hay que copiar.
+description: Un chat sin registro y sin historial para pasarte algo que hay que copiar.
 ---
 
 # Temp — mensajes que duran 60 segundos
@@ -9,7 +9,7 @@ description: Un chat sin cuenta y sin historial para pasarte algo que hay que co
 [`dotrino-temp`](https://github.com/imdotrino/dotrino-temp)
 
 Sirve para pasarte algo que hay que copiar —un código, un enlace, una clave— entre dos
-aparatos o dos personas, sin dejarlo guardado en ningún sitio. No hay cuenta ni historial.
+aparatos o dos personas, sin dejarlo guardado en ningún sitio. No hay registro ni historial.
 
 ## Cómo se usa
 
@@ -22,12 +22,19 @@ aparatos o dos personas, sin dejarlo guardado en ningún sitio. No hay cuenta ni
 
 ## Quién lo lee
 
-Arriba se ve cuántas personas hay conectadas al canal. Es lo único que se ve de ellas.
+Arriba se ve quién está conectado al canal: su apodo y el código de su cuenta de Dotrino
+(`AB12-CD34`). La cuenta se crea sola la primera vez que abres una app de Dotrino; no hay
+que registrarse. El apodo lo pones tú en tu perfil.
 
-- **Si entra alguien, te avisa** y no puedes enviar nada hasta pulsar **Entendido**. Así no
+- **El código no se puede falsificar.** Cada persona demuestra con una firma de su cuenta
+  que el código es suyo. El apodo, en cambio, lo elige cada uno: fíate del código.
+- Si alguien todavía no se ha presentado, o su firma no cuadra, aparece como **alguien sin
+  verificar**.
+
+- **Si entra alguien, te avisa con su nombre** y no puedes enviar nada hasta pulsar **Entendido**. Así no
   mandas algo sin saber que hay alguien más leyendo.
 - **El canal lo puede abrir cualquiera que sepa su nombre.** Con 3 caracteres hay pocos
-  nombres posibles: mira el número de conectados antes de enviar algo delicado.
+  nombres posibles: mira quién está antes de enviar algo delicado.
 
 ## Quien llega tarde
 
@@ -39,7 +46,7 @@ lo manda a quien no lo tiene y los 60 segundos vuelven a empezar para todos.
 
 - Cada mensaje sale cifrado para cada persona del canal. El servidor que lo lleva no
   puede leerlo.
-- Nada se guarda: ni en el servidor ni en tu navegador. Al cerrar la pestaña, eres otra
-  persona la próxima vez que entres.
+- Nada se guarda: ni en el servidor ni en tu navegador.
+- Quien conozca tu código te reconoce en cualquier canal en el que entres.
 - Lo que alguien copia o captura en su pantalla ya es suyo: eso ninguna app lo puede
   evitar.

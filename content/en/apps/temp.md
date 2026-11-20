@@ -1,6 +1,6 @@
 ---
 title: Temp — messages that last 60 seconds
-description: A chat with no account and no history, for passing along something you need to copy.
+description: A chat with no sign-up and no history, for passing along something you need to copy.
 ---
 
 # Temp — messages that last 60 seconds
@@ -9,7 +9,7 @@ description: A chat with no account and no history, for passing along something 
 [`dotrino-temp`](https://github.com/imdotrino/dotrino-temp)
 
 It is for passing along something you need to copy —a code, a link, a password— between
-two devices or two people, without leaving it stored anywhere. No account, no history.
+two devices or two people, without leaving it stored anywhere. No sign-up, no history.
 
 ## How to use it
 
@@ -22,13 +22,20 @@ two devices or two people, without leaving it stored anywhere. No account, no hi
 
 ## Who reads it
 
-The top of the screen shows how many people are in the channel. That is all you see of
-them.
+The top of the screen shows who is in the channel: their nickname and the code of their
+Dotrino account (`AB12-CD34`). The account is created on its own the first time you open a
+Dotrino app; there is nothing to sign up for. You set your nickname in your profile.
 
-- **If someone joins, you are told**, and you cannot send anything until you tap **Got
+- **The code cannot be faked.** Each person proves with a signature from their account
+  that the code is theirs. The nickname, on the other hand, is whatever each one picks:
+  trust the code.
+- Someone who has not introduced themselves yet, or whose signature does not check out,
+  shows as **someone unverified**.
+
+- **If someone joins, you are told who**, and you cannot send anything until you tap **Got
   it**. That way you never send something without knowing someone else is reading.
 - **Anyone who knows the channel name can open it.** With 3 characters there are few
-  possible names: check the count before sending something sensitive.
+  possible names: check who is there before sending something sensitive.
 
 ## Whoever arrives late
 
@@ -40,6 +47,6 @@ goes to whoever does not have it, and the 60 seconds start again for everyone.
 
 - Every message is encrypted for each person in the channel. The server that carries it
   cannot read it.
-- Nothing is stored: not on the server, not in your browser. Close the tab and you are
-  someone else the next time you join.
+- Nothing is stored: not on the server, not in your browser.
+- Anyone who knows your code recognizes you in any channel you join.
 - Whatever someone copies or screenshots is theirs: no app can prevent that.
