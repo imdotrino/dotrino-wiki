@@ -24,7 +24,9 @@ daemon no corre, la TUI ofrece arrancarlo con `S` (solo sabe hacerlo por systemd
    también creas, renombras, borras y pones el candado.
 2. Dentro, **pestañas** (`←→`): **Dispositivos** (emparejar, aprobar, rechazar,
    revocar; con `e` sobre un servicio, sus variables propias) y **Scopes y
-   variables** (las compartidas; `i` importa un `.env` entero).
+   variables** (las compartidas; `i` importa un `.env` entero) y **Contraseñas**
+   (escribes un sitio y te dice si hay una contraseña o passkey guardada, con qué
+   usuario y en qué aparatos; no enseña la contraseña).
 
 Al emparejar, la bóveda **pregunta primero a qué cuenta entra el dispositivo** (la
 activa, una nueva, o conectar un servicio con su namespace) y recién después muestra
