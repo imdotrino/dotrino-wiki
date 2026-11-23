@@ -25,8 +25,8 @@ order for the daemon. If the daemon isn't running, the TUI offers to start it wi
    create, rename, delete and set the password lock.
 2. Inside, **tabs** (`←→`): **Devices** (pair, approve, reject, revoke; `e` on a
    service shows its own variables), **Scopes & variables** (the shared ones; `i`
-   imports a whole `.env`) and **Passwords** (type a site and it tells you whether a
-   password or passkey is saved, with which user and on which devices; it does not show
+   imports a whole `.env`) and **Passwords** (type part of the site, the title or the user —`npm` finds
+   `www.npmjs.com`— and it tells you whether a password or passkey is saved, with which user and on which devices; it does not show
    the password).
 
 When pairing, the vault **first asks which account the device joins** (the active
